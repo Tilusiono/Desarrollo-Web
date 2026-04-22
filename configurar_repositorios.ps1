@@ -2,6 +2,7 @@ param(
     [string]$archivo
 )
 
+
 if (-not $archivo) {
     Write-Host "Debe indicar el archivo. Ejemplo:"
     Write-Host ".\configurar_repositorios.ps1 alumnos.txt"
