@@ -1,0 +1,48 @@
+body{ background-color: #0f253a;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: black
+}
+header{
+    display:flex ;
+    min-height: 20 px ;
+    justify-content: space-between;
+    background-color: rgb(31, 90, 142);
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display:flex;
+    align-items: center;
+   
+
+
+}
+.logo img{height: 30px;
+    margin-right: 1 0px;
+
+}
+nav a{
+    font-weight: 100px;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: white;
+   
+}
+
+@media (max-width:600px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+img{
+    max-width: 100%;
+}
