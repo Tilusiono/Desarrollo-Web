@@ -1,28 +1,21 @@
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: white;
+}
 main{
+    width: 100dvw;
+    height: 100dvh;
     background-color: red;
     display: flex;
-}
-#player{
-    background-color: blue;
-    width: 20px;
-    height: 50px;
-    position: absolute;
-    top: 200px;
-    left: 100px;
-}
-#arbol {
-    background-color: yellow;
-    width: 30px;
-    height: 50px;
-    position: absolute;
-    top:200px;
-    right: 0px;
-}
-canvas{
-    width: 800px;
-    height: 500px;
-    border: solid black 2px;
 }
