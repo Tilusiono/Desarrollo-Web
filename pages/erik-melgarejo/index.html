@@ -1,28 +1,20 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GG Highlights</title>
-        <meta name="description" content="Páginagamer">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>GG Highlights</h1>
+<head>
+    <meta charset="utf-8">
+    <title>GG Highlights</title>
+</head>
+<body>
+    <h1>GG Highlights</h1>
 
-        <section>    
+    <section>    
         <h2 id="dotaTitle">Dota2-Epic Moments</h2>
         <video id="dotaVideo" src="fly.mp4" controls width="600" style="display:none;"></video>
     </section>
 
-    <p>Mejores Momentos del Dota Peruano</p>
+    <p>Mejores Momentos del Dota2</p>
 
-     <script>
+    <script>
         // Mostrar video al hacer clic en el título
         const titulo = document.getElementById("dotaTitle");
         const video = document.getElementById("dotaVideo");
@@ -32,7 +24,6 @@
             video.play(); // lo reproduce automáticamente
         });
     </script>
-
 
     <audio id="introAudio" src="audio.mp3.mp3" autoplay muted></audio>
 
@@ -51,3 +42,5 @@
             }, 10000); // 10 segundos
         }, { once: true }); // solo funciona la primera vez
     </script>
+</body>
+</html>
