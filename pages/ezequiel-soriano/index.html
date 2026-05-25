@@ -1,64 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-   <title>JHOALS</title>
-   <link rel="icon" type="image/x-icon" href="fotos/logo_jhoals.ico">
-   <link rel="stylesheet" href="estilos.css/estilos.css">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JHOALS</title>
+    <link rel="stylesheet" href="estilos.css/style.css">
 </head>
 
 <body>
-   <header>
-      <div class="logo">
-         <img src="fotos/logo.png" alt="logo de la compania">
-         <h3 class="nombre-empresa">JHOALS</h3>
-      </div>
-      <nav>
-         <a href="" class="nav-link">Inicio</a>
-         <a href="" class="nav-link">Sobre nosotros</a>
-         <a href="" class="nav-link">Contacto</a>
-      </nav>
-   </header>
-   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-         <div class="carousel-item active">
-            <img class="d-block w-100" src="fotos/imagenprincipal.jpg" alt="First slide">
-         </div>
-         <div class="carousel-item">
-            <img class="d-block w-100" src="fotos/logo.png" alt="Second slide">
-         </div>
-         <div class="carousel-item">
-            <img class="d-block w-100" src="fotos/logo_jhoals.ico" alt="Third slide">
-         </div>
-      </div>
-   </div>
-   <audio src="fotos/audio.mp4" controls autoplay loop></audio>
-   <div>
-      <section id="hero">
-      </section>
-      <img src="fotos/imagenprincipal.jpg" alt="imagen PRINCIPAL">
-   </div>
-   <div class="video">
-      <video controls width="50%">
-         <source src="fotos/video.mp4" type="video/mp4">
-         Tu navegador no soporta la reproducción de videos nativos.
-      </video>
-   </div>
-   <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatibus hic. Optio officiis temporibus
-      quam minus sequi quasi libero voluptatum ut accusantium, dolore suscipit corrupti earum, ipsa repudiandae numquam
-      reiciendis.</P>
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-</body>
+    <header>
+        <div class="logo">
+            <img src="fotos/logo.png" alt="logo_empresa">
+            <h1>JHOALS</h1>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#nosotro">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        </nav>
+       
+    </header>
 
+   
+    <section class="hero">
+        <div id=inicio class="hero-texto">
+            <h2>El Mejor Pollo a la Brasa</h2>
+            <p>Disfruta del auténtico sabor peruano.</p>
+        </div>
+    </section>
+<!--MENU-->
+    <section id="menu">
+        <h2>Nuestro Menú</h2>
+        <div class="contenedor-menu">
+            <div class="card">
+                <img src="fotos/POLLOENTERO.jpg" alt="POLLO ENTERO">
+                <h3>1 POLLO ANDINO</h3>
+                <p>1 Pollo a la Brasa Andino 
+                  con Papas Fritas. Ensalada 
+                  Fresca y Cremas.</p>
+                <span>S/ 57.00</span>
+            </div>
+            <div class="card">
+                <img src="fotos/MEDIOPOLLO.jpg" alt="MEDIO POLLO">
+                <h3>1/2 POLLO ANDINO</h3>
+                <p>1/2 de Pollo a la Brasa Andino 
+                  con Papas Fritas. Ensalada 
+                  Fresca y Cremas</p>
+                <span>S/ 30.00</span>
+            </div>
+            <div class="card">
+                <img src="fotos/CUARTOPOLLO.jpg" alt="CUARTO POLLO">
+                <h3>1/4 POLLO ANDINO </h3>
+                <p>1/4 de Pollo a la Brasa Andino 
+                  con Papas Fritas. Ensalada 
+                  Fresca y Cremas.</p>
+                <span>S/ 16.00</span>
+            </div>
+        </div>
+    </section>
+    <!-- NOSOTROS -->
+    <section class="nosotros">
+        <div class="LOCALES">
+            <h3>NUESTROS LOCALES</h3>
+            <a href="https://maps.app.goo.gl/mTaRrk8DYW1zSYCr5" target="_blank"
+            rel="noopener noreferrer">
+               <H4>SANTA CLARA</H4>
+            </a>
+            <a href="https://maps.app.goo.gl/WnAD6YZbjGeUJ86D9" target="_blank"
+            rel="noopener noreferrer">
+               <H4>LAS AMERICAS</H4> 
+            </a>
+            <a href="https://maps.app.goo.gl/P3oAWrGp9pfTng1W6" target="_blank"
+            rel="noopener noreferrer">
+               <H4>VALLE GRANDE</H4> 
+            </a>
+            <img src="img/local.jpg" alt="Local">
+        </div>
+        <div id="nosotro" class="texto-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Somos una pollería dedicada a brindar el mejor sabor
+                y calidad para nuestros clientes.
+            </p>
+        </div>
+    </section>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <p>📍 Lima,Ate Perú</p>
+        <p>📞 981 418 148</p>
+        <p>📧 jhoals_polleria@gmail.com</p>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Pollería Sabor Andino</p>
+    </footer>
+</body>
 </html>
