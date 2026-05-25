@@ -2,12 +2,44 @@ body {
     font-family: Arial, sans-serif;
     background: #111827;
     color: white;
+    margin: 0;
 }
 
+/* ── Navbar ── */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px 40px;
     background: #1f2937;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.nav-menu a:hover {
+    color: #60a5fa;
+}
+
+/* ── Hero ── */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
 }
