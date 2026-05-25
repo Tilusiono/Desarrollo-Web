@@ -1,22 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-<img src="pages/geanny-palencia/assets/img/Captura de pantalla 2026-05-19 074507.png" 
-alt="lustracion multimedia en una pagina 
-web"
-title="contenido multimedia en HTML"
-width="600" height="400"
-loading="lazy" decoding="async"
-fetchpriority="high"
-sizes="(max-width:600px) 100vw, 600px"
-referrerpolicy="no-referrer"
-usemap="#mapa-interactivo"
-draggable="false" >
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Sekiro</title>
+    <style>
+        /* Desplazamiento suave al hacer clic */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        /* Menú fijo arriba */
+        header {
+            position: fixed;
+            top: 0;
+            background: #111;
+            width: 100%;
+            padding: 15px;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Estilo para tus secciones */
+        section {
+            padding: 100px 20px 40px 20px; /* Espacio arriba para que el menú no tape el texto */
+            border-bottom: 1px solid #333;
+            min-height: 50vh;
+        }
+        section img {
+            display: block;
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #e67e22; /* Un borde color fuego para las capturas */
+        }
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABECERA CON TU MENÚ -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#seccion-1">Historia y Lore</a></li>
+                <li><a href="#seccion-2">Herramientas de Prótesis</a></li>
+                <li><a href="#seccion-3">Guía de Jefes</a></li>
+                <li><a href="#seccion-4">Habilidades Esenciales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- LAS SECCIONES QUE AÑADISTE (Conectadas al menú por su ID) -->
+    <main>
+        <section id="seccion-1">
+            <h2>📜 Historia y Lore</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis ipsa quidem placeat at optio, dolorum, accusantium impedit adipisci amet delectus, repellendus consectetur ullam! Recusandae ex rem laborum doloremque velit!</p>
+            <img src="../../assets/img/captura1.png" alt="Captura 1">
+        </section>
+
+        <section id="seccion-2">
+            <h2>🪓 Herramientas de Prótesis</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error quisquam beatae repudiandae voluptatem totam, maxime nostrum accusantium. Non ut nemo fugiat veritatis unde repudiandae, numquam placeat eius quos laborum dolorem?</p>
+            <img src="../../assets/img/captura2.png" alt="Captura 2">
+        </section>
+
+        <section id="seccion-3">
+            <h2>⚔️ Guía de Jefes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus dolor excepturi blanditiis quaerat optio repellat veritatis libero porro iste, nemo illo tempora dolorem consequuntur sit eaque tempore! Beatae, soluta?</p>
+            <img src="../../assets/img/captura3.png" alt="Captura 3">
+        </section>
+
+        <section id="seccion-4">
+            <h2>👁️ Habilidades Esenciales</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsum natus ipsam laudantium tempore voluptatibus voluptas praesentium totam, animi non laboriosam ea consectetur asperiores quis omnis soluta quasi optio officia!</p>
+            <img src="../../assets/img/captura4.png" alt="Captura 4">
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <h1>Blog de Sekiro - 2026</h1>
+    </footer>
+
+</body>
+</html>
