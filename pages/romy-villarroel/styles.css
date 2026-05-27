@@ -1,0 +1,54 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    color: white;
+}
+li{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+main{
+    background-color: red;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+#inicio{
+    width: 100%;
+    background-image: url(/assets/imagenes/baner1\ .jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#contactenos{
+    background-color: blueviolet;
+}
+#logo{
+    width: 150px;
+    height: 100px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
