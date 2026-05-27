@@ -1,0 +1,354 @@
+/* ================================
+   RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   ESTILO GLOBAL
+================================ */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #dbe6f6);
+    color: #333;
+}
+
+/* contenedor general */
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* ================================
+   ENCABEZADO
+================================ */
+
+.encabezado {
+    padding-bottom: 30px;
+}
+
+.logo-curso h1 {
+    color: #f26430;
+    font-size: 48px;
+    margin-bottom: 12px;
+    border-bottom: 4px solid #f04f57;
+    padding-bottom: 12px;
+}
+
+.logo-curso p {
+    color: #173f91;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* ================================
+   NAV
+================================ */
+
+.nav-principal {
+    background: linear-gradient(90deg, #f26a3d, #7b1fd1);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* contenedor */
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* items principales */
+.menu > li {
+    position: relative;
+    padding: 16px 24px;
+    color: white;
+    font-weight: 600;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* último sin borde */
+.menu > li:last-child {
+    border-right: none;
+}
+
+/* links */
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ================================
+   INTRODUCCIÓN (SUBMENÚ)
+================================ */
+
+/* hace que el li sea vertical */
+.menu > li:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* título "Introduccion" */
+.menu > li:nth-child(2) {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+/* lista interna */
+.menu ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* items internos */
+.menu ol li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 14px;
+}
+
+/* iconos */
+.menu ol li:nth-child(1)::before {
+    content: "📊";
+}
+
+.menu ol li:nth-child(2)::before {
+    content: "📁";
+}
+
+.menu ol li:nth-child(3)::before {
+    content: "💻";
+}
+
+/* links internos */
+.menu ol a {
+    color: white;
+    font-weight: 500;
+}
+
+/* hover */
+.menu a:hover {
+    text-decoration: underline;
+}
+/* ================================
+   TABLA
+================================ */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    font-size: 14px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    animation: fadeIn .8s ease;
+}
+
+/* encabezado */
+.table thead {
+    background: linear-gradient(90deg, #f07443, #5c08d1);
+    color: white;
+}
+
+.table thead th {
+    padding: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* celdas */
+.table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+/* hover */
+.table tbody tr {
+    transition: all .2s ease;
+}
+
+.table tbody tr:hover {
+    background: #f6f8ff;
+    transform: scale(1.01);
+}
+
+/* ================================
+   LINKS TABLA
+================================ */
+
+.table a {
+    color: #051745;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   ICONOS
+================================ */
+
+.bi-check2-circle {
+    color: #edb794;
+    font-size: 22px;
+}
+
+.bi-x-circle-fill {
+    color: #e63946;
+    font-size: 22px;
+}
+
+
+
+mark {
+    font-size: 15px;
+    color: white;
+    background: #8a129c;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+span {
+    font-size: 15px;
+    color: white;
+    background: #f4532b;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+
+/* ================================
+   ANIMACIONES
+================================ */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media(max-width:900px) {
+
+    .table {
+        font-size: 12px;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+    }
+
+    .table td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td::before {
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        text-align: left;
+        font-weight: bold;
+    }
+
+}
+/* ================================
+   ICONOS
+================================ */
+
+.bi-check2-circle {
+    color: #24a135;
+    font-size: 22px;
+}
+
+.bi-x-circle-fill {
+    color: #e63946;
+    font-size: 22px;
+}
+
+
+
+mark {
+    font-size: 15px;
+    color: white;
+    background: #8a129c;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+span {
+    font-size: 15px;
+    color: white;
+    background: #f4532b;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+/* ================================
+   NAV RESPONSIVE
+================================ */
+
+@media(max-width:768px) {
+
+    .logo-curso h1 {
+        font-size: 32px;
+    }
+
+    .logo-curso p {
+        font-size: 18px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu li:last-child {
+        border-bottom: none;
+    }
+
+}

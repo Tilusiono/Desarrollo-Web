@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+body{
+    background-color: beige;
+}
+nav{
+    padding: auto;
+    margin: 50px;
+}
+
+nav li{
+    display: inline-flex;
+}
+img{
+    border-radius: 10%;
+    background-color: transparent;
+}
+
+main{
+    padding: 100px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+
+.social  img{
+    display: inline-block;
+    justify-content: center;
+    border-radius: 100px;
+    object-fit: cover;
+    
+}
