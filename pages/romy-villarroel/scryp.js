@@ -1,2 +1,2 @@
-for (i=0;i < 5;i++)
-    {console.log(i)};
+
+document.getElementById("ban1").style.display="none";
