@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA DESPENSA</title>
+</head>
+
+<body>
+
+    
+    <header>
+
+        <a href="#seccion1">☰</a>
+        &nbsp;&nbsp;
+
+
+        <img src="LA DESPENSA LOGO ORIGINAL.png"  alt="Logo de la Despensa" width="170" height="70"/>
+        &nbsp;
+        <strong>LA DESPENSA</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="text" placeholder="¿Qué estás buscando hoy?" size="50"/>
+        <button>🔍</button>
+         &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <a href="#seccion2">📦 Mis pedidos</a>
+        &nbsp;&nbsp;
+        <a href="#seccion3">👤 Mi cuenta</a>
+        &nbsp;&nbsp;
+        <a href="#seccion4">🛒 Carrito (0)</a>
+
+        <p>"Frescura y calidad en un solo lugar"</p>
+    
+        <ul>
+            <li><a href="#seccion1">Inicio</a></li>
+            <li><a href="#seccion2">Nuestros Productos</a></li>
+            <li><a href="#seccion3">Ofertas y Servicios</a></li>
+            <li><a href="#seccion4">Contacto</a></li>
+        </ul>
+    </header>
+
+    
+    <section id="seccion1">
+        <h2>Bienvenidos a La Despensa</h2>
+        <p>Descubre nuestros productos y las ofertas de esta semana</p>
+
+        <img id="ImagenCarrusel1"
+             src="LA DESPENSA LOGO ORIGINAL.png"
+             alt="Imagen del Carrusel"
+             width="1800"
+             height="500" />
+        <br>
+        <button onclick="anterior()">⬅️ Anterior</button>
+        &nbsp;
+        <button onclick="siguiente()">Siguiente ➡️</button>
+        <p id="contador">1 de 5</p>
+        <p id="descripcion"><strong>Bienvenidos a La Despensa</strong></p>
+
+    </section>
+
+
+    <section id="seccion2">
+        <h2>Nuestros Productos</h2>
+
+        <h3>🍎🥬 Frutas y Verduras</h3>
+        <ul>
+            <li>Plátanos - S/ 2.80 el kilo</li>
+            <li>Naranjas - S/ 3.60 el kilo</li>
+            <li>Manzanas - S/ 3.50 el kilo</li>
+            <li>Fresas - S/ 4.50 el kilo</li>
+            <li>Lechuga - S/ 1.50 cada unidad</li>
+            <li>Pepino - S/ 1.20 cada unidad</li>
+            <li>Tomates - S/ 2.00 el kilo</li>
+            <li>Papa Blanca - S/ 3.90 el kilo</li>
+            <li>Limón - S/ 4.00 el kilo</li>
+            <li>Zanahoria - S/ 3.60 el kilo</li>
+        </ul>
+
+        <h3>🥩🍗 Carnes y Pescados</h3>
+        <ul>
+            <li>Carne de Res - S/ 22.00 el kilo</li>
+            <li>Pollo entero - S/ 9.50 el kilo</li>
+            <li>Filete de Pescado - S/ 13.50 el kilo</li>
+            <li>Pavo Entero - S/ 15.00 el kilo</li>
+            <li>Asado de Cerdo - S/ 25.20 el kilo</li>
+        </ul>
+
+        <h3>🍞 Panadería</h3>
+        <ul>
+            <li>Pan de Molde - S/ 5.20</li>
+            <li>Pan Molde integral - S/ 6.00</li>
+            <li>Croissant - S/ 0.80 la unidad</li>
+            <li>Baguette - S/ 2.00 la unidad</li>
+            <li>Caramandungas - S/ 3.00 por 8 unidades</li>
+        </ul>
+
+        <h3>🍚🥫 Abarrotes</h3>
+        <ul>
+            <li>Arroz - S/ 4.50 el kilo</li>
+            <li>Aceite Vegetal - S/ 10.50 por litro</li>
+            <li>Azúcar Rubia - S/ 3.50 el kilo</li>
+            <li>Atún Enlatado - S/ 5.00 la unidad</li>
+            <li>Mayonesa - S/ 13.00 por 500 g</li>
+            <li>Sal Marina - S/ 2.60 por kilo</li>
+        </ul>
+
+        <h3>🧴🧼 Productos de Limpieza</h3>
+        <ul>
+            <li>Papel Toalla - S/ 3.00 por 1 rollo grande</li>
+            <li>Papel Higiénico - S/ 7.60 por 4 rollos</li>
+            <li>Lavavajillas en Pasta - S/ 9.00 por 850 g</li>
+            <li>Detergente - S/ 11.00 por kilo</li>
+            <li>Jabón Bolívar - S/ 4.60 por 380 g</li>
+            <li>Jabón en Barra Tocador - S/ 3.20 por 120 g</li>
+            <li>Lejía - S/ 3.50 por litro</li>
+            <li>Shampoo - S/ 18.00 por 500 ml</li>
+            <li>Limpiador - S/ 4.00 por 900 ml</li>
+            <li>Pasta Dental - S/ 10.00 por 150 ml</li>
+            <li>Cepillo de Dientes - S/ 4.00 la unidad</li>
+        </ul>
+
+        <h3>🍼 Bebidas</h3>
+        <ul>
+            <li>Gaseosa Inka Kola - S/ 3.50 por 600 ml</li>
+            <li>Gaseosa Coca Cola - S/ 3.00 por 500 ml</li>
+            <li>Leche - S/ 5.80 por litro</li>
+            <li>Agua Mineral - S/ 1.80 por 600 ml</li>
+            <li>Frugos - S/ 2.50 por 300 ml</li>
+            <li>Energizante - S/ 8.00 por 500 ml</li>
+            <li>Vinos - S/ 25.00 por 750 ml</li>
+        </ul>
+
+        <h3>🍫 Snacks y Golosinas</h3>
+        <ul>
+            <li>Frutos Secos - S/ 9.50 por 150 g</li>
+            <li>Galletas Vainilla - S/ 5.50 por 6 unidades</li>
+            <li>Galletas Oreo - S/ 5.80 por 6 unidades</li>
+            <li>Galletas Soda - S/ 5.00 por 6 unidades</li>
+            <li>Caramelos - S/ 3.50 por 6 unidades</li>
+            <li>Chocolate Sublime - S/ 2.40 por 26 g</li>
+            <li>Piqueo - S/ 2.50 por 55 g</li>
+            <li>Chupetín - S/ 7.20 por paquete</li>
+            <li>Papas Lays - S/ 3.50 por paquete de 140 g</li>
+        </ul>
+    </section>
+
+    
+    <section id="seccion3">
+        <h2>🏷️ Ofertas y Servicios</h2>
+        <h3>Ofertas de la Semana</h3>
+        <p>¡Aprovecha nuestros descuentos y ofertas únicas, solo por esta semana! ¡No te lo pierdas!</p>
+
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Precio Normal</th>
+                <th>Precio con Oferta</th>
+                <th>Descuento</th>
+            </tr>
+            <tr>
+                <td>🍚 Arroz Costeño 10 kg</td>
+                <td>S/ 51.00</td>
+                <td>S/ 40.80</td>
+                <td>20% de descuento</td>
+            </tr>
+            <tr>
+                <td>🥛 Leche Gloria 1L</td>
+                <td>S/ 5.60</td>
+                <td>S/ 4.70</td>
+                <td>15% de descuento</td>
+            </tr>
+            <tr>
+                <td>🍗 Pollo Entero</td>
+                <td>S/ 10.50</td>
+                <td>S/ 8.60</td>
+                <td>18% de descuento</td>
+            </tr>
+            <tr>
+                <td>🍾 Aceite Vegetal 1L</td>
+                <td>S/ 9.50</td>
+                <td>S/ 8.40</td>
+                <td>12% de descuento</td>
+            </tr>
+            <tr>
+                <td>🧻 Papel Higiénico Six Pack</td>
+                <td>S/ 39.00</td>
+                <td>S/ 30.40</td>
+                <td>22% de descuento</td>
+            </tr>
+            <tr>
+                <td>🍘 Galleta Soda Six Pack</td>
+                <td>S/ 4.20</td>
+                <td>S/ 3.70</td>
+                <td>10% de descuento</td>
+            </tr>
+            <tr>
+                <td>🧴 Shampoo 1L</td>
+                <td>S/ 18.00</td>
+                <td>S/ 14.80</td>
+                <td>18% de descuento</td>
+            </tr>
+            <tr>
+                <td>🧼 Jabón Six Pack</td>
+                <td>S/ 19.00</td>
+                <td>S/ 15.20</td>
+                <td>20% de descuento</td>
+            </tr>
+            <tr>
+                <td>Saco de Azúcar 50 kg</td>
+                <td>S/ 125.00</td>
+                <td>S/ 94.00</td>
+                <td>25% de descuento</td>
+            </tr>
+            <tr>
+                <td>🐽 Jamonada Molde</td>
+                <td>S/ 38.00</td>
+                <td>S/ 33.40</td>
+                <td>12% de descuento</td>
+            </tr>
+            <tr>
+                <td>💧 Agua Mineral Six Pack</td>
+                <td>S/ 12.00</td>
+                <td>S/ 10.00</td>
+                <td>17% de descuento</td>
+            </tr>
+            <tr>
+                <td>🥤 Gaseosa Inka Kola Six Pack</td>
+                <td>S/ 18.00</td>
+                <td>S/ 16.50</td>
+                <td>8% de descuento</td>
+            </tr>
+        </table>
+
+        <p><strong>⚠️ Oferta válida hasta agotar stock.</strong></p>
+
+        <hr>
+
+        
+
+        <h3>🏍️ Servicio de Delivery</h3>
+        <ul>
+            <li>Entrega en menos de dos horas</li>
+            <li>Cobertura: Toda Lima Metropolitana</li>
+            <li>Pedido mínimo: S/ 25.00</li>
+            <li>Costo de envío: S/ 4.00</li>
+            <li>Envío gratis en compras que superan S/ 100.00</li>
+        </ul>
+    </section>
+
+    
+    <section id="seccion4">
+        <h2>📬 Contacto</h2>
+        <p>Si tienes alguna duda, consulta, sugerencia o pregunta, ¡Escríbenos!</p>
+
+        <form>
+            <label for="nombre">Nombre Completo:</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required />
+            <br><br>
+
+            <label for="correo">Correo electrónico:</label>
+            <br>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required />
+            <br><br>
+
+            <label for="telefono">Teléfono (opcional):</label>
+            <br>
+            <input type="tel" id="telefono" name="telefono" placeholder="999 999 999" />
+            <br><br>
+
+            <label for="asunto">Asunto:</label>
+            <br>
+            <select id="asunto" name="asunto">
+                <option value="">-- Selecciona un asunto --</option>
+                <option value="consulta">Consulta general</option>
+                <option value="oferta">Consulta sobre ofertas</option>
+                <option value="delivery">Consulta sobre el delivery</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="reclamo">Reclamo</option>
+            </select>
+            <br><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40"
+                placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <br><br>
+
+            <button type="submit" value="✉️ Enviar mensaje" />
+            <button type="reset" value="🗑️ Limpiar formulario" />
+        </form>
+    </section>
+
+    
+    <footer>
+          
+        <hr>
+
+        <h2>🛒 LA DESPENSA © 2026</h2>
+
+        <p><strong>"Frescura y calidad en un solo lugar"</strong></p>
+
+        <table width="100%">
+            <tr>
+
+               <td>
+                   <h3>📌 Enlaces rápidos</h3>
+                   <ul>
+                       <li><a href="#seccion1">🏠 Inicio</a></li>
+                       <li><a href="#seccion2">🛍️ Productos</a></li>
+                       <li><a href="#seccion3">🏷️ Ofertas</a></li>
+                       <li><a href="#seccion4">📬 Contacto</a></li>
+                   </ul>
+                </td>
+
+                <td>
+                    <h3>📞 Contáctanos</h3>
+                    <p>📍 Lima Metropolitana - Perú</p>
+                    <p>📱 +51 999 999 999</p>
+                    <p>✉️ ladespensa@gmail.com</p>
+                </td>
+
+                <td>
+                    <h3>💳 Métodos de pago</h3>
+                    <p>💵 Efectivo</p>
+                    <p>💳 Visa</p>
+                    <p>💳 Mastercard</p>
+                    <p>📱 Yape / Plin</p>
+                </td>
+
+            </tr>
+        </table>
+
+        <hr>
+
+        <p>
+            🚚 Delivery disponible todos los días |
+            🕒 Atención: 8:00 AM - 10:00 PM
+        </p>
+
+        <p>
+            Síguenos en:
+            🌐 Facebook |
+            🎵 TikTok |
+            📸 Instagram 
+        
+        </p>
+
+        <p>
+           
+            <strong>Todos los derechos reservados.</strong>
+        </p>
+
+    </footer>
+   
+    <script>
+        const imagenes = [
+            {
+                src: "LA DESPENSA LOGO ORIGINAL.png",
+                descripcion: "Bienvenidos a La Despensa"
+            },
+            {
+                src: "carrusel 1.png",
+                
+            },
+            {
+                src: "carrusel 2.png",
+                
+            },
+            {
+                src: "carrusel 3.png",
+                
+            },
+            {
+                src: "carrusel 4.png",
+                
+            }
+        ];
+
+        let posicion = 0;
+
+        function actualizarimagen() {
+            document.getElementById("ImagenCarrusel1").src = imagenes[posicion].src;
+            document.getElementById("ImagenCarrusel1").alt = imagenes[posicion].descripcion;
+            document.getElementById("contador").textContent = (posicion + 1) + " de " + imagenes.length;
+            document.getElementById("descripcion").innerHTML = "<strong>" + imagenes[posicion].descripcion + "</strong>";
+        }
+
+        function siguiente() {
+            posicion = (posicion < imagenes.length - 1) ? posicion + 1 : 0;
+            actualizarimagen();
+        }
+
+        function anterior() {
+            posicion = (posicion > 0) ? posicion - 1 : imagenes.length - 1;
+            actualizarimagen();
+        }
+
+        setInterval(siguiente, 5000);
+
+    </script>
+
+
+</body>
+</html>
