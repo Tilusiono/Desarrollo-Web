@@ -7,122 +7,39 @@
 </head>
 <body>
 <body>
-
+  
     <fieldset style="border-color: black;">
         <header>
-            <img src="Imagenes/Logo.jpeg" alt="Logo Bextor" width="150">
             
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#categorias">Categorías</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#pedidos">Pedidos</a></li>
-            </ul>
+            <nav style="display: flex; justify-content: space-between; align-items: center;">
+                
+                <div style="width: 25%; text-align: center;">
+                    <img src="Imagenes/Logo.jpg" alt="Logo Bextor" width="120">
+                </div>
+                
+                <div style="width: 70%; text-align: left;">
+                    <form action="#" style="margin: 0; display: flex; width: 90%;">
+                        <input type="text" placeholder="Buscar productos..." size="70" style="padding: 10px; font-size: 16px; width: 80%; border: 1px solid #ccc; border-radius: 4px 0 0 4px;">
+                        <button type="button" style="padding: 10px 20px; font-size: 16px; background-color: #333; color: white; border: none; border-radius: 0 4px 4px 0; cursor: pointer;">Buscar</button>
+                    </form>
+                </div>
+            </nav>
 
-            <input type="text" placeholder="Buscar Productos">
-            <button type="button">Buscar</button>
+            <div style="width: 25%; text-align: center;">
+                <h1 style="margin: 10px 0 25px 0; font-size: 28px;">BEXTOR</h1>
+            </div>
+
+            <nav style="text-align: center; margin-top: 10px;">
+                <ul style="list-style-type: none; padding: 0; margin: 0; display: inline-flex; gap: 15px;">
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li>|</li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li>|</li>
+                    <li><a href="#pedidos">Pedidos</a></li>
+                    <li>|</li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
         </header>
-
-    <section id="pedidos">
-        
-        <fieldset style="border-color: black;">
-            <legend><h2>Realizar Pedido</h2></legend>
-            
-            <form action="#">
-
-                <fieldset>
-                    <legend>Información personal</legend>
-                    
-                    <div style="display: inline-block; margin-right: 15px;">
-                        <label>Nombre:</label>
-                        <input type="text">
-                    </div>
-                    
-                    <div style="display: inline-block; margin-right: 15px;">
-                        <label>Correo:</label>
-                        <input type="email">
-                    </div>
-                    
-                    <div style="display: inline-block;">
-                        <label>Teléfono:</label>
-                        <input type="tel">
-                    </div>
-                </fieldset>
-
-                <br>
-
-                <fieldset>
-                    <legend>Pedido</legend>
-                    
-                    <div style="display: inline-block; margin-right: 15px;">
-                        <label>Cantidad:</label>
-                        <input type="number" min="1" max="10">
-                    </div>
-                    
-                    <div style="display: inline-block; margin-right: 15px;">
-                        <label>Fecha de Entrega:</label>
-                        <input type="date">
-                    </div>
-                    
-                    <div style="display: inline-block;">
-                        <label>Dirección:</label>
-                        <input type="search">
-                    </div>
-                </fieldset>
-
-                <br>
-
-                <fieldset>
-                    <legend>Pago</legend>
-                    
-                    <div style="display: inline-block; margin-right: 15px;">
-                        <label>
-                            <input type="radio" name="metodo_pago" value="yape"> Yape
-                        </label>
-                    </div>
-
-                    <div style="display: inline-block; margin-right: 15px;">
-                        <label>
-                            <input type="radio" name="metodo_pago" value="plin"> Plin
-                        </label>
-                    </div>
-                    
-                    <div style="display: inline-block;">
-                        <label>
-                            <input type="radio" name="metodo_pago" value="transferencia"> Transferencia
-                        </label>
-                    </div>
-                </fieldset>
-
-                <br>
-
-                <fieldset>
-                    <legend>Servicios</legend>
-                    
-                    <div style="display: inline-block; margin-right: 15px;">
-                        <label>
-                            <input type="checkbox" name="adicional" value="delivery"> Delivery
-                        </label>
-                    </div>
-                    
-                    <div style="display: inline-block;">
-                        <label>
-                            <input type="checkbox" name="adicional" value="empaque"> Empaque premium
-                        </label>
-                    </div>
-                </fieldset>
-
-                <br>
-
-                <p>
-                    <input type="submit" value="Enviar Formulario de Pedido">
-                </p>
-
-            </form>
-
-        </fieldset>
-
-    </section>
-
-</body>
-</html>
+    </fieldset>
