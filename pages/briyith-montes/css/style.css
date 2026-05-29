@@ -5,6 +5,7 @@
 body {
     background-color: rgb(244, 183, 237);
 }
+<<<<<<< HEAD:pages/briyith-montes/style.css/style.css
 
 header {
     background-color: rgb(234, 128, 202);
@@ -17,6 +18,9 @@ section img {
 }
 
 header h1 {
+=======
+header h1{
+>>>>>>> 48de4d0bfe064e2a9a3caed7fba5d37180c49060:pages/briyith-montes/css/style.css
     gap: 10px;
 }
 
