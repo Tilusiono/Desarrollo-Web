@@ -5,22 +5,18 @@
 body {
     background-color: rgb(244, 183, 237);
 }
-<<<<<<< HEAD:pages/briyith-montes/style.css/style.css
 
 header {
     background-color: rgb(234, 128, 202);
     align-items: center;
-    margin:
+    margin: 0px;
 }
 
 section img {
     width: 60%;
 }
 
-header h1 {
-=======
 header h1{
->>>>>>> 48de4d0bfe064e2a9a3caed7fba5d37180c49060:pages/briyith-montes/css/style.css
     gap: 10px;
 }
 
@@ -31,7 +27,7 @@ h1 {
 
 body {
     font-family: sans-serif;
-    line: height 1.5;;
+    line-height: 1.5;
 }
 
 section {
