@@ -1,38 +1,68 @@
-*{
+* {
     margin: 0px;
 }
-body { background-color: rgb(232, 227, 236);}
-header {background-color: rgb(234, 144, 241);
-align-items: center;
-margin:
+
+body {
+    background-color: rgb(244, 183, 237);
 }
-section img{
-    width: 20%;
+<<<<<<< HEAD:pages/briyith-montes/style.css/style.css
+
+header {
+    background-color: rgb(234, 128, 202);
+    align-items: center;
+    margin:
 }
+
+section img {
+    width: 60%;
+}
+
+header h1 {
+=======
 header h1{
+>>>>>>> 48de4d0bfe064e2a9a3caed7fba5d37180c49060:pages/briyith-montes/css/style.css
     gap: 10px;
 }
-h1{
-    
+
+h1 {
+
     text-align: center;
- }
-  body { font-family: sans-serif; line-height: 1.6; }
-        section { 
-            padding: 60px 20px; 
-            border-bottom: 1px solid #ccc; 
-            min-height: 400px; /* Para asegurar que haya scroll */
-        }
-        header { 
-            list-style: none;;
-            display: flex;
-            position: sticky; 
-            top: 0; 
-            background: white; 
-            padding: 0px; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-        }
-        nav ul { display: flex; gap: 50px; list-style: none; 
-        justify-content: space-between;
-        
-        }
-        img { max-width: 100%; height: auto; display: block; margin-top: 10px; }
+}
+
+body {
+    font-family: sans-serif;
+    line: height 1.5;;
+}
+
+section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #ccc;
+    min-height: 400px;
+    /* Para asegurar que haya scroll */
+}
+
+header {
+    list-style: none;
+    ;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    justify-content: space-between;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
