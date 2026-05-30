@@ -1,10 +1,11 @@
-let c=0
-const imagenes = document.getElementById("active");
+let c=0;
 
-function efecto(){
+function carrusel(){
+
+    let imagen = document.getElementById("baner");
     c++;
-    if(c>5) c=1
-    imagenes.setAttribute("src","img/imagenes"+c+"jpg")
+    if(c>3) c=1;
+    imagen.setAttribute("src","imagenes/banner" + c + ".jpg");
 }
 
-setInterval(efecto,1000);
+setInterval(carrusel,1000)

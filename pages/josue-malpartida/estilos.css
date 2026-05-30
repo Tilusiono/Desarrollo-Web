@@ -5,24 +5,73 @@
     list-style: none;
     font-family: sans-serif;
     text-transform: capitalize;
+    z-index: 0;
 }
 body{
-    background-color: beige;
-    padding: 0;
-    margin: 0;
+    padding: 10px 10px;
+    margin:  10px 10px;
 }
-nav{
-    padding: auto;
-    margin: 50px;
-    border: 10px solid black;
+
+.menu >li{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.menu >li >a{
+    display: block;
+    padding: 15px 15px;
+    color: blue;
+    text-decoration: none;
+    padding-left:90px ;
+}
+
+.menu li a:hover{
+    color: orange;
+    transition: all .3s;
+}
+
+
+#bloque{
+    width: 93%;
+    margin: 10px auto;
+    background-color: aqua ;
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+#baner{
+    width: 80%;
+    height: 500px;
 }
 
 nav li{
     display: inline-flex;
 }
-img{
-    border-radius: 40%;
-    background-color: transparent;
+
+.submenu{
+    position: absolute;
+    background-color: azure;
+    width: 110%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a{
+    display: block;
+    padding: 10px;
+    color: gray;
+    text-decoration: none;
+}
+
+nav li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
 }
 
 main{
@@ -34,6 +83,10 @@ main{
     border: 10px solid black;
 }
 
+.celulares img{
+    height: 300px;
+    width: 300px;
+}
 
 
 .social {

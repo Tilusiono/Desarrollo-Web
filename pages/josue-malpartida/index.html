@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 
@@ -18,20 +18,36 @@
 
     <section>
         <header>
-            <div class="carrusel">
-                <img class="active" src="./imagenes/banner1.jpg" alt="banner1" width="300px">
-                <img src="./imagenes/banner2.jpeg" alt="banner2" width="300px">
-                <img src="./imagenes/banner3.jpg" alt="banner3" width="300px">
-            </div>
+           <img src="./imagenes/logo.png" alt="logo marca" width="90%" height="500px">
         </header>
-        <main></main>
-        <footer></footer>
+        <main>
+            <img id="baner" src="./imagenes/banner1.jpg" alt="banner1">
+        </main>
     </section>
-    <nav>
-        <ul>
-            <li><a href="">Productos</a></li>
-            <li><a href="">Marcas</a></li>
-            <li><a href="">Modelos</a></li>
+    <nav id="bloque">
+        <ul class="menu">
+            <li><a href="">Productos</a>
+                <ul class="submenu">
+                    <li><a href="#">Celulares</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                </ul>
+            </li>
+            <li><a href="">Marcas</a>
+                <ul class="submenu">
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Motorola</a></li>
+                    <li><a href="#">Xiaomi</a></li>
+                    <li><a href="#">Honor</a></li>
+                </ul>
+            </li>
+            <li><a href="">Modelos</a>
+                <ul class="submenu">
+                    <li><a href="#">Gama alta</a></li>
+                    <li><a href="#">Gama media</a></li>
+                    <li><a href="#">Gama entrada</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <section>
@@ -39,14 +55,39 @@
             <h1>celulares</h1>
         </header>
         <main class="celulares">
-            <img src="./imagenes/celular1.jpg" alt="samsung a55" width="300px" height="300px">
-            <img src="./imagenes/celular2.jpg" alt="samsung a36" width="300px" height="300px">
-            <img src="./imagenes/celular3.jpg" alt="iphone 14" width="300px" height="300px">
-            <img src="./imagenes/celular4.jpg" alt="iphone 17 pro max" width="300px" height="300px">
-            <img src="./imagenes/celular5.jpg" alt="honor 400pro" width="300px" height="300px">
-            <img src="./imagenes/celular6.jpg" alt="honor 8xc" width="300px" height="300px">
-            <img src="./imagenes/celular7.jpg" alt="motorola g77" width="300px" height="300px">
-            <img src="./imagenes/celular8.jpg" alt="motorola edge60 fusion" width="300px" height="300px">
+            <figure>
+                <img src="./imagenes/celular1.jpg" alt="samsung a55">
+                <figcaption>SAMSUNG A55</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/celular2.jpg" alt="samsung a36">
+                <figcaption>SAMSUNG A36</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/celular3.jpg" alt="iphone 14">
+                <figcaption>IPHONE 14</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/celular4.jpg" alt="iphone 17 pro max">
+                <figcaption>IPHONE 17 PRO MAX</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/celular5.jpg" alt="honor 400pro">
+                <figcaption>HONOR 400 PRO</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/celular6.jpg" alt="honor 8xc">
+                <figcaption>HONOR 8XC</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/celular7.jpg" alt="motorola g77">
+                <figcaption>MOTOROLA G77</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/celular8.jpg" alt="motorola edge60 fusion">
+                <figcaption>MOTOROLA EDGE 60 FUSION</figcaption>
+            </figure>
+
         </main>
         <footer></footer>
     </section>
@@ -55,12 +96,30 @@
             <h1>los mas vendidos</h1>
         </header>
         <main class="celulares">
-            <img src="./imagenes/iphone1.jpg" alt="iphone 17pro max" width="300px" height="300px">
-            <img src="./imagenes/iphone2.jpg" alt="iphone 16e" width="300px" height="300px">
-            <img src="./imagenes/samsung1.jpg" alt="samsung s24 ultra" width="300px" height="300px">
-            <img src="./imagenes/samsung2.jpg" alt="samsung s25 fe" width="300px" height="300px">
-            <img src="./imagenes/xiaomi.jpg" alt="xiaomi 15 pro" width="300px" height="300px">
-            <img src="./imagenes/xiaomi2.jpg" alt="xiaomi 14c" width="300px" height="300px">
+            <figure>
+                <img src="./imagenes/iphone1.jpg" alt="iphone 17pro max">
+                <figcaption>IPHONE 17 PRO MAX</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/iphone2.jpg" alt="iphone 16e">
+                <figcaption>IPHONE 16E</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/samsung1.jpg" alt="samsung s24 ultra">
+                <figcaption>SAMSUNG S24 ULTRA</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/samsung2.jpg" alt="samsung s25 fe">
+                <figcaption>SAMSUNG S25 FE</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/xiaomi.jpg" alt="xiaomi 15 pro">
+                <figcaption>XIAOMI 15 PRO</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/xiaomi2.jpg" alt="xiaomi 14c">
+                <figcaption>XIAOMI 14C</figcaption>
+            </figure>
         </main>
         <footer></footer>
     </section>
@@ -68,31 +127,48 @@
         <header>
             <h1>acceserios</h1>
         </header>
-<<<<<<< HEAD
-        <main>
-=======
-        <main class="accesorios">
->>>>>>> josue-malpartida
-            <img src="./imagenes/acceserio1.jpg" alt="" width="300px" height="300px">
-            <img src="./imagenes/acceserio2.jpg" alt="" width="300px" height="300px">
-            <img src="./imagenes/acceserio3.jpg" alt="" width="300px" height="300px">
-            <img src="./imagenes/acceserio4.jpg" alt="" width="300px" height="300px">
+        <main class="celulares">
+            <figure>
+                <img src="./imagenes/acceserio1.jpg" alt="galaxy buds 3">
+                <figcaption>GALAXY BUDS 3</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/acceserio2.jpg" alt="apple watch">
+                <figcaption>APPLE WATCH 4</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/acceserio3.jpg" alt="apple airpods">
+                <figcaption>APPLE AIRPODS</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagenes/acceserio4.jpg" alt="carcasa">
+                <figcaption>CARCASA TRANSPARENTE</figcaption>
+            </figure>
         </main>
         <footer></footer>
     </section>
     <footer>
         <header>Redes sociales</header>
+        <figure>
         <a href="#"><img class="social" src="./imagenes/logo1.jpg" alt="facebook" width="50px" height="50px"></a>
+        <figcaption>FACEBOOK</figcaption>
+        </figure>
+        <figure>
         <a href="#"><img class="social" src="./imagenes/logo2.jpg" alt="instagram" width="50px" height="50px"></a>
+        <figcaption>INSTAGRAM</figcaption>
+        </figure>
+        <figure>
         <a href="#"><img class="social" src="./imagenes/logo3.jpg" alt="tiktok" width="50px" height="50px"></a>
+        <figcaption>TIK TOK</figcaption>
+        </figure>
     </footer>
-
-  <script src="./js/carrusel.js"></script>
 
 
 </body>
 
 </html>
+
+<script src="./js/carrusel.js"></script>
 
 <!-- 
 
