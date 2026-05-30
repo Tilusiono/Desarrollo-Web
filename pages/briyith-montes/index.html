@@ -136,9 +136,6 @@
 
             </section>
 
-            <footer>
-                <p> Encuentra los mejores productos para tu cuidado personal y de la piel </p>
-            </footer>
         </section>
 
     </main>
@@ -151,28 +148,28 @@
 
             <card class="card">
                 <figure>
-                    <img src="" alt="">
+                    <img src="imagenes/Panda.png" alt="">
                 </figure>
                 <header>
                     <h3>Tony Moly</h3>
-                    <p>yo</p>
-                    <span>hh</span>
+                    <p>Crema Panda's Dream Magic</p>
+                    <span>Crema Tony Moly 50 gr</span>
                     <br>
-                    <span>gg</span>
+                    <span>S/68.90</span>
                 </header>
                 <footer></footer>
 
             </card>
             <card class="card">
                 <figure>
-                    <img src="" alt="">
+                    <img src="imagenes/Temu.png" alt="">
                 </figure>
                 <header>
-                    <h3>Tonicos</h3>
-                    <p>yo</p>
-                    <span>hh</span>
+                    <h3>Tocobo</h3>
+                    <p>Protector Solar En BarraTocobo</p>
+                    <span>Cotto Solf Sun Stick Spf50 19g</span>
                     <br>
-                    <span>gg</span>
+                    <span>S/99.90</span>
                 </header>
                 <footer>
                     <p></p>
@@ -182,14 +179,14 @@
             </card>
             <card class="card">
                 <figure>
-                    <img src="" alt="">
+                    <img src="imagenes/yuu.png" alt="">
                 </figure>
                 <header>
-                    <h3>Serum</h3>
-                    <p>yoyo</p>
-                    <span>hh</span>
+                    <h3>Beauty of Joseon</h3>
+                    <p>Serum Glow Serum: Proporlis+</p>
+                    <span>Nacinamide Beauty Of Joseon</span>
                     <br>
-                    <span>gg</span>
+                    <span>S/84.90</span>
                 </header>
                 <footer>
                     <p></p>
@@ -198,14 +195,14 @@
             </card>
             <card class="card">
                 <figure>
-                    <img src="" alt="">
+                    <img src="imagenes/gol.png" alt="">
                 </figure>
                 <header>
-                    <h3>Crema Facial</h3>
-                    <p>yoyo</p>
-                    <span>hh</span>
+                    <h3>Mixsoon</h3>
+                    <p>Limpiador Brean Cleansing Oil</p>
+                    <span>195ml Mixsoon</span>
                     <br>
-                    <span>gg</span>
+                    <span>S/109.00</span>
                 </header>
                 <footer>
                     <p></p>
@@ -214,14 +211,14 @@
             </card>
             <card class="card">
                 <figure>
-                    <img src="" alt="">
+                    <img src="imagenes/Ton.png" alt="">
                 </figure>
                 <header>
-                    <h3>Protector Solar</h3>
-                    <p>yoyo</p>
-                    <span>hh</span>
+                    <h3>Tocobo</h3>
+                    <p>Brillo Labial Tocobo Juicy Berry</p>
+                    <span>Plumping Lip Oil 03 Black...</span>
                     <br>
-                    <span>gg</span>
+                    <span>S/59.90</span>
                 </header>
                 <footer>
                     <p></p>
@@ -229,12 +226,136 @@
                 </footer>
             </card>
         </section>
+        
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2026 True Beauty</p>
+    <section>
+        <fieldset>
+            <legend>Iniciar secion o registrarse para comprar</legend>
+            <br>
+            <!-- input text con valor por defecto -->
+            <label>Nombre:</label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre completo">
+            <br><br>
 
-    </footer>
+
+
+            <!-- Maximo 8  caracteres -->
+            <label>DNI:</label>
+            <input type="text" minlength="8" maxlength="8" pattern="\d{8}" title="Ingrese un DNI válido de 8 dígitos"
+                required>
+
+            <br><br>
+
+            <!-- Campo solo lectura -->
+            <label>Solo lectura:</label>
+            <input type="text" value="VALOR NO EDITABLE" readonly>
+            <br><br>
+
+            <!-- Campo deshabilitado -->
+            <label>Solo lectura:</label>
+            <input type="text" value="No disponible" disabled>
+            <br><br>
+
+            <!-- Mínimo 4 caracteres -->
+            <label>Valor de minimo </label>
+            <input type="text" minlength="4">
+            <br><br>
+            <!-- readonly -->
+            <label>Código Usuario:</label>
+            <input type="text" name="codigo" value="fbinche" readonly required>
+            <br><br>
+
+            <!-- email con valor inicial -->
+            <label>Email:</label>
+            <input type="email" name="email" required autocomplete="email">
+            <br><br>
+
+            <!-- radio con checked por defecto -->
+            <label>Género:</label>
+            <input type="radio" name="genero" value="F" checked> Femenino
+            <input type="radio" name="genero" value="M"> Masculino
+            <br><br>
+
+            <!-- Permite seleccionar varias opciones -->
+
+            <!-- Selección desde lista -->
+            <label>País:</label>
+
+            <select name="pais">
+                <option value="">Seleccione País</option>
+                <option value="co">Colombia</option>
+                <option value="pe">Perú</option>
+                <option value="ar">Argentina</option>
+            </select>
+            <br><br>
+            <!-- Lista de sugerencias -->
+            <label>Ciudad:</label>
+
+            <input list="ciudades" value="Lima">
+
+            <datalist id="ciudades">
+                <option value="Lima">
+                <option value="Cusco">
+                <option value="Arequipa">
+            </datalist>
+            <br><br>
+
+            <!-- Permite seleccionar una fecha desde un calendario -->
+            <label>Fecha Registro:</label>
+            <input type="date" name="fechaRegistro" value="1995-08-15">
+            <br><br>
+
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fechaNacimiento" value="2000-01-01" min="1960-01-01" max="2010-12-31">
+            <br><br>
+
+            <!-- Permite seleccionar fecha y hora juntas -->
+            <label>Fecha y hora de reunión:</label>
+            <input type="datetime-local" name="reunion" value="2026-03-04T10:30" min="2026-01-01T08:00"
+                max="2026-12-31T18:00" step="900">
+            <br><br>
+
+            <!-- ====================== TIME ====================== -->
+            <!-- Permite seleccionar solo hora -->
+            <label>Hora de atención:</label>
+            <input type="time" value="09:00" min="08:00" max="18:00" step="300" required>
+            <br><br>
+
+            <!-- Selector de hora con límite mínimo -->
+            <label>Hora de entrada:</label>
+            <input type="time" name="horaInicio" value="08:15" min="08:00" max="8:30">
+            <br><br>
+
+            <label>Hora de salida :</label>
+            <input type="time" name="horaFin" value="18:10" min="18:00" max="18:45">
+            <br><br>
+
+            <!-- Campo para ingresar números telefónicos -->
+            <label>Teléfono:</label>
+            <input type="tel" name="telefono" value="987654321" pattern="[0-9]{9}">
+            <br><br>
+
+            <!-- Campo para contraseñas, oculta los caracteres -->
+            <label>Contraseña:</label>
+            <input type="password" name="clave" value="123456">
+            <br><br>
+
+            <!-- Campo para escribir textos largos -->
+            <label>Comentarios:</label>
+            <br>
+            
+            <textarea name="comentarios" rows="10" cols="400">Escribe aquí tu comentario...</textarea>
+            <br><br>
+            <!-- Permite ingresar enlaces web -->
+            <label>Sitio web:</label>
+            <input type="url" name="web" value="https://www.idat.edu.pe">
+            <br><br>
+
+            <footer class="footer">
+                <p>&copy; 2026 True Beauty</p>
+
+            </footer>
 </body>
 
 </html>
