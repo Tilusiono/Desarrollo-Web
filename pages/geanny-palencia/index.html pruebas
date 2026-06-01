@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sekiro Blog</title>
+    <title>Blog de Sekiro</title>
     <style>
         html {
             scroll-behavior: smooth;
@@ -23,11 +23,6 @@
             padding: 15px;
             z-index: 1000;
         }
-        header h1 {
-            margin: 0 0 10px 0;
-            font-size: 1.5rem;
-            color: #fff;
-        }
         nav ul {
             list-style: none;
             margin: 0;
@@ -43,7 +38,7 @@
             font-weight: bold;
         }
         section {
-            padding: 120px 20px 40px 20px; 
+            padding: 100px 20px 40px 20px; /* Espacio arriba para que el menú no tape el texto */
             border-bottom: 1px solid #333;
             min-height: 50vh;
         }
@@ -52,7 +47,7 @@
             margin-top: 20px;
             max-width: 100%;
             height: auto;
-            border: 2px solid #e67e22;
+            border: 2px solid #e67e22; /* Un borde color fuego para las capturas */
         }
         footer {
             background-color: #111;
@@ -62,14 +57,15 @@
     </style>
 </head>
 <body>
+
+    <!-- CABECERA CON TU MENÚ -->
     <header>
-        <h1>Blog de Sekiro</h1>
         <nav>
             <ul>
-                <li><a href="#seccion-1">historia y lore</a></li>
-                <li><a href="#seccion-2">Rutas y como hacerlas</a></li>
-                <li><a href="#seccion-3">objetos y habilidades</a></li>
-                <li><a href="#seccion-4">info de los personajes y enemigos</a></li>
+                <li><a href="#seccion-1">Historia y Lore</a></li>
+                <li><a href="#seccion-2">Herramientas de Prótesis</a></li>
+                <li><a href="#seccion-3">Guía de Jefes</a></li>
+                <li><a href="#seccion-4">Habilidades Esenciales</a></li>
             </ul>
         </nav>
     </header>
@@ -82,24 +78,25 @@
         </section>
 
         <section id="seccion-2">
-            <h2>🗺️ Rutas y Cómo Hacerlas</h2>
+            <h2>🪓 Herramientas de Prótesis</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error quisquam beatae repudiandae voluptatem totam, maxime nostrum accusantium. Non ut nemo fugiat veritatis unde repudiandae, numquam placeat eius quos laborum dolorem?</p>
             <img src="../../assets/img/captura2.png" alt="Captura 2">
         </section>
 
         <section id="seccion-3">
-            <h2>🎒 Objetos y Habilidades</h2>
+            <h2>⚔️ Guía de Jefes</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus dolor excepturi blanditiis quaerat optio repellat veritatis libero porro iste, nemo illo tempora dolorem consequuntur sit eaque tempore! Beatae, soluta?</p>
             <img src="../../assets/img/captura3.png" alt="Captura 3">
         </section>
 
         <section id="seccion-4">
-            <h2>👥 Info de los Personajes y Enemigos</h2>
+            <h2>👁️ Habilidades Esenciales</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsum natus ipsam laudantium tempore voluptatibus voluptas praesentium totam, animi non laboriosam ea consectetur asperiores quis omnis soluta quasi optio officia!</p>
             <img src="../../assets/img/captura4.png" alt="Captura 4">
         </section>
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer>
         <h1>Blog de Sekiro - 2026</h1>
     </footer>

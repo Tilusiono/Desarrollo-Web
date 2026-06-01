@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Sekiro</title>
+    <title>Sekiro Blog</title>
+   
+    <link rel="icon" type="image/png" href="../geanny-palencia/assets/img/icono.png">
+
     <style>
-        /* Desplazamiento suave al hacer clic */
         html {
             scroll-behavior: smooth;
         }
@@ -16,7 +18,6 @@
             margin: 0;
             padding: 0;
         }
-        /* Menú fijo arriba */
         header {
             position: fixed;
             top: 0;
@@ -24,6 +25,11 @@
             width: 100%;
             padding: 15px;
             z-index: 1000;
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+            color: #fff;
         }
         nav ul {
             list-style: none;
@@ -39,9 +45,8 @@
             text-decoration: none;
             font-weight: bold;
         }
-        /* Estilo para tus secciones */
         section {
-            padding: 100px 20px 40px 20px; /* Espacio arriba para que el menú no tape el texto */
+            padding: 120px 20px 40px 20px; 
             border-bottom: 1px solid #333;
             min-height: 50vh;
         }
@@ -50,7 +55,7 @@
             margin-top: 20px;
             max-width: 100%;
             height: auto;
-            border: 2px solid #e67e22; /* Un borde color fuego para las capturas */
+            border: 2px solid #e67e22;
         }
         footer {
             background-color: #111;
@@ -60,47 +65,48 @@
     </style>
 </head>
 <body>
-
-    <!-- CABECERA CON TU MENÚ -->
     <header>
+        <h1>Blog de Sekiro</h1>
         <nav>
             <ul>
-                <li><a href="#seccion-1">Historia y Lore</a></li>
-                <li><a href="#seccion-2">Herramientas de Prótesis</a></li>
-                <li><a href="#seccion-3">Guía de Jefes</a></li>
-                <li><a href="#seccion-4">Habilidades Esenciales</a></li>
+                <li><a href="#seccion-1">historia y lore</a></li>
+                <li><a href="#seccion-2">Rutas y como hacerlas</a></li>
+                <li><a href="#seccion-3">objetos y habilidades</a></li>
+                <li><a href="#seccion-4">info de los personajes y enemigos</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- LAS SECCIONES QUE AÑADISTE (Conectadas al menú por su ID) -->
     <main>
         <section id="seccion-1">
             <h2>📜 Historia y Lore</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis ipsa quidem placeat at optio, dolorum, accusantium impedit adipisci amet delectus, repellendus consectetur ullam! Recusandae ex rem laborum doloremque velit!</p>
-            <img src="../../assets/img/captura1.png" alt="Captura 1">
+            <p> Aqui va el lore y la historia de sekiro, con detalles sobre los personajes, el mundo y los eventos que ocurren en el juego.
+                desde la caida okami(nuestro protagonista) hasta el final del juego, pasando por los eventos importantes y las conexiones 
+                entre cada personaje y como influyen en la historia, también incluire algunas teorias y especulaciones tanto mias como de 
+                la comunidad, para darle un toque mas personal y generarte interes en el contenido, ademas de que te ayudara a entender mejor 
+                el juego y su historia, para que puedas disfrutarlo al maximo y apreciar cada detalle que se ha puesto en el desarrollo del juego.</p> 
+            <img src="../geanny-palencia/assets/img/captura1.png" alt="Captura 1">
         </section>
 
         <section id="seccion-2">
-            <h2>🪓 Herramientas de Prótesis</h2>
+            <h2>🗺️ Rutas y Cómo Hacerlas</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error quisquam beatae repudiandae voluptatem totam, maxime nostrum accusantium. Non ut nemo fugiat veritatis unde repudiandae, numquam placeat eius quos laborum dolorem?</p>
-            <img src="../../assets/img/captura2.png" alt="Captura 2">
+            <img src="../geanny-palencia/assets/img/captura2.png" alt="Captura 2">
         </section>
 
         <section id="seccion-3">
-            <h2>⚔️ Guía de Jefes</h2>
+            <h2>🎒 Objetos y Habilidades</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus dolor excepturi blanditiis quaerat optio repellat veritatis libero porro iste, nemo illo tempora dolorem consequuntur sit eaque tempore! Beatae, soluta?</p>
-            <img src="../../assets/img/captura3.png" alt="Captura 3">
+            <img src="../geanny-palencia/assets/img/captura3.png" alt="Captura 3">
         </section>
 
         <section id="seccion-4">
-            <h2>👁️ Habilidades Esenciales</h2>
+            <h2>👥 Info de los Personajes y Enemigos</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsum natus ipsam laudantium tempore voluptatibus voluptas praesentium totam, animi non laboriosam ea consectetur asperiores quis omnis soluta quasi optio officia!</p>
-            <img src="../../assets/img/captura4.png" alt="Captura 4">
+            <img src="../geanny-palencia/assets/img/captura4.png" alt="Captura 4">
         </section>
     </main>
 
-    <!-- PIE DE PÁGINA -->
     <footer>
         <h1>Blog de Sekiro - 2026</h1>
     </footer>
