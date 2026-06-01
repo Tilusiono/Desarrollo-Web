@@ -13,7 +13,7 @@ body {
 .header {
   background: #cce5ff;   /* azul */
   border: 3px solid #339af0;
-  height: 80px;
+  height: 120px;
   text-align: center;
   font-weight: bold;
   justify-content: center;
@@ -59,6 +59,11 @@ body {
 .section4 {
   background: #0d7d13;   /* azul oscuro */
   border: 3px solid #1b2838;      
+}
+
+.logo{
+  width: 40px;
+  height: 40px;
 }
 
 .card {
