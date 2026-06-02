@@ -31,26 +31,44 @@ body {
 }
 
 /* SECTION */
-.section {
-  background: #df845a;   /* verde */
-  border: 3px solid #79c485;
-  min-height: 20vh;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-weight: bold;
+section p {
+  font-size: 24px;
+  line-height: 1.5;
+  writing-mode: horizontal-tb;
+  transform: none;
+}section img {
+  width: 200px;   /* o el tamaño que quieras */
+  height: auto;
 }
 
-.section1 {
-  background: #eb3407; 
-  border: 3px solid #0523e7;
+
+#seccion1 img, 
+#seccion2 img, 
+#seccion3 img, 
+#seccion4 img {
+    max-width: 300px; /* Ajusta este número al tamaño que desees */
+    height: auto;     /* Mantiene la proporción para que no se deformen */
+}
+.section2 ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.section2 {
-  background: #cd7203;   
-  border: 3px solid #d35400;
-} 
+.section2 li {
+    flex: 1;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.section2 img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
 .section3 {
   background: #c1d207;   
   border: 3px solid #d35400;
