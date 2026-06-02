@@ -73,62 +73,56 @@ p{
     gap: 0px;
 }
 #uno{
-    background-image: url(/assets/imagenes/productos/bakanazo.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#uno{
     background-image: url(/assets/imagenes/productos/chocobombom.png);
-    background-size: contain;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #dos{
     background-image: url(/assets/imagenes/productos/cono.png);
-    background-size: contain;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #tres{
     background-image: url(/assets/imagenes/productos/lucuma-chips.png);
-    background-size: contain;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #cuatro{
     background-image: url(/assets/imagenes/productos/mini-yamboly.png);
-    background-size: contain;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #cinco{
     background-image: url(/assets/imagenes/productos/minipasion.png);
-    background-size: contain;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #seis{
     background-image: url(/assets/imagenes/productos/pasion.png);
-    background-size: contain;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #siete{
     background-image: url(/assets/imagenes/productos/trisabor.png);
-    background-size: contain;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #ocho{
     background-image: url(/assets/imagenes/productos/vainilla-chips.png);
-    background-size: contain;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #nueve{
     background-image: url(/assets/imagenes/productos/vainilla-chocolate.png);
-    background-size: contain;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -151,4 +145,21 @@ p{
         transform: translateX(-50%);
     }
 
+}
+#distribuidores{
+    background: linear-gradient(60deg,aqua, white) ;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    padding-bottom: 30px;
+    color: blue;
+}
+#contactenos{
+    background: linear-gradient(60deg,aqua, white) ;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-align: center;
 }

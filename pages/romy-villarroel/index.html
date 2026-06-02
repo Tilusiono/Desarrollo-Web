@@ -14,10 +14,10 @@
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Distribuidores</a></li>
-                <li><a href="#">Contactenos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#distribuidores">Distribuidores</a></li>
+                <li><a href="#contactenos">Contactenos</a></li>
             </ul>
         </nav>
     </header>
@@ -48,8 +48,26 @@
 
     </section>
     
-        <section id="distribuidores">Distribuidores</section>
-        <section id="contactenos">Contactenos
+        <section id="distribuidores">
+            <h2>A NIVEL NACIONAL</h2>
+            <p>Contamos con distribuidres a nivel nacional</p>
+        </section>
+        <section id="contactenos">
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Registro de usuario</legend>
+                    <label for="nombre">Nombres:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br>
+                    <label for="apellidos">Apellidos</label><br>
+                    <input type="text" id="apellidos" name="apellidos" required><br>
+                    <label for="email">correo electronico</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="password">password</label><br>
+                    <input type="password" id="password" name="password" required><br>
+                    <button type="submit">enviar</button>
+
+                </fieldset>
+            </form>
         </section>
     </main>
 </body>
