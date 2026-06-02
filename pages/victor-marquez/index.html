@@ -8,13 +8,15 @@
 
     <link rel="stylesheet" href="../../css/estilo_global.css">
 </head>
-
+<!-- TITULO Y LOGO DE LA PAGINA -->
 <body>
     <header class="header">
-        <img src="imagenes/LOGO1.jpg" alt="Logo de gallos">
+        <img src="imagenes/51ae9b4a946d433943500fd0380adb18.jpg" alt="Logo de gallos">
         <h1>Cultura Gallera</h1>
-
         <h2>LA CULTURA GALLISTICA</h2>
+        <p class="slogan">
+            Tradición, historia y pasión por la cultura gallística.
+        </p>
         <nav>
             <ul class="menu">
                 <li><a href="#seccion1">🐔¿Que significa?</a></li>
@@ -24,12 +26,23 @@
             </ul>
         </nav>
     </header>
+    <!-- FIN DE EL LOGO Y LA PAGINA -->
+
+    <!-- SUBTITULOS DECORATIVOS -->
+    <section class="datos-header">
+        <p>🐓 Tradición peruana: una costumbre transmitida de generación en generación.</p>
+        <p>📜 Historia centenaria: con raíces que se remontan a varios siglos atrás.</p>
+        <p>🌎 Presencia internacional: practicada y reconocida en diversos países.</p>
+    </section>
+    <!-- FIN DE DECORACION-->
+
+<!-- INICIO DE CODIGO DE CARRUSEL -->
     <main>
         <section>
             <section id="carrusel" class="columnas_4">
                 <section>
                     <p>#1🐔¿Que significa realmente los gallos de pelea para la cultura peruana? </p>
-                    <img src="imagenes/-combat-de-coq-au-perou-1.jpeg">
+                    <img src="imagenes/Pelea4.webp">
                 </section>
                 <section id="seccion2">
                     <p>#2🤝En este tipos de gallo de combate, la variedad de especies se hace notar, desde España hasta
@@ -52,47 +65,133 @@
                         de
                         gallos</p>
                     <img src="imagenes/4353146_713.jpg">
-
                 </section>
-            </section>
-            <section id="seccion2">
 
             </section>
-            <section id="seccion3">
+            <!-- FIN DE CODIGO DE CARRUSEL -->
 
-
-            </section>
-            <section class="section2 columnas_4">
-                <card>
+            <!-- INICIO DE LAS "CARD" -->
+            <section class="columnas_4">
+                <article class="card">
                     <header>
-                        <h2>titulo</h2>
-                        <p>El espectaculo de cada fin de semana.</p>
+                        <h2>EL ESPECTACULO</h2>
+                        <p>La vida cada en todas las galleras.</p>
                     </header>
-                    <img src="imagenes/Pelea1.jpg" alt="Pelea de gallos en espectaculo">
-                    <button>Ver mas</button>
-                </card>
+                    <figure>
+                        <img src="imagenes/Pelea1.jpg" alt="Pelea de gallos en espectaculo">
+                    </figure>
+                    <button>Cada fin de semana, las galleras rebasan capacidad para presenciar el show</button>
+                </article>
 
-                <card>
-                    <img src="imagenes/Pelea2.jpg" alt="Pelea para ver quien manda">
-                    <p>La ley del más fuerte en granjas.</p>
-                </card>
+                <article class="card">
+                    <header>
+                        <h2>LAS LEYES VITALES</h2>
+                        <p>El mas fuerte muchas veces sobrevive</p>
+                    </header>
+                    <figure>
+                        <img src="imagenes/Pelea2.jpg" alt="Pelea para ver quien manda">
+                        <button>Pelean por su naturaleza, no frenaran hasta que solo 1 quede vivo.</button>
+                    </figure>
+                </article>
 
-                <card>
-                    <img src="imagenes/Pelea3.jpg" alt="Gallos que aunque no son de pelea luchan por el territorio">
-                    <p>Ese tipo de gallos no son de pelea, pero por el territorio hacen lo que sea.</p>
-                </card>
+                <article class="card">
+                    <header>
+                        <h2>LA SANGRE FINA </h2>
+                        <p>Aunque algunos no pelean,corre por su sangre</p>
+                    </header>
+                    <figure>
+                        <img src="imagenes/Pelea3.jpg" alt="Gallos que aunque no son de pelea luchan por el territorio">
+                        <button>Ese tipo de gallos no son de pelea, pero por el territorio hacen lo que sea.</button>
+                    </figure>
+                </article>
 
-                <card>
-                    <img src="imagenes/Pelea4.webp" alt="Descarte de gallos debiles">
-                    <p>Muchas veces, hacen competirlos; el que gana sobrevive y el que no se sacrifica por
-                        espacio en el
-                        corral.</p>
-                </card>
+                <article class="card">
+                    <header>
+                        <h2>LOS DEBILES ENTRE LOS FUERTES</h2>
+                        <p>El debil no puede prevalecer. </p>
+                    </header>
+                    <figure>
+                        <img src="imagenes/Pelea4.webp" alt="Descarte de gallos debiles">
+                        <button>Muchas veces, hacen competirlos; el que gana sobrevive y el que no se sacrifica por
+                            espacio en elcorral.</button>
+                    </figure>
+                </article>
             </section>
 
 
         </section>
     </main>
+    <!-- FIN DE LAS "CARDS" -->
+
+     <!-- INICIO DE EL FORMULARIO-->
+<section>
+    <h2>Formulario de Registro</h2>
+
+    <form>
+
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="dni">DNI:</label><br>
+        <input type="text" id="dni" name="dni" maxlength="8" required><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label>Género:</label><br>
+
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label>
+
+        <input type="radio" id="otro" name="genero" value="Otro">
+        <label for="otro">Otro</label>
+
+        <br><br>
+
+        <label for="fecha">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <label for="ciudad">Ciudad / Provincia:</label><br>
+        <select id="ciudad" name="ciudad">
+
+            <option value="">Seleccione una provincia</option>
+
+            <option>Lima</option>
+            <option>Arequipa</option>
+            <option>Trujillo</option>
+            <option>Chiclayo</option>
+            <option>Piura</option>
+            <option>Cusco</option>
+            <option>Huancayo</option>
+            <option>Iquitos</option>
+            <option>Tacna</option>
+            <option>Puno</option>
+            <option>Chimbote</option>
+            <option>Ayacucho</option>
+            <option>Cajamarca</option>
+            <option>Huánuco</option>
+            <option>Tarapoto</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="mensaje">Opinión sobre la cultura gallística:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+        <br><br>
+
+        <button type="submit">Enviar Registro</button>
+
+    </form>
+</section>
+            <!-- FIN DE EL FORMULARIO -->
+
+
+    <!-- INICIO DE FOOTER -->
     <footer class="footer columnas_4">
         <section>
             <h3>Redes Sociales</h3>
@@ -104,17 +203,26 @@
         </section>
         <p>&copy; 2026 Pagina dedicada a la investigacion de la cultura gallistica dentro de Perú. Todos los
             derechos reservados.</p>
-        <p>Contacto soporte: vmarquezr26@gmail.com</p>
-        <section>
-            <h3>Redes Sociales</h3>
+        <section class="contacto">
+            <h3>Contacto soporte:</h3>
             <ul>
-                <li><a href="https://www.facebook.com/victor.marquez.863232/">Facebook</a></li>
-                <li><a href="https://www.instagram.com/vix_2208/">Instagram</a></li>
-                <li><a href="https://www.tiktok.com/foryou?lang=es">TikTok</a></li>
+                <li>vmarquezr25@gmail.com</li>
+                <li>Horario de atención: Lunes a Viernes</li>
+                <li>Ubicación: Av. Nicolás Ayllón 836, Ate 15491</li>
             </ul>
+        </section>
+        <section>
+            <h3 style="font-size: 14px;">
+                Investigación basada en historiadores y personas conocedoras del tema.
+            </h3>
+
+            <p class="autor">
+                Victor Márquez-AUTOR
+            </p>
         </section>
     </footer>
 </body>
+<!-- FIN DE FOOTER -->
 
 
 
