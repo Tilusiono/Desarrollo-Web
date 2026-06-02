@@ -6,64 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bextor</title>
     <link rel="stylesheet" href="../../css/estilo_global.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <fieldset style="background-color: black; padding: 10px 0; border: none;">
-        <header style="position: relative;">
+    <header class="header">  
+        <figure>
+            <img src="Imagenes Bextor/Logotipo.png" alt="Logotipo Bextor" width="125">
+        </figure>
 
-            <img src="Imagenes/Logotipo.jpg" alt="Logo Bextor" width="130"
-                style="position: absolute; left: 50%; margin-left: -470px; top: 5px; display: block;">
+        <form action="#" method="get">
+            <input type="search" placeholder="Buscar productos, marcas y más..." size="100" style="padding: 5px">
+            <button type="submit" style="padding: 5px">Buscar</button>
+        </form>
 
-            <table style="width: 100%; margin: 0; border-collapse: collapse;">
+        <br>
+        <nav>
+            <p>
+                <a href="#Categorías">Categorías</a> | 
+                <a href="#Productos">Productos</a> | 
+                <a href="#Pedidos">Pedidos</a> | 
+                <a href="#Contactos">Contactos</a>
+            </p>
+                
+        </nav>
 
-                <tr>
-                    <td style="text-align: center; vertical-align: middle; padding: 5px 0;">
-                        <form action="#" style="margin: 0; padding: 0;">
-                            <input type="text" placeholder="Buscar productos, marcas y más..." size="60"
-                                style="padding: 6px; font-size: 18px; vertical-align: middle;">
-                            <button type="submit"
-                                style="padding: 6px; font-size: 18px; vertical-align: middle;">Buscar</button>
-                        </form>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="text-align: center; vertical-align: top; padding-top: 10px; padding-bottom: 2px;">
-                        <nav style="font-family: sans-serif; font-size: 14px; word-spacing: 45px;">
-                            <ul style="display: inline; padding: 0; margin: 0; list-style: none;">
-                                <li style="display: inline;"><a href="#categorias"
-                                        style="text-decoration: none; color: white;">Categorías</a></li>
-                                <li style="display: inline; color: white;">|</li>
-                                <li style="display: inline;"><a href="#productos"
-                                        style="text-decoration: none; color: white;">Productos</a></li>
-                                <li style="display: inline; color: white;">|</li>
-                                <li style="display: inline;"><a href="#pedidos"
-                                        style="text-decoration: none; color: white;">Pedidos</a></li>
-                                <li style="display: inline; color: white;">|</li>
-                                <li style="display: inline;"><a href="#contacto"
-                                        style="text-decoration: none; color: white;">Contacto</a></li>
-                            </ul>
-                        </nav>
-                    </td>
-                </tr>
-
-            </table>
-
-        </header>
-    </fieldset>
-
-    <main>
-        <section class="section1">1</section>
-        <section class="section2">2</section>
-        <!--Productos o servicios -->
-        <section class="section3">
+    </header>
+        
+    <Section>
+        <section class="section1">1
             <header>
-                <h3>Productos Descatados</h3>
+                <h1>Bienvenido a Bextor</h1>
+                <p>Tu destino de compras en línea para productos de calidad y ofertas exclusivas.</p>
             </header>
 
-            <section class="columnas_6">
+            <figure>
+                <img src="Imagenes Carrusel/Carrusel principal.jpg" alt="Portada Bextor">
+            </figure>
+
+             <p>En Bextor, nos enorgullece ofrecer una amplia gama de productos que se adaptan a tus necesidades y estilo de vida. Desde tecnología de vanguardia hasta artículos para el hogar, moda y más, tenemos todo lo que necesitas para mejorar tu día a día.</p>
+
+        </section>
+            
+        <section id="Categorias" class="section2">2
+            <header>
+                <h2>Categorías</h2>
+                <p>Descubre Nuestras Categorías</p>
+            </header>
+    
+            </section class="columnas_4">
+                <card class="card">1<br><br><br><br>
+                    <h3>Título Aquí</h3>
+                    <img src="Imagenes Catálogo/Catalogo de perfume.jpg" alt="Descripción de la imagen" width="100%">
+                    <p>Tu descripción aquí.</p>
+                </card>
+                <card class="card">1<br><br><br><br>
+                    <h3>Título Aquí</h3>
+                    <img src="Imagenes Catálogo/Productos Para  Cocina.jpg" alt="Descripción de la imagen" width="100%">
+                    <p>Tu descripción aquí.</p>
+                </card>
+                <card class="card">1<br><br><br><br>
+                    <h3>Título Aquí</h3>
+                    <img src="Imagenes Catálogo/Productos para mascotas.jpg" alt="Descripción de la imagen" width="100%">
+                    <p>Tu descripción aquí.</p>
+                </card>
+                <card class="card">1<br><br><br><br>
+                    <h3>Título Aquí</h3>
+                    <img src="tu_carpeta/tu_imagen.jpg" alt="Descripción de la imagen" width="100%">
+                    <p>Tu descripción aquí.</p>
+                </card>             
+            <footer>
+                <p>...</p>
+            </footer>
+        </section>
+
+        <section id="Productos" class="section3">
+            <header>
+                <h2>Productos</h2>
+                <p>Ofrecemos una exclusiva selección de productos que destacan por su calidad superior, diseño sofisticado y rendimiento excepcional.</p>
+            </header>
+
+            <section class="columnas_4">
+
                 <article class="article">
 
                     <header>
@@ -73,11 +98,11 @@
 
                     <figure>
                         <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
+                        <img src="Imagenes Productos/Perfume Afnan 9pm.jpg" alt="Producto 1">
                     </figure>
 
                     <details>
-                        <summary>Platano</summary>
+                        <summary>Perfume Afnan 9pm</summary>
                         <p>Descripción del producto 1.</p>
 
                         <ol>
@@ -88,7 +113,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
+                        <a href="#pedidos"> Comprar</a>
                     </footer>
 
                 </article>
@@ -101,13 +126,13 @@
 
 
                     <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
+                        <figcaption>Producto 2</figcaption>
+                        <img src="Imagenes Productos/Perfume Khamrah Qahwa.jpg" alt="Producto 2">
                     </figure>
 
                     <details>
-                        <summary>Platano</summary>
-                        <p>Descripción del producto 1.</p>
+                        <summary>Perfume Khamrah Qahwa</summary>
+                        <p>Descripción del producto 2.</p>
 
                         <ol>
                             <li>Color: Amarillo</li>
@@ -117,7 +142,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
+                        <a href="#pedidos"> Comprar</a>
                     </footer>
 
                 </article>
@@ -131,8 +156,8 @@
 
 
                     <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
+                        <figcaption>Producto 3</figcaption>
+                        <img src="Imagenes/producto1.jpg" alt="Producto 3">
                     </figure>
 
                     <details>
@@ -147,7 +172,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
+                        <a href="#pedidos"> Comprar</a>
                     </footer>
 
                 </article>
@@ -160,8 +185,8 @@
 
 
                     <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
+                        <figcaption>Producto 4</figcaption>
+                        <img src="Imagenes Productos Destacados/QUITALO.jpg" alt="Producto 4">
                     </figure>
 
                     <details>
@@ -176,7 +201,7 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
+                        <a href="#pedidos"> Comprar</a>
                     </footer>
 
                 </article>
@@ -189,12 +214,12 @@
 
 
                     <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
+                        <figcaption>Producto 5</figcaption>
+                        <img src="Imagenes Productos/Dispensador De Jabon Líquido.jpg" alt="Producto 5">
                     </figure>
 
                     <details>
-                        <summary>Platano</summary>
+                        <summary>Dispensador De Jabon Líquido</summary>
                         <p>Descripción del producto 1.</p>
 
                         <ol>
@@ -205,10 +230,11 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
+                        <a href="#pedidos"> Comprar</a>
                     </footer>
 
                 </article>
+
                 <article class="article">
 
                     <header>
@@ -217,12 +243,12 @@
 
 
                     <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
+                        <figcaption>Producto 6</figcaption>
+                        <img src="Imagenes Productos/Soporte Magnético Para Cuchillos.jpg" alt="Producto 6">
                     </figure>
 
                     <details>
-                        <summary>Platano</summary>
+                        <summary>Soporte Magnético Para Cuchillos</summary>
                         <p>Descripción del producto 1.</p>
 
                         <ol>
@@ -233,10 +259,11 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
+                        <a href="#pedidos"> Comprar</a>
                     </footer>
 
                 </article>
+
                 <article class="article">
 
                     <header>
@@ -245,12 +272,12 @@
 
 
                     <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
+                        <figcaption>Producto 7</figcaption>
+                        <img src="Imagenes Productos/Pup Jet.jpg" alt="Producto 7">
                     </figure>
 
                     <details>
-                        <summary>Platano</summary>
+                        <summary>Pup Jet</summary>
                         <p>Descripción del producto 1.</p>
 
                         <ol>
@@ -261,10 +288,11 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
+                        <a href="#pedidos"> Comprar</a>
                     </footer>
 
                 </article>
+
                 <article class="article">
 
                     <header>
@@ -273,12 +301,12 @@
 
 
                     <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
+                        <figcaption>Producto 8</figcaption>
+                        <img src="Imagenes Productos/Lanzador De Pelotas Para Perros.jpg" alt="Producto 8">
                     </figure>
 
                     <details>
-                        <summary>Platano</summary>
+                        <summary>Lanzador De Pelotas Para Perros</summary>
                         <p>Descripción del producto 1.</p>
 
                         <ol>
@@ -289,138 +317,24 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
-                    </footer>
-
-                </article>
-                <article class="article">
-
-                    <header>
-                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
-                    </header>
-
-
-                    <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
-                    </figure>
-
-                    <details>
-                        <summary>Platano</summary>
-                        <p>Descripción del producto 1.</p>
-
-                        <ol>
-                            <li>Color: Amarillo</li>
-                            <li>Peso: 150g</li>
-                            <li>Origen: Colombia</li>
-                        </ol>
-                    </details>
-
-                    <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
-                    </footer>
-
-                </article>
-                <article class="article">
-
-                    <header>
-                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
-                    </header>
-
-
-                    <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
-                    </figure>
-
-                    <details>
-                        <summary>Platano</summary>
-                        <p>Descripción del producto 1.</p>
-
-                        <ol>
-                            <li>Color: Amarillo</li>
-                            <li>Peso: 150g</li>
-                            <li>Origen: Colombia</li>
-                        </ol>
-                    </details>
-
-                    <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
-                    </footer>
-
-                </article>
-                <article class="article">
-
-                    <header>
-                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
-                    </header>
-
-
-                    <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
-                    </figure>
-
-                    <details>
-                        <summary>Platano</summary>
-                        <p>Descripción del producto 1.</p>
-
-                        <ol>
-                            <li>Color: Amarillo</li>
-                            <li>Peso: 150g</li>
-                            <li>Origen: Colombia</li>
-                        </ol>
-                    </details>
-
-                    <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
-                    </footer>
-
-                </article>
-                <article class="article">
-
-                    <header>
-                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
-                    </header>
-
-
-                    <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
-                    </figure>
-
-                    <details>
-                        <summary>Platano</summary>
-                        <p>Descripción del producto 1.</p>
-
-                        <ol>
-                            <li>Color: Amarillo</li>
-                            <li>Peso: 150g</li>
-                            <li>Origen: Colombia</li>
-                        </ol>
-                    </details>
-
-                    <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
+                        <a href="#pedidos"> Comprar</a>
                     </footer>
 
                 </article>
 
             </section>
 
-            <footer>
-                <p>¡Gracias por visitar Bextor! Tu tienda de confianza para productos de calidad. ¡Esperamos
-                    verte pronto!</p>
-            </footer>
+
         </section>
+
+
         <section class="section3">
             <header>
-                <h3>Productos Descatados</h3>
+                <h2>Productos Descatados</h2>
+                <p>Encuentra aquí nuestros productos estrella y las últimas novedades.</p>
             </header>
 
-            <section class="columnas_8">
-
-
+            <section class="columnas_4">
 
                 <article class="article">
 
@@ -430,12 +344,12 @@
 
 
                     <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
+                        <figcaption>Producto destacado 1</figcaption>
+                        <img src="Imagenes Productos Destacados/Perfume Al Haramain Amber Oud Gold.jpg" alt="Producto destacado 1">
                     </figure>
 
                     <details>
-                        <summary>Platano</summary>
+                        <summary>Perfume Al Haramain Amber Oud Gold</summary>
                         <p>Descripción del producto 1.</p>
 
                         <ol>
@@ -446,7 +360,65 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
+                        <a href="#pedidos"> Comprar</a>
+                    </footer>
+
+                </article>
+
+                <article class="article">
+
+                    <header>
+                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
+                    </header>
+
+
+                    <figure>
+                        <figcaption>Producto destacado 2</figcaption>
+                        <img src="Imagenes Productos Destacados/C.jpg" alt="Producto destacado 2">
+                    </figure>
+
+                    <details>
+                        <summary>Collar con cámara para mascotas</summary>
+                        <p>Descripción del producto 1.</p>
+
+                        <ol>
+                            <li>Color: Amarillo</li>
+                            <li>Peso: 150g</li>
+                            <li>Origen: Colombia</li>
+                        </ol>
+                    </details>
+
+                    <footer>
+                        <a href="#pedidos"> Comprar</a>
+                    </footer>
+
+                </article>
+
+                <article class="article">
+
+                    <header>
+                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
+                    </header>
+
+
+                    <figure>
+                        <figcaption>Producto destacado 3</figcaption>
+                        <img src="Imagenes Productos Destacados/Cortador De Verduras.jpg" alt="Producto destacado 3">
+                    </figure>
+
+                    <details>
+                        <summary>Cortador De Verduras</summary>
+                        <p>Descripción del producto 1.</p>
+
+                        <ol>
+                            <li>Color: Amarillo</li>
+                            <li>Peso: 150g</li>
+                            <li>Origen: Colombia</li>
+                        </ol>
+                    </details>
+
+                    <footer>
+                        <a href="#pedidos"> Comprar</a>
                     </footer>
 
                 </article>
@@ -458,39 +430,12 @@
 
 
                     <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
+                        <figcaption>Producto destacado 4</figcaption>
+                        <img src="Imagenes Productos Destacados/Collar Con Cámara Para Mascotas.jpg" alt="Producto destacado 4">
                     </figure>
 
                     <details>
-                        <summary>Platano</summary>
-                        <p>Descripción del producto 1.</p>
-                        <<<<<<< HEAD <ol>
-                            <li>Color: Amarillo</li>
-                            <li>Peso: 150g</li>
-                            <li>Origen: Colombia</li>
-                            </ol>
-                    </details>
-
-                    <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
-                    </footer>
-
-                </article>
-                <article class="article">
-
-                    <header>
-                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
-                    </header>
-
-
-                    <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
-                    </figure>
-
-                    <details>
-                        <summary>Platano</summary>
+                        <summary>Collar Con Cámara Para Mascotas</summary>
                         <p>Descripción del producto 1.</p>
 
                         <ol>
@@ -501,256 +446,71 @@
                     </details>
 
                     <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
-                    </footer>
-
-                </article>
-                <article class="article">
-
-                    <header>
-                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
-                    </header>
-
-
-                    <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
-                    </figure>
-
-                    <details>
-                        <summary>Platano</summary>
-                        <p>Descripción del producto 1.</p>
-
-                        <ol>
-                            <li>Color: Amarillo</li>
-                            <li>Peso: 150g</li>
-                            <li>Origen: Colombia</li>
-                        </ol>
-                    </details>
-
-                    <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
-                    </footer>
-
-                </article>
-                <article class="article">
-
-                    <header>
-                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
-                    </header>
-
-
-                    <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
-                    </figure>
-
-                    <details>
-                        <summary>Platano</summary>
-                        <p>Descripción del producto 1.</p>
-
-                        <ol>
-                            <li>Color: Amarillo</li>
-                            <li>Peso: 150g</li>
-                            <li>Origen: Colombia</li>
-                        </ol>
-                    </details>
-
-                    <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
-                    </footer>
-
-                </article>
-                <article class="article">
-
-                    <header>
-                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
-                    </header>
-
-
-                    <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
-                    </figure>
-
-                    <details>
-                        <summary>Platano</summary>
-                        <p>Descripción del producto 1.</p>
-
-                        <ol>
-                            <li>Color: Amarillo</li>
-                            <li>Peso: 150g</li>
-                            <li>Origen: Colombia</li>
-                        </ol>
-                    </details>
-
-                    <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
-                    </footer>
-
-                </article>
-                <article class="article">
-
-                    <header>
-                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
-                    </header>
-
-
-                    <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
-                    </figure>
-
-                    <details>
-                        <summary>Platano</summary>
-                        <p>Descripción del producto 1.</p>
-
-                        <ol>
-                            <li>Color: Amarillo</li>
-                            <li>Peso: 150g</li>
-                            <li>Origen: Colombia</li>
-                        </ol>
-                    </details>
-
-                    <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
-                    </footer>
-
-                </article>
-                <article class="article">
-
-                    <header>
-                        Oferta Especial: <mark>10% de Descuento</mark> en Plátanos Frescos
-                    </header>
-
-
-                    <figure>
-                        <figcaption>Producto 1</figcaption>
-                        <img src="Imagenes/producto1.jpg" alt="Producto 1">
-                    </figure>
-
-                    <details>
-                        <summary>Platano</summary>
-                        <p>Descripción del producto 1.</p>
-
-                        <ol>
-                            <li>Color: Amarillo</li>
-                            <li>Peso: 150g</li>
-                            <li>Origen: Colombia</li>
-                        </ol>
-                    </details>
-
-                    <footer>
-                        <a href="#pedidos"> Hacer pedido / Comprar</a>
+                        <a href="#pedidos"> Comprar</a>
                     </footer>
 
                 </article>
 
             </section>
-
-            <footer>
-                <p>¡Gracias por visitar Bextor! Tu tienda de confianza para productos de calidad. ¡Esperamos
-                    verte pronto!</p>
-            </footer>
-        </section>
-
-
+                <footer>
+                    <p>Gracias por elegir Bextor. Nos enorgullece ofrecer productos de excelencia y calidad superior. Esperamos acompañarlo nuevamente</p>
+                </footer>
+            </section>
+        </setion>
 
         <section id="pedidos" class="section4">
+            <fieldset>
+                <legend><h2>Realizar Pedido</h2></legend>
 
-            <fieldset style="border-color: black;">
-                <legend>
-                    <h2>Realizar Pedido</h2>
-                </legend>
-
-                <form action="#">
+                <form action="#" method="post">
 
                     <fieldset>
                         <legend>Información personal</legend>
-
-                        <div style="display: inline-block; margin-right: 15px;">
-                            <label>Nombre:</label>
-                            <input type="text">
-                        </div>
-
-                        <div style="display: inline-block; margin-right: 15px;">
-                            <label>Correo:</label>
-                            <input type="email">
-                        </div>
-
-                        <div style="display: inline-block;">
-                            <label>Teléfono:</label>
-                            <input type="tel">
-                        </div>
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" required>
+                
+                        <label>Apellido:</label>
+                        <input type="text" name="apellido">
+                
+                        <label>Correo:</label>
+                        <input type="email" name="correo">
+                
+                        <label>Teléfono:</label>
+                        <input type="tel" name="telefono">
                     </fieldset>
 
                     <br>
 
                     <fieldset>
-                        <legend>Pedido</legend>
-
-                        <div style="display: inline-block; margin-right: 15px;">
-                            <label>Cantidad:</label>
-                            <input type="number" min="1" max="10">
-                        </div>
-
-                        <div style="display: inline-block; margin-right: 15px;">
-                            <label>Fecha de Entrega:</label>
-                            <input type="date">
-                        </div>
-
-                        <div style="display: inline-block;">
-                            <label>Dirección:</label>
-                            <input type="search">
-                        </div>
+                        <legend>Detalles del Pedido</legend>
+                        <label>Producto:</label>
+                        <input type="text" name="producto">
+                
+                       <label>Cantidad:</label>
+                       <input type="number" name="cantidad" min="1" max="10">
+                
+                      <label>Fecha de entrega:</label>
+                      <input type="date" name="fecha">
+                
+                      <label>Dirección:</label>
+                      <input type="text" name="direccion">
                     </fieldset>
 
                     <br>
 
                     <fieldset>
-                        <legend>Pago</legend>
-
-                        <div style="display: inline-block; margin-right: 15px;">
-                            <label>
-                                <input type="radio" name="metodo_pago" value="yape"> Yape
-                            </label>
-                        </div>
-
-                        <div style="display: inline-block; margin-right: 15px;">
-                            <label>
-                                <input type="radio" name="metodo_pago" value="plin"> Plin
-                            </label>
-                        </div>
-
-                        <div style="display: inline-block;">
-                            <label>
-                                <input type="radio" name="metodo_pago" value="transferencia"> Transferencia
-                            </label>
-                        </div>
-                    </fieldset>
-
-                    <br>
-
-                    <fieldset>
-                        <legend>Servicios</legend>
-
-                        <div style="display: inline-block; margin-right: 15px;">
-                            <label>
-                                <input type="checkbox" name="adicional" value="delivery"> Delivery
-                            </label>
-                        </div>
-
-                        <div style="display: inline-block;">
-                            <label>
-                                <input type="checkbox" name="adicional" value="empaque"> Empaque premium
-                            </label>
-                        </div>
+                        <legend>Pago y Servicios</legend>
+                        <label><input type="radio" name="metodo" value="yape"> Yape</label>
+                        <label><input type="radio" name="metodo" value="plin"> Plin</label>
+                        <label><input type="radio" name="metodo" value="transferencia"> Transferencia</label>
+                
+                        <label><input type="checkbox" name="adicional" value="delivery"> Delivery</label>
                     </fieldset>
 
                     <br>
 
                     <p>
-                        <input type="submit" value="Enviar Formulario de Pedido">
+                       <input type="submit" value="Enviar Pedido">
                     </p>
 
                 </form>
@@ -764,30 +524,32 @@
 
         <section class="columnas_4">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#Categorías">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#Categorías">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#Categorías">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <figure>
-                <img src="Imagenes/Logotipo.jpg" alt="Logo Bextor" width="130">
+            <figure>  
+                <img src="Imagenes Bextor/Imagotipo.png" alt="Logotipo Bextor">
+
             </figure>
+          
         </section>
 
         <section class="columnas_1">
-            <p>© 2024 Bextor. Todos los derechos reservados.</p>
+            <p>© 2026 Bextor. Todos los derechos reservados</p>
         </section>
 
     </footer>
