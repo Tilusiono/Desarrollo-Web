@@ -4,7 +4,7 @@ function carrusel(){
 
     let imagen = document.getElementById("baner");
     c++;
-    if(c>3) c=1;
+    if(c>10) c=1;
     imagen.setAttribute("src","imagenes/banner" + c + ".jpg");
 }
 
