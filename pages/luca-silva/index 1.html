@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA DESPENSA</title>
+
+    <link rel="stylesheet" href="../../css/estilo_global.css">
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <h1> <img class="logo" src="Imagenes/logo.png" alt="logo">LA DESPENSA</h1>
+
+        <p>"Frescura y calidad en un solo lugar"</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#secciones">Secciones</a></li>
+                <li><a href="#productos">Nuestros Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--SUSTENTACIÓN DEL ENCABEZADO
+
+    .<header class="header">: Define el encabezado principal de mi página y le asigno la clase "header" para aplicar estilos CSS.
+    .La etiqueta <h1> la utilice para mostrar el título principal del sitio web, siendo el elemento de mayor importancia dentro de la jerarquía del contenido.
+    .La etiqueta <img> la utilice porque me permite insertar mi logotipo de la empresa. El atributo src indica la ubicación de la imagende mi logo y el atributo alt proporciona una descripción alternativa para mejorar su accesibilidad.
+    .La etiqueta <p> contiene el eslogan de mi empresa, el cual ayuda a resumir la propuestade valor de mi negocio para los clientes y lectores.
+    .La etiqueta <nav> identifica el menú de navegación principal de mi sitio web ,permitiendo al usuario poder desplazarse entre las distintas secciones que hay en mi página.
+    .La etiqueta <ul> organiza los enlaces en una lista no ordenada.
+    .La etiqueta <li> representa cada opción individual del menú de mi página web
+    .La etiqueta <a> crea enlaces internos mediante identificadores (#),permitiendo navegar hacia las secciones Inicio, Secciones,Nuestros Productos y Contacto qeue se encuentran en mi sitio web
+     -->
+
+    <main>
+
+        <!-- SECCIÓN 1 - CARRUSEL -->
+
+    <section class="section1 columnas_3" id="inicio">
+
+        <section>
+            <header>
+                <h2>Bienvenidos a LA DESPENSA</h2>
+                <p>Todo lo que tu hogar necesita en un solo lugar y al alcance de tu mano</p>
+            </header>
+
+            <img src="Imagenes/sitio.png" alt="Promoción especial">
+
+        </section>
+
+        <section>
+            <header>
+                <h2>Ofertas de la Semana</h2>
+                <p>Los mejores precios seleccionados para ti.</p>
+            </header>
+
+            <img src="Imagenes/carrusel01.png" alt="Promoción especial">
+
+        </section>
+
+        <section>
+            <header>
+                <h2>Promociones para la familia</h2>
+                <p>Ahorra más comprando para toda la familia.</p>
+            </header>
+
+            <img src="Imagenes/carrusel02.png" alt="Promoción especial">
+
+        </section>
+
+        <section>
+            <header>
+                <h2>Ofertas en Snacks</h2>
+                <p>Tus snacks favoritos con descuentos especiales.</p>
+            </header>
+
+            <img src="Imagenes/carrusel03.png" alt="Promoción especial">
+
+        </section>
+
+        <section>
+            <header>
+                <h2>Ahorra más</h2>
+                <p>Encuentra descuentos todos los días. No dejes pasar la oportunidad</p>
+            </header>
+
+            <img src="Imagenes/carrusel04.png" alt="Promoción especial">
+
+        </section>
+
+    </section>
+
+    <!--SUSTENTACIÓN DE LA SECCIÓN 1 - CARRUSEL
+
+    .La etiqueta <section class="section1 columnas_3"> define la primera sección principal de mi página web y organiza su contenido mediante un sistema de columnas para mostrar promociones y ofertas destacadas que presento.
+    .El atributo id="inicio" permite que el enlace "Inicio" del menú de navegación de mi página weeb pueda dirigir al usuario directamente hacia esta sección.
+    .La etiqueta <header> se utiliza dentro de cada bloque para agrupar el título y la descripción de cada promoción, mejorando la organización semántica del contenido que se observa.
+    .La etiqueta <h2> se utiliza para mostrar los títulos principales de cada promoción del carrusel, destacando la información más importante para el usuario y sea más atractivo de leer.
+    .La etiqueta <p> contiene una breve descripción de cada oferta o promoción que coloco, proporcionando información complementaria sobre el contenido que se muestra.
+    .La etiqueta <img> permite insertar imágenes promocionales relacionadas con cada oferta. El atributo src indica la ubicación de la imagen y el atributo alt proporciona una descripción alternativa para mejorar su accesibilidad y la comprensión del contenido cuando la imagen no pueda visualizarse.
+    .El objetivo principal de esta sección de mi página web, es captar la atención del usuario mediante imágenes llamativas, promociones destacadas en donde se puede ver descuentos y mensajes publicitarios que incentiven la navegación dentro de mi sitio web.
+    .Utilicé varias etiquetas <section> porque cada promoción representa un bloque de contenido independiente. De esta forma mi código queda más organizado, más fácil de mantener y considero que sigue una estructura semántica adecuada.
+    -->
+
+    <!--SECCION 2 - CATEGORIZACIÓN-->
+
+
+    <section class="section2" id="secciones">
+        <header>
+            <h2>Secciones de Productos</h2>
+            <p>Explora nuestras diferentes categorías, encuentra productos frescos, abarrotes, bebidas y todo lo
+                necesario para tu hogar </p>
+
+        </header>
+        <!--<img src imagenes/txt.png" alt="Imagen Descriptiva">-->
+
+        <section class="columnas_5">
+
+            <card class="card">
+
+                <header>
+                    <h3>🍎🥬 Frutas y Verduras</h3>
+                    <p>Productos frescos seleccionados diariamente para tu hogar.</p>
+                </header>
+
+                <img src="Imagenes/frutas y verduras.png" alt="Frutas y Verduras">
+
+                <a href="#frutas"><button>Ver productos</button></a>
+            </card>
+
+            <card class="card">
+                <header>
+                    <h3>🥩🍗 Carnes y Pescados</h3>
+                    <p>Carnes frescas y productos del mar de calidad.</p>
+                </header>
+
+                <img src="Imagenes/carnes y pescados..png" alt="Carnes y Pescados">
+
+                <a href="#carnes"><button>Ver productos</button></a>
+            </card>
+
+            <card class="card">
+                <header>
+                    <h3>🍞 Panadería</h3>
+                    <p>Panes y productos recién horneados todos los días.</p>
+                </header>
+
+                <img src="Imagenes/panadería.png" alt="Panadería">
+
+                <a href="#panaderia"><button>Ver productos</button></a>
+            </card>
+
+            <card class="card">
+                <header>
+                    <h3>🍚🥫 Abarrotes</h3>
+                    <p>Todo lo que necesitas para abastecer tu despensa.</p>
+                </header>
+
+                <img src="Imagenes/Abarrotes.png" alt="Abarrotes">
+
+                <a href="#abarrotes"><button>Ver productos</button></a>
+            </card>
+
+            <card class="card">
+                <header>
+                    <h3>🧴🧼 Productos de Limpieza</h3>
+                    <p>Artículos para mantener tu hogar ordenado y limpio.</p>
+                </header>
+
+                <img src="Imagenes/Productos de limpieza.png" alt="Productos de Limpieza">
+
+                <a href="#limpieza"><button>Ver productos</button></a>
+            </card>
+
+            <card class="card">
+                <header>
+                    <h3>🥤💧 Bebidas</h3>
+                    <p>Refrescos, aguas, jugos y más.</p>
+                </header>
+
+                <img src="Imagenes/Bebidas.png" alt="Bebidas">
+
+                <a href="#bebidas"><button>Ver productos</button></a>
+            </card>
+
+            <card class="card">
+                <header>
+                    <h3>🍫 Snacks y Golosinas</h3>
+                    <p>Snacks, dulces y aperitivos para cualquier momento de tu día.</p>
+                </header>
+
+                <img src="Imagenes/Snacks y Golosinas.png" alt="Snacks y Golosinas">
+
+                <a href="#snacks"><button>Ver productos</button></a>
+            </card>
+
+            <card class="card">
+                <header>
+                    <h3>🥶❄️ Congelados</h3>
+                    <p>Productos congelados listos para conservar y disfrutar.</p>
+                </header>
+
+                <img src="Imagenes/Congelados.png" alt="Congelados">
+
+                <a href="#congelados"><button>Ver productos</button></a>
+            </card>
+
+            <card class="card">
+                <header>
+                    <h3>🥛🧀 Lácteos y Huevos</h3>
+                    <p>Leches, quesos, yogures y huevos frescos.</p>
+                </header>
+
+                <img src="Imagenes/Lácteos y Huevos.png" alt="Lácteos y Huevos">
+
+                <a href="#lácteos"><button>Ver productos</button></a>
+            </card>
+
+            <card class="card">
+                <header>
+                    <h3>🏠🧹 Hogar y Utilidades</h3>
+                    <p>Artículos prácticos para el día a día del hogar.</p>
+                </header>
+
+                <img src="Imagenes/Hogar y Utilidades.png" alt="Hogar y Utilidades">
+
+                <a href="#hogar"><button>Ver productos</button></a>
+            </card>
+
+        </section>
+    </section>
+
+        <!--SUSTENTACIÓN DE LA SECCIÓN 2 - CATEGORIZACIÓN
+
+        .La etiqueta <section class="section2"> define la segunda sección principal de mi página web, destinada a mostrar las diferentes categorías de productos que ofrece mi negocio.
+        .El atributo id="secciones" permite que el enlace "Secciones" del menú de navegación dirija al usuario directamente hacia esta parte de mi página.
+        .La etiqueta <header> agrupa el título y la descripción general de la sección, proporcionando una presentación clara del contenido que se muestra.
+        .La etiqueta <h2> se utiliza para mostrar el título principal "Secciones de Productos", indicando al usuario el propósito de esta sección.
+        .La etiqueta <p> contiene una descripción breve que informa al usuario sobre las categorías disponibles de productos dentro de mi tienda.   
+        .La etiqueta <section class="columnas_5"> se utiliza para organizar visualmente las categorías de mi página en un diseño de varias columnas en este caso 5 columnas, permitiendo una distribución ordenada, limpia y atractiva del contenido que se muestra.
+        .La etiqueta <card class="card"> representa cada categoría de productos de manera independiente, facilitando la organización y mantenimiento de mi código.
+        .La etiqueta <h3> se utiliza para mostrar el nombre de cada categoría, como Frutas y Verduras, Carnes y Pescados, Panadería, entre otras que hay en mi página.
+        .La etiqueta <img> permite mostrar una imagen representativa de cada categoría para que el usuario pueda identificar visualmente de manera sencilla los productos disponibles.
+        .La etiqueta <a> crea enlaces internos hacia la sección de productos correspondiente utilizando identificadores (#), permitiendo una navegación rápida dentro de mi sitio web.
+        .La etiqueta <button> se utiliza para crear el botón "Ver productos", brindando una forma más detallada e interactiva al usuario para acceder a la información detallada de cada categoría que presento en mi página.
+        .El objetivo principal de esta sección 2 es clasificar mis productos de forma ordenada, mejorar la experiencia de navegación del usuario y facilitar el acceso a la información específica de cada categoría disponible en mi tienda, de forma sencilla y atractiva.
+        -->
+
+        <!--SECCION 3 - PRODUCTOS-->
+
+
+        <section class="section3" id="productos">
+            <header>
+                <h2>Nuestros Productos</h2>
+                <p>Explora nuestras diferentes categorías, encuentra productos frescos, abarrotes, bebidas y todo lo
+                    necesario para tu hogar </p>
+
+            </header>
+            <!--<img src imagenes/txt.png" alt="Imagen Descriptiva">-->
+
+            <section class="columnas_5">
+
+                <card class="card" id="frutas">
+                    <header>
+                        <h3>🍎🥬 Frutas y Verduras</h3>
+                    </header>
+                    <details>
+                        <ul>
+                            <li>Plátanos - S/ 2.80 el kilo</li>
+                            <li>Naranjas - S/ 3.60 el kilo</li>
+                            <li>Manzanas - S/ 3.50 el kilo</li>
+                            <li>Fresas - S/ 4.50 el kilo</li>
+                            <li>Lechuga - S/ 1.50 cada unidad</li>
+                            <li>Pepino - S/ 1.20 cada unidad</li>
+                            <li>Tomates - S/ 2.00 el kilo</li>
+                            <li>Papa Blanca - S/ 3.90 el kilo</li>
+                            <li>Limón - S/ 4.00 el kilo</li>
+                            <li>Zanahoria - S/ 3.60 el kilo</li>
+                            <li>Brócoli - S/ 4.50 la unidad</li>
+                        </ul>
+                    </details>
+                </card>
+
+                <card class="card" id="carnes">
+                    <header>
+                        <h3>🥩🍗 Carnes y Pescados</h3>
+                    </header>
+                    <details>
+                        <ul>
+                            <li>Carne de Res - S/ 22.00 el kilo</li>
+                            <li>Pollo entero - S/ 9.50 el kilo</li>
+                            <li>Filete de Pescado - S/ 13.50 el kilo</li>
+                            <li>Pavo Entero - S/ 15.00 el kilo</li>
+                            <li>Asado de Cerdo - S/ 25.20 el kilo</li>
+                            <li>Chuleta de Cerdo - S/ 18.00 el kilo</li>
+                            <li>Carne Molida - S/ 19.50 el kilo</li>
+                            <li>Pechuga de Pollo - S/ 12.50 el kilo</li>
+                            <li>Alitas de Pollo - S/ 10.50 el kilo</li>
+                            <li>Jurel Fresco - S/ 11.00 el kilo</li>
+                            <li>Langostinos - S/ 28.00 el kilo</li>
+                        </ul>
+                    </details>
+                </card>
+
+                <card class="card" id="panaderia">
+                    <header>
+                        <h3>🍞 Panadería</h3>
+                    </header>
+                    <details>
+                        <ul>
+                            <li>Pan de Molde - S/ 5.20</li>
+                            <li>Pan Molde integral - S/ 6.00</li>
+                            <li>Croissant - S/ 0.80 la unidad</li>
+                            <li>Baguette - S/ 2.00 la unidad</li>
+                            <li>Caramandungas - S/ 3.00 por 8 unidades</li>
+                            <li>Pan Francés - S/ 0.30 la unidad</li>
+                            <li>Pan Ciabatta - S/ 1.20 la unidad</li>
+                            <li>Donas - S/ 2.50 la unidad</li>
+                            <li>Empanadas - S/ 3.50 la unidad</li>
+                            <li>Keke de Vainilla - S/ 8.00 la unidad</li>
+                            <li>Panetón Mini - S/ 12.00 la unidad</li>
+                        </ul>
+                    </details>
+                </card>
+
+                <card class="card" id="abarrotes">
+                    <header>
+                        <h3>🍚🥫 Abarrotes</h3>
+                    </header>
+                    <details>
+                        <ul>
+                            <li>Arroz - S/ 4.50 el kilo</li>
+                            <li>Aceite Vegetal - S/ 10.50 por litro</li>
+                            <li>Azúcar Rubia - S/ 3.50 el kilo</li>
+                            <li>Atún Enlatado - S/ 5.00 la unidad</li>
+                            <li>Mayonesa - S/ 13.00 por 500 g</li>
+                            <li>Sal Marina - S/ 2.60 por kilo</li>
+                            <li>Fideos Tallarín - S/ 3.20 el paquete</li>
+                            <li>Lentejas - S/ 4.50 el kilo</li>
+                            <li>Garbanzos - S/ 5.20 el kilo</li>
+                            <li>Harina Preparada - S/ 3.80 el kilo</li>
+                            <li>Café Instantáneo - S/ 12.00 el frasco</li>
+                        </ul>
+                    </details>
+                </card>
+
+                <card class="card" id="limpieza">
+                    <header>
+                        <h3>🧴🧼 Productos de Limpieza</h3>
+                    </header>
+                    <details>
+                        <ul>
+                            <li>Papel Toalla - S/ 3.00 por 1 rollo grande</li>
+                            <li>Papel Higiénico - S/ 7.60 por 4 rollos</li>
+                            <li>Lavavajillas en Pasta - S/ 9.00 por 850 g</li>
+                            <li>Detergente - S/ 11.00 por kilo</li>
+                            <li>Jabón Bolívar - S/ 4.60 por 380 g</li>
+                            <li>Jabón en Barra Tocador - S/ 3.20 por 120 g</li>
+                            <li>Lejía - S/ 3.50 por litro</li>
+                            <li>Shampoo - S/ 18.00 por 500 ml</li>
+                            <li>Limpiador - S/ 4.00 por 900 ml</li>
+                            <li>Pasta Dental - S/ 10.00 por 150 ml</li>
+                            <li>Cepillo de Dientes - S/ 4.00 la unidad</li>
+                        </ul>
+                    </details>
+                </card>
+
+                <card class="card" id="bebidas">
+                    <header>
+                        <h3>🥤💧 Bebidas</h3>
+                    </header>
+                    <details>
+                        <ul>
+                            <li>Gaseosa Inka Kola - S/ 3.50 por 600 ml</li>
+                            <li>Gaseosa Coca Cola - S/ 3.00 por 500 ml</li>
+                            <li>Gaseosa Sprite - S/ 3.00 por 500 ml</li>
+                            <li>Agua Mineral - S/ 1.80 por 600 ml</li>
+                            <li>Frugos - S/ 2.50 por 300 ml</li>
+                            <li>Energizante - S/ 8.00 por 500 ml</li>
+                            <li>Vinos - S/ 25.00 por 750 ml</li>
+                            <li>Jugo de Naranja - S/ 4.50 el litro</li>
+                            <li>Té Helado - S/ 3.50 por botella</li>
+                            <li>Agua con Gas - S/ 2.50 por botella</li>
+                            <li>Red Bull - S/ 8.50 por lata</li>
+                        </ul>
+                    </details>
+                </card>
+
+                <card class="card" id="snacks">
+                    <header>
+                        <h3>🍫 Snacks y Golosinas</h3>
+                    </header>
+                    <details>
+                        <ul>
+                            <li>Frutos Secos - S/ 9.50 por 150 g</li>
+                            <li>Galletas Vainilla - S/ 5.50 por 6 unidades</li>
+                            <li>Galletas Oreo - S/ 5.80 por 6 unidades</li>
+                            <li>Galletas Soda - S/ 5.00 por 6 unidades</li>
+                            <li>Caramelos - S/ 3.50 por 6 unidades</li>
+                            <li>Chocolate Sublime - S/ 2.40 por 26 g</li>
+                            <li>Piqueo - S/ 2.50 por 55 g</li>
+                            <li>Chupetín - S/ 7.20 por paquete</li>
+                            <li>Papas Lays - S/ 3.50 por paquete de 140 g</li>
+                            <li>Gomitas Frutales - S/ 3.50 por paquete</li>
+                            <li>Palomitas de Maíz - S/ 4.00 por paquete</li>
+                        </ul>
+                    </details>
+                </card>
+
+                <card class="card" id="congelados">
+                    <header>
+                        <h3>🥶❄️ Congelados</h3>
+                    </header>
+                    <details>
+                        <ul>
+                            <li>Helados - S/ 13,00 de litro</li>
+                            <li>Hamburguesas - S/ 12,00 por páquete</li>
+                            <li>Nuggets - S/ 5,80 por 10 unidades</li>
+                            <li>Papas prefritas - S/ 7,00 el kilo</li>
+                            <li>Empanadas - S/ 14,00 por 14 unidades</li>
+                            <li>Ravioles - S/ 15,00 por 800 g</li>
+                            <li>Bombones - S/ 15,00 de 400 g</li>
+                            <li>Milanesas- S/ 6,50 por 4 unidades</li>
+                            <li>Verduras Mix- S/ 8,00 por paquete</li>
+                            <li>Pizza Congelada - S/ 18.00 la unidad</li>
+                            <li>Aros de Cebolla - S/ 9.50 por paquete</li>
+                        </ul>
+                    </details>
+                </card>
+
+                <card class="card" id="lácteos">
+                    <header>
+                        <h3>🥛🧀 Lácteos y Huevos</h3>
+                    </header>
+                    <details>
+                        <ul>
+                            <li>Queso Fresco - S/ 2.50 por 100 g</li>
+                            <li>Mantequilla - S/ 6,50</li>
+                            <li>Leche evaporada - S/ 4.00 por unidad</li>
+                            <li>Huevos - S/ 7,50 el kilo</li>
+                            <li>Yogurt - S/ 6,50 de litro</li>
+                            <li>Leche fresca - S/ 5,50 de litro</li>
+                            <li>Queso Edam - S/ 5,00 150 g</li>
+                            <li>Yogurt griego S/ 10,50 900 ml</li>
+                            <li>Chocolatada- S/ 6,00 de litro</li>
+                            <li>Leche Condensada - S/ 6.50 la lata</li>
+                            <li>Margarina - S/ 4.50 por unidad</li>
+                        </ul>
+                    </details>
+                </card>
+
+                <card class="card" id="hogar">
+                    <header>
+                        <h3>🏠🧹 Hogar y Utilidades</h3>
+                    </header>
+                    <details>
+                        <ul>
+                            <li>Recogedores - S/ 5,00 por unidad</li>
+                            <li>Pilas AA - S/ 2.00 por par</li>
+                            <li>Fósforos - S/ 3,00 por 10 unidades</li>
+                            <li>Bolsas de Basura - S/ 5.00 por 100</li>
+                            <li>Esponjas - S/ 2,50 por unidad</li>
+                            <li>Velas - S/ 2.00 por paquete de 4</li>
+                            <li>Linternas - S/ 10,00 por unidad</li>
+                            <li>Encendedores - S/ 1,20 por unidad</li>
+                            <li>Papel aluminio - S/ 1,00 el pliego</li>
+                            <li>Guantes de Limpieza - S/ 4.50 el par</li>
+                            <li>Escoba - S/ 12.00 la unidad</li>
+                        </ul>
+                    </details>
+                </card>
+
+            </section>
+        </section>
+
+        <!--SUSTENTACIÓN DE LA SECCIÓN 3 - PRODUCTOS
+        
+        .La etiqueta <section class="section3"> define la tercera sección principal de mi página web, destinada a mostrar de forma detallada los productos disponibles dentro de cada categoría de mi tienda.
+        .El atributo id="productos" permite que el enlace "Nuestros Productos" del menú de navegación de mi página dirija al usuario directamente hacia esta sección.
+        .La etiqueta <header> agrupa el título principal y la descripción general de la sección, proporcionando una presentación clara del contenido que se muestra.
+        .La etiqueta <h2> se utiliza para mostrar el título principal "Nuestros Productos", indicando al usuario que en esta sección podrá visualizar el catálogo de mis productos disponibles.
+        .La etiqueta <p> contiene una descripción general que orienta al usuario sobre el contenido que encontrará dentro de esta sección.
+        .La etiqueta <section class="columnas_5"> organiza visualmente los productos en un diseño de cinco columnas al igual que en la sección 2, permitiendo una distribución ordenada y una mejor experiencia de navegación.
+        .La etiqueta <card class="card"> representa cada categoría de productos de manera independiente, permitiendo separar la información de forma organizada y facilitar el mantenimiento de mi código.
+        .El atributo id asignado a cada categoría permite que los botones "Ver productos" de la sección anterior dirijan al usuario directamente hacia la categoría seleccionada.
+        .La etiqueta <header> dentro de cada tarjeta agrupa el nombre de la categoría correspondiente.
+        .La etiqueta <h3> muestra el nombre de cada categoría de productos, permitiendo identificar de manera fácil el contenido que contiene cada bloque o tarjeta.
+        .La etiqueta <details> se utiliza para mostrar y ocultar información adicional de forma interactiva, permitiendo al usuario desplegar o contraer la lista de productos según lo necesite el usuario.
+        .Utilicé la etiqueta <details> porque permite ocultar inicialmente la información y mostrarla únicamente cuando el usuario la solicite, mejorando la organización visual de mi página y evitando que el contenido se vea demasiado extenso.
+        .La etiqueta <ul> organiza los productos en una lista no ordenada para presentar la información de forma clara y estructurada.
+        .La etiqueta <li> representa cada producto individual junto con su respectivo precio, facilitando la lectura y comprensión de la información y que el usuario pueda darse una idea de cada producto,
+        .El objetivo principal de esta sección 3 es presentar el catálogo detallado de productos disponibles en cada categoría, permitiendo al usuario consultar rápidamente los artículos y precios ofrecidos por mi tienda de una manera organizada, accesible e interactiva.
+        -->
+
+            <!--SECCION 4- FORMULARIO-->
+
+            <section class="section4" id="contacto">
+
+                <!--Barra de progreso general -->
+
+                <!-- Representa avance del proceso -->
+                <progress value="50" max="100"></progress>
+                <progress value="20" max="100"></progress>
+                <progress value="100" max="100"></progress>
+
+                <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data"
+                    autocomplete="on">
+
+                    <section class="columnas_3">
+
+                        <!-- ====================== DATOS PERSONALES ====================== -->
+                        <section>
+                            <fieldset>
+                                <legend>Datos Personales</legend>
+
+                                <!-- input text con valor por defecto -->
+                                <label>Nombres:</label>
+                                <input type="text" name="Nombres" required>
+
+                                <label>Apellidos:</label>
+                                <input type="text" name="Apellidos">
+
+                                <!-- Maximo 8  caracteres -->
+                                <label>DNI:</label>
+                                <input type="text" maxlength="8">
+
+                                <!-- email con valor inicial -->
+                                <label>Email:</label>
+                                <input type="email" name="email">
+                                <!-- Poner edad máximo hasta los 99 años -->
+                                <label>Edad:</label>
+                                <input type="number" min="18" max="99">
+                            </fieldset>
+                        </section>
+
+                        <section>
+                            <fieldset>
+                                <legend>Información Adicional</legend>
+
+                                <!-- radio con checked por defecto -->
+                                <label>Género:</label>
+
+                                <label>
+                                    <input type="radio" name="genero">
+                                    Femenino
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="genero">
+                                    Masculino
+                                </label>
+
+                                <!-- Selección desde lista -->
+                                <label>País:</label>
+                                <select name="pais">
+
+                                    <option>Seleccione País</option>
+                                    <option>Perú</option>
+                                    <option>Argentina</option>
+                                    <option>Chile</option>
+                                    <option>Colombia</option>
+                                    <option>Ecuador</option>
+                                    <option>Bolivia</option>
+                                    <option>Uruguay</option>
+                                    <option>Paraguay</option>
+                                    <option>México</option>
+                                    <option>España</option>
+                                </select>
+                                <!-- Lista de sugerencias -->
+
+                                <label>Ciudad:</label>
+                                <input list="ciudades">
+
+                                <datalist id="ciudades">
+                                    <option value="Lima">
+                                    <option value="Arequipa">
+                                    <option value="Cusco">
+                                    <option value="Trujillo">
+                                    <option value="Piura">
+                                    <option value="Chiclayo">
+                                </datalist>
+
+                                <!-- Selección desde lista -->
+                                <label>Distrito:</label>
+                                <input list="distritos">
+
+                                <datalist id="distritos">
+                                    <option value="Lurigancho-Chosica">
+                                    <option value="Ate">
+                                    <option value="Santa Anita">
+                                    <option value="San Juan de Lurigancho">
+                                    <option value="La Molina">
+                                    <option value="Miraflores">
+                                    <option value="Surco">
+                                    <option value="Callao">
+                                    <option value="Villa El Salvador">
+                                </datalist>
+                                <!-- Permite seleccionar fecha de nacimiento -->
+                                <label>Fecha de nacimiento:</label>
+                                <input type="date">
+                            </fieldset>
+                        </section>
+
+                        <section>
+                            <fieldset>
+
+                                <legend>Contacto y Comentarios</legend>
+                                <!-- Campo para ingresar números telefónicos -->
+                                <label>Teléfono:</label>
+                                <input type="tel">
+
+                                <!-- Campo para contraseñas, oculta los caracteres -->
+                                <label>Contraseña:</label>
+                                <input type="password">
+
+                                <label>Dirección:</label>
+                                <input type="text">
+
+                                <!-- Elegir el método de pago -->
+                                <label>Método de pago:</label>
+                                <select>
+                                    <option>Yape</option>
+                                    <option>Plin</option>
+                                    <option>Transferencia</option>
+                                    <option>Efectivo</option>
+                                </select>
+                                <!-- Campo para escribir textos largos -->
+                                <label>Comentarios:</label>
+                                <textarea rows="5"></textarea>
+
+                                <menu>
+                                    <button type="submit">Guardar</button>
+                                    <button type="reset">Cancelar</button>
+                                </menu>
+
+                            </fieldset>
+                        </section>
+                    </section>
+
+                </form>
+
+            </section>
+
+            </main>
+
+        <!--SUSTENTACIÓN DE LA SECCIÓN 4 - FORMULARIO
+        
+        .La etiqueta <section class="section4"> define la cuarta sección principal de mi página web, destinada a recopilar información de los usuarios mediante un formulario de contacto y registro.
+        .El atributo id="contacto" permite que el enlace "Contacto" del menú de navegación dirija al usuario directamente hacia esta sección de la página.
+        .La etiqueta <progress> se utiliza para representar visualmente el avance de un proceso mediante una barra de progreso. En este caso se muestran diferentes porcentajes de avance utilizando los atributos value y max.
+        .La etiqueta <form> define el formulario principal encargado de recopilar los datos ingresados por el usuario, es una de las etiquetas más importantes de esta sección.
+        .El atributo id="formCompleto" permite identificar el formulario de manera única dentro del documento.
+        .El atributo action especifica la dirección a la que serán enviados los datos una vez que el formulario de esta sección sea procesado y terminado
+        .El atributo method="post" indica que los datos serán enviados de forma más segura dentro del cuerpo de la solicitud HTTP.
+        .El atributo enctype="multipart/form-data" permite el envío de información compleja como archivos, aunque actualmente mi formulario no incluye carga de archivos de momento.
+        .El atributo autocomplete="on" permite que el navegador sugiera datos previamente almacenados para facilitar el llenado del formulario.
+        .La etiqueta <section class="columnas_3"> organiza el formulario en tres columnas para mejorar la distribución visual y la experiencia de usuario.
+        .La etiqueta <fieldset> agrupa campos relacionados dentro del formulario, de esta manera permitiendo una mejor organización de la información.
+        .La etiqueta <legend> proporciona un título descriptivo para cada grupo de campos contenidos dentro de cada fieldset en este formulario.
+        .La etiqueta <label> identifica cada campo del formulario, facilitando la comprensión de la información que debe ingresar el usuario.
+        .La etiqueta <input type="text"> permite ingresar información de texto libre como nombres, apellidos o dirección al usuario.
+        .La etiqueta <input type="email"> permite ingresar direcciones de correo electrónico y realiza una validación básica del formato que ingrese.
+        .La etiqueta <input type="number"> permite ingresar únicamente valores numéricos y utiliza los atributos min y max para establecer límites permitidos de cada parte.
+        .La etiqueta <input type="radio"> permite seleccionar una única opción entre varias alternativas, como en el caso del género en el formulario.
+        .La etiqueta <select> crea listas desplegables que permiten al usuario seleccionar una opción entre varias alternativas disponibles.
+        .La etiqueta <option> representa cada una de las opciones disponibles dentro de una lista desplegable.
+        .La etiqueta <input list=""> junto con <datalist> proporciona sugerencias predeterminadas mientras el usuario escribe información como ciudades o distritos en el formulario.
+        .La etiqueta <input type="date"> permite seleccionar fechas mediante un calendario integrado en el navegador de mi página.
+        .La etiqueta <input type="tel"> permite ingresar números telefónicos.
+        .La etiqueta <input type="password"> permite ingresar contraseñas ocultando visualmente los caracteres escritos.
+        .La etiqueta <textarea> se utiliza para ingresar comentarios o mensajes extensos de varias líneas.
+        .El atributo required obliga al usuario a completar determinados campos antes de poder enviar la información.
+        .La etiqueta <menu> agrupa los controles de acción del formulario.
+        .La etiqueta <button type="submit"> permite enviar la información ingresada dentro del formulario.
+        .La etiqueta <button type="reset"> permite restablecer o reiniciar todos los campos del formulario a sus valores iniciales.
+        .El objetivo principal de esta sección 4 de mi página web es recopilar información personal y de contacto de los usuarios de manera organizada, validada y estructurada, permitiendo una interacción más completa entre el cliente y mi sitio web.
+        .Las etiquetas <form>(crea el formulario),<fieldset>(agrupa campos relacionados),<label>(identifica cada campo),<input>(permite ingresar datos),<button>(ejecuta acciones (enviar o reiniciar)), son las etiquetas que considero más importantes de esta sección de mi página web.
+
+        -->
+
+
+            <!-- FOOTER -->
+
+            <footer class="footer columnas_4">
+
+                <section>
+                    <h3>📞 Contáctanos</h3>
+                    <ul>
+                        <li>📍 Lima Metropolitana - Perú</li>
+                        <li>📱 +51 999 999 999</li>
+                        <li>✉️ ladespensa@gmail.com</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>💳 Métodos de pago</h3>
+                    <ul>
+                        <li>💵 Efectivo</li>
+                        <li>💳 Visa</li>
+                        <li>💳 Mastercard</li>
+                        <li>📱 Yape / Plin</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>🏍️ Delivery</h3>
+                    <ul>
+                        <li>🚚 Delivery disponible todos los días</li>
+                        <li>🕒 Atención: 8:00 AM - 10:00 PM</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Redes Sociales</h3>
+                    <ul>
+                        <li>🌐Facebook</li>
+                        <li>🎵TikTok</li>
+                        <li>📸Instagram</li>
+                    </ul>
+                </section>
+
+                <section class="enlaces-footer">
+
+                    <h3>🔗 Enlaces rápidos</h3>
+                    <nav>
+                        <a href="#inicio">Inicio</a> |
+                        <a href="#secciones">Secciones</a> |
+                        <a href="#productos">Nuestros Productos</a> |
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+                </section>
+
+                <section>
+                    <h3>🛒 LA DESPENSA</h3>
+                    <p>Frescura y calidad en un solo lugar</p>
+                    <p class="copyright">
+                        © 2026 Todos los derechos reservados
+                    </p>
+                </section>
+
+            </footer>
+
+        <!--SUSTENTACIÓN DEL FOOTER
+
+        .La etiqueta <footer> define el pie de página de mi sitio web y contiene información complementaria e importante para los usuarios.
+        .La clase "footer" me permite aplicar estilos CSS personalizados a toda esta sección, mientras que la clase "columnas_4" organiza visualmente el contenido en varias columnas para mejorar la presentació, en este caso son 4 columnas.
+        .La etiqueta <section> se utiliza para dividir el footer en diferentes bloques de información independientes, permitiendo una mejor organización del contenido de mi página.
+        .La etiqueta <h3> se utiliza para mostrar los títulos principales de cada bloque informativo, facilitando la identificación rápida de cada apartado por parte del usuario.
+        .La etiqueta <ul> organiza la información mediante listas no ordenadas, permitiendo presentar los datos de forma clara y estructurada.
+        .La etiqueta <li> representa cada elemento individual dentro de las listas, como direcciones, teléfonos, métodos de pago o redes sociales.
+        .La sección "Contáctanos" proporciona información básica de contacto para que los usuarios puedan comunicarse con mi empresa.
+        .La sección "Métodos de pago" informa al usuario sobre las diferentes formas de pago aceptadas por mi tienda.
+        .La sección "Delivery" muestra información relacionada con el servicio de entrega y los horarios de atención disponibles.
+        .La sección "Redes Sociales" permite mostrar las plataformas digitales donde mi empresa tiene presencia.
+        .La etiqueta <nav> se utiliza nuevamente dentro de la sección "Enlaces rápidos" porque contiene enlaces de navegación importantes para el usuario que ingrese a mi página.
+        .Utilicé la etiqueta <nav> tanto en el encabezado como en el footer porque ambos contienen enlaces de navegación importantes. En el encabezado se encuentra el menú principal y en el footer los enlaces rápidos que permiten desplazarse nuevamente por las secciones de mi sitio web.
+        .La etiqueta <a> crea enlaces internos mediante identificadores (#), permitiendo acceder rápidamente a las secciones Inicio, Secciones, Nuestros Productos y Contacto.
+        .La etiqueta <p> se utiliza para mostrar información descriptiva adicional, como el eslogan de mi empresa y los derechos reservados.
+        .La clase "copyright" se utiliza para aplicar estilos específicos al texto de derechos de autor.
+        .El objetivo principal de mi footer es proporcionar información institucional, datos de contacto, métodos de pago, enlaces de navegación y otros recursos complementarios que mejoren la experiencia del usuario que ingrese a mi sitio web.
+        -->
+
+</body>
+
+</html>
+
+<!--SUSTENTACIÓN GENERAL DE MI PÁGINA WEB
+
+.Mi proyecto consiste en el desarrollo de una página web denominada "LA DESPENSA", orientada a la presentación de productos de un minimarket o tienda de abarrotes mediante una estructura organizada, visual e interactiva para el usuario.
+.Para la construcción de esta página web utilicé HTML5, aplicando etiquetas semánticas con el objetivo de mejorar la organización del contenido, facilitar el mantenimiento del código y proporcionar una mejor experiencia de navegación al usuario.
+.La estructura principal de mi proyecto está compuesta por las etiquetas <header>, <main> y <footer>, permitiendo separar claramente el encabezado, el contenido principal y el pie de página del sitio web.
+.En el encabezado incorporé el logotipo de la empresa, el nombre comercial de mi página, el eslogan y un menú de navegación que permite desplazarse fácilmente entre las diferentes secciones de la página mediante enlaces internos.
+.La primera sección fue diseñada como un carrusel informativo, cuya finalidad es captar la atención del usuario mediante promociones, ofertas y mensajes publicitarios acompañados de imágenes representativas de mi página web.
+.La segunda sección está dedicada a la categorización de productos, permitiendo organizar la información en diferentes grupos para facilitar la búsqueda y navegación dentro de mi sitio web.
+.La tercera sección presenta el catálogo detallado de productos disponibles, mostrando categorías, productos y precios de forma organizada e interactiva mediante listas desplegables.
+.La cuarta sección corresponde al formulario de contacto y registro, permitiendo recopilar información de los usuarios mediante diferentes controles y validaciones integradas en HTML.
+.El footer o pie de página reúne información institucional relevante como datos de contacto, métodos de pago, servicio de delivery, redes sociales y enlaces rápidos para facilitar la navegación del usuario.
+.Durante el desarrollo de este proyecto utilicé diversas etiquetas HTML como <section>, <header>, <nav>, <form>, <fieldset>, <label>, <input>, <details>, <ul>, <li>, <a> y <button>, cada una cumpliendo una función específica dentro de la estructura del sitio web que se detalla cada uno debajo de su cada sección de este código.
+.Además, implementé navegación interna mediante identificadores (id) y enlaces (<a>), permitiendo una experiencia de usuario más dinámica y eficiente.
+.El objetivo principal de este proyecto fue aplicar los conocimientos adquiridos sobre HTML5, crear una página web funcional y organizada, y comprender la importancia de las etiquetas semánticas en el desarrollo web moderno.
+.Con este proyecto logré desarrollar una página web completa que integra navegación, organización de contenido, presentación de productos, interacción mediante formularios y una estructura semántica , la cual considero adecuada.
+-->
+
+
+

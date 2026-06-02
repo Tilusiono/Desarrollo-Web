@@ -57,7 +57,7 @@ body {
 } 
 
 .section4 {
-  background: #0d7d13;   /* azul oscuro */
+  background: #0c7d81;   /* azul oscuro */
   border: 3px solid #1b2838;      
 }
 
@@ -139,9 +139,6 @@ body {
   gap: 20px;
 }
 
-.columnas_1 {
-  align-items: center;
-}
 
 .columnas_2 {
   grid-template-columns: repeat(2, 1fr);
@@ -304,12 +301,6 @@ body {
   display: block;
 }
 
-section img  {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 
 .card {
   width: 100%;
@@ -343,4 +334,8 @@ nav {
   width: 24px;
   height: 24px;
 }
+
+
+
+
 
