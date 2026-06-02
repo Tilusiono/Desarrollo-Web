@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga 1 - Campeonato Peruano</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        /* === ESTILOS GENERALES === */
+        body {
+            padding-top: 110px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* === HEADER / CABECERA === */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #0033a0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* === DISEÑO DE CONTENEDORES Y TARJETAS (S2 & S3 CARDS) === */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            border-bottom: 3px solid #0033a0;
+            padding-bottom: 10px;
+            color: #0033a0;
+        }
+
+        /* Descripción de introducción pedida en S1 */
+        .section-description {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Carrusel simple */
+        .carousel-container {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        /* Grid de Tarjetas (Cards) */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* Estructura Semántica de las Cards (S3) */
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card header {
+            background-color: #f8f9fa;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .card .card-body {
+            padding: 15px;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .card .card-body img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        .card footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        /* === FORMULARIO DE REGISTRO === */
+        .form-registro {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px 30px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .form-registro p {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-registro input, .form-registro select {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-registro p.gender-row {
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .form-registro .button-container {
+            grid-column: span 2;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .form-registro button {
+            padding: 12px 40px;
+            cursor: pointer;
+            font-weight: bold;
+            background-color: #0033a0;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .form-registro button:hover {
+            background-color: #002266;
+        }
+
+        /* === FOOTER EN COLUMNAS === */
+        .main-footer {
+            background-color: #111;
+            color: white;
+            padding: 40px 20px 20px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-column h3 {
+            color: #0033a0;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer-column ul li a:hover {
+            color: white;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ==========================================
+         CABECERA PRINCIPAL (HEADER)
+         ========================================== -->
+    <header class="main-header">
+        <picture class="logo-container">
+            <img src="./imagenes/logo_liga1.png" alt="Liga 1 official logo" width="200">
+        </picture>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#banners-carrusel">Inicio</a></li>
+                <li><a href="#equipos">Equipos</a></li>
+                <li><a href="#destacados">Resultados</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==========================================
+         CONTENIDO PRINCIPAL (MAIN)
+         ========================================== -->
+    <main>
+        
+        <!-- SECCIÓN 1: INICIO / CARRUSEL -->
+        <section id="banners-carrusel">
+            <h2>Campeonato Peruano 2026</h2>
+            <p class="section-description">
+            <section class="carousel-container">
+                <img src="./imagenes/banner_liga1.jpg.jpg" alt="Liga 1 championship banner" width="300">
+                <img src="./imagenes/banner_estadio.jpg.jpg" alt="National Stadium banner" width="300">
+                <img src="./imagenes/banner_hinchada.jpg.jpg" alt="Peruvian football supporters" width="300">
+            </section>
+        </section>
+
+        <!-- SECCIÓN 2: EQUIPOS (Uso de tarjetas semánticas CARD) -->
+        <section id="equipos">
+            <h2>Equipos de la Liga 1</h2>
+            <section class="grid-container">
+                
+                <article class="card">
+                    <header>Universitario</header>
+                    <div class="card-body">
+                        <img src="./imagenes/universitario.jpg" alt="Universitario de Deportes">
+                    </div>
+                    <footer>Liga 1 - Lima</footer>
+                </article>
+
+                <article class="card">
+                    <header>Alianza Lima</header>
+                    <div class="card-body">
+                        <img src="./imagenes/alianza_lima.jpg" alt="Alianza Lima">
+                    </div>
+                    <footer>Liga 1 - Lima</footer>
+                </article>
+
+                <article class="card">
+                    <header>Sporting Cristal</header>
+                    <div class="card-body">
+                        <img src="./imagenes/sporting_cristal.jpg" alt="Sporting Cristal">
+                    </div>
+                    <footer>Liga 1 - Lima</footer>
+                </article>
+
+                <article class="card">
+                    <header>FBC Melgar</header>
+                    <div class="card-body">
+                        <img src="./imagenes/melgar.jpg" alt="FBC Melgar">
+                    </div>
+                    <footer>Liga 1 - Arequipa</footer>
+                </article>
+
+                <article class="card">
+                    <header>Cienciano</header>
+                    <div class="card-body">
+                        <img src="./imagenes/cienciano.jpg" alt="Cienciano">
+                    </div>
+                    <footer>Liga 1 - Cusco</footer>
+                </article>
+
+                <article class="card">
+                    <header>Sport Boys</header>
+                    <div class="card-body">
+                        <img src="./imagenes/sport_boys.jpg" alt="Sport Boys">
+                    </div>
+                    <footer>Liga 1 - Callao</footer>
+                </article>
+
+                <article class="card">
+                    <header>Chankas CYC</header>
+                    <div class="card-body">
+                        <img src="./imagenes/Chankas_CYC.jpg" alt="Los Chankas CYC">
+                    </div>
+                    <footer>Liga 1 - Apurímac</footer>
+                </article>
+
+                <article class="card">
+                    <header>Cusco FC</header>
+                    <div class="card-body">
+                        <img src="./imagenes/cusco_fc.jpg" alt="Cusco FC">
+                    </div>
+                    <footer>Liga 1 - Cusco</footer>
+                </article>
+
+                <article class="card">
+                    <header>Alianza Atlético</header>
+                    <div class="card-body">
+                        <img src="./imagenes/alianza_atletico.jpg" alt="Alianza Atlético Sullana">
+                    </div>
+                    <footer>Liga 1 - Piura</footer>
+                </article>
+
+                <article class="card">
+                    <header>Atlético Grau</header>
+                    <div class="card-body">
+                        <img src="./imagenes/Atlético_Grau.jpg" alt="Atlético Grau">
+                    </div>
+                    <footer>Liga 1 - Piura</footer>
+                </article>
+
+                <article class="card">
+                    <header>CD Moquegua</header>
+                    <div class="card-body">
+                        <img src="./imagenes/CD_Moquegua.jpg" alt="Club Deportivo Moquegua">
+                    </div>
+                    <footer>Liga 1 - Moquegua</footer>
+                </article>
+
+                <article class="card">
+                    <header>ADT Tarma</header>
+                    <div class="card-body">
+                        <img src="./imagenes/ADT.jpg" alt="Asociación Deportiva Tarma">
+                    </div>
+                    <footer>Liga 1 - Junín</footer>
+                </article>
+
+                <article class="card">
+                    <header>Deportivo Garcilaso</header>
+                    <div class="card-body">
+                        <img src="./imagenes/Deportivo-Garcilaso.jpg" alt="Deportivo Garcilaso">
+                    </div>
+                    <footer>Liga 1 - Cusco</footer>
+                </article>
+
+                <article class="card">
+                    <header>Juan Pablo II</header>
+                    <div class="card-body">
+                        <img src="./imagenes/Juan_Pablo-II.jpg" alt="Juan Pablo II College">
+                    </div>
+                    <footer>Liga 1 - Lambayeque</footer>
+                </article>
+
+                <article class="card">
+                    <header>Comerciantes Unidos</header>
+                    <div class="card-body">
+                        <img src="./imagenes/Comerciantes_Unidos.jpg" alt="Comerciantes Unidos">
+                    </div>
+                    <footer>Liga 1 - Cajamarca</footer>
+                </article>
+
+                <article class="card">
+                    <header>Sport Huancayo</header>
+                    <div class="card-body">
+                        <img src="./imagenes/Sport_Huancayo.jpg" alt="Sport Huancayo">
+                    </div>
+                    <footer>Liga 1 - Junín</footer>
+                </article>
+
+                <article class="card">
+                    <header>FC Cajamarca</header>
+                    <div class="card-body">
+                        <img src="./imagenes/FC_Cajamarca.jpg" alt="FC Cajamarca">
+                    </div>
+                    <footer>Liga 1 - Cajamarca</footer>
+                </article>
+
+                <article class="card">
+                    <header>UTC Cajamarca</header>
+                    <div class="card-body">
+                        <img src="./imagenes/UTCajamarca.jpg" alt="UTC Cajamarca">
+                    </div>
+                    <footer>Liga 1 - Cajamarca</footer>
+                </article>
+
+            </section>
+        </section>
+        
+        <!-- SECCIÓN 3: DESTACADOS -->
+        <section id="destacados">
+            <h2>Los Más Destacados del Torneo</h2>
+            <section class="grid-container">
+                
+                <article class="card">
+                    <header>Máximo Goleador</header>
+                    <div class="card-body">
+                        <img src="./imagenes/goleador1.jpg" alt="Tournament top scorer">
+                    </div>
+                    <footer>Premio de Oro</footer>
+                </article>
+
+                <article class="card">
+                    <header>Mejor Guardameta</header>
+                    <div class="card-body">
+                        <img src="./imagenes/arquero1.jpg" alt="Goalkeeper">
+                    </div>
+                    <footer>Guardián de Oro</footer>
+                </article>
+
+                <article class="card">
+                    <header>Director Técnico</header>
+                    <div class="card-body">
+                        <img src="./imagenes/dt.jpg" alt="Best technical director">
+                    </div>
+                    <footer>tecnico del año</footer>
+                </article>
+
+                <article class="card">
+                    <header>Jugador Revelación</header>
+                    <div class="card-body">
+                        <img src="./imagenes/jugador_revelacion.jpg" alt="Breakout player">
+                    </div>
+                    <footer>Promesa del Torneo</footer>
+                </article>
+
+                <article class="card">
+                    <header>Mejor Hinchada</header>
+                    <div class="card-body">
+                        <img src="./imagenes/mejor_hinchada.jpg" alt="Fans">
+                    </div>
+                    <footer>Premio a la Fidelidad</footer>
+                </article>
+
+                <article class="card">
+                    <header>Premio Fair Play</header>
+                    <div class="card-body">
+                        <img src="./imagenes/fair_play.jpg" alt="Fair play award">
+                    </div>
+                    <footer>recta final 2026</footer>
+                </article>
+
+            </section>
+        </section>
+
+        <!-- SECCIÓN 4: TIENDA OFICIAL (Corregida con grid-container y cards) -->
+        <h2>Accesorios y Camisetas Oficiales</h2>
+        <section id="tienda">
+            <section class="grid-container">
+                
+                <article class="card">
+                    <header>Camiseta Oficial</header>
+                    <div class="card-body">
+                        <img src="./imagenes/camiseta_oficial.jpg" alt="Camiseta oficial">
+                    </div>
+                    <footer>Temporada 2026</footer>
+                </article>
+
+                <article class="card">
+                    <header>Balón Oficial</header>
+                    <div class="card-body">
+                        <img src="./imagenes/pelota_oficial.jpg" alt="Pelota oficial">
+                    </div>
+                    <footer>Edición Especial</footer>
+                </article>
+
+                <article class="card">
+                    <header>Gorra Oficial</header>
+                    <div class="card-body">
+                        <img src="./imagenes/gorra_campeonato.jpg" alt="Gorra oficial">
+                    </div>
+                    <footer>Estilo Urbano</footer>
+                </article>
+
+                <article class="card">
+                    <header>Bufanda Oficial</header>
+                    <div class="card-body">
+                        <img src="./imagenes/bufanda_hincha.jpg" alt="Bufanda">
+                    </div>
+                    <footer>Identidad de Pasión</footer>
+                </article>
+
+            </section>
+        </section>
+
+        <!-- SECCIÓN 5: FORMULARIO DE REGISTRO -->
+        <section id="contacto">
+            <h2>Regístrate para Recibir Entradas y Novedades</h2>
+
+            <form action="#" method="POST" class="form-registro">
+                <p>
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                </p>
+
+                <p>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                </p>
+
+                <p>
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" required placeholder="Ej. 12345678">
+                </p>
+
+                <p>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </p>
+
+                <p>
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                </p>
+
+                <p>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad">
+                </p>
+
+                <p>
+                    <label>Género:</label>
+                    <span class="gender-row">
+                        <input type="radio" name="genero" id="masculino"><label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" id="femenino"><label for="femenino">Femenino</label>
+                    </span>
+                </p>
+
+                <p>
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad">
+                </p>
+
+                <p>
+                    <label for="entradas">Cantidad de Entradas:</label>
+                    <input type="number" id="entradas" name="entradas">
+                </p>
+
+                <p>
+                    <label for="hora">Hora Preferida:</label>
+                    <input type="time" id="hora" name="hora">
+                </p>
+
+                <p>
+                    <label for="equipo_favorito">Equipo Favorito:</label>
+                    <select id="equipo_favorito" name="equipo_favorito">
+                        <option value="universitario">Universitario</option>
+                        <option value="alianza_lima">Alianza Lima</option>
+                        <option value="sporting_cristal">Sporting Cristal</option>
+                        <option value="melgar">FBC Melgar</option>
+                        <option value="otros">Otros equipos</option>
+                    </select>
+                </p>
+
+                <p class="button-container">
+                    <button type="submit">Enviar Registro</button>
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+         PIE DE PÁGINA (FOOTER EN COLUMNAS)
+         ========================================== -->
+    <footer class="main-footer">
+        <div class="footer-columns">
+            
+            <!-- Columna 1: Enlaces -->
+            <div class="footer-column">
+                <h3>Enlaces Oficiales</h3>
+                <ul>
+                    <li><a href="#banners-carrusel">Inicio</a></li>
+                    <li><a href="#equipos">Equipos</a></li>
+                    <li><a href="#destacados">Resultados</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 2: Soporte / Info Extra -->
+            <div class="footer-column">
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="#">Reglamento del Torneo</a></li>
+                    <li><a href="#">Federación Peruana de Fútbol</a></li>
+                    <li><a href="#">Prensa y Acreditaciones</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Redes Sociales -->
+            <div class="footer-column">
+                <h3>Redes Oficiales</h3>
+                <section class="social-icons">
+                    <a href="https://www.facebook.com/santiago.morales.77520?locale=es_LA" target="_blank">
+                        <img src="./imagenes/logo_facebook.jfif" alt="Facebook" width="40">
+                    </a>
+                    <a href="https://www.instagram.com/santiagomoraleszurita/" target="_blank">
+                        <img src="./imagenes/logo_Instagram.jfif" alt="Instagram" width="40">
+                    </a>
+                    <a href="https://www.tiktok.com/@santiagozurita73" target="_blank">
+                        <img src="./imagenes/logo_tiktok.jfif" alt="TikTok" width="55">
+                    </a>
+                </section>
+            </div>
+
+        </div>
+
+        <p class="copyright">&copy; 2026 Liga 1 de Perú - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
