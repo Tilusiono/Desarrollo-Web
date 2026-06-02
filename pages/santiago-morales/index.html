@@ -30,7 +30,7 @@
             align-items: center;
             padding: 10px 20px;
             box-sizing: border-box;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .main-nav ul {
@@ -91,7 +91,7 @@
         .card {
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -137,7 +137,7 @@
             background: white;
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .form-registro p {
@@ -146,7 +146,8 @@
             flex-direction: column;
         }
 
-        .form-registro input, .form-registro select {
+        .form-registro input,
+        .form-registro select {
             padding: 8px;
             margin-top: 5px;
             border: 1px solid #ccc;
@@ -249,7 +250,7 @@
 <body>
 
     <!-- ==========================================
-         CABECERA PRINCIPAL (HEADER)
+         CABECERA PRINCIPAL (HEADER) 1.0
          ========================================== -->
     <header class="main-header">
         <picture class="logo-container">
@@ -268,10 +269,10 @@
     </header>
 
     <!-- ==========================================
-         CONTENIDO PRINCIPAL (MAIN)
+         CONTENIDO PRINCIPAL (MAIN) 3.0 (Agregar la semantica correctamente)
          ========================================== -->
     <main>
-        
+
         <!-- SECCIÓN 1: INICIO / CARRUSEL -->
         <section id="banners-carrusel">
             <h2>Campeonato Peruano 2026</h2>
@@ -283,163 +284,316 @@
             </section>
         </section>
 
-        <!-- SECCIÓN 2: EQUIPOS (Uso de tarjetas semánticas CARD) -->
+        <section>
+
+            <card>
+                <h2> Equipos Liga 1</h2> <img src="imagenes/Equipos Liga 1.jfif">
+                <details>
+                    <summary>Información del equipo</summary>
+                    <p>Detalles sobre el equipo...</p>
+                    <ul>
+                        <li>Fundación de la liga 1:1912</li>
+                        <li>Universitario</li>
+                        <li>Alianza Lima</li>
+                        <li>Sporting Cristal</li>
+                        <li>Melgar</li>
+                    </ul>
+                </details>
+            </card>
+            <card>    
+                <h2> Equipos Liga 1</h2> <img src="imagenes/Equipos Liga 1.jfif">
+                <details>
+                    <summary>Información del equipo</summary>
+                    <p>Detalles sobre el equipo...</p>
+                    <ul>
+                        <li>Fundación de la liga 1:1912</li>
+                        <li>Cienciano</li>
+                        <li>Sport Huancayo</li>
+                        <li>Cusco FC</li>
+                        <li>Atlético Grau</li>
+                    </ul>
+                </details>
+            </card>
+
+            <card>
+                <h2> Los mas destacados del Torneo</h2> <img src="imagenes/Los mas destacados del Torneo12.jpg">
+                <details>
+                    <summary>Información del equipo</summary>
+                    <p>Detalles sobre el equipo...</p>
+                    <ul>
+                        <li>Criterio de selección:Tabla acumulada</li>
+                        <li>Equipo con más goles:Club Cienciano(34 goles)</li>
+                        <li>Valla menos batida:Alianza Lima</li>
+                        <li>Mejor localía:Cusco FC</li>
+                        <li>Vigente Campeón:Universitario</li>
+                    </ul>
+                </details>
+            </card>
+                  <card>
+                <h2> Equipos Liga 2</h2> <img src="imagenes/Equipos Liga 2.jfif">
+                <details>
+                    <summary>Información del equipo</summary>
+                    <p>Detalles sobre el equipo...</p>
+                    <ul>
+                        <li>Fundación de la liga 2:1943</li>
+                        <li>Santos FC</li>
+                        <li>Alianza Universidad</li>
+                        <li>Carlos A. Mannucci</li>
+                        <li>ADA Jaén</li>
+                    </ul>
+                </details>
+            </card>
+            </card>
+        </section>
+
+        <!-- SECCIÓN 3: EQUIPOS (Uso de tarjetas semánticas CARD) 2 -->
         <section id="equipos">
             <h2>Equipos de la Liga 1</h2>
             <section class="grid-container">
-                
-                <article class="card">
+
+                <article class="article">
                     <header>Universitario</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1924</li>
+                            <li>Apodo: "Los Cremas"</li>
+                            <li>Estadio: Estadio Monumental</li>
+                        </ul>
                         <img src="./imagenes/universitario.jpg" alt="Universitario de Deportes">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Lima</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Alianza Lima</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1924</li>
+                            <li>Apodo: "los Blanquiazules"</li>
+                            <li>Estadio:Estadio Alejandro Villanueva</li>
+                        </ul>
                         <img src="./imagenes/alianza_lima.jpg" alt="Alianza Lima">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Lima</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Sporting Cristal</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1924</li>
+                            <li>Apodo: "Los Cerveceros"</li>
+                            <li>Estadio:Estadio Alberto Gallardo</li>
+                        </ul>
                         <img src="./imagenes/sporting_cristal.jpg" alt="Sporting Cristal">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Lima</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>FBC Melgar</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1915</li>
+                            <li>Apodo: "Los Rojinegros"</li>
+                            <li>Estadio:Estadio Monumental de la UNSA</li>
+                        </ul>
                         <img src="./imagenes/melgar.jpg" alt="FBC Melgar">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Arequipa</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Cienciano</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1901</li>
+                            <li>Apodo:"El Papá"</li>
+                            <li>Estadio:Estadio Inca Garcilaso de la Vega</li>
+                        </ul>
                         <img src="./imagenes/cienciano.jpg" alt="Cienciano">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Cusco</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Sport Boys</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1927</li>
+                            <li>Apodo:"Los Chalacos"</li>
+                            <li>Estadio:Estadio Miguel Grau</li>
+                        </ul>
                         <img src="./imagenes/sport_boys.jpg" alt="Sport Boys">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Callao</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Chankas CYC</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 2021</li>
+                            <li>Apodo:"Los Guerreros Chankas"</li>
+                            <li>Estadio:Estadio Los Chankas</li>
+                        </ul>
                         <img src="./imagenes/Chankas_CYC.jpg" alt="Los Chankas CYC">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Apurímac</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Cusco FC</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 2009</li>
+                            <li>Apodo:"Los Guerreros Dorados"</li>
+                            <li>Estadio:Estadio Inca Garcilaso de la Vega</li>
+                        </ul>
                         <img src="./imagenes/cusco_fc.jpg" alt="Cusco FC">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Cusco</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Alianza Atlético</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1920</li>
+                            <li>Apodo:"Los Churres"</li>
+                            <li>Estadio:Estadio Campeones del 36</li>
+                        </ul>
                         <img src="./imagenes/alianza_atletico.jpg" alt="Alianza Atlético Sullana">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Piura</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Atlético Grau</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1919</li>
+                            <li>Apodo:"El Patrimonio de Piura"</li>
+                            <li>Estadio:Estadio Miguel Grau (Piura)</li>
+                        </ul>
                         <img src="./imagenes/Atlético_Grau.jpg" alt="Atlético Grau">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Piura</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>CD Moquegua</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 2013</li>
+                            <li>Apodo:"La Furia de Moquegua"</li>
+                            <li>Estadio:Estadio 25 de Noviembre</li>
+                        </ul>
+                    <figure class="card-body">
                         <img src="./imagenes/CD_Moquegua.jpg" alt="Club Deportivo Moquegua">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Moquegua</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>ADT Tarma</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1929</li>
+                            <li>Apodo:"El Vendaval Celeste""</li>
+                            <li>Estadio:Estadio Unión Tarma</li>
+                        </ul>
                         <img src="./imagenes/ADT.jpg" alt="Asociación Deportiva Tarma">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Junín</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Deportivo Garcilaso</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1957</li>
+                            <li>Apodo:"El Pedacito de Cielo"</li>
+                            <li>Estadio:Estadio Inca Garcilaso de la Vega</li>
+                        </ul>
                         <img src="./imagenes/Deportivo-Garcilaso.jpg" alt="Deportivo Garcilaso">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Cusco</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Juan Pablo II</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 2015</li>
+                            <li>Apodo:"El Cuadro Santo"</li>
+                            <li>Estadio:Estadio Municipal de Juventud de Chongoyape</li>
+                        </ul>
                         <img src="./imagenes/Juan_Pablo-II.jpg" alt="Juan Pablo II College">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Lambayeque</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Comerciantes Unidos</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 2002</li>
+                            <li>Apodo:"Las Águilas de Cutervo"</li>
+                            <li>Estadio:Estadio Juan Maldonado Gamarra</li>
+                        </ul>
                         <img src="./imagenes/Comerciantes_Unidos.jpg" alt="Comerciantes Unidos">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Cajamarca</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>Sport Huancayo</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 2007</li>
+                            <li>Apodo:"El Rojo Matador"</li>
+                            <li>Estadio:Estadio IPD de Huancayo</li>
+                        </ul>
                         <img src="./imagenes/Sport_Huancayo.jpg" alt="Sport Huancayo">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Junín</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>FC Cajamarca</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en  2023</li>
+                            <li>Apodo:"Azul y Oro"</li>
+                            <li>Estadio:Estadio Héroes de San Ramón</li>
+                        </ul>
                         <img src="./imagenes/FC_Cajamarca.jpg" alt="FC Cajamarca">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Cajamarca</footer>
                 </article>
 
-                <article class="card">
+                <article class="article">
                     <header>UTC Cajamarca</header>
-                    <div class="card-body">
+                    <figure class="card-body">
+                        <ul>
+                            <li>Fundado en 1964</li>
+                            <li>Apodo:"El Gavilán del Norte"</li>
+                            <li>Estadio:Estadio Héroes de San Ramón</li>
+                        </ul>
                         <img src="./imagenes/UTCajamarca.jpg" alt="UTC Cajamarca">
-                    </div>
+                    </figure>
                     <footer>Liga 1 - Cajamarca</footer>
                 </article>
 
             </section>
         </section>
-        
+
         <!-- SECCIÓN 3: DESTACADOS -->
         <section id="destacados">
             <h2>Los Más Destacados del Torneo</h2>
             <section class="grid-container">
-                
+
                 <article class="card">
                     <header>Máximo Goleador</header>
                     <div class="card-body">
@@ -495,7 +649,7 @@
         <h2>Accesorios y Camisetas Oficiales</h2>
         <section id="tienda">
             <section class="grid-container">
-                
+
                 <article class="card">
                     <header>Camiseta Oficial</header>
                     <div class="card-body">
@@ -618,7 +772,7 @@
          ========================================== -->
     <footer class="main-footer">
         <div class="footer-columns">
-            
+
             <!-- Columna 1: Enlaces -->
             <div class="footer-column">
                 <h3>Enlaces Oficiales</h3>
@@ -662,4 +816,25 @@
     </footer>
 
 </body>
+
 </html>
+
+
+<!-- 
+Header               1.0 , falta H1
+S1 Inicio            3.0 , falta header(descripcion ) , footer(opcional)
+S2 Categorización    0.0 , Agregar las categorias al igual que los items pero usando CARD
+S3 Ítems             2.0 ( solo falta mejorar las semantica falta header, footer y contenido  por cada item, algunas imageenes no cargan, no USAR DIV)
+S4 Formulario        3.5, 12 inputs de 12 puntos
+S5 Adicionales       1.0
+Footer               1.5 ,Falta mas informacion separar bien las secciones (EN COLUMNAS). 
+Sustentación 
+Observaciones : 
+- La pagina principal deberia ser index.html y no index2.html
+- Agregar comentarios para diferenciar cada seccion del codigo.
+- Considerar que solo es código HTML , si conservas el css y el JS se harán preguntas con respecto a esto.
+- Evitar usar etiqueta class a codigo de css , que no exista.
+- Separar bien las secciones (Afinar el diseño) .
+- Seguir los lineamientos dados en clase.
+Nota Avance : 12 de 17
+-->
