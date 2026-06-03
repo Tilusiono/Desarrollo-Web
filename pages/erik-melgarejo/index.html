@@ -9,12 +9,13 @@
             background: rgb(219, 211, 211);
         }
     </style>
+    <link rel="stylesheet" href="../../css/estilo_global.css">
 </head>
 
 <body>
 
-    <header>
-        <img src="logodejuego.jpg" alt="Logo GG Highlights" width="100%" height="300">
+    <header class="header" >
+        <img src="logodejuego.jpg" alt="Logo GG Highlights" width="30px" height="20px">
         <h1>GG Highlights</h1>
         <p>GG Highlights está enfocada en el mundo gamer. La idea es mostrar clips y jugadas destacadas de videojuegos
             populares como Dota 2, Valorant, League of Legends y Counter-Strike. Cada sección tiene imágenes
@@ -22,54 +23,133 @@
             básicamente un espacio para revivir lo más emocionante del gaming y del streaming.</p>
     </header>
 
+    <!--seccion 2 CATEGORIAS-->
+    <section id="videojuegos" class="section2">
+        <header>
+            <h2>Videojuegos más jugados</h2>
+            <p>En esta sección encontrarás los videojuegos más populares y jugados en la actualidad. Desde títulos
+                competitivos hasta juegos de rol, aquí podrás descubrir cuáles son los favoritos de la comunidad gamer.
+                Haz clic en cada imagen para explorar clips y momentos destacados de cada juego.</p>
+        </header>
 
-    <section id="videojuegos">
-        <h2>Videojuegos más jugados</h2>
-        <table>
-            <tr>
-                <td>
-                    <a href="https://www.dota2.com/home" target="_blank">
-                        <img src="dotaimg.jpg" width="450" height="450" alt="Dota 2">
-                    </a>
-                    <p><a href="#clips-dota">DOTA2</a></p>
+        <section class="columnas_4">
+            <card class="card">
+                <header>
+                    <h3>Dota 2</h3>
+                </header>
 
-                </td>
-                <td>
-                    <a href="https://playvalorant.com/es-mx/" target="_blank">
-                        <img src="valorantimg.webp" width="450" height="450" alt="Valorant">
-                    </a>
-                    <p><a href="#clips-valorant">VALORANT</a></p>
-                </td>
+                <figure>
+                    <img src="dotaimg.jpg" width="450" height="450" alt="Dota 2">
+                    <details>
+                        <summary>Dota 2</summary>
+                        Dota 2 es un juego de estrategia en tiempo real donde dos equipos de cinco jugadores
+                        compiten para destruir la base del equipo contrario. Con una amplia variedad de héroes y
+                        habilidades, Dota 2 ofrece una experiencia de juego profunda y estratégica que ha cautivado a
+                        millones de jugadores en todo el mundo.
+                    </details>
+                </figure>
 
-                <td>
-                    <a href="https://www.leagueoflegends.com/es-es/" target="_blank">
-                        <img src="lolimg.jpg" width="450" height="450" alt="League of Legends">
-                    </a>
-                    <p><a href="#clips-lol">LEAGUE OF LEGENDS</a></p>
-                </td>
+                <footer>
+                    <a href="https://www.dota2.com/home" target="_blank">Web oficial</a>
+                    <a href="#clips-dota">DOTA2</a>
+                </footer>
 
-                <td>
-                    <a href="https://www.counter-strike.net/cs2?l=spanish" target="_blank">
-                        <img src="counterimg.jpg" width="450" height="450" alt="Counter‑Strike">
-                    </a>
-                    <p><a href="#clips-cs">COUNTER STRIKE</a></p>
-                </td>
+            </card>
+            <card>
+                <a href="https://playvalorant.com/es-mx/" target="_blank">
+                    <img src="valorantimg.webp" width="450" height="450" alt="Valorant">
+                </a>
+                <p><a href="#clips-valorant">VALORANT</a></p>
+            </card>
+            <card>
+                <a href="https://www.leagueoflegends.com/es-es/" target="_blank">
+                    <img src="lolimg.jpg" width="450" height="450" alt="League of Legends">
+                </a>
+                <p><a href="#clips-lol">LEAGUE OF LEGENDS</a></p>
+            </card>
+            <card>
+                <a href="https://www.counter-strike.net/cs2?l=spanish" target="_blank">
+                    <img src="counterimg.jpg" width="450" height="450" alt="Counter‑Strike">
+                </a>
+                <p><a href="#clips-cs">COUNTER STRIKE</a></p>
+            </card>
+        </section>
 
-            </tr>
-        </table>
     </section>
 
+    <!--SECCION 3 ITEMS-->
+    <section id="clips-dota" class="section3">
+        <header>
+            <h2>Clips de Dota 2</h2>
+            <p>Descubre los momentos más emocionantes de Dota 2 en esta selección de clips.</p>
+        </header>
 
-    <section id="clips-dota">
-        <h2>Clips de Dota 2</h2>
-        <ul>
-            <li>
 
+        <section class="columnas_2">
+             <article class="article">
+            <header>
+                <h3>Scofield de Beastcoast aturde y cancela la teletransportación del equipo enemigo en el bosque oscuro
+                </h3>
+            </header>
+            <p>En esta jugada, Scofield realiza una acción decisiva al aturdir y cancelar la teletransportación del
+                equipo enemigo en el bosque oscuro. Gracias a su rápida reacción y control de habilidades, evita que
+                los rivales regresen a defender su base, permitiendo que el resto de Beastcoast empuje con libertad
+                la línea inferior. Esta jugada demuestra una lectura excelente del mapa y coordinación</p>
+            <figure> <video src="videos/1jugadadota.mp4" width="320" height="240" controls></video></figure>
+            <date>2023-10-15</date>
+            <footer>Jugada de Scofield en el torneo The International 2023</footer>
+        </article>
+            <article class="article">
+                <header>
+                    <h3>Scofield de Beastcoast aturde y cancela la teletransportación del equipo enemigo en el bosque
+                        oscuro
+                    </h3>
+                </header>
                 <p>En esta jugada, Scofield realiza una acción decisiva al aturdir y cancelar la teletransportación del
                     equipo enemigo en el bosque oscuro. Gracias a su rápida reacción y control de habilidades, evita que
                     los rivales regresen a defender su base, permitiendo que el resto de Beastcoast empuje con libertad
                     la línea inferior. Esta jugada demuestra una lectura excelente del mapa y coordinación</p>
-                <video src="videos/1jugadadota.mp4" width="320" height="240" controls></video>
+                <figure> <video src="videos/1jugadadota.mp4" width="320" height="240" controls></video></figure>
+                <date>2023-10-15</date>
+                <footer>Jugada de Scofield en el torneo The International 2023</footer>
+            </article>
+            <article class="article">
+                <header>
+                    <h3>Scofield de Beastcoast aturde y cancela la teletransportación del equipo enemigo en el bosque
+                        oscuro
+                    </h3>
+                </header>
+                <p>En esta jugada, Scofield realiza una acción decisiva al aturdir y cancelar la teletransportación del
+                    equipo enemigo en el bosque oscuro. Gracias a su rápida reacción y control de habilidades, evita que
+                    los rivales regresen a defender su base, permitiendo que el resto de Beastcoast empuje con libertad
+                    la línea inferior. Esta jugada demuestra una lectura excelente del mapa y coordinación</p>
+                <figure> <video src="videos/1jugadadota.mp4" width="320" height="240" controls></video></figure>
+                <date>2023-10-15</date>
+                <footer>Jugada de Scofield en el torneo The International 2023</footer>
+            </article>
+            <article class="article">
+                <header>
+                    <h3>Scofield de Beastcoast aturde y cancela la teletransportación del equipo enemigo en el bosque
+                        oscuro
+                    </h3>
+                </header>
+                <p>En esta jugada, Scofield realiza una acción decisiva al aturdir y cancelar la teletransportación del
+                    equipo enemigo en el bosque oscuro. Gracias a su rápida reacción y control de habilidades, evita que
+                    los rivales regresen a defender su base, permitiendo que el resto de Beastcoast empuje con libertad
+                    la línea inferior. Esta jugada demuestra una lectura excelente del mapa y coordinación</p>
+                <figure> <video src="videos/1jugadadota.mp4" width="320" height="240" controls></video></figure>
+                <date>2023-10-15</date>
+                <footer>Jugada de Scofield en el torneo The International 2023</footer>
+            </article>
+
+        </section>
+
+
+        <ul>
+            <li>
+
+
+
             </li>
 
             <li>
@@ -85,22 +165,31 @@
     </section>
 
 
-    <section id="clips-valorant">
+    <section id="clips-valorant" class="section3">
         <h2>Clips de Valorant</h2>
         <ul>
             <li>
-                Clip 1
-                <video src="3jugadalol.mp4" width="320" height="240" controls></video>
+
+                <p>En esta jugada de Valorant, el jugador se encuentra en clara desventaja numérica y parece imposible
+                    ganar la ronda. Sin embargo, con movimientos inteligentes y disparos precisos, logra sorprender a
+                    cada rival uno por uno. En el minuto 11:07, convierte un clutch épico en victoria, demostrando
+                    sangre fría y dominio absoluto del juego. Este momento es un ejemplo</p>
+                <video src="videos/vidvalorant.mp4" width="320" height="240" controls></video>
             </li>
             <li>
-                Clip 2
-                <video src="4jugadavalorant.mp4" width="320" height="240" controls></video>
+                <p>En esta jugada, nAts de Gambit Esports consigue un ace espectacular frente a G2. Con movimientos
+                    precisos y reflejos perfectos, elimina a los cinco enemigos uno por uno, demostrando una lectura
+                    impecable del mapa y control total de la situación. Su ejecución convierte una ronda difícil en una
+                    victoria contundente, dejando claro por qué es considerado uno de los jugadores más inteligentes y
+                    letales del competitivo.</p>
+
+                <video src="videos/vidvalorant2.mp4" width="320" height="240" controls></video>
             </li>
         </ul>
     </section>
 
 
-    <section id="clips-lol">
+    <section id="clips-lol" class="section3">
         <h2>Clips de League of Legends</h2>
         <ul>
             <li>
@@ -129,7 +218,7 @@
         </ul>
     </section>
 
-    <section id="clips-cs">
+    <section id="clips-cs" class="section3">
         <h2>Clips de Counter Strike</h2>
         <ul>
             <li>
@@ -149,34 +238,68 @@
         </ul>
     </section>
 
+    <!--SECCION 4 FORMULARIO-->
+    <section class="section4">
+        formulario
+    </section>
 
-    <footer>
+
+    <footer class="footer columnas_4">
+        <section>
+            <p>© 2026 GG Highlights - Creado por Erik</p>
+
+            <p>Síguenos en:</p>
+
+            <ol>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="youtubeicon.png" alt="YouTube" width="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitch.tv" target="_blank">
+                        <img src="twitchicon.png" alt="Twitch" width="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discord.com" target="_blank">
+                        <img src="discordicon.png" alt="Discord" width="30">
+                    </a>
+                </li>
+
+            </ol>
+
+        </section>
+
         <p>© 2026 GG Highlights - Creado por Erik</p>
 
-        <p>Síguenos en:</p>
-        <a href="https://www.youtube.com" target="_blank">
-            <img src="youtubeicon.png" alt="YouTube" width="30">
-        </a>
-        <a href="https://www.twitch.tv" target="_blank">
-            <img src="twitchicon.png" alt="Twitch" width="30">
-        </a>
-        <a href="https://discord.com" target="_blank">
-            <img src="discordicon.png" alt="Discord" width="30">
-        </a>
+        <section>
+            <p>Síguenos en:</p>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="youtubeicon.png" alt="YouTube" width="30">
+            </a>
+            <a href="https://www.twitch.tv" target="_blank">
+                <img src="twitchicon.png" alt="Twitch" width="30">
+            </a>
+            <a href="https://discord.com" target="_blank">
+                <img src="discordicon.png" alt="Discord" width="30">
+            </a>
+        </section>
 
 
-        <p>Suscríbete para recibir novedades:</p>
-        
+        <section>
+            <p>Suscríbete para recibir novedades:</p>
+
 
             <input type="text" name="nombre" placeholder="Ingresa tu nombre">
             <input type="email" name="correo" placeholder="Ingresa tu correo">
             <input type="text" name="pais" placeholder="Ingresa tu país">
             <input type="number" name="edad" placeholder="Ingresa tu edad">
             <input type="password" name="clave" placeholder="Crea una contraseña">
-            <textarea name="comentario" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
             <input type="submit" value="Suscribirme">
+        </section>
 
-        </footer>
+    </footer>
 
     </footer>
 
@@ -185,20 +308,18 @@
 </html>
 
 
-
-
 <!-- 
-Header               1.0 , falta el logo
-S1 Carrusel          0.0 , Agregar etiquetas seccion pero no tables para usar el carrusel 
-S2 Categorización    2.5 , Agregar un poco mas de contenido a cada categoria y usar etiqueta CARD 
-S3 Ítems             2.0 , Mejorar el diseño y adicionar mas contenido NO USAR TABLA (9 DE 12) , Usar etiqueta ITEM
+Header               1.0 , FALTA NAV
+S1 Carrusel          1.5 , Agregar 2 IMAGNEES Y DIVIR EN 3 
+S2 Categorización    3.0 , Agregar un poco mas de contenido a cada categoria y usar etiqueta CARD 
+S3 Ítems             2.5 , Mejorar el diseño y adicionar mas contenido NO USAR TABLA (9 DE 12) , Usar etiqueta ITEM
 S4 Formulario        0.0 , Mejorar mas el contexto con referencia a la tienda 
-Footer               1 , Falta usar semantica y adicionar mas contenido (Columnas)
-Sustentación 
+Footer               1.5, Falta usar semantica y adicionar mas contenido (Columnas)
+Sustentación :+2
 Observaciones : 
 - Dar formato al codigo HTML (Shift+Alt+F) para mejorar la legibilidad.
 - No eliminar los comentarios de revision , solo agregar los nuevos.
 - Separar bien las secciones (Afinar el diseño) .
 - Seguir los lineamientos dados en clase.
-Nota Avance : 7.0 de 17.0
+Nota Avance : 10 de 17.0
 -->
