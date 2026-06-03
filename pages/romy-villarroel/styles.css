@@ -4,12 +4,22 @@ box-sizing: border-box;}
 
 header{
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 9999;
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
 nav{
     display: flex;
@@ -66,67 +76,24 @@ p{
     color: blueviolet;
 }
 #productos{
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px;
+    overflow: hidden;
 }
-#uno{
-    background-image: url(/assets/imagenes/productos/chocobombom.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
+.helados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
-#dos{
-    background-image: url(/assets/imagenes/productos/cono.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
+.yapa{
+    height: 100%;
+    width: auto;
+    
 }
-#tres{
-    background-image: url(/assets/imagenes/productos/lucuma-chips.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#cuatro{
-    background-image: url(/assets/imagenes/productos/mini-yamboly.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#cinco{
-    background-image: url(/assets/imagenes/productos/minipasion.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#seis{
-    background-image: url(/assets/imagenes/productos/pasion.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#siete{
-    background-image: url(/assets/imagenes/productos/trisabor.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#ocho{
-    background-image: url(/assets/imagenes/productos/vainilla-chips.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#nueve{
-    background-image: url(/assets/imagenes/productos/vainilla-chocolate.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 #logo{
     width: 150px;
     height: 100px;
