@@ -1,236 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css/style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <header>
-        <div class="logo">
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JHOALS Pollería - El mejor pollo a la brasa</title>
+      <link rel="stylesheet" href="estilos.css/style.css">
+   </head>
+   <body>
+      <header>
+         <article>
             <img src="img/logo.png" alt="Logo JHOALS">
             <h1>JHOALS</h1>
-        </div>
-
-        <nav>
+         </article>
+         <nav>
             <a href="#inicio">Inicio</a>
-            <a href="#categorias">Categorías</a>
             <a href="#menu">Menú</a>
+            <a href="#categorias">Especialidades</a>
+            <a href="#locales">Locales</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#registro">Únete</a>
             <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
-
-    <main>
-
-        <!-- INICIO -->
-        <section id="inicio" class="inicio">
-            <img src="img/foto-promo.jpg" alt="Promo 1">
-            <img src="img/foto-promo1.png" alt="Promo 2">
-            <img src="img/foto-promo2.jpg" alt="Promo 3">
-        </section>
-
-        <section class="hero">
-            <h2>El Mejor Pollo a la Brasa</h2>
-
-            <p>
-                Tenemos el mejor sabor, el mejor servicio y productos de calidad
-                para brindar la mejor experiencia a nuestros clientes.
-            </p>
-        </section>
-
-        <!-- CATEGORIAS -->
-        <section id="categorias">
-            <h2>Categorías</h2>
-            <section class="categorias">
-                <article class="categorias-box"><a href="#entero">POLLO ENTERO</a></article>
-                <article class="categorias-box"><a href="#medio">1/2 POLLO</a></article>
-                <article class="categorias-box"><a href="#cuarto">1/4 POLLO</a></article>
-                <article class="categorias-box"><a href="#bebidas">BEBIDAS</a></article>
+         </nav>
+      </header>
+      <section id="carrusel">
+         <img id="carrusel-img" src="img/banner1.png" alt="Promoción Especial JHOALS">
+         <script>
+            const imagenes = ["img/banner1.png", "img/banner2.png", "img/banner3.jpg"];
+            let indice = 0;
+            setInterval(() => {
+               indice = (indice + 1) % imagenes.length;
+               document.getElementById("carrusel-img").src = imagenes[indice];
+            }, 3000);
+         </script>
+      </section>
+      <main>
+         <section1 id="inicio">
+            <h2>Bienvenidos a JHOALS Pollería</h2>
+            <h3>El auténtico e inigualable sabor del pollo a la brasa peruano</h3>
+            <p>En JHOALS nos apasiona mantener viva la tradición. Seleccionamos los mejores ingredientes, papas nativas seleccionadas y un tierno pollo marinado con nuestra receta secreta de la casa, cocinado al calor de las brasas de carbón natural para garantizar una piel crujiente y una carne jugosa.</p>
+            <p>Disfruta de una experiencia gastronómica única en un ambiente cómodo, seguro y diseñado especialmente para compartir momentos inolvidables en familia.</p>
+            <a href="#menu">Explorar Menú Completo</a>
+         </section1>
+         <hr>
+         <section id="categorias">
+            <h2>Nuestras Especialidades</h2>
+            <p>Explora nuestras 4 categorías principales preparadas con los más altos estándares de calidad.</p>
+            <nav>
+               <a href="#entero">
+                  <img src="img/POLLOENTERO.jpg" alt="Categoría Pollo Entero">
+                  <h3>Pollo Entero</h3>
+                  <p>Ideales para banquetes familiares y reuniones grandes.</p>
+               </a>
+               <a href="#medio">
+                  <img src="img/MEDIOPOLLO.jpg" alt="Categoría Medio Pollo">
+                  <h3>1/2 Pollo</h3>
+                  <p>La porción perfecta para compartir en pareja o saciar un gran apetito.</p>
+               </a>
+               <a href="#cuarto">
+                  <img src="img/CUARTOPOLLO.jpg" alt="Categoría Cuarto de Pollo">
+                  <h3>1/4 Pollo</h3>
+                  <p>El clásico almuerzo personal acompañado de tus guarniciones favoritas.</p>
+               </a>
+               <a href="#bebidas">
+                  <img src="img/bebidas.png" alt="Categoría Bebidas">
+                  <h3>Bebidas</h3>
+                  <p>Gaseosas heladas y refrescos tradicionales para acompañar tu plato.</p>
+               </a>
+            </nav>
+         </section>
+         <hr>
+         <section id="menu">
+            <h2>Menú JHOALS</h2>
+            <p>Descubre el sabor crujiente y jugoso que nos caracteriza en cada una de nuestras presentaciones.</p>
+            <h3>Sección: Pollo Entero</h3>
+            <section class="grupo-productos">
+               <article>
+                  <figure><img src="img/pollo1.1.jpg" alt="Pollo Entero Clásico"></figure>
+                  <h4>Pollo Entero Clásico</h4>
+                  <p>1 Pollo entero a la brasa, porción grande de papas fritas crocantes y selección de cremas JHOALS.</p>
+                  <h5>S/ 69.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/pollo1.2.jpg" alt="Pollo Familiar"></figure>
+                  <h4>Pollo Familiar</h4>
+                  <p>1 Pollo entero a la brasa, papas fritas crocantes, ensalada fresca familiar y cremas surtidas.</p>
+                  <h5>S/ 74.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/pollo1.3.jpg" alt="Pollo Mega Combo"></figure>
+                  <h4>Pollo Mega Combo</h4>
+                  <p>1 Pollo entero a la brasa, porción gigante de papas, ensalada clásica y una gaseosa de 1.5L a elección.</p>
+                  <h5>S/ 79.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/pollo1.1.jpg" alt="Combo Especial JHOALS"></figure>
+                  <h4>Combo Especial JHOALS</h4>
+                  <p>1 Pollo a la brasa, papas, ensalada, gaseosa de 1.5L y una porción de tequeños rellenos de pollo de cortesía.</p>
+                  <h5>S/ 84.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
             </section>
-        </section>
-        <!--POLLO ENTERO-->
-        <section id="entero" class="tarjetas">
-            <h2>Pollo Entero</h2>
-            <section class="productos">
-                <article class="card">
-                    <figure><img src="img/pollo1.1.jpg" alt="Pollo Entero Clásico"></figure>
-                    <h3>Pollo Entero Clásico</h3>
-                    <p>1 pollo + papas + cremas.</p>
-                    <h4>S/ 69.90</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/pollo1.2.jpg" alt="Pollo Familiar"></figure>
-                    <h3>Pollo Familiar</h3>
-                    <p>1 pollo + ensalada + papas.</p>
-                    <h4>S/ 74.90</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/pollo1.3.jpg" alt="Pollo con Gaseosa"></figure>
-                    <h3>Pollo + Gaseosa</h3>
-                    <p>Incluye gaseosa de 1.5L.</p>
-                    <h4>S/ 79.90</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/pollo1.1.jpg" alt="Combo Especial"></figure>
-                    <h3>Combo Especial</h3>
-                    <p>Pollo, papas y postre.</p>
-                    <h4>S/ 84.90</h4><button>Pedir Ahora</button>
-                </article>
+            <h3>Sección: Medio Pollo</h3>
+            <section class="grupo-productos">
+               <article>
+                  <figure><img src="img/pollo2.1.jpg" alt="1/2 Pollo Clásico"></figure>
+                  <h4>1/2 Pollo Clásico</h4>
+                  <p>Medio pollo crocante cocinado a la brasa, acompañado de crujientes papas fritas y cremas artesanales.</p>
+                  <h5>S/ 39.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/pollo2.2.jpg" alt="1/2 Pollo Saludable"></figure>
+                  <h4>1/2 Pollo Saludable</h4>
+                  <p>Medio pollo a la brasa acompañado de una generosa porción de ensalada fresca y vinagreta de la casa.</p>
+                  <h5>S/ 42.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/pollo2.3.jpg" alt="1/2 Pollo Dúo"></figure>
+                  <h4>1/2 Pollo Dúo</h4>
+                  <p>Medio pollo a la brasa, porción de papas fritas individuales, ensalada fresca y 2 gaseosas personales.</p>
+                  <h5>S/ 46.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/pollo2.1.jpg" alt="1/2 Pollo Parrillero"></figure>
+                  <h4>1/2 Pollo Parrillero</h4>
+                  <p>Medio pollo bañado en una deliciosa salsa anticuchera especial, papas fritas y ensalada.</p>
+                  <h5>S/ 49.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
             </section>
-        </section>
-
-        <!--1/2 POLLO-->
-        <section id="medio" class="tarjetas">
-            <h2>1/2 Pollo</h2>
-            <section class="productos">
-                <article class="card">
-                    <figure><img src="img/pollo2.1.jpg" alt="1/2 Pollo"></figure>
-                    <h3>1/2 Pollo Clásico</h3>
-                    <p>Papas fritas y cremas.</p>
-                    <h4>S/ 39.90</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/pollo2.2.jpg" alt="1/2 Pollo Familiar"></figure>
-                    <h3>1/2 Pollo Familiar</h3>
-                    <p>Ideal para compartir.</p>
-                    <h4>S/ 44.90</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/pollo2.3.jpg" alt="1/2 Pollo con Bebida"></figure>
-                    <h3>1/2 Pollo + Bebida</h3>
-                    <p>Incluye gaseosa personal.</p>
-                    <h4>S/ 46.90</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/pollo2.1.jpg" alt="1/2 Pollo Premium"></figure>
-                    <h3>1/2 Pollo Premium</h3>
-                    <p>Con ensalada fresca.</p>
-                    <h4>S/ 49.90</h4><button>Pedir Ahora</button>
-                </article>
+            <h3>Sección: Cuarto de Pollo</h3>
+            <section class="grupo-productos">
+               <article>
+                  <figure><img src="img/pollo3.1.jpg" alt="1/4 Pollo Tradicional"></figure>
+                  <h4>1/4 Pollo Tradicional</h4>
+                  <p>Un jugoso cuarto de pollo a la brasa (pierna o pecho) servido con papas fritas y cremas.</p>
+                  <h5>S/ 22.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/pollo3.2.jpg" alt="1/4 Pollo Ejecutivo"></figure>
+                  <h4>1/4 Pollo Ejecutivo</h4>
+                  <p>Un cuarto de pollo a la brasa con papas fritas crocantes, ensalada fresca y un vaso de chicha morada.</p>
+                  <h5>S/ 26.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/pollo3.3.jpg" alt="1/4 Pollo JHOALS Especial"></figure>
+                  <h4>1/4 Pollo JHOALS Especial</h4>
+                  <p>Cuarto de pollo, porción de papas fritas doradas, ensalada cocida con beterraba y cremas al gusto.</p>
+                  <h5>S/ 28.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/pollo3.1.jpg" alt="1/4 Pollo Combinado"></figure>
+                  <h4>1/4 Pollo Combinado</h4>
+                  <p>Cuarto de pollo a la brasa servido con una porción de arroz chaufa de pollo, papas fritas y cremas.</p>
+                  <h5>S/ 31.90</h5>
+                  <button>Pedir Ahora</button>
+               </article>
             </section>
-        </section>
-
-        <!--1/4 POLLO-->
-        <section id="cuarto" class="tarjetas">
-            <h2>1/4 Pollo</h2>
-            <section class="productos">
-                <article class="card">
-                    <figure><img src="img/pollo3.1.jpg" alt="1/4 Pollo"></figure>
-                    <h3>1/4 Pollo Clásico</h3>
-                    <p>Papas y cremas.</p>
-                    <h4>S/ 22.90</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/pollo3.2.jpg" alt="1/4 Pollo con Bebida"></figure>
-                    <h3>1/4 Pollo + Bebida</h3>
-                    <p>Combo personal.</p>
-                    <h4>S/ 26.90</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/pollo3.3.jpg" alt="1/4 Pollo Especial"></figure>
-                    <h3>1/4 Pollo Especial</h3>
-                    <p>Con ensalada fresca.</p>
-                    <h4>S/ 28.90</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/pollo3.1.jpg" alt="1/4 Pollo Premium"></figure>
-                    <h3>1/4 Pollo Premium</h3>
-                    <p>Incluye bebida personal.</p>
-                    <h4>S/ 31.90</h4><button>Pedir Ahora</button>
-                </article>
+            <h3>Sección: Bebidas y Refrescos</h3>
+            <section class="grupo-productos">
+               <article>
+                  <figure><img src="img/bebida1.png" alt="Inca Kola Familiar"></figure>
+                  <h4>Inca Kola 1.5L</h4>
+                  <p>La compañera perfecta para el pollo a la brasa. Gaseosa de formato familiar helada.</p>
+                  <h5>S/ 12.00</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/bebida2.png" alt="Coca Cola Familiar"></figure>
+                  <h4>Coca Cola 1.5L</h4>
+                  <p>Refrescante gaseosa Coca Cola en presentación de litro y medio, ideal para compartir.</p>
+                  <h5>S/ 12.00</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/bebida3.png" alt="Chicha Morada JHOALS"></figure>
+                  <h4>Chicha Morada Natural 1L</h4>
+                  <p>Deliciosa chicha morada casera preparada de forma natural con maíz morado, piña y limón.</p>
+                  <h5>S/ 14.00</h5>
+                  <button>Pedir Ahora</button>
+               </article>
+               <article>
+                  <figure><img src="img/bebida4.png" alt="Maracuyá Natural"></figure>
+                  <h4>Jugo de Maracuyá 1L</h4>
+                  <p>Refresco de pura fruta de maracuyá seleccionado, endulzado en su punto exacto y muy helado.</p>
+                  <h5>S/ 14.00</h5>
+                  <button>Pedir Ahora</button>
+               </article>
             </section>
-        </section>
-
-        <!--BEBIDAS-->
-        <section id="bebidas" class="tarjetas">
-            <h2>Bebidas</h2>
-            <section class="productos">
-                <article class="card">
-                    <figure><img src="img/bebida1.png" alt="Gaseosa"></figure>
-                    <h3>Gaseosa 1.5L</h3>
-                    <p>Refrescante gaseosa familiar</p>
-                    <h4>S/ 12.00</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/bebida2.png" alt="Gaseosa"></figure>
-                    <h3>Gaseosa 1.5L</h3>
-                    <p>Refrescante gaseosa familiar</p>
-                    <h4>S/ 12.00</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/bebida3.png" alt="Gaseosa"></figure>
-                    <h3>Gaseosa 1.5L</h3>
-                    <p>Refrescante gaseosa familiar</p>
-                    <h4>S/ 12.00</h4><button>Pedir Ahora</button>
-                </article>
-                <article class="card">
-                    <figure><img src="img/bebida4.png" alt="Gaseosa"></figure>
-                    <h3>Gaseosa 1.5L</h3>
-                    <p>Refrescante gaseosa familiar</p>
-                    <h4>S/ 12.00</h4><button>Pedir Ahora</button>
-                </article>
-            </section>
-        </section>
-        <!-- FORMULARIO -->
-        <section class="registro">
+         </section>
+         <hr>
+         <section id="registro">
             <h2>Únete a la Familia JHOALS</h2>
-            <p>Regístrate para recibir promociones exclusivas.</p>
-
+            <p>Completa tus doce datos personales obligatorios para habilitar el casillero de cliente frecuente y recibir descuentos especiales en tu bandeja de entrada.</p>
             <form>
-                <input class="controls" type="text" placeholder="Nombres" required>
-                <input class="controls" type="text" placeholder="Apellidos" required>
-                <input class="controls" type="email" placeholder="Correo Electrónico" required>
-                <input class="controls" type="password" placeholder="Contraseña" required>
-                <input class="boton" type="submit" value="Registrarme">
+               <input type="text" placeholder="1. Nombres completos" required>
+               <input type="text" placeholder="2. Apellidos paterno y materno" required>
+               <input type="email" placeholder="3. Correo Electrónico" required>
+               <input type="password" placeholder="4. Contraseña de cuenta" required>
+               <input type="tel" placeholder="5. Número de Celular (9 dígitos)" required>
+               <input type="text" placeholder="6. Dirección exacta de domicilio" required>
+               <input type="text" placeholder="7. Distrito de residencia" required>
+               <input type="text" placeholder="8. Referencia visual de la vivienda" required>
+               <input type="number" placeholder="9. Número de DNI o Carnet de Extranjería" required>
+               <input type="date" placeholder="10. Fecha de Nacimiento" required>
+               <input type="text" placeholder="11. Código Promocional de Invitado (Opcional)">
+               <label>
+               <input type="checkbox" required> 12. Declaro que acepto de forma expresa las políticas de privacidad y protección de datos.
+               </label>
+               <input type="submit" value="Registrar Formulario Completado">
             </form>
-        </section>
-        <!--LOCALES-->
-        <section class="nosotros">
-            <h2>Nuestros Locales</h2>
-            <p>
-                Visítanos y disfruta del auténtico sabor de JHOALS.
-            </p>
-            <article class="locales"><a href="https://maps.app.goo.gl/9cpgfV5aufwKf2Rq6" target="_blank"><img
-                        src="img/americas.jpg" alt="Las Américas">
-                    <h4>Las Américas</h4>
-                </a>
-                <a href="https://maps.app.goo.gl/S6DbCE4Fr9pgmKzs7" target="_blank"><img src="img/santaclara.png"
-                        alt="Santa Clara">
-                    <h4>Santa Clara</h4>
-                </a>
-                <a href="https://maps.app.goo.gl/aBbSSjUNwLSmmH2U9" target="_blank"><img src="img/vallegrande.jpg"
-                        alt="Valle Grande">
-                    <h4>Valle Grande</h4>
-                </a>
-            </article>
-        </section>
-    </main>
-    <footer id="contacto">
-        <section class="footer-contenido">
-            <article>
-                <h3>JHOALS POLLERÍA</h3>
-                <p>El mejor pollo a la brasa para compartir en familia.</p>
-            </article>
-            <article>
-                <h3>Contacto</h3>
-                <p>📍 Ate Vitarte, Lima - Perú</p>
-                <p>📞 970 992 724</p>
-                <p>✉️ polleria.giganton@gmail.com</p>
-            </article>
-            <article>
-                <h3>Síguenos</h3>
-                <a href="https://www.facebook.com/JhoalsSaborAndino/?locale=es_LA" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/jhoalssaborandino/" target="_blank">Instagram</a>
-                <a href="https://www.tiktok.com/@jhoals.andino" target="_blank">TikTok</a>
-            </article>
-        </section>
-        <p class="copyright">© 2026 JHOALS POLLERÍA | Todos los derechos reservados.</p>
-    </footer>
-</body>
+         </section>
+         <hr>
+         <section id="locales">
+            <h2>Nuestras Sedes Oficiales</h2>
+            <p>Visita cualquiera de nuestros amplios y modernos locales distribuidos estratégicamente para brindarte la mejor comodidad.</p>
+            <section class="grupo-locales">
+               <a href="https://maps.app.goo.gl/9cpgfV5aufwKf2Rq6" target="_blank">
+                  <img src="img/americas.jpg" alt="Sede Las Américas">
+                  <h4>Sede Las Américas</h4>
+                  <p>Av. Las Américas 450 - Zona Central</p>
+               </a>
+               <a href="https://maps.app.goo.gl/S6DbCE4Fr9pgmKzs7" target="_blank">
+                  <img src="img/santaclara.png" alt="Sede Santa Clara">
+                  <h4>Sede Santa Clara</h4>
+                  <p>Calle Los Ángeles 120 - Frente a la Plaza</p>
+               </a>
+               <a href="https://maps.app.goo.gl/aBbSSjUNwLSmmH2U9" target="_blank">
+                  <img src="img/vallegrande.jpg" alt="Sede Valle Grande">
+                  <h4>Sede Valle Grande</h4>
+                  <p>Jr. Progreso 785 - Entrada Principal</p>
+               </a>
+            </section>
+         </section>
+         <section id="nosotros">
+         <h2>Nosotros</h2>
+         <p>En JHOALS Sabor Andino contamos con más de 15 años de experiencia ofreciendo el mejor pollo a la brasa y una atención de calidad para toda la familia.</p>
+         <h3>Misión</h3>
+         <p>Brindar una experiencia gastronómica única con productos de calidad y excelente servicio.</p>
+         <h3>Visión</h3>
+         <p>Ser la pollería preferida por las familias peruanas.</p>
+         </section>
 
+      </main>
+      <footer id="contacto">
+         <section class="footer-bloques">
+            
+            <article>
+               <h3>JHOALS SABOR ANDINO</h3>
+               <p>Empresa líder en el rubro gastronómico peruano, dedicada a rescatar el verdadero sabor del pollo a la brasa con insumos 100% nacionales de primera calidad.</p>
+            </article>
+            <article>
+               <h3>Central de Contacto</h3>
+               <p> Sede Central: Ate Vitarte, Lima - Perú</p>
+               <p> Teléfono Fijo / Delivery: 970 992 724</p>
+               <p> Correo: polleria.giganton@gmail.com</p>
+            </article>
+            <article>
+               <h3>Comunidad Digital</h3>
+               <p>Sigue nuestras redes y entérate de sorteos relámpago semanales:</p>
+               <nav class="redes-sociales">
+                  <a href="https://www.facebook.com/JhoalsSaborAndino/?locale=es_LA" target="_blank">Facebook Oficial</a>
+                  <a href="https://www.instagram.com/jhoalssaborandino/" target="_blank">Instagram Canal</a>
+                  <a href="https://www.tiktok.com/@jhoals.andino" target="_blank">TikTok Videos</a>
+               </nav>
+            </article>
+            <article>
+               <h3>Horarios Comerciales</h3>
+               <p>Atendemos de manera ininterrumpida de:</p>
+               <p>Lunes a Domingo</p>
+               <p>12:00 PM - 11:00 PM</p>
+            </article>
+            <article>
+            <p>Aceptamos:</p>
+            <p> Visa | Mastercard | Yape | Plin</p>
+         </section>
+         <section class="footer-nosotros">
+            <h2>Compromiso Corporativo JHOALS</h2>
+            <p>En JHOALS nos esforzamos diariamente para superar las expectativas de nuestros comensales, garantizando una rigurosa cadena de bioseguridad alimentaria, un servicio al cliente rápido y eficiente, y por supuesto, el inconfundible aderezo artesanal que nos ha posicionado como la pollería preferida de las familias de Ate Vitarte.</p>
+         </section>
+         <section> <p class="copyright">
+            © 2026 JHOALS Sabor Andino. Todos los derechos reservados.
+         </p></section>
+      </footer>
+   </body>
 </html>
 <!-- 
 Header               1.5 ,

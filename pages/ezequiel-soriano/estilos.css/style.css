@@ -1,127 +1,37 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial,sans-serif;
-    background:#FFF8F0;
-}
-
+body{margin:0;font-family:Arial, sans-serif;}
+main, section{padding:20px;}
 header{
-    background:#0B1B2D;
-    color:white;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 30px;
-    position:sticky;
+    position:fixed;
     top:0;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.logo img{
-    width:50px;
-}
-
-nav{
-    display:flex;
-    gap:20px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-}
-
-h2{
-    text-align:center;
-    margin:40px 0 20px;
-}
-
-.inicio{
-    display:flex;
-    gap:15px;
-    padding:20px;
-}
-
-.inicio img{
-    width:32.5%;
-}
-
-.hero{
-    text-align:center;
-    padding:30px;
-}
-
-.productos{
-    width: 90%;
-    margin: 40px auto;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-.card{
-    background:white;
-    overflow:hidden;
-    text-align:center;
-}
-
-.card img{
     width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.registro{
-    width:500px;
-    margin:50px auto;
-}
-
-.registro form{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-}
-
-.controls,
-.boton{
-    padding:12px;
-}
-
-.locales{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.locales img{
-    width:300px;
-    border-radius:15px;
-}
-
-footer{
-    background:#0B1B2D;
+    background:#1e3a5f;
     color:white;
-    padding:30px;
-    margin-top:50px;
-}
-
-
-
-
-
-        
-
-
-
-
-
+    padding:10px 20px;}
+header article{display:flex;align-items:center;}
+header img{width:60px;}
+header nav a{margin:0 10px;text-decoration:none;color:white;}
+#carrusel{margin-top:80px;}
+#carrusel img,
+#categorias img,
+.grupo-productos img,
+.grupo-locales img{width:100%;}
+#inicio{background:#fff;}
+#categorias{background:#dbeafe;}
+#menu{background:#f8fafc;}
+#nosotros{background:#dcfce7;}
+#locales{background:#fef3c7;}
+#registro{background:#fee2e2;}
+#inicio,#categorias,#menu,#nosotros,#locales,#registro,footer{scroll-margin-top:90px;}
+#categorias nav,
+.grupo-productos,
+.grupo-locales,
+.footer-bloques{display:grid;gap:10px;}
+#categorias nav{grid-template-columns:repeat(4,1fr);}
+.grupo-productos{grid-template-columns:repeat(4,1fr);}
+.grupo-locales{grid-template-columns:repeat(3,1fr);}
+.footer-bloques{grid-template-columns:repeat(5,1fr);}
+#registro form{display:flex;flex-direction:column;gap:10px;}
+footer{background:#1f2937;color:white;padding:20px;}
