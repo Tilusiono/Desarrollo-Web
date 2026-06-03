@@ -73,55 +73,55 @@ p{
     gap: 0px;
 }
 #uno{
-    background-image: url(/assets/imagenes/productos/chocobombom.png);
+    background-image: url(imagenes/productos/chocobombom.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #dos{
-    background-image: url(/assets/imagenes/productos/cono.png);
+    background-image: url(imagenes/productos/cono.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #tres{
-    background-image: url(/assets/imagenes/productos/lucuma-chips.png);
+    background-image: url(imagenes/productos/lucuma-chips.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #cuatro{
-    background-image: url(/assets/imagenes/productos/mini-yamboly.png);
+    background-image: url(imagenes/productos/mini-yamboly.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #cinco{
-    background-image: url(/assets/imagenes/productos/minipasion.png);
+    background-image: url(imagenes/productos/minipasion.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #seis{
-    background-image: url(/assets/imagenes/productos/pasion.png);
+    background-image: url(imagenes/productos/pasion.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #siete{
-    background-image: url(/assets/imagenes/productos/trisabor.png);
+    background-image: url(imagenes/productos/trisabor.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #ocho{
-    background-image: url(/assets/imagenes/productos/vainilla-chips.png);
+    background-image: url(imagenes/productos/vainilla-chips.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
 #nueve{
-    background-image: url(/assets/imagenes/productos/vainilla-chocolate.png);
+    background-image: url(imagenes/productos/vainilla-chocolate.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
