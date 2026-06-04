@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../../css/estilo_global.css">
     <title>Perú Hosting</title>
 </head>
 
@@ -16,33 +16,105 @@
         </section>
 
         <ul>
-            <li><a href="#inicio">Promociones</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#clientes">Clientes</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#web">Web</a></li>
+            <li><a href="#gaming">Gaming</a></li>
+            <li><a href="#dedicados">Dedicados</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </header>
 
     <main>
-        <!--SECCION 1-->
-        <section>
-            <h2>EL MEJOR SERVICIO DE HOSTING</h2>
-            <p>
-                Tenemos el servicio para tus requerimientos web, gaming o de hosting dedicado.
-            </p>
+        <!--SECCION CARRUSEL-->
+        <section class="section">
+            <section>
+                <h2>CARROUSEL DE PROMOCIONES</h2>
+                <p>
+                    Tenemos el servicio para tus requerimientos web, gaming o de hosting dedicado.
+                </p>
+            </section>
+
+            <section id="promociones" class="columnas_6">
+                <img src="images/carrusel1.png" alt="Plan 1">
+                <img src="images/carrusel2.png" alt="Plan 2">
+                <img src="images/carrusel3.png" alt="Plan 3">
+                <img src="images/carrusel1.png" alt="Plan 4">
+                <img src="images/carrusel2.png" alt="Plan 5">
+                <img src="images/carrusel3.png" alt="Plan 6">
+            </section>
         </section>
 
-        <section id="promociones" class="columnas_3">
-            <img src="images/carrusel1.png" alt="Plan 1">
-            <img src="images/carrusel2.png" alt="Plan 2">
-            <img src="images/carrusel3.png" alt="Plan 3">
+<!--SECCION 2 CATEGORIAS-->
+        <section id="categorias" class="section2">
+
+            <header>
+                <h2>Nuestras categorias de servicios</h2>
+            </header>
+
+            <section class="columnas_4">
+                <card class="card item">
+                    <header>
+                        <img src="images/web.png" alt="Servicios Web">
+                        <h3>Servicios Web</h3>
+                    </header>
+                    <p>
+                        Diseño, desarrollo y optimización de sitios web profesionales adaptados a tus necesidades.
+                    </p>
+                    <footer>
+                        <a href="#web">Ir</a>
+                    </footer>
+                </card>
+                <card class="card item">
+                    <header>
+                        <img src="images/gaming.png" alt="Servicios Gaming">
+                        <h3>Servicios Gaming</h3>
+                    </header>
+                    <p>
+                        Servidores optimizados y soluciones de alto rendimiento para la mejor experiencia de juego.
+                    </p>
+                    <footer>
+                        <a href="#gaming">Ir</a>
+                    </footer>
+                </card>
+                <card class="card item">
+                    <header>
+                        <img src="images/dedicados.jpg" alt="Servidores Dedicados">
+                        <h3>Servidores Dedicados</h3>
+                    </header>
+                    <p>
+                        Infraestructura exclusiva y potente con máxima seguridad para albergar tus proyectos.
+                    </p>
+                    <footer>
+                        <a href="#dedicados">Ir</a>
+                    </footer>
+                </card>
+                <card class="card item">
+                    <header>
+                        <img src="images/atc.png" alt="Atención al Cliente">
+                        <h3>Atención al Cliente</h3>
+                    </header>
+                    <p>
+                        Soporte técnico personalizado y asistencia constante para resolver todas tus dudas.
+                    </p>
+                    <footer>
+                        <a href="#contacto">Ir</a>
+                    </footer>
+                </card>
+            </section>
+
+            <footer>
+                <p>
+                    En esta sección se agrupan algunos productos y soluciones representativos relacionados
+                    con nuestros servicios tecnológicos.
+                </p>
+            </footer>
+
         </section>
-        <!--SECCION 2 CATEGORIAS-->
+
         <!--SECCION 3 ITEMS-->
-        <section id="servicios">
+        <section id="web">
             <h2>Servicios Web</h2>
-            <section>
+            <section class="section1 columnas_4">
                 <article>
                     <figure>
                         <img src="images/bronze.webp" alt="Plan Bronze">
@@ -55,111 +127,309 @@
                     <details>
                         <summary>Detalles del plan</summary>
                         <p>100gb HDD</p>
-                        <h4>S/. 100</h4>
+                        <h4>S/. 99</h4>
                         <button>Comprar</button>
                     </details>
                 </article>
                 <article>
-                    <img src="images/silver.webp" alt="Plan Silver">
-                    <h3>Web Silver</h3>
-                    <p>Ryzen 5</p>
-                    <p>250gb HDD</p>
-                    <h4>S/. 250</h4>
-                    <button>Comprar</button>
+                    <figure>
+                        <img src="images/silver.webp" alt="Plan Silver">
+                        <figcaption>Plan Silver</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Web Silver</h3>
+                        <mark>Ryzen 5</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>300gb HDD</p>
+                        <h4>S/. 250</h4>
+                        <button>Comprar</button>
+                    </details>
                 </article>
                 <article>
-                    <img src="images/diamond.png" alt="Plan Diamond">
-                    <h3>Web Diamond</h3>
-                    <p>Ryzen 7</p>
-                    <p>500gb HDD</p>
-                    <h4>S/. 500</h4>
-                    <button>Comprar</button>
+                    <figure>
+                        <img src="images/diamond.png" alt="Plan Diamond">
+                        <figcaption>Plan Diamond</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Web Diamond</h3>
+                        <mark>Ryzen 9</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>500gb HDD</p>
+                        <h4>S/. 399</h4>
+                        <button>Comprar</button>
+                    </details>
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/rubi.jpg" alt="Plan Rubi">
+                        <figcaption>Plan Rubi</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Web Rubi</h3>
+                        <mark>Ryzen Threadriper</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>1TB HDD</p>
+                        <h4>S/. 599</h4>
+                        <button>Comprar</button>
+                    </details>
                 </article>
             </section>
-
             <h2>Servicios Gaming</h2>
-            <section>
+            <section id="gaming" class="section2 columnas_4">
                 <article>
-                    <img src="images/bronze.webp" alt="Plan Bronze">
-                    <h3>Gaming Bronze</h3>
-                    <p>Ryzen 3</p>
-                    <p>100gb HDD</p>
-                    <h4>S/. 100</h4>
-                    <button>Comprar</button>
+                    <figure>
+                        <img src="images/minecraft.jpg" alt="Plan Minecraft">
+                        <figcaption>Plan Minecraft</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Minecraft</h3>
+                        <mark>1 jugador</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>1 servidor</p>
+                        <h4>S/. 20</h4>
+                        <button>Comprar</button>
+                    </details>
                 </article>
                 <article>
-                    <img src="images/silver.webp" alt="Plan Silver">
-                    <h3>Gaming Silver</h3>
-                    <p>Ryzen 5</p>
-                    <p>250gb HDD</p>
-                    <h4>S/. 250</h4>
-                    <button>Comprar</button>
+                    <figure>
+                        <img src="images/gta.jpg" alt="Plan GTA">
+                        <figcaption>Plan GTA</figcaption>
+                    </figure>
+                    <header>
+                        <h3>GTA</h3>
+                        <mark>5 jugadores</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>1 servidor Roleplay</p>
+                        <h4>S/. 50</h4>
+                        <button>Comprar</button>
+                    </details>
                 </article>
                 <article>
-                    <img src="images/diamond.png" alt="Plan Diamond">
-                    <h3>Gaming Diamond</h3>
-                    <p>Ryzen 7</p>
-                    <p>500gb HDD</p>
-                    <h4>S/. 500</h4>
-                    <button>Comprar</button>
+                    <figure>
+                        <img src="images/cs.png" alt="Plan Counter Strike">
+                        <figcaption>Plan Counter Strike</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Counter Strike</h3>
+                        <mark>30 jugadores</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>10 mapas gaming</p>
+                        <h4>S/. 39</h4>
+                        <button>Comprar</button>
+                    </details>
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/dota.png" alt="Dota">
+                        <figcaption>Plan Dota</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Dota</h3>
+                        <mark>Infinitos jugadores</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>Hosteo ilimitado</p>
+                        <h4>S/. 100</h4>
+                        <button>Comprar</button>
+                    </details>
                 </article>
             </section>
         </section>
 
-        <section id="clientes">
-            <h2>Nuestros clientes</h2>
-            <section>
-                <article>
+        <h2>Servidores dedicados</h2>
+        <section id="dedicados" class="section3 columnas_4">
+            <article>
+                <figure>
                     <img src="images/google.png" alt="Google">
+                    <figcaption>Google</figcaption>
+                </figure>
+                <header>
                     <h3>Google</h3>
-                    <p>+67 planes contratados</p>
-                </article>
-                <article>
+                    <mark>Cliente desde 1998</mark>
+                </header>
+                <details>
+                    <summary>Detalles de su servicio</summary>
+                    <p>1545 servidores</p>
+                </details>
+            </article>
+            <article>
+                <figure>
                     <img src="images/amazon.png" alt="Amazon">
+                    <figcaption>Amazon</figcaption>
+                </figure>
+                <header>
                     <h3>Amazon</h3>
-                    <p>+25 planes contratados</p>
-                </article>
-                <article>
+                    <mark>Cliente desde 2010</mark>
+                </header>
+                <details>
+                    <summary>Detalles de su servicio</summary>
+                    <p>6713 servidores</p>
+                </details>
+            </article>
+            <article>
+                <figure>
                     <img src="images/ovh.png" alt="OVH">
-                    <h3>OVH Cloud</h3>
-                    <p>+79 planes contratados</p>
-                </article>
-            </section>
+                    <figcaption>OVH</figcaption>
+                </figure>
+                <header>
+                    <h3>OVH</h3>
+                    <mark>Cliente desde 2003</mark>
+                </header>
+                <details>
+                    <summary>Detalles de su servicio</summary>
+                    <p>541 servidores</p>
+                </details>
+            </article>
+            <article>
+                <figure>
+                    <img src="images/facebook.png" alt="Facebook">
+                    <figcaption>Facebook</figcaption>
+                </figure>
+                <header>
+                    <h3>Facebook</h3>
+                    <mark>Cliente desde 2008</mark>
+                </header>
+                <details>
+                    <summary>Detalles de su servicio</summary>
+                    <p>10 servidores</p>
+                </details>
+            </article>
         </section>
 
-        <section id="nosotros">
-
-            <h2>Contacto</h2>
-            <p>📍 Ate Vitarte, Lima - Perú</p>
-            <p>📞 934 534 080</p>
-            <p>✉️ peru@hosting.pe</p>
-
-            <h2>Recibir promociones</h2>
-            <p>Inscribite para recibir promociones.</p>
+        <!-- SECCION FORMULARIO-->
+        <section class="section4" id="contacto">
+            <h2>Formulario de Servicio al cliente</h2>
 
             <form>
-                <input type="text" placeholder="Nombres" required>
-                <input type="text" placeholder="Apellidos" required>
-                <input type="email" placeholder="Correo Electrónico" required>
-                <input type="password" placeholder="Contraseña" required>
-                <input type="submit" value="Registrarme">
-            </form>
 
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <label for="servicio">ID del servicio:</label><br>
+                <input type="text" id="servicio" name="servicio" maxlength="3" required><br><br>
+
+                <label for="servicio">Numero de telefono:</label><br>
+                <input type="text" id="servicio" name="servicio" maxlength="9" required><br><br>
+
+
+                <label>Area:</label><br>
+
+                <input type="radio" id="ventas" name="area" value="ventas">
+                <label for="ventas">Ventas</label>
+
+                <input type="radio" id="tecnico" name="area" value="tecnico">
+                <label for="tecnico">Servicio Tecnico</label>
+
+                <input type="radio" id="otro" name="area" value="Otro">
+                <label for="otro">Otro</label>
+
+                <br><br>
+
+                <label for="fecha">Fecha del problema:</label><br>
+                <input type="datetime-local" name="reunion" value="2026-03-04T10:30" min="2026-01-01T08:00"
+                    max="2026-12-31T18:00" step="900">
+                <br><br>
+
+                <label for="tipo">Tipo de servicio</label><br>
+                <select id="tipo" name="ciudad">
+
+                    <option value="">Selecionar</option>
+
+                    <option>Web</option>
+                    <option>Gaming</option>
+                </select>
+                <br><br>
+
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                <br><br>
+
+                <legend>Adjuntar Archivos</legend>
+
+                <!-- file múltiple -->
+                <label>Imagen de ayuda:</label>
+                <input type="file" name="imagen" accept=".pdf,.doc,.docx" multiple>
+                <br><br>
+
+                <label>Video de ayuda:</label><br><br>
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/dD2EISBDjWM">
+                </iframe>
+                <br><br>
+
+                <audio controls>
+                    <source src="instrucciones.mp3" type="audio/mpeg">
+                </audio>
+                <br><br>
+
+                <label>
+                    <input type="checkbox" name="terminos" unchecked required>
+                    Acepto términos y condiciones
+                </label>
+                <br><br>
+
+                <button type="submit">Enviar</button>
+
+                <!-- botón reset -->
+                <button type="reset">Limpiar</button>
+                <br><br>
+
+            </form>
         </section>
 
-        <footer id="contacto">
-            <h3>Contacto</h3>
-            <p>📍 Ate Vitarte, Lima - Perú</p>
-            <p>📞 934 534 080</p>
-            <p>✉️ peru@hosting.pe</p>
+        <!-- SECCION FOOTER -->
+        <footer class="footer columnas_4">
 
-            <h3>Síguenos</h3>
-            <ul>
-                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-                <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
-                <li><a href="https://www.tiktok.com/" target="_blank">Tiktok</a></li>
-                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            </ul>
+            <section>
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/">TikTok</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Links</h3>
+                <ul>
+                    <li>Informacion legal </li>
+                    <li>Politica de privacidad</li>
+                    <li>Terminos y Condiciones</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Contacto soporte:</h3>
+                <ul>
+                    <li>peruhosting@peru.com</li>
+                    <li>Horario de atención: 24/7</li>
+                    <li>Ubicación: Lima, Perú</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Pagina creada y desarrollada por</h3>
+                <p>
+                    Michael Pacheco
+                    &copy; 2026 Derechos reservados
+                </p>
+            </section>
+
         </footer>
     </main>
 
