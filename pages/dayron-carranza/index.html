@@ -1,11 +1,431 @@
-<!DOCTYPE html>
-<html lang="en">
+ws <!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../css/estilo_global.css">
+    <title>Inca Fitness - Gimnasio</title>
 </head>
+
 <body>
-    
+    <header>
+        <section>
+            <img src="images/logo_gym.png" alt="Logo de Inca Fitness">
+            <h1>Inca Fitness</h1>
+        </section>
+
+        <ul>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#membresias">Membresías</a></li>
+            <li><a href="#disciplinas">Disciplinas</a></li>
+            <li><a href="#sedes">Nuestras Sedes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="section">
+            <section>
+                <h2>CARRUSEL DE PROMOCIONES</h2>
+                <p>
+                    ¡Empieza hoy mismo! Descubre nuestras ofertas exclusivas en pases mensuales, entrenamientos personalizados y nutrición.
+                </p>
+            </section>
+
+            <section id="promociones" class="columnas_6">
+                <img src="images/promo_verano.png" alt="Promo Verano">
+                <img src="images/promo_duo.jpg" alt="Plan Dúo">
+                <img src="images/promo_estudiante.jpg" alt="Plan Estudiante">
+                <img src="images/promo_anual.jpg" alt="Pase Anual">
+                <img src="images/promo_Personalizado.avif" alt="Pase Personalizado">
+                <img src="images/promo_Nutricion.jpg" alt="Plan Nutrición">
+            </section>
+        </section>
+
+        <section id="categorias" class="section2">
+
+            <header>
+                <h2>Nuestras categorías de servicios</h2>
+            </header>
+
+            <section class="columnas_4">
+                <card class="card item">
+                    <header>
+                        <img src="images/icon_pesis.jpg" alt="Membresías de Gimnasio">
+                        <h3>Membresías</h3>
+                    </header>
+                    <p>
+                        Planes flexibles de acceso libre a nuestras zonas de musculación, cardio y peso libre adaptados a tus objetivos.
+                    </p>
+                    <footer>
+                        <a href="#membresias">Ir</a>
+                    </footer>
+                </card>
+                <card class="card item">
+                    <header>
+                        <img src="images/icon_clases.png" alt="Disciplinas y Clases">
+                        <h3>Disciplinas</h3>
+                    </header>
+                    <p>
+                        Clases grupales dirigidas por instructores certificados: Boxeo, Spinning, Yoga, CrossFit y baile.
+                    </p>
+                    <footer>
+                        <a href="#disciplinas">Ir</a>
+                    </footer>
+                </card>
+                <card class="card item">
+                    <header>
+                        <img src="images/icon_sedes.png" alt="Nuestras Sedes">
+                        <h3>Nuestras Sedes</h3>
+                    </header>
+                    <p>
+                        Contamos con infraestructura moderna, zonas amplias y excelente equipamiento cerca de ti.
+                    </p>
+                    <footer>
+                        <a href="#sedes">Ir</a>
+                    </footer>
+                </card>
+                <card class="card item">
+                    <header>
+                        <img src="images/icon_atc.jpg" alt="Atención al Socio">
+                        <h3>Atención al Socio</h3>
+                    </header>
+                    <p>
+                        Soporte personalizado para congelamiento de membresías, dudas de pagos y reservas de citas.
+                    </p>
+                    <footer>
+                        <a href="#contacto">Ir</a>
+                    </footer>
+                </card>
+            </section>
+
+            <footer>
+                <p>
+                    En esta sección se agrupan los principales planes de entrenamiento, disciplinas grupales y beneficios diseñados para tu salud.
+                </p>
+            </footer>
+
+        </section>
+
+        <section id="membresias">
+            <h2>Membresías Fitness</h2>
+            <section class="section1 columnas_4">
+                <article>
+                    <figure>
+                        <img src="images/plan_bronze.jpg" alt="Plan Bronze Gym">
+                        <figcaption>Plan Bronze</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Pase Mensual</h3>
+                        <mark>Acceso Mañanas</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>Zona de musculación y cardio</p>
+                        <h4>S/. 99</h4>
+                        <button>Comprar</button>
+                    </details>
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/plan_silver.jpg" alt="Plan Silver Gym">
+                        <figcaption>Plan Silver</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Pase Trimestral</h3>
+                        <mark>Acceso Libre</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>Incluye 3 clases grupales al mes</p>
+                        <h4>S/. 250</h4>
+                        <button>Comprar</button>
+                    </details>
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/plan_diamond.jpg" alt="Plan Diamond Gym">
+                        <figcaption>Plan Diamond</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Pase Semestral</h3>
+                        <mark>Acceso Total</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>Clases ilimitadas + Evaluación</p>
+                        <h4>S/. 399</h4>
+                        <button>Comprar</button>
+                    </details>
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/plan_rubi.jpg" alt="Plan VIP Gym">
+                        <figcaption>Plan VIP Anual</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Inca VIP Black</h3>
+                        <mark>Personal Trainer Incluido</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>Acceso a todas las sedes + Nutrición</p>
+                        <h4>S/. 599</h4>
+                        <button>Comprar</button>
+                    </details>
+                </article>
+            </section>
+            
+            <h2>Disciplinas Dirigidas</h2>
+            <section id="disciplinas" class="section2 columnas_4">
+                <article>
+                    <figure>
+                        <img src="images/funcional.jpg" alt="Entrenamiento Funcional">
+                        <figcaption>Funcional</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Cross Inca</h3>
+                        <mark>1 sesión de prueba</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>Circuitos de alta intensidad</p>
+                        <h4>S/. 20</h4>
+                        <button>Comprar</button>
+                    </details>
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/boxeo.jpg" alt="Clases de Boxeo">
+                        <figcaption>Boxeo & MMA</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Boxeo Pro</h3>
+                        <mark>5 clases al mes</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>Técnica y cardio de combate</p>
+                        <h4>S/. 50</h4>
+                        <button>Comprar</button>
+                    </details>
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/spinning.jpg" alt="Clases de Spinning">
+                        <figcaption>Spinning</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Inca Cycling</h3>
+                        <mark>12 pases mensuales</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>Salón climatizado y monitores</p>
+                        <h4>S/. 39</h4>
+                        <button>Comprar</button>
+                    </details>
+                </article>
+                <article>
+                    <figure>
+                        <img src="images/yoga.jpg" alt="Clases de Yoga">
+                        <figcaption>Yoga & Pilates</figcaption>
+                    </figure>
+                    <header>
+                        <h3>Mente & Cuerpo</h3>
+                        <mark>Sesiones ilimitadas</mark>
+                    </header>
+                    <details>
+                        <summary>Detalles del plan</summary>
+                        <p>Flexibilidad y control postural</p>
+                        <h4>S/. 100</h4>
+                        <button>Comprar</button>
+                    </details>
+                </article>
+            </section>
+        </section>
+
+        <h2>Sedes Exclusivas</h2>
+        <section id="sedes" class="section3 columnas_4">
+            <article>
+                <figure>
+                    <img src="images/sede_miraflores.webp" alt="Sede Miraflores">
+                    <figcaption>Sede Miraflores</figcaption>
+                </figure>
+                <header>
+                    <h3>Miraflores</h3>
+                    <mark>Sede desde 2018</mark>
+                </header>
+                <details>
+                    <summary>Detalles de su servicio</summary>
+                    <p>Zonas de entrenamiento: 4 pisos</p>
+                </details>
+            </article>
+            <article>
+                <figure>
+                    <img src="images/sede_surco.jpg" alt="Sede Surco">
+                    <figcaption>Sede Surco</figcaption>
+                </figure>
+                <header>
+                    <h3>Santiago de Surco</h3>
+                    <mark>Sede desde 2020</mark>
+                </header>
+                <details>
+                    <summary>Detalles de su servicio</summary>
+                    <p>Zonas de entrenamiento: 5 pisos</p>
+                </details>
+            </article>
+            <article>
+                <figure>
+                    <img src="images/sede_olivos.jpg" alt="Sede Los Olivos">
+                    <figcaption>Sede Los Olivos</figcaption>
+                </figure>
+                <header>
+                    <h3>Los Olivos</h3>
+                    <mark>Sede desde 2022</mark>
+                </header>
+                <details>
+                    <summary>Detalles de su servicio</summary>
+                    <p>Zonas de entrenamiento: 3 pisos</p>
+                </details>
+            </article>
+            <article>
+                <figure>
+                    <img src="images/sede_san_miguel.jpg" alt="Sede San Miguel">
+                    <figcaption>Sede San Miguel</figcaption>
+                </figure>
+                <header>
+                    <h3>San Miguel</h3>
+                    <mark>Sede desde 2024</mark>
+                </header>
+                <details>
+                    <summary>Detalles de su servicio</summary>
+                    <p>Zonas de entrenamiento: Pista indoor</p>
+                </details>
+            </article>
+        </section>
+
+        <section class="section4" id="contacto">
+            <h2>Formulario de Servicio al cliente</h2>
+
+            <form>
+
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <label for="servicio">ID del servicio:</label><br>
+                <input type="text" id="servicio" name="servicio" maxlength="3" required><br><br>
+
+                <label for="servicio">Numero de telefono:</label><br>
+                <input type="text" id="servicio" name="servicio" maxlength="9" required><br><br>
+
+
+                <label>Area:</label><br>
+
+                <input type="radio" id="ventas" name="area" value="ventas">
+                <label for="ventas">Ventas</label>
+
+                <input type="radio" id="tecnico" name="area" value="tecnico">
+                <label for="tecnico">Servicio Tecnico</label>
+
+                <input type="radio" id="otro" name="area" value="Otro">
+                <label for="otro">Otro</label>
+
+                <br><br>
+
+                <label for="fecha">Fecha del problema:</label><br>
+                <input type="datetime-local" name="reunion" value="2026-03-04T10:30" min="2026-01-01T08:00"
+                    max="2026-12-31T18:00" step="900">
+                <br><br>
+
+                <label for="tipo">Tipo de servicio</label><br>
+                <select id="tipo" name="ciudad">
+
+                    <option value="">Selecionar</option>
+
+                    <option>Web</option>
+                    <option>Gaming</option>
+                </select>
+                <br><br>
+
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                <br><br>
+
+                <legend>Adjuntar Archivos</legend>
+
+                <label>Imagen de ayuda:</label>
+                <input type="file" name="imagen" accept=".pdf,.doc,.docx" multiple>
+                <br><br>
+
+                <label>Video de ayuda:</label><br><br>
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/dD2EISBDjWM">
+                </iframe>
+                <br><br>
+
+                <audio controls>
+                    <source src="instrucciones.mp3" type="audio/mpeg">
+                </audio>
+                <br><br>
+
+                <label>
+                    <input type="checkbox" name="terminos" unchecked required>
+                    Acepto términos y condiciones
+                </label>
+                <br><br>
+
+                <button type="submit">Enviar</button>
+
+                <button type="reset">Limpiar</button>
+                <br><br>
+
+            </form>
+        </section>
+
+        <footer class="footer columnas_4">
+
+            <section>
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/">TikTok</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Links</h3>
+                <ul>
+                    <li>Informacion legal </li>
+                    <li>Politica de privacidad</li>
+                    <li>Terminos y Condiciones</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Contacto soporte:</h3>
+                <ul>
+                    <li>incafitness@peru.com</li>
+                    <li>Horario de atención: 24/7</li>
+                    <li>Ubicación: Lima, Perú</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Pagina creada y desarrollada por</h3>
+                <p>
+                    Dayron Carranza
+                    &copy; 2026 Derechos reservados
+                </p>
+            </section>
+
+        </footer>
+    </main>
+
 </body>
+
 </html>
