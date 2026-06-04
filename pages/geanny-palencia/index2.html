@@ -26,11 +26,23 @@
             padding: 15px;
             z-index: 1000;
         }
-        header h1 {
-            margin: 0 0 10px 0;
-            font-size: 1.5rem;
-            color: #fff;
-        }
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #fff;
+    
+    /* Esto alinea el logo y el texto en la misma línea horizontal */
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Controla el espacio de separación entre el logo y el texto */
+}
+
+/* Controla el tamaño de tu icono para que no rompa la cabecera */
+.Menu-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain; /* Evita que la imagen se deforme */
+}
         nav ul {
             list-style: none;
             margin: 0;
@@ -186,7 +198,10 @@
 <body>
 
     <header>
-        <h1>Blog de Sekiro</h1>
+        <h1>
+            <img src="../geanny-palencia/assets/img/icono.png" alt="Logo sekiro" class="Menu-logo">
+            Blog de Sekiro
+        </h1>
         <nav>
             <ul>
                 <li><a href="#seccion-1">historia y lore</a></li>

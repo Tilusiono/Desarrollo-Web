@@ -7,6 +7,7 @@
    
     <link rel="icon" type="image/png" href="../geanny-palencia/assets/img/icono.png">
 
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -26,11 +27,21 @@
             padding: 15px;
             z-index: 1000;
         }
-        header h1 {
-            margin: 0 0 10px 0;
-            font-size: 1.5rem;
-            color: #fff;
-        }
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #fff;
+    
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Menu-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
         nav ul {
             list-style: none;
             margin: 0;
@@ -66,7 +77,13 @@
 </head>
 <body>
     <header>
-        <h1>Blog de Sekiro</h1>
+        <h1>
+        
+            <img src="../geanny-palencia/assets/img/icono.png" alt="Logo sekiro" class="Menu-logo">
+            
+                Blog de Sekiro
+        
+        </h1>
         <nav>
             <ul>
                 <li><a href="#seccion-1">historia y lore</a></li>
@@ -77,9 +94,12 @@
         </nav>
     </header>
 <section id="carrusel">
+    <h1>🎥 Carrusel de Imágenes</h1>
+    <p>imagenes del juego Sekiro</p>
     <img src="../geanny-palencia/assets/img/mikiri.png" alt="Carrusel 1">
     <img src="../geanny-palencia/assets/img/ejecusiones normales.png" alt="Carrusel 2">
     <img src="../geanny-palencia/assets/img/hacienda recuerdo.png" alt="Carrusel 3"> 
+</section>
     <main>
         <section id="seccion-1">
             <h2>📜 Historia y Lore</h2>
