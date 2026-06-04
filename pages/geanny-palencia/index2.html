@@ -1,396 +1,264 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Sekiro</title>
+    <title>Sekiro Blog</title>
+   
+    <link rel="icon" type="image/png" href="../geanny-palencia/assets/img/icono.png">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            background: #111;
+            width: 100%;
+            padding: 15px;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 120px 20px 40px 20px; 
+            border-bottom: 1px solid #333;
+            min-height: 50vh;
+        }
+        section img {
+            display: block;
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #e67e22;
+        }
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-
     <header>
-
-        <img src="../geanny-palencia/assets/img/icono.png"
-             alt="Logo de Sekiro"
-             width="120">
-
         <h1>Blog de Sekiro</h1>
-
-        <p>
-            Guía creada por fans para conocer la historia,
-            personajes, habilidades y secretos del juego.
-        </p>
-
         <nav>
-
             <ul>
-
-                <li><a href="#carrusel">Inicio</a></li>
-
-                <li><a href="#categorias">Categorías</a></li>
-
-                <li><a href="#personajes">Personajes</a></li>
-
-                <li><a href="#formulario">Formulario</a></li>
-
+                <li><a href="#carrusel">carrusel</a></li>
+                <li><a href="#seccion-1">historia y lore</a></li>
+                <li><a href="#seccion-2">Rutas y como hacerlas</a></li>
+                <li><a href="#seccion-3">objetos y habilidades</a></li>
+                <li><a href="#seccion-4">info de los personajes y enemigos</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-    <hr>
-
-    <!-- SECCIÓN 1 -->
-
+    <!-- CARRUSEL -->
     <section id="carrusel">
+        <h2>carrusel de imagenes</h2>
+        <p>aqui algunas imagenes del juego como tal</p>
 
-        <h2>Carrusel de Imágenes</h2>
+        <img src="../geanny-palencia/assets/img/mikiri.png" alt="Carrusel 1">
+        <p>Counter mikiri</p>
 
-        <p>
-            Algunas imágenes destacadas del juego.
-        </p>
+        <img src="../geanny-palencia/assets/img/ejecusiones normales.png" alt="Carrusel 2">
+        <p>ejecusiones</p>
 
-        <img src="../geanny-palencia/assets/img/mikiri.png"
-             alt="Mikiri Counter"
-             width="300">
-
-        <img src="../geanny-palencia/assets/img/ejecusiones normales.png"
-             alt="Ejecuciones"
-             width="300">
-
-        <img src="../geanny-palencia/assets/img/hacienda recuerdo.png"
-             alt="Hacienda Hirata"
-             width="300">
-
+        <img src="../geanny-palencia/assets/img/hacienda recuerdo.png" alt="Carrusel 3"> 
+        <p>una de las secciones del mapa</p>
     </section>
 
-    <hr>
+    <main>
 
-    <!-- SECCIÓN 2 -->
-
-    <section id="categorias">
-
-        <h2>Categorías del Blog</h2>
-
-        <article>
-
-            <h3>Historia y Lore</h3>
-
+        <section id="seccion-1">
+            <h2>📜 Historia y Lore</h2>
             <p>
-                Descubre el origen de Wolf,
-                la historia de Ashina y la Sangre del Dragón.
-            </p>
+                Aqui va el lore y la historia de sekiro...
+            </p> 
+            <img src="../geanny-palencia/assets/img/captura1.png" alt="Captura 1">
+        </section>
 
-        </article>
+        <section id="seccion-2">
+            <h2>🗺️ Rutas y Cómo Hacerlas</h2>
+            <p>Lorem ipsum...</p>
+            <img src="../geanny-palencia/assets/img/captura2.png" alt="Captura 2">
+        </section>
 
-        <article>
+        <section id="seccion-3">
+            <h2>🎒 Objetos y Habilidades</h2>
+            <p>Lorem ipsum...</p>
+            <img src="../geanny-palencia/assets/img/captura3.png" alt="Captura 3">
+        </section>
 
-            <h3>Rutas y Finales</h3>
+        <section id="seccion-4">
 
-            <p>
-                Aprende cómo desbloquear todos los finales
-                disponibles en el juego.
-            </p>
+            <h2>👥 Info de los Personajes y Enemigos</h2>
 
-        </article>
+            <article>
+                <h3>Wolf (Sekiro)</h3>
+                <img src="../geanny-palencia/assets/img/Sekiro.png" alt="Sekiro">
 
-        <article>
+                <ul>
+                    <li><strong>Rol:</strong> Protagonista</li>
+                    <li><strong>Afiliación:</strong> Clan Hirata</li>
+                    <li><strong>Arma:</strong> Kusabimaru</li>
+                    <li><strong>Objetivo:</strong> Proteger a Kuro</li>
+                </ul>
 
-            <h3>Objetos y Habilidades</h3>
+                <p>
+                    Shinobi conocido como Wolf...
+                </p>
+            </article>
 
-            <p>
-                Información sobre herramientas protésicas
-                y artes de combate.
-            </p>
+            <hr>
 
-        </article>
+            <article>
+                <h3>Genichiro Ashina</h3>
+                <img src="../geanny-palencia/assets/img/Genichiro.png" alt="Genichiro">
 
-        <article>
+                <ul>
+                    <li><strong>Rol:</strong> Antagonista</li>
+                    <li><strong>Afiliación:</strong> Clan Ashina</li>
+                    <li><strong>Arma:</strong> Katana y arco</li>
+                    <li><strong>Objetivo:</strong> Salvar Ashina</li>
+                </ul>
 
-            <h3>Personajes y Jefes</h3>
+                <p>
+                    Nieto adoptivo de Isshin Ashina...
+                </p>
+            </article>
 
-            <p>
-                Conoce a los aliados y enemigos más importantes.
-            </p>
+            <hr>
 
-        </article>
+            <article>
+                <h3>Isshin Ashina</h3>
+                <img src="../geanny-palencia/assets/img/Isshin.png" alt="Isshin">
 
-    </section>
+                <ul>
+                    <li><strong>Rol:</strong> Fundador de Ashina</li>
+                    <li><strong>Título:</strong> Santo de la Espada</li>
+                    <li><strong>Arma:</strong> Katana</li>
+                    <li><strong>Especialidad:</strong> Combate cuerpo a cuerpo</li>
+                </ul>
 
-    <hr>
+                <p>
+                    Legendario guerrero...
+                </p>
+            </article>
 
-    <!-- SECCIÓN 3 -->
+            <hr>
 
-    <section id="personajes">
+            <article>
+                <h3>Kuro</h3>
+                <img src="../geanny-palencia/assets/img/Kuro.png" alt="Kuro">
 
-        <h2>Fichas de Personajes</h2>
+                <ul>
+                    <li><strong>Rol:</strong> Heredero Divino</li>
+                    <li><strong>Poder:</strong> Sangre del Dragón</li>
+                    <li><strong>Protector:</strong> Wolf</li>
+                    <li><strong>Importancia:</strong> Personaje central</li>
+                </ul>
 
-        <!-- FICHA 1 -->
+                <p>
+                    Joven heredero...
+                </p>
+            </article>
 
-        <article>
-
-            <h3>Wolf (Sekiro)</h3>
-
-            <img src="../geanny-palencia/assets/img/captura1.png"
-                 alt="Wolf"
-                 width="250">
-
-            <h4>Información General</h4>
-
-            <ul>
-
-                <li><strong>Nombre:</strong> Wolf</li>
-
-                <li><strong>Título:</strong> Sekiro</li>
-
-                <li><strong>Rol:</strong> Protagonista</li>
-
-                <li><strong>Afiliación:</strong> Clan Hirata</li>
-
-            </ul>
-
-            <h4>Descripción</h4>
-
-            <p>
-                Shinobi que juró proteger al joven Kuro.
-                Es el protagonista principal de la historia.
-            </p>
-
-        </article>
+        </section>
 
         <hr>
 
-        <!-- FICHA 2 -->
+        <!-- FORMULARIO -->
+        <section id="formulario">
 
-        <article>
+            <h2>Formulario de Opinión</h2>
 
-            <h3>Genichiro Ashina</h3>
+            <form>
 
-            <img src="../geanny-palencia/assets/img/captura2.png"
-                 alt="Genichiro"
-                 width="250">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
 
-            <h4>Información General</h4>
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" name="correo"><br><br>
 
-            <ul>
+                <label for="categoria">Categoría Favorita:</label><br>
 
-                <li><strong>Nombre:</strong> Genichiro Ashina</li>
+                <select id="categoria">
+                    <option>Historia y Lore</option>
+                    <option>Rutas y Finales</option>
+                    <option>Objetos y Habilidades</option>
+                    <option>Personajes y Jefes</option>
+                </select>
 
-                <li><strong>Rol:</strong> Antagonista</li>
+                <br><br>
 
-                <li><strong>Arma:</strong> Katana y arco</li>
+                <label for="comentario">Comentario:</label><br>
+                <textarea id="comentario" rows="5" cols="40"></textarea>
 
-                <li><strong>Afiliación:</strong> Clan Ashina</li>
+                <br><br>
 
-            </ul>
+                <input type="submit" value="Enviar">
 
-            <h4>Descripción</h4>
+            </form>
 
-            <p>
-                Busca salvar a Ashina utilizando cualquier
-                medio posible, incluso la inmortalidad.
-            </p>
+        </section>
 
-        </article>
+    </main>
 
-        <hr>
-
-        <!-- FICHA 3 -->
-
-        <article>
-
-            <h3>Isshin Ashina</h3>
-
-            <img src="../geanny-palencia/assets/img/captura3.png"
-                 alt="Isshin"
-                 width="250">
-
-            <h4>Información General</h4>
-
-            <ul>
-
-                <li><strong>Nombre:</strong> Isshin Ashina</li>
-
-                <li><strong>Título:</strong> Santo de la Espada</li>
-
-                <li><strong>Rol:</strong> Fundador de Ashina</li>
-
-                <li><strong>Arma:</strong> Katana</li>
-
-            </ul>
-
-            <h4>Descripción</h4>
-
-            <p>
-                Considerado uno de los espadachines más
-                poderosos del juego.
-            </p>
-
-        </article>
-
-        <hr>
-
-        <!-- FICHA 4 -->
-
-        <article>
-
-            <h3>Kuro</h3>
-
-            <img src="../geanny-palencia/assets/img/captura4.png"
-                 alt="Kuro"
-                 width="250">
-
-            <h4>Información General</h4>
-
-            <ul>
-
-                <li><strong>Nombre:</strong> Kuro</li>
-
-                <li><strong>Rol:</strong> Heredero Divino</li>
-
-                <li><strong>Protector:</strong> Wolf</li>
-
-                <li><strong>Poder:</strong> Sangre del Dragón</li>
-
-            </ul>
-
-            <h4>Descripción</h4>
-
-            <p>
-                Posee el poder de la inmortalidad y es el
-                personaje que Wolf debe proteger.
-            </p>
-
-        </article>
-
-    </section>
-
-    <hr>
-
-    <!-- SECCIÓN 4 -->
-
-    <section id="formulario">
-
-        <h2>Formulario de Opinión</h2>
-
-        <form>
-
-            <label for="nombre">
-                Nombre:
-            </label>
-
-            <br>
-
-            <input type="text"
-                   id="nombre"
-                   name="nombre">
-
-            <br><br>
-
-            <label for="correo">
-                Correo Electrónico:
-            </label>
-
-            <br>
-
-            <input type="email"
-                   id="correo"
-                   name="correo">
-
-            <br><br>
-
-            <label for="categoria">
-                Categoría Favorita:
-            </label>
-
-            <br>
-
-            <select id="categoria">
-
-                <option>Historia y Lore</option>
-
-                <option>Rutas y Finales</option>
-
-                <option>Objetos y Habilidades</option>
-
-                <option>Personajes y Jefes</option>
-
-            </select>
-
-            <br><br>
-
-            <label for="comentario">
-                Comentario:
-            </label>
-
-            <br>
-
-            <textarea id="comentario"
-                      rows="5"
-                      cols="40"></textarea>
-
-            <br><br>
-
-            <input type="submit"
-                   value="Enviar">
-
-        </form>
-
-    </section>
-
-    <hr>
-
-    <!-- FOOTER -->
-
+    <!-- FOOTER CORREGIDO -->
     <footer>
 
-        <h3>Sobre el Proyecto</h3>
+        <section>
+            <h3>Sobre el Proyecto</h3>
+            <p>Página creada para aprender HTML con Sekiro.</p>
+        </section>
 
-        <p>
-            Página creada para aprender HTML utilizando
-            el universo de Sekiro como temática principal.
-        </p>
+        <section>
+            <h3>Enlaces de Interés</h3>
+            <ul>
+                <li>Wiki de Sekiro</li>
+                <li>Comunidad de jugadores</li>
+                <li>Noticias y actualizaciones</li>
+            </ul>
+        </section>
 
-        <h3>Enlaces de Interés</h3>
+        <section>
+            <h3>Contacto y Créditos</h3>
+            <p>correo@sekiroblog.com</p>
+            <p>Lima - Perú</p>
+            <p>Proyecto académico de HTML.</p>
 
-        <ul>
-
-            <li>Wiki de Sekiro</li>
-
-            <li>Comunidad de jugadores</li>
-
-            <li>Noticias y actualizaciones</li>
-
-        </ul>
-
-        <h3>Contacto</h3>
-
-        <p>
-            correo@sekiroblog.com
-        </p>
-
-        <p>
-            Lima - Perú
-        </p>
-
-        <h3>Créditos</h3>
-
-        <p>
-            Proyecto académico de HTML.
-        </p>
-
-        <small>
-            © 2026 Blog de Sekiro
-        </small>
+            <small>© 2026 Blog de Sekiro</small>
+        </section>
 
     </footer>
 
 </body>
-
 </html>
-```
