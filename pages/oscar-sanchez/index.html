@@ -241,7 +241,70 @@
         </section>
 
 
-   
+        <!-- S6: FORMULARIO DE CONTACTO -->
+        <section id="contacto" class="seccion-contacto">
+            <h2>Formulario de Contacto y Pedido</h2>
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <p>
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+                    <p>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles de tu Pedido</legend>
+                    <p>
+                        <label for="juego">Juego de Interés:</label>
+                        <select id="juego" name="juego">
+                            <option value="">-- Selecciona un juego --</option>
+                            <option value="human-fall-flat">Human: Fall Flat</option>
+                            <option value="god-of-war">God of War</option>
+                            <option value="mortal-kombat-11">Mortal Kombat 11 Ultimate</option>
+                            <option value="stray">Stray</option>
+                            <option value="pou">Pou</option>
+                            <option value="mortal-kombat-1">Mortal Kombat 1: Definitive Edition</option>
+                            <option value="batman">Batman: Arkham Knight</option>
+                            <option value="gta-v">Grand Theft Auto V</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="plataforma">Plataforma:</label>
+                        <select id="plataforma" name="plataforma">
+                            <option value="">-- Selecciona plataforma --</option>
+                            <option value="pc">PC</option>
+                            <option value="ps5">PlayStation 5</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="fecha">Fecha de entrega deseada:</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </p>
+                    <p>
+                        <label for="mensaje">Mensaje o consulta:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="40"
+                            placeholder="Escribe aquí los detalles de tu pedido..."></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="boletin" name="boletin" value="si">
+                        <label for="boletin">Deseo recibir ofertas y promociones en mi correo.</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar Pedido</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </p>
     
     <footer id="contacto">
         <p>© 2026 Mi Página Web</p>
@@ -271,14 +334,15 @@
 </html>
 
 
+
 <!-- 
 Header               1.0 No usar div
 S1 Inicio            3.5 , no hay imágenes
 S2 Categorización    0.0 (minimo 4)   
 S3 Ítems             3.5 (Minimo 12 ítems podrías hacer 4 por cada categoria) , Todos tienen mismo precio
-S4 Formulario        2.5 , Minimo 7/12 inputs diferentes
+S4 Formulario        3.0 , Minimo 9/12 inputs diferentes
 Footer               0.5, Le falta mas contenido 
-Nota HTML:11
+Nota HTML:12
 Sustentación :+0
 Participacion:1
 Observaciones : 
@@ -287,5 +351,5 @@ Observaciones :
 - Seguir los lineamientos dados en clase.
 - Considerar que solo es código HTML , si conservas el css y el JS se harán preguntas con respecto a esto.
 - Usar css base
-Nota Parcial : 12 de 20
+Nota Parcial : 13
 -->
