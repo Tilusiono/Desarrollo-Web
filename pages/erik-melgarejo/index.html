@@ -2,191 +2,249 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>GG Highlights</title>
-    <style>
-        body {
-            background: rgb(219, 211, 211);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GG Highlights</title>
+  <link rel="stylesheet" href="../../css/estilo_global.css">
+  <link rel="icon" type="image/png" href="logodejuego.jpg">
+
 </head>
 
 <body>
+  <!-- BUSCADOR -->
+  <section id="buscador" class="section-search">
 
-    <header>
-        <img src="logodejuego.jpg" alt="Logo GG Highlights" width="100%" height="300">
-        <h1>GG Highlights</h1>
-        <p>GG Highlights está enfocada en el mundo gamer. La idea es mostrar clips y jugadas destacadas de videojuegos
-            populares como Dota 2, Valorant, League of Legends y Counter-Strike. Cada sección tiene imágenes
-            representativas y al hacer clic se pueden ver videos de jugadas épicas o momentos importantes. Es
-            básicamente un espacio para revivir lo más emocionante del gaming y del streaming.</p>
-    </header>
+    <form action="#clips-dota" method="get">
+      <input type="search" name="q" placeholder="Escribe Dota, Valorant, LoL o CS2">
+
+    </form>
+  </section>
 
 
-    <section id="videojuegos">
-        <h2>Videojuegos más jugados</h2>
-        <table>
-            <tr>
-                <td>
-                    <a href="https://www.dota2.com/home" target="_blank">
-                        <img src="dotaimg.jpg" width="450" height="450" alt="Dota 2">
-                    </a>
-                    <p><a href="#clips-dota">DOTA2</a></p>
+  <!-- LOGO -->
+  <header>
+    <img src="logodejuego.jpg" alt="Logo GG Highlights" width="2000" height="300">
 
-                </td>
-                <td>
-                    <a href="https://playvalorant.com/es-mx/" target="_blank">
-                        <img src="valorantimg.webp" width="450" height="450" alt="Valorant">
-                    </a>
-                    <p><a href="#clips-valorant">VALORANT</a></p>
-                </td>
+  </header>
 
-                <td>
-                    <a href="https://www.leagueoflegends.com/es-es/" target="_blank">
-                        <img src="lolimg.jpg" width="450" height="450" alt="League of Legends">
-                    </a>
-                    <p><a href="#clips-lol">LEAGUE OF LEGENDS</a></p>
-                </td>
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header class="header">
+    <h1>GG Highlights</h1>
+    <p>GG Highlights está enfocada en el mundo gamer. La idea es mostrar clips y jugadas destacadas de videojuegos
+      populares como Dota 2, Valorant, League of Legends y Counter-Strike. Cada sección tiene imágenes
+      representativas y al hacer clic se pueden ver videos de jugadas épicas o momentos importantes. Es
+      básicamente un espacio para revivir lo más emocionante del gaming y del streaming.</p>
+  </header>
 
-                <td>
-                    <a href="https://www.counter-strike.net/cs2?l=spanish" target="_blank">
-                        <img src="counterimg.jpg" width="450" height="450" alt="Counter‑Strike">
-                    </a>
-                    <p><a href="#clips-cs">COUNTER STRIKE</a></p>
-                </td>
+  <!-- SECCIÓN DE VIDEOJUEGOS -->
+  <section id="videojuegos" class="section2">
+    <h2>Videojuegos más jugados</h2>
+    <p>En el mundo gamer existen títulos que han marcado generaciones y que siguen siendo los más jugados y comentados
+      en la actualidad. Entre ellos destacan Dota 2, un clásico de estrategia por equipos que ha definido el género MOBA
+      con batallas intensas y héroes únicos; League of Legends, que se ha convertido en un fenómeno global con millones
+      de jugadores y competencias profesionales en todo el mundo; Valorant, el shooter táctico que mezcla precisión y
+      habilidades especiales en partidas llenas de adrenalina; y Counter Strike 2, la evolución de uno de los FPS más
+      emblemáticos, donde la estrategia y la puntería siguen siendo la clave para dominar cada ronda..</p>
 
-            </tr>
-        </table>
+    <section class="columnas_4">
+      <article class="card">
+        <h3>Dota 2</h3>
+        <img src="dotaimg.jpg" alt="Dota 2" width="250">
+        <footer><a href="#clips-dota">Clips Dota 2</a></footer>
+      </article>
+
+      <article class="card">
+        <h3>Valorant</h3>
+        <img src="valorantimg.webp" alt="Valorant" width="250">
+        <footer><a href="#clips-valorant">Clips Valorant</a></footer>
+      </article>
+
+      <article class="card">
+        <h3>League of Legends</h3>
+        <img src="lolimg.jpg" alt="LoL" width="250">
+        <footer><a href="#clips-lol">Clips LoL</a></footer>
+      </article>
+
+      <article class="card">
+        <h3>Counter Strike 2</h3>
+        <img src="counterimg.jpg" alt="CS2" width="250">
+        <footer><a href="#clips-cs">Clips CS2</a></footer>
+      </article>
     </section>
+  </section>
 
+  <!-- CLIPS DE DOTA 2 -->
+  <section id="clips-dota" class="section3">
+    <h2>JUGADAS QUE LA COMUNIDAD DE ESTE JUEGO NUNCA OLVIDARA</h2>
+    <section class="columnas_4">
+      <article class="card">
+        <h3>Clip 1</h3>
+        <video src="videos/1jugadadota.mp4" width="250" controls
+          title="Scofield CANCELA LA TELETRANSPORTACION DEL ENEMIGO DANDO A SU EQUIPO ROMPER TORRES"></video>
+      </article>
 
-    <section id="clips-dota">
-        <h2>Clips de Dota 2</h2>
-        <ul>
-            <li>
+      <article class="card">
+        <h3>Clip 2</h3>
+        <video src="videos/universe.mp4" width="250" controls
+          title="Universe realiza el famoso Echo Slam de 6 millones"></video>
+      </article>
 
-                <p>En esta jugada, Scofield realiza una acción decisiva al aturdir y cancelar la teletransportación del
-                    equipo enemigo en el bosque oscuro. Gracias a su rápida reacción y control de habilidades, evita que
-                    los rivales regresen a defender su base, permitiendo que el resto de Beastcoast empuje con libertad
-                    la línea inferior. Esta jugada demuestra una lectura excelente del mapa y coordinación</p>
-                <video src="videos/1jugadadota.mp4" width="320" height="240" controls></video>
-            </li>
+      <article class="card">
+        <h3>OD VS 5ENEMY</h3>
+        <video src="Videos/ode.mp4" width="250" controls 
+           title="EL OD DE MIRACLE LOGRA UN CLUTCH INCREÍBLE EN UNA SITUACIÓN DE 1 VS 5"></video>
+      </article>
 
-            <li>
-                <p>En esta jugada histórica, Evil Geniuses logra la famosa “Echo Slam de 6 millones” frente a CDEC.
-                    Mientras el equipo enemigo intenta asegurar a Roshan, Universe lanza un Echo Slam perfecto que
-                    impacta a todos los héroes agrupados dentro del foso. La explosión de daño y control cambia por
-                    completo el rumbo de la partida, permitiendo a EG eliminar a todo el equipo rival y asegurar la
-                    victoria. Este momento se convirtió en una de las jugadas más recordadas del competitivo de Dota 2
-                    por su precisión, timing y el impacto que tuvo en el torneo.</p>
-                <video src="videos/universe.mp4" width="320" height="240" controls></video>
-            </li>
-        </ul>
+      <article class="card">
+        <h3>Clip 4</h3>
+        <video src="videos/arce.mp4" width="250" controls
+          title="EL ARC WARDEN DE MIRACLE LOGRA UNA JUGADA EPICA QUE PONE A SU EQUIPO EN UNA GANADA ABSOLUTA"></video>
+      </article>
     </section>
+  </section>
 
 
-    <section id="clips-valorant">
-        <h2>Clips de Valorant</h2>
-        <ul>
-            <li>
-
-                <p>En esta jugada de Valorant, el jugador se encuentra en clara desventaja numérica y parece imposible
-                    ganar la ronda. Sin embargo, con movimientos inteligentes y disparos precisos, logra sorprender a
-                    cada rival uno por uno. En el minuto 11:07, convierte un clutch épico en victoria, demostrando
-                    sangre fría y dominio absoluto del juego. Este momento es un ejemplo</p>
-                <video src="videos/vidvalorant.mp4" width="320" height="240" controls></video>
-            </li>
-            <li>
-                <p>En esta jugada, nAts de Gambit Esports consigue un ace espectacular frente a G2. Con movimientos
-                    precisos y reflejos perfectos, elimina a los cinco enemigos uno por uno, demostrando una lectura
-                    impecable del mapa y control total de la situación. Su ejecución convierte una ronda difícil en una
-                    victoria contundente, dejando claro por qué es considerado uno de los jugadores más inteligentes y
-                    letales del competitivo.</p>
-
-                <video src="videos/vidvalorant2.mp4" width="320" height="240" controls></video>
-            </li>
-        </ul>
+  <!-- CLIPS DE VALORANT -->
+  <section id="clips-valorant" class="section3">
+    <h2>JUGADAS QUE MARCARON MOMENTOS INOLVIDABLES EN VALORANT</h2>
+    <section class="columnas_4">
+      <article class="card">
+        <h3>Clip 1</h3><video src="videos/vidvalorant.mp4" width="250" controls></video>
+      </article>
+      <article class="card">
+        <h3>Clip 2</h3><video src="videos/vidvalorant2.mp4" width="250" controls></video>
+      </article>
+      <article class="card">
+        <h3>Clip 3</h3><video src="videos/val3.mp4" width="250" controls></video>
+      </article>
+      <article class="card">
+        <h3>Clip 4</h3><video src="videos/val4.mp4" width="250" controls></video>
+      </article>
     </section>
+  </section>
 
-
-    <section id="clips-lol">
-        <h2>Clips de League of Legends</h2>
-        <ul>
-            <li>
-                <p>Los jugadores NS Jiwoo y NS Peter están ejecutando una emboscada agresiva contra un rival de DK que
-                    intenta defender bajo su torre. Ambos campeones de NS activan sus habilidades de control y daño en
-                    área, creando un efecto visual de escudos y explosiones mientras el enemigo intenta retroceder.</p>
-                <video src="videos/1jugadalol.mp4" width="320" height="240" controls></video>
-            </li>
-            <li>
-
-                <p>En esta jugada, BDS nuc consigue un Pentakill espectacular con Irelia frente a Vitality. La pelea
-                    ocurre cerca del río, donde nuc se lanza con precisión milimétrica contra los cinco enemigos. .</p>
-
-                <video src="videos/2jugadalol.mp4" width="320" height="240" controls></video>
-            </li>
-            <li>
-
-                <p>En esta jugada, MDK Supa consigue un Pentakill espectacular frente a Fnatic. Con reflejos rápidos
-                    y posicionamiento perfecto, elimina a los cinco enemigos en una sola pelea grupal, demostrando
-                    una ejecución impecable y coordinación con su equipo. Este momento se convierte en uno de los
-                    más emocionantes del enfrentamiento, mostrando el poder y la confianza de Supa en el
-                    competitivo.</p>
-
-                <video src="videos/3jugadalol.mp4" width="320" height="240" controls></video>
-            </li>
-        </ul>
+  <!-- CLIPS DE LOL -->
+  <section id="clips-lol" class="section3">
+    <h2>JUGADAS QUE MARCARON HECHOS HISTORICOS EN LEAGUE OF LEGENDS</h2>
+    <section class="columnas_4">
+      <article class="card">
+        <h3>Clip 1</h3><video src="videos/1jugadalol.mp4" width="250" controls></video>
+      </article>
+      <article class="card">
+        <h3>Clip 2</h3><video src="videos/2jugadalol.mp4" width="250" controls></video>
+      </article>
+      <article class="card">
+        <h3>Clip 3</h3><video src="videos/3jugadalol.mp4" width="250" controls></video>
+      </article>
+      <article class="card">
+        <h3>Clip 4</h3><video src="videos/lol4.mp4" width="250" controls></video>
+      </article>
     </section>
+  </section>
 
-    <section id="clips-cs">
-        <h2>Clips de Counter Strike</h2>
-        <ul>
-            <li>
-                <p>En la primera jugada, donk protagoniza un clutch memorable en CounterStrike 2. A pesar de estar en
-                    clara desventaja numérica, se posiciona con inteligencia y aprovecha cada ángulo para sorprender a
-                    sus rivales. Con una ráfaga de disparos precisos elimina a varios enemigos en cuestión de segundos.
-                <p>
-
-                    <video src="videos/counter.mp4" width="320" height="240" controls></video>
-            </li>
-            <p>En la jugada protagonizada por wonderful, el jugador demuestra un dominio absoluto del francotirador. Con
-                calma y precisión, se posiciona en un ángulo clave y conecta disparos certeros que eliminan a los
-                rivales uno tras otro.
-                <li>
-                    <video src="videos/counter2.mp4" width="320" height="240" controls></video>
-                </li>
-        </ul>
+  <!-- CLIPS DE CS2 -->
+  <section id="clips-cs" class="section3">
+    <h2>JUGADAS QUE MARCARON HISTORIA EN COUNTER STRIKE 2</h2>
+    <section class="columnas_4">
+      <article class="card">
+        <h3>Clip 1</h3><video src="videos/counter.mp4" width="250" controls></video>
+      </article>
+      <article class="card">
+        <h3>Clip 2</h3><video src="videos/counter2.mp4" width="250" controls></video>
+      </article>
+      <article class="card">
+        <h3>Clip 3</h3><video src="videos/dunkc2.mp4" width="250" controls></video>
+      </article>
+      <article class="card">
+        <h3>Clip 4</h3><video src="videos/cs3.mp4" width="250" controls></video>
+      </article>
     </section>
+  </section>
+
+  
+  <!-- FORMULARIO -->
+<section class="section4">
+  <h2>Suscríbete para recibir novedades</h2>
+
+  <section class="columnas_4">
+    <!-- Bloque 1 -->
+    <article>
+      <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+      <input type="email" name="correo" placeholder="Ingresa tu correo">
+    </article>
+
+    <!-- Bloque 2 -->
+    <article>
+      <input type="text" name="nickname" placeholder="Ingresa tu nickname">
+      <input type="number" name="edad" placeholder="Ingresa tu edad">
+    </article>
+
+    <!-- Bloque 3: Ubicación -->
+    <article>
+      <fieldset>
+        <legend>Ubicación</legend>
+
+        <label>Seleccione País:</label>
+        <select name="pais">
+          <option value="">Seleccione</option>
+
+          <!-- optgroup agrupa opciones -->
+          <optgroup label="Sudamérica">
+            <option value="pe" selected>Perú</option>
+            <option value="ar">Argentina</option>
+            <option value="co">Colombia</option>
+            <option value="cl">Chile</option>
+            <option value="uy">Uruguay</option>
+            <option value="ve">Venezuela</option>
+          </optgroup>
+
+          <optgroup label="Europa">
+            <option value="de">Alemania</option>
+            <option value="es">España</option>
+            <option value="fr">Francia</option>
+            <option value="it">Italia</option>
+            <option value="uk">Reino Unido</option>
+            <option value="ru">Rusia</option>
+            <option value="nl">Países Bajos</option>
+          </optgroup>
+        </select>
+      </fieldset>
+    </article>
+
+    <!-- Bloque 4 -->
+    <article>
+      <input type="tel" name="telefono" placeholder="Ingresa tu número de teléfono">
+      <input type="text" name="ID del juego" placeholder="Ingresa tu ID del juego favorito">
+    </article>
+
+    <!-- Bloque 5 -->
+    <article>
+      <input type="text" name="plataforma" placeholder="Tu plataforma favorita">
+      <input type="text" name="juego" placeholder="Tu juego favorito">
+    </article>
+
+    <!-- Bloque 6 -->
+    <article>
+      <label>
+        <input type="checkbox" name="acepto"> Acepto recibir novedades por correo
+      </label>
+      <br>
+      <input type="submit" value="Suscribirme">
+    </article>
+  </section>
+</section>
 
 
-    <footer>
-        <p>© 2026 GG Highlights - Creado por Erik</p>
-
-        <p>Síguenos en:</p>
-        <a href="https://www.youtube.com" target="_blank">
-            <img src="youtubeicon.png" alt="YouTube" width="30">
-        </a>
-        <a href="https://www.twitch.tv" target="_blank">
-            <img src="twitchicon.png" alt="Twitch" width="30">
-        </a>
-        <a href="https://discord.com" target="_blank">
-            <img src="discordicon.png" alt="Discord" width="30">
-        </a>
 
 
-        <p>Suscríbete para recibir novedades:</p>
-
-
-        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
-        <input type="email" name="correo" placeholder="Ingresa tu correo">
-        <input type="text" name="pais" placeholder="Ingresa tu país">
-        <input type="number" name="edad" placeholder="Ingresa tu edad">
-        <input type="password" name="clave" placeholder="Crea una contraseña">
-        <input type="submit" value="Suscribirme">
-
-    </footer>
-
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 GG Highlights - Creado por Erik</p>
+    <p>Síguenos en:</p>
+    <a href="https://www.youtube.com" target="_blank"><img src="youtubeicon.png" alt="YouTube" width="30"></a>
+    <a href="https://www.twitch.tv" target="_blank"><img src="twitchicon.png" alt="Twitch" width="30"></a>
+    <a href="https://discord.com" target="_blank"><img src="discordicon.png" alt="Discord" width="30"></a>
+  </footer>
 
 </body>
 
