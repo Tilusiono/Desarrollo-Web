@@ -12,9 +12,9 @@
 
     <header>
         <nav class="navbar">
-            <div class="logo">
+            <figure class="logo">
                 <img src="logo/logo.png" alt="Logo de la empresa">
-            </div>
+            </figure>
             <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#catalogo">Catálogo</a></li>
@@ -27,7 +27,7 @@
 
     <main>
 
-
+        <!-- S1: CARRUSEL -->
         <section id="inicio" class="hero">
             <p class="carrusel-titulo">Destacados y Recomendados</p>
 
@@ -36,50 +36,45 @@
 
                 <div class="carrusel-slides">
 
-
-                    <div class="slide activo">
+                    <figure class="slide activo">
                         <img src="img/imagen1.jpg" alt="Producto 1" class="slide-img-principal">
-                        <div class="slide-overlay">
+                        <figcaption class="slide-overlay">
                             <p class="slide-nombre">Nombre del producto 1</p>
                             <p class="slide-descripcion">Escribe aquí una descripción corta del producto.</p>
-                        </div>
-                    </div>
+                        </figcaption>
+                    </figure>
 
-
-                    <div class="slide">
+                    <figure class="slide">
                         <img src="img/imagen2.jpg" alt="Producto 2" class="slide-img-principal">
-                        <div class="slide-overlay">
+                        <figcaption class="slide-overlay">
                             <p class="slide-nombre">Nombre del producto 2</p>
                             <p class="slide-descripcion">Escribe aquí una descripción corta del producto.</p>
-                        </div>
-                    </div>
+                        </figcaption>
+                    </figure>
 
-
-                    <div class="slide">
+                    <figure class="slide">
                         <img src="img/imagen3.jpg" alt="Producto 3" class="slide-img-principal">
-                        <div class="slide-overlay">
+                        <figcaption class="slide-overlay">
                             <p class="slide-nombre">Nombre del producto 3</p>
                             <p class="slide-descripcion">Escribe aquí una descripción corta del producto.</p>
-                        </div>
-                    </div>
+                        </figcaption>
+                    </figure>
 
-
-                    <div class="slide">
+                    <figure class="slide">
                         <img src="img/imagen4.jpg" alt="Producto 4" class="slide-img-principal">
-                        <div class="slide-overlay">
+                        <figcaption class="slide-overlay">
                             <p class="slide-nombre">Nombre del producto 4</p>
                             <p class="slide-descripcion">Escribe aquí una descripción corta del producto.</p>
-                        </div>
-                    </div>
+                        </figcaption>
+                    </figure>
 
-
-                    <div class="slide">
+                    <figure class="slide">
                         <img src="img/imagen5.jpg" alt="Producto 5" class="slide-img-principal">
-                        <div class="slide-overlay">
+                        <figcaption class="slide-overlay">
                             <p class="slide-nombre">Nombre del producto 5</p>
                             <p class="slide-descripcion">Escribe aquí una descripción corta del producto.</p>
-                        </div>
-                    </div>
+                        </figcaption>
+                    </figure>
 
                 </div>
 
@@ -96,155 +91,158 @@
         </section>
 
 
+        <!-- S2: CATÁLOGO -->
         <section id="catalogo" class="seccion-catalogo">
             <h2 class="seccion-titulo">Catálogo</h2>
-            <div class="tarjetas-grid">
+            <ul class="tarjetas-grid">
 
-                <div class="tarjeta">
-                    <img src="img/juego1.jpg" alt="Juego 1">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">Human: Fall Flat </p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/juego1.jpg" alt="Juego 1">
+                        <h3 class="tarjeta-nombre">Human: Fall Flat</h3>
+                        <p class="tarjeta-precio">S/. 40.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-                <div class="tarjeta">
-                    <img src="img/juego2.jpg" alt="Juego 2">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">God of War</p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/juego2.jpg" alt="Juego 2">
+                        <h3 class="tarjeta-nombre">God of War</h3>
+                        <p class="tarjeta-precio">S/. 150.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-                <div class="tarjeta">
-                    <img src="img/juego3.jpg" alt="Juego 3">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">Mortal Kombat 11 Ultimate</p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/juego3.jpg" alt="Juego 3">
+                        <h3 class="tarjeta-nombre">Mortal Kombat 11 Ultimate</h3>
+                        <p class="tarjeta-precio">S/. 120.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-                <div class="tarjeta">
-                    <img src="img/juego4.jpg" alt="Juego 4">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">Stray</p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/juego4.jpg" alt="Juego 4">
+                        <h3 class="tarjeta-nombre">Stray</h3>
+                        <p class="tarjeta-precio">S/. 67.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-            </div>
+            </ul>
         </section>
 
 
+        <!-- S3: MÁS VENDIDOS -->
         <section id="mas-vendidos" class="seccion-catalogo">
             <h2 class="seccion-titulo">Los más vendidos</h2>
-            <div class="tarjetas-grid">
+            <ul class="tarjetas-grid">
 
-                <div class="tarjeta">
-                    <img src="img/pou.png" alt="Juego 1">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">Pou</p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/pou.png" alt="Pou">
+                        <h3 class="tarjeta-nombre">Pou</h3>
+                        <p class="tarjeta-precio">S/. 200.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-                <div class="tarjeta">
-                    <img src="img/mk.jpg" alt="Juego 2">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">Mortal Kombat 1: Definitive Edition</p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/mk.jpg" alt="Mortal Kombat 1">
+                        <h3 class="tarjeta-nombre">Mortal Kombat 1: Definitive Edition</h3>
+                        <p class="tarjeta-precio">S/. 250.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-                <div class="tarjeta">
-                    <img src="img/batman.jpg" alt="Juego 3">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">Batman: Arkham Knight </p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/batman.jpg" alt="Batman Arkham Knight">
+                        <h3 class="tarjeta-nombre">Batman: Arkham Knight</h3>
+                        <p class="tarjeta-precio">S/. 70.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-                <div class="tarjeta">
-                    <img src="img/gta.jpg" alt="Juego 4">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">Grand Theft Auto V</p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/gta.jpg" alt="GTA V">
+                        <h3 class="tarjeta-nombre">Grand Theft Auto V</h3>
+                        <p class="tarjeta-precio">S/. 100.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-            </div>
+            </ul>
         </section>
 
 
+        <!-- S4: PROMOCIONES -->
         <section id="promociones" class="seccion-catalogo">
             <h2 class="seccion-titulo">Promociones</h2>
-            <div class="tarjetas-grid">
+            <ul class="tarjetas-grid">
 
-                <div class="tarjeta">
-                    <img src="img/dead space.jpg" alt="Juego 1">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">Dead Space 2 </p>
-                        <p class="tarjeta-precio-antes">S/. 00.00</p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/dead space.jpg" alt="Dead Space 2">
+                        <h3 class="tarjeta-nombre">Dead Space 2</h3>
+                        <p class="tarjeta-precio-antes">S/. 30.00</p>
+                        <p class="tarjeta-precio">S/. 12.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-                <div class="tarjeta">
-                    <img src="img/maincra.png" alt="Juego 2">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">Minecraft: Java</p>
-                        <p class="tarjeta-precio-antes">S/. 00.00</p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/maincra.png" alt="Minecraft Java">
+                        <h3 class="tarjeta-nombre">Minecraft: Java</h3>
+                        <p class="tarjeta-precio-antes">S/. 100.00</p>
+                        <p class="tarjeta-precio">S/. 50.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-                <div class="tarjeta">
-                    <img src="img/days gone.jpg" alt="Juego 3">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">Days Gone</p>
-                        <p class="tarjeta-precio-antes">S/. 00.00</p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/days gone.jpg" alt="Days Gone">
+                        <h3 class="tarjeta-nombre">Days Gone</h3>
+                        <p class="tarjeta-precio-antes">S/. 89.00</p>
+                        <p class="tarjeta-precio">S/. 35.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-                <div class="tarjeta">
-                    <img src="img/the last.jpg" alt="Juego 4">
-                    <div class="tarjeta-info">
-                        <p class="tarjeta-nombre">The Last of Us Part I</p>
-                        <p class="tarjeta-precio-antes">S/. 00.00</p>
-                        <p class="tarjeta-precio">S/. 00.00</p>
+                <li class="tarjeta">
+                    <article>
+                        <img src="img/the last.jpg" alt="The Last of Us Part I">
+                        <h3 class="tarjeta-nombre">The Last of Us Part I</h3>
+                        <p class="tarjeta-precio-antes">S/. 120.00</p>
+                        <p class="tarjeta-precio">S/. 70.00</p>
                         <button class="tarjeta-btn">Ver más</button>
-                    </div>
-                </div>
+                    </article>
+                </li>
 
-            </div>
+            </ul>
         </section>
 
 
+        <!-- S5: NEWSLETTER -->
         <section class="newsletter">
             <h2 class="newsletter-titulo">¡No te pierdas ninguna oferta!</h2>
-            <p class="newsletter-subtitulo">Suscríbete y recibe las mejores promociones de videojuegos directo a tu
-                correo.</p>
-            <div class="newsletter-form">
+            <p class="newsletter-subtitulo">Suscríbete y recibe las mejores promociones de videojuegos directo a tu correo.</p>
+            <form class="newsletter-form" action="#" method="post">
                 <input type="email" placeholder="Ingresa tu correo electrónico" class="newsletter-input">
-                <button class="newsletter-btn">Suscribirme</button>
-            </div>
+                <button type="submit" class="newsletter-btn">Suscribirme</button>
+            </form>
         </section>
 
-    </main>
 
-
+   
+    
     <footer id="contacto">
         <p>© 2026 Mi Página Web</p>
     </footer>
@@ -273,13 +271,12 @@
 </html>
 
 
-
 <!-- 
 Header               1.0 No usar div
 S1 Inicio            3.5 , no hay imágenes
 S2 Categorización    0.0 (minimo 4)   
 S3 Ítems             3.5 (Minimo 12 ítems podrías hacer 4 por cada categoria) , Todos tienen mismo precio
-S4 Formulario        1.0 , Minimo 7/12 inputs diferentes
+S4 Formulario        2.5 , Minimo 7/12 inputs diferentes
 Footer               0.5, Le falta mas contenido 
 Nota HTML:11
 Sustentación :+0
