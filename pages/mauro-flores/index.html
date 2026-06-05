@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fisicoculturismo Gym</title>
-
+    <!--
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,14 +51,17 @@
             color: orange;
         }
     </style>
+-->
+    <link rel="stylesheet" href="../../css/estilo_global.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="header">
         <h1>Fisicoculturismo Gym</h1>
 
-        <img src="https://journey.app/blog/wp-content/uploads/2025/02/Reglas-del-fisicoculturismo.jpg" alt="Fisicoculturismo">
+        <img src="https://journey.app/blog/wp-content/uploads/2025/02/Reglas-del-fisicoculturismo.jpg"
+            alt="Fisicoculturismo">
 
         <nav>
 
@@ -69,57 +72,390 @@
             <a href="categoria_mujeres.html">
                 Categoria Mujeres
             </a>
-
+            <a href="#formulario">
+                Formulario
+            </a>
         </nav>
 
-    </header>
     </header>
 
     <main>
 
         <section>
-            <h2>¿Qué es el fisicoculturismo?</h2>
-            <p>
-                El fisicoculturismo es una disciplina enfocada en el desarrollo muscular
-                mediante entrenamiento, nutrición y descanso.
-            </p>
+            <header>
+                <h2>¿Qué es el fisicoculturismo?</h2>
+                <p>
+                    El fisicoculturismo es una disciplina enfocada en el desarrollo muscular
+                    mediante entrenamiento, nutrición y descanso.
+                </p>
+            </header>
+            <section class="columnas_3">
+                <section>
+                    <h2>Hipertrofia</h2>
+
+                    <p>
+                        La hipertrofia muscular es el aumento del tamaño de las fibras musculares.
+                    </p>
+
+                    <video width="640" height="360" controls autoplay muted loop>
+                        <source src="imagen/videoplayback (1).mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </section>
+                <section>
+                    <h2>Hipertrofia</h2>
+
+                    <p>
+                        La hipertrofia muscular es el aumento del tamaño de las fibras musculares.
+                    </p>
+
+                    <video width="640" height="360" controls autoplay muted loop>
+                        <source src="imagen/videoplayback (1).mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </section>
+                <section>
+                    <h2>Hipertrofia</h2>
+
+                    <p>
+                        La hipertrofia muscular es el aumento del tamaño de las fibras musculares.
+                    </p>
+
+                    <video width="640" height="360" controls autoplay muted loop>
+                        <source src="imagen/videoplayback (1).mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </section>
+            </section>
         </section>
 
-        <section>
-            <h2>Hipertrofia</h2>
 
-            <p>
-                La hipertrofia muscular es el aumento del tamaño de las fibras musculares.
-            </p>
 
-            <video width="640" height="360" controls autoplay muted loop>
-                <source src="imagen/videoplayback (1).mp4" type="video/mp4">
-                Tu navegador no soporta videos.
-            </video>
+        <!--Formulario-->
+        <section class="section4 formulario" id="formulario">
+            <form id="formCompleto" action="/procesar" method="post" enctype="multipart/form-data" autocomplete="on">
+
+                <!-- ====================== DATOS PERSONALES ====================== -->
+                <section>
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+
+                        <!-- input 1 -->
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" value="Mauro" required minlength="3">
+                        <label>Apellido:</label>
+                        <input type="text" name="apellido" value="Flores" placeholder="Ingrese su apellido completo">
+                        <!-- radio con checked por defecto -->
+                        <label>Género:</label>
+                        <input type="radio" name="genero" value="F" checked> Femenino
+                        <input type="radio" name="genero" value="M"> Masculino
+                        <input type="radio" name="genero" value="O"> No especificado
+                        <br><br>
+
+
+
+
+
+
+
+
+                        <!-- Maximo 8  caracteres -->
+                        <label>DNI:</label>
+                        <input type="text" minlength="8" maxlength="8" pattern="\d{8}"
+                            title="Ingrese un DNI válido de 8 dígitos" required>
+                        <br><br>
+                        <!-- readonly -->
+                        <label>Código Usuario:</label>
+                        <input type="text" name="codigo" value="C0000130" readonly required>
+                        <br><br>
+
+                        <!-- email con valor inicial -->
+                        <label>Email:</label>
+                        <input type="email" name="email" required autocomplete="email">
+                        <br><br>
+
+
+
+                        <!-- Permite seleccionar varias opciones -->
+                        <label>Ejercicios:</label>
+                        <input type="checkbox" name="habilidad" value="html" checked> Levantamiento de pesas
+                        <input type="checkbox" name="habilidad" value="css"> CSS
+                        <input type="checkbox" name="habilidad" value="js"> JavaScript
+                        <br> <br>
+
+                        <!-- Selección desde lista -->
+                        <label>País:</label>
+
+                        <select name="pais">
+                            <option value="">Seleccione País</option>
+                            <option value="co">Colombia</option>
+                            <option value="pe">Perú</option>
+                            <option value="ar">Argentina</option>
+                        </select>
+                        <br><br>
+                        <!-- Lista de sugerencias -->
+                        <label>Ciudad:</label>
+
+                        <input list="ciudades" value="Lima">
+
+                        <datalist id="ciudades">
+                            <option value="Lima">
+                            <option value="Cusco">
+                            <option value="Arequipa">
+                        </datalist>
+                        <br><br>
+                        <!-- Permite seleccionar varias opciones -->
+                        <label>Tecnologías:</label>
+
+                        <select name="tech" multiple>
+                            <option selected>HTML</option>
+                            <option>CSS</option>
+                            <option>JavaScript</option>
+                            <option>Python</option>
+                        </select>
+                        <br> <br>
+                        <!-- Permite seleccionar una fecha desde un calendario -->
+                        <label>Fecha Registro:</label>
+                        <input type="date" name="fechaRegistro" value="1995-08-15">
+                        <br><br>
+
+                        <label>Fecha de nacimiento:</label>
+                        <input type="date" name="fechaNacimiento" value="2000-01-01" min="1960-01-01" max="2010-12-31">
+                        <br><br>
+
+
+                        <!-- Permite seleccionar solo mes y año -->
+                        <label>Mes de inicio de contrato:</label>
+                        <input type="month" value="2024-03" min="2020-01" max="2030-12" required>
+                        <br><br>
+
+                        <!-- Permite seleccionar una fecha desde un calendario -->
+                        <label>Semana de trabajo:</label>
+                        <input type="week" value="2026-W10" min="2025-W01" max="2026-W52">
+                        <br><br>
+
+                        <!-- Permite seleccionar fecha y hora juntas -->
+                        <label>Fecha y hora de reunión:</label>
+                        <input type="datetime-local" name="reunion" value="2026-03-04T10:30" min="2026-01-01T08:00"
+                            max="2026-12-31T18:00" step="900">
+                        <br><br>
+
+                        <!-- ====================== TIME ====================== -->
+                        <!-- Permite seleccionar solo hora -->
+                        <label>Hora de atención:</label>
+                        <input type="time" value="09:00" min="08:00" max="18:00" step="300" required>
+                        <br><br>
+
+                        <!-- Selector de hora con límite mínimo -->
+                        <label>Hora de entrada:</label>
+                        <input type="time" name="horaInicio" value="08:15" min="08:00" max="8:30">
+                        <br><br>
+
+                        <label>Hora de salida :</label>
+                        <input type="time" name="horaFin" value="18:10" min="18:00" max="18:45">
+                        <br><br>
+                        <!-- Permite seleccionar un color desde el selector del navegador -->
+
+                        <label>Color favorito:</label>
+                        <input type="color" name="colorFavorito" value="#ff0000">
+                        <br><br>
+                        <!-- Campo numérico con mínimo, máximo y valor inicial -->
+                        <label>Número de hijos:</label>
+                        <input type="number" name="hijos" min="0" max="10" value="1">
+                        <br><br>
+                        <!-- Campo para ingresar números telefónicos -->
+                        <label>Teléfono:</label>
+                        <input type="tel" name="telefono" value="987654321" pattern="[0-9]{9}">
+                        <br><br>
+
+                        <!-- Campo para contraseñas, oculta los caracteres -->
+                        <label>Contraseña:</label>
+                        <input type="password" name="clave" value="123456">
+                        <br><br>
+
+                        <!-- Campo para escribir textos largos -->
+                        <label>Comentarios:</label>
+                        <br>
+                        <textarea name="comentarios" rows="4" cols="40">Escribe aquí tu comentario...</textarea>
+
+
+                        <textarea name="comentarios" rows="10" cols="400">Escribe aquí tu comentario...</textarea>
+                        <br><br>
+                        <!-- Permite ingresar enlaces web -->
+                        <label>Sitio web:</label>
+                        <input type="url" name="web" value="https://www.idat.edu.pe">
+                        <br><br>
+
+
+                        <!-- checkbox marcado por defecto -->
+                        <label>
+                            <input type="checkbox" name="terminos" unchecked required>
+                            Acepto términos y condiciones
+                        </label>
+
+                        <menu>
+                            <button type="submit">Guardar</button>
+                            <button type="reset">Cancelar</button>
+                        </menu>
+
+                    </fieldset>
+                </section>
+
+                <!-- ====================== SELECT CON OPTGROUP ====================== -->
+                <section>
+                    <fieldset>
+                        <legend>Ubicación</legend>
+
+                        <label>Seleccione País:</label>
+                        <select name="pais">
+                            <option value="">Seleccione</option>
+
+                            <!-- optgroup agrupa opciones -->
+                            <optgroup label="Sudamérica">
+                                <option value="pe" selected>Perú</option>
+                                <option value="ar">Argentina</option>
+                                <option value="co">Colombia</option>
+                            </optgroup>
+
+                            <optgroup label="Europa">
+                                <option value="de">Alemania</option>
+                                <option value="es">España</option>
+                            </optgroup>
+
+                        </select>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Mi informacion</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre" required minlength="3">
+                    </fieldset>
+                </section>
+
+                <!-- ====================== MEDICIONES ====================== -->
+                <section>
+                    <input>
+                    <legend>Indicadores</legend>
+
+                    <!-- meter indica nivel dentro de rango -->
+                    <label>Nivel técnico:</label>
+
+                    <mark>Nivel CSS</mark>
+                    <meter value="0.25" min="0" max="1"></meter>
+                    <mark>Nivel HTML</mark>
+                    <meter value="0.50" min="0" max="1"></meter>
+                    <meter value="0.75" min="0" max="1"></meter>
+                    <meter value="1" min="0" max="1"></meter>
+
+
+                    <br><br>
+
+                    <!-- range con valor inicial -->
+                    <label>Experiencia (años):</label>
+                    <input type="range" name="experiencia" min="0" max="10" value="10">
+                    <output>10</output>
+                    <br>
+
+                    <!-- Selección en rango -->
+                    <label>Nivel:</label>
+                    <input type="range" min="0" max="100" value="50">
+                    <output>50</output>
+                    <br>
+
+                    </fieldset>
+                </section>
+
+                <!-- ====================== ARCHIVOS Y MULTIMEDIA ====================== -->
+                <section>
+                    <fieldset>
+                        <legend>Adjuntar Archivos</legend>
+
+                        <!-- file múltiple -->
+                        <label>Subir CV (PDF/DOC):</label>
+                        <input type="file" name="cv" accept=".pdf,.doc,.docx" multiple>
+                        <br><br>
+
+
+                        <!-- Permite subir varios archivos -->
+                        <label>Subir Varios Archivos (Imágenes):</label>
+                        <input type="file" multiple accept="image/*">
+                        <br><br>
+                        <!-- captura desde cámara -->
+                        <label>Foto perfil (cámara):</label>
+                        <input type="file" name="foto" accept="image/*" capture>
+                        <br><br>
+
+
+                        <label>Video de ayuda:</label>
+                        <iframe width="400" height="200" src="https://www.youtube.com/embed/dD2EISBDjWM">
+                        </iframe>
+
+                        <br><br>
+                        <audio controls>
+                            <source src="instrucciones.mp3" type="audio/mpeg">
+                        </audio>
+
+                    </fieldset>
+                </section>
+
+                <!-- ====================== BOTONES ====================== -->
+                <footer>
+
+                    <!-- botón submit normal -->
+                    <button type="submit">Enviar</button>
+
+
+
+                </footer>
+
+            </form>
         </section>
-
-        <section>
-            <h2>Categorías</h2>
-
-            <p>
-                Existen categorías masculinas y femeninas en el fisicoculturismo.
-            </p>
-        </section>
-
     </main>
+
+    <footer class="footer columnas_4">
+
+        <section>
+            <h3>Gym</h3>
+            <p>En nuestro gimnasio, nos dedicamos a promover un estilo de vida saludable a través del fisicoculturismo.
+            </p>
+        </section>
+        <ul>
+            <li><a href="categoria_hombres.html">Categoría Hombres</a></li>
+            <li><a href="categoria_mujeres.html">Categoría Mujeres</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <ul> Redes sociales
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.twitter.com/">Twitter</a></li>
+            <li><a href="https://www.youtube.com/">YouTube</a></li>
+        </ul>
+        <section>
+
+            <form>
+                suscribete a nuestro boletin
+                <input type="email" placeholder="Ingresa tu correo">
+                <button type="submit">Suscribirse</button>
+            </form>
+
+        </section>
+
+    </footer>
 
 </body>
 <header>
     <ul>
-        
-<!-- 
+
+        <!-- 
 
 Header               1 , falta el logo
 S1 Carrusel          2.5 , no hay imágenes de banners para usar en el carrusel
 S2 Categorización    1.5 (minimo 4) Deberias  
 S3 Ítems             0 (Minimo 12 ítems podrías hacer 4 por cada categoria)
 S4 Formulario        0 , Adicionar Formulario 
-Footer               0 , Le falta mas contenido 
+Footer               1.5 , Le falta mas contenido 
 Nota HTML:5.0
 Sustentación :0
 Participacion:+3
