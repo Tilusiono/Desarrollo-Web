@@ -14,7 +14,7 @@ body {
   background: #cce5ff;
   /* azul */
   border: 3px solid #339af0;
-  height: 120px;
+  height: 20%;
   text-align: center;
   font-weight: bold;
   justify-content: center;
@@ -45,29 +45,36 @@ body {
 }
 
 .section1 {
-  background: #eb3407;
+  background: #e2bfb6;
   border: 3px solid #0523e7;
 }
 
+.header img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.section1 img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+
 .section2 {
-  background: #cd7203;
+  background: #f3d4ae;
   border: 3px solid #d35400;
 }
 
 .section3 {
-  background: #c1d207;
+  background: #c9cca9;
   border: 3px solid #d35400;
 }
 
 .section4 {
-  background: #0d7d13;
+  background: #b9dcbb;
   /* azul oscuro */
   border: 3px solid #1b2838;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
 }
 
 .card {
@@ -146,9 +153,6 @@ body {
   gap: 20px;
 }
 
-.columnas_1 {
-  align-items: center;
-}
 
 .columnas_2 {
   grid-template-columns: repeat(2, 1fr);
@@ -256,7 +260,7 @@ body {
 
 /* THEAD */
 .table thead {
-  background: #0c4b36;
+  background: #afebd7;
   /* verde claro */
   border: 3px solid #20b2c9;
 }
@@ -318,12 +322,6 @@ body {
   display: block;
 }
 
-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 
 .card {
   width: 100%;
@@ -356,4 +354,136 @@ nav {
 .icon {
   width: 24px;
   height: 24px;
+}
+
+img{
+  max-width: 250px;
+  max-height: 250px;
+}
+
+/* Contenedor principal */
+.formulario {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Fieldsets */
+.formulario fieldset {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Títulos */
+.formulario legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #333;
+}
+
+/* Labels */
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Inputs, selects y textarea */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario input[type="url"],
+.formulario input[type="tel"],
+.formulario input[type="date"],
+.formulario input[type="time"],
+.formulario input[type="month"],
+.formulario input[type="week"],
+.formulario input[type="datetime-local"],
+.formulario input[type="number"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Textarea */
+.formulario textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Radios y checkbox */
+.formulario input[type="radio"],
+.formulario input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Range */
+.formulario input[type="range"] {
+    width: 100%;
+}
+
+/* File */
+.formulario input[type="file"] {
+    margin-bottom: 15px;
+}
+
+/* Botones */
+.formulario button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+/* Submit */
+.formulario button[type="submit"] {
+    background-color: #198754;
+    color: white;
+}
+
+/* Reset */
+.formulario button[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Hover */
+.formulario button:hover {
+    opacity: 0.9;
+}
+
+/* Footer botones */
+.formulario footer,
+.formulario menu {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .formulario {
+        padding: 10px;
+    }
+
+    .formulario footer,
+    .formulario menu {
+        flex-direction: column;
+    }
+
+    .formulario button {
+        width: 100%;
+    }
 }
