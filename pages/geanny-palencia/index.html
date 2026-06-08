@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sekiro Blog</title>
-   
+
     <link rel="icon" type="image/png" href="../geanny-palencia/assets/img/icono.png">
-
-
+    <!--
     <style>
         html {
             scroll-behavior: smooth;
         }
+
         body {
             font-family: sans-serif;
             background-color: #1a1a1a;
@@ -19,6 +20,7 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             position: fixed;
             top: 0;
@@ -27,40 +29,37 @@
             padding: 15px;
             z-index: 1000;
         }
-header h1 {
-    margin: 0 0 10px 0;
-    font-size: 1.5rem;
-    color: #fff;
-    
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
 
-.Menu-logo {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-}
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+            color: #fff;
+            background: #f2c307;
+        }
+
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
         }
+
         nav li {
             display: inline;
             margin-right: 20px;
         }
+
         nav a {
             color: #e67e22;
             text-decoration: none;
             font-weight: bold;
         }
+
         section {
-            padding: 120px 20px 40px 20px; 
+            padding: 120px 20px 40px 20px;
             border-bottom: 1px solid #333;
             min-height: 50vh;
         }
+
         section img {
             display: block;
             margin-top: 20px;
@@ -68,22 +67,23 @@ header h1 {
             height: auto;
             border: 2px solid #e67e22;
         }
+
         footer {
-            background-color: #111;
+            background-color: #e02929;
             padding: 20px;
             text-align: center;
         }
     </style>
+-->
+
+    <link rel="stylesheet" href="../../css/estilo_global.css">
 </head>
+
 <body>
-    <header>
-        <h1>
-        
-            <img src="../geanny-palencia/assets/img/icono.png" alt="Logo sekiro" class="Menu-logo">
-            
-                Blog de Sekiro
-        
-        </h1>
+
+    <!--HEADER-->
+    <header class="header">
+        <h1>Blog de Sekiro</h1>
         <nav>
             <ul>
                 <li><a href="#seccion-1">historia y lore</a></li>
@@ -93,256 +93,244 @@ header h1 {
             </ul>
         </nav>
     </header>
-<section id="carrusel">
-    <h1> 
-        
-        aqui algunas de las actividades que se pueden hacer en el juego o ubicaciones 
-    
-    </h1>
-    <img src="../geanny-palencia/assets/img/mikiri.png" alt="Carrusel 1">
-        <p> counter mikiri, habilidad del personaje principal </p>
-    <img src="../geanny-palencia/assets/img/ejecusiones normales.png" alt="Carrusel 2">
-        <p> ejecusiones que se pueden cometer contra enemigos debilitados </p>
-    <img src="../geanny-palencia/assets/img/hacienda recuerdo.png" alt="Carrusel 3"> 
-        <p> Una de las tantas ubicaciones en el juego </p>
-
-</section>
     <main>
-        <section id="seccion-1">
-            <h2>📜 Historia y Lore</h2>
-            <p> Aqui va el lore y la historia de sekiro, con detalles sobre los personajes, el mundo y los eventos que ocurren en el juego.
-                desde la caida okami(nuestro protagonista) hasta el final del juego, pasando por los eventos importantes y las conexiones 
-                entre cada personaje y como influyen en la historia, también incluire algunas teorias y especulaciones tanto mias como de 
-                la comunidad, para darle un toque mas personal y generarte interes en el contenido, ademas de que te ayudara a entender mejor 
-                el juego y su historia, para que puedas disfrutarlo al maximo y apreciar cada detalle que se ha puesto en el desarrollo del juego.</p> 
-            <img src="../geanny-palencia/assets/img/captura1.png" alt="Captura 1">
+        <!-- SECCION 1-->
+        <section id="carrusel" class="section1">
+            <h2>carrusel de imagenes</h2>
+            <p>aqui algunas imagenes del juego como tal</p>
+
+            <section class="columnas_3">
+                <figure>
+                    <img src="../geanny-palencia/assets/img/mikiri.png" alt="Carrusel 1">
+                    <figcaption>Counter mikiri</figcaption>
+                </figure>
+                <figure>
+                    <img src="../geanny-palencia/assets/img/ejecusiones normales.png" alt="Carrusel 2">
+                    <figcaption>ejecusiones</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../geanny-palencia/assets/img/hacienda recuerdo.png" alt="Carrusel 3">
+                    <figcaption>una de las secciones del mapa</figcaption>
+                </figure>
+            </section>
+
         </section>
 
-        <section id="seccion-2">
-            <h2>🗺️ Rutas y Cómo Hacerlas</h2>
-            <p> Guia de como hacer paso por paso cada ruta en especifico de forma eficiente y metodica </p>
-            <img src="../geanny-palencia/assets/img/captura2.png" alt="Captura 2">
+
+        <!-- SECCION 2-->
+        <section class="section2 columnas_4">
+            <card>
+                <header>
+                    <h2>📜 Historia y Lore</h2>
+                    <p></p>
+                </header>
+                <details>
+                    <p> Aqui va el lore y la historia de sekiro, con detalles sobre los personajes, el mundo y los
+                        eventos
+                        que ocurren en el juego.</p>
+                    <p>desde la caida okami(nuestro protagonista) hasta el final del juego, pasando por los eventos
+                        importantes y las conexiones</p>
+                    entre cada personaje y como influyen en la historia, también incluire algunas teorias y
+                    especulaciones tanto mias como de
+                    la comunidad, para darle un toque mas personal y generarte interes en el contenido, ademas de que te
+                    ayudara a entender mejor
+                    el juego y su historia, para que puedas disfrutarlo al maximo y apreciar cada detalle que se ha
+                    puesto en el desarrollo del juego.
+
+                </details>
+                <img src="../geanny-palencia/assets/img/captura1.png" alt="Captura 1">
+                <footer></footer>
+            </card>
+
+            <card>
+                <h2>🎒 Objetos y Habilidades</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus dolor excepturi
+                    blanditiis quaerat optio repellat veritatis libero porro iste, nemo illo tempora dolorem
+                    consequuntur sit eaque tempore! Beatae, soluta?</p>
+                <img src="../geanny-palencia/assets/img/captura3.png" alt="Captura 3">
+            </card>
+
         </section>
 
-        <section id="seccion-3">
-            <h2>🎒 Objetos y Habilidades</h2>
-            <p> Objetos que se pueden tanto encontrar como conseguir de forma natural</p>
-            <p>y de forma especifica en sus ubicaciones dentro de las ubicaciones y para que sirven</p>
-            <img src="../geanny-palencia/assets/img/captura3.png" alt="Captura 3">
+
+        <section id="seccion-4" class="section3">
+
+            <h2>👥 Info de los Personajes y Enemigos</h2>
+
+            <section class="columnas_4">
+                <article class="article">
+                    <h3>Wolf (Sekiro)</h3>
+                    <img src="../geanny-palencia/assets/img/Sekiro.png" alt="Wolf">
+                    <ul>
+                        <li><strong>Rol:</strong> Protagonista</li>
+                        <li><strong>Arma:</strong> Kusabimaru</li>
+                    </ul>
+                    <p>Shinobi principal del juego.</p>
+                </article>
+                <article class="article">
+                    <h3>Kuro</h3>
+                    <img src="../geanny-palencia/assets/img/kuro.png" alt="Kuro">
+                    <ul>
+                        <li><strong>Rol:</strong> Heredero Divino</li>
+                        <li><strong>Poder:</strong> Sangre del Dragón</li>
+                    </ul>
+                    <p>Clave en la historia del juego.</p>
+                </article>
+                <article class="article">
+                    <h3>Genichiro Ashina</h3>
+                    <img src="../geanny-palencia/assets/img/genichiro.png" alt="Genichiro">
+                    <ul>
+                        <li><strong>Rol:</strong> Antagonista</li>
+                        <li><strong>Objetivo:</strong> Salvar Ashina</li>
+                    </ul>
+                    <p>Guerrero del clan Ashina.</p>
+                </article>
+                <article class="article">
+                    <h3>Isshin Ashina</h3>
+                    <img src="../geanny-palencia/assets/img/isshin.png" alt="Isshin">
+                    <ul>
+                        <li><strong>Rol:</strong> Fundador de Ashina</li>
+                        <li><strong>Título:</strong> Santo de la Espada</li>
+                    </ul>
+                    <p>Legendario espadachín.</p>
+                </article>
+                <article class="article">
+                    <h3>Emma</h3>
+                    <img src="../geanny-palencia/assets/img/Emma.png" alt="Emma">
+                    <ul>
+                        <li><strong>Rol:</strong> Sanadora shinobi</li>
+                    </ul>
+                    <p>Ayuda a Wolf durante su viaje.</p>
+                </article>
+                <article class="article">
+                    <h3>Owl (Father)</h3>
+                    <img src="../geanny-palencia/assets/img/Buho.png" alt="Owl">
+                    <ul>
+                        <li><strong>Rol:</strong> Antagonista</li>
+                    </ul>
+                    <p>Padre adoptivo de Wolf.</p>
+                </article>
+                <article class="article">
+                    <h3>Lady Butterfly</h3>
+                    <img src="../geanny-palencia/assets/img/dama mariposa.png" alt="Lady Butterfly">
+                    <ul>
+                        <li><strong>Rol:</strong> Jefe</li>
+                    </ul>
+                    <p>Maestra de ilusiones.</p>
+                </article>
+                <article class="article">
+                    <h3>Guardian Ape</h3>
+                    <img src="../geanny-palencia/assets/img/Simio guardian.png" alt="Guardian Ape">
+                    <ul>
+                        <li><strong>Rol:</strong> Jefe</li>
+                    </ul>
+                    <p>Bestia gigante muy poderosa.</p>
+                </article>
+                <article class="article">
+                    <h3>Great Shinobi Owl</h3>
+                    <img src="../geanny-palencia/assets/img/Gran shinobi Buho.png" alt="Great Shinobi Owl">
+                    <ul>
+                        <li><strong>Rol:</strong> Jefe</li>
+                    </ul>
+                    <p>Versión más fuerte de Owl.</p>
+                </article>
+                <article class="article">
+                    <h3>Genichiro (Way of Tomoe)</h3>
+                    <img src="../geanny-palencia/assets/img/Genichiro senda de Tomoe.png" alt="Genichiro Tomoe">
+                    <ul>
+                        <li><strong>Rol:</strong> Jefe final</li>
+                    </ul>
+                    <p>Forma final de Genichiro.</p>
+                </article>
+                <article class="article">
+                    <h3>Divine Dragon</h3>
+                    <img src="../geanny-palencia/assets/img/Dragon divino.png" alt="Divine Dragon">
+                    <ul>
+                        <li><strong>Rol:</strong> Jefe</li>
+                    </ul>
+                    <p>Entidad mística del juego.</p>
+                </article>
+
+
+                <article class="article">
+                    <h3>Demon of Hatred</h3>
+                    <img src="../geanny-palencia/assets/img/Demonio del odio.png" alt="Demon of Hatred">
+                    <ul>
+                        <li><strong>Rol:</strong> Jefe opcional</li>
+                    </ul>
+                    <p>Formado por odio y sufrimiento.</p>
+                </article>
+            </section>
+
+
         </section>
-<section id="seccion-4">
 
-    <h2>👥 Info de los Personajes y Enemigos</h2>
+        <section id="formulario" class="section4">
 
-    <article>
-        <h3>Wolf (Sekiro)</h3>
-        <img src="../geanny-palencia/assets/img/Sekiro.png" alt="Wolf">
-        <ul>
-            <li><strong>Rol:</strong> Protagonista</li>
-            <li><strong>Arma:</strong> Kusabimaru</li>
-        </ul>
-        <p>Shinobi principal del juego.</p>
-    </article>
+            <h2>Formulario de Opinión</h2>
 
-    <hr>
+            <form>
 
-    <article>
-        <h3>Kuro</h3>
-        <img src="../geanny-palencia/assets/img/kuro.png" alt="Kuro">
-        <ul>
-            <li><strong>Rol:</strong> Heredero Divino</li>
-            <li><strong>Poder:</strong> Sangre del Dragón</li>
-        </ul>
-        <p>Clave en la historia del juego.</p>
-    </article>
+                <label for="nombre">
+                    Nombre:
+                </label>
 
-    <hr>
+                <br>
 
-    <article>
-        <h3>Genichiro Ashina</h3>
-        <img src="../geanny-palencia/assets/img/genichiro.png" alt="Genichiro">
-        <ul>
-            <li><strong>Rol:</strong> Antagonista</li>
-            <li><strong>Objetivo:</strong> Salvar Ashina</li>
-        </ul>
-        <p>Guerrero del clan Ashina.</p>
-    </article>
+                <input type="text" id="nombre" name="nombre">
 
-    <hr>
+                <br><br>
 
-    <article>
-        <h3>Isshin Ashina</h3>
-        <img src="../geanny-palencia/assets/img/isshin.png" alt="Isshin">
-        <ul>
-            <li><strong>Rol:</strong> Fundador de Ashina</li>
-            <li><strong>Título:</strong> Santo de la Espada</li>
-        </ul>
-        <p>Legendario espadachín.</p>
-    </article>
+                <label for="correo">
+                    Correo Electrónico:
+                </label>
 
-    <hr>
+                <br>
 
-    <article>
-        <h3>Emma</h3>
-        <img src="../geanny-palencia/assets/img/Emma.png" alt="Emma">
-        <ul>
-            <li><strong>Rol:</strong> Sanadora shinobi</li>
-        </ul>
-        <p>Ayuda a Wolf durante su viaje.</p>
-    </article>
+                <input type="email" id="correo" name="correo">
 
-    <hr>
+                <br><br>
 
-    <article>
-        <h3>Owl (Father)</h3>
-        <img src="../geanny-palencia/assets/img/Buho.png" alt="Owl">
-        <ul>
-            <li><strong>Rol:</strong> Antagonista</li>
-        </ul>
-        <p>Padre adoptivo de Wolf.</p>
-    </article>
+                <label for="categoria">
+                    Categoría Favorita:
+                </label>
 
-    <hr>
+                <br>
 
-    <article>
-        <h3>Lady Butterfly</h3>
-        <img src="../geanny-palencia/assets/img/dama mariposa.png" alt="Lady Butterfly">
-        <ul>
-            <li><strong>Rol:</strong> Jefe</li>
-        </ul>
-        <p>Maestra de ilusiones.</p>
-    </article>
+                <select id="categoria">
 
-    <hr>
+                    <option>Historia y Lore</option>
 
-    <article>
-        <h3>Guardian Ape</h3>
-        <img src="../geanny-palencia/assets/img/Simio guardian.png" alt="Guardian Ape">
-        <ul>
-            <li><strong>Rol:</strong> Jefe</li>
-        </ul>
-        <p>Bestia gigante muy poderosa.</p>
-    </article>
+                    <option>Rutas y Finales</option>
 
-    <hr>
+                    <option>Objetos y Habilidades</option>
 
-    <article>
-        <h3>Great Shinobi Owl</h3>
-        <img src="../geanny-palencia/assets/img/Gran shinobi Buho.png" alt="Great Shinobi Owl">
-        <ul>
-            <li><strong>Rol:</strong> Jefe</li>
-        </ul>
-        <p>Versión más fuerte de Owl.</p>
-    </article>
+                    <option>Personajes y Jefes</option>
 
-    <hr>
+                </select>
 
-    <article>
-        <h3>Genichiro (Way of Tomoe)</h3>
-        <img src="../geanny-palencia/assets/img/Genichiro senda de Tomoe.png" alt="Genichiro Tomoe">
-        <ul>
-            <li><strong>Rol:</strong> Jefe final</li>
-        </ul>
-        <p>Forma final de Genichiro.</p>
-    </article>
+                <br><br>
 
-    <hr>
+                <label for="comentario">
+                    Comentario:
+                </label>
 
-    <article>
-        <h3>Divine Dragon</h3>
-        <img src="../geanny-palencia/assets/img/Dragon divino.png" alt="Divine Dragon">
-        <ul>
-            <li><strong>Rol:</strong> Jefe</li>
-        </ul>
-        <p>Entidad mística del juego.</p>
-    </article>
+                <br>
 
-    <hr>
+                <textarea id="comentario" rows="5" cols="40"></textarea>
 
-    <article>
-        <h3>Demon of Hatred</h3>
-        <img src="../geanny-palencia/assets/img/Demonio del odio.png" alt="Demon of Hatred">
-        <ul>
-            <li><strong>Rol:</strong> Jefe opcional</li>
-        </ul>
-        <p>Formado por odio y sufrimiento.</p>
-    </article>
+                <br><br>
 
-</section>
-    <hr>
-
-    <section id="formulario">
-
-        <h2>Formulario de Opinión</h2>
-
-        <form>
-
-            <label for="nombre">
-                Nombre:
-            </label>
-
-            <br>
-
-            <input type="text"
-                   id="nombre"
-                   name="nombre">
-
-            <br><br>
-
-            <label for="correo">
-                Correo Electrónico:
-            </label>
-
-            <br>
-
-            <input type="email"
-                   id="correo"
-                   name="correo">
-
-            <br><br>
-
-            <label for="categoria">
-                Categoría Favorita:
-            </label>
-
-            <br>
-
-            <select id="categoria">
-
-                <option>Historia y Lore</option>
-
-                <option>Rutas y Finales</option>
-
-                <option>Objetos y Habilidades</option>
-
-                <option>Personajes y Jefes</option>
-
-            </select>
-
-            <br><br>
-
-            <label for="comentario">
-                Comentario:
-            </label>
-
-            <br>
-
-            <textarea id="comentario"
-                      rows="5"
-                      cols="40"></textarea>
-
-            <br><br>
-
-            <input type="submit"
-                   value="Enviar">
+                <input type="submit" value="Enviar">
 
             </form>
 
         </section>
 
     </main>
-    
-    <footer>
+
+    <footer class="footer columnas_3">
 
         <section>
             <h3>Sobre el Proyecto</h3>
@@ -370,17 +358,22 @@ header h1 {
     </footer>
 
 </body>
+
 </html>
 
 <!-- 
-Header               1 , falta el logo
-S1 Carrusel          0.5 , no hay imágenes de banners para usar en el carrusel
-S2 Categorización    0.5 (minimo 4) Deberias  
-S3 Ítems             0.5 (Minimo 12 ítems podrías hacer 4 por cada categoria)
-S4 Formulario        0.5, Adicionar Formulario 
-Footer               0.5 , Le falta mas contenido 
-Sustentación 
+Header               1.0 , Falta icono y relacion # & id 
+S1 Carrusel          3.0 , falta semántica (HEADER)
+S2 Categorización    2.0 , son 4 items de CARD
+S3 Ítems             2.5 , Le falta semantica(HEADER,CONTENIDO,FOOTER) , El contenido esta OK pero falta separar la semantica
+S4 Formulario        1.5 , Adicionar Formulario 4 DE 12 INPUTS
+Footer               1.5, OK
+Nota HTML:12
+Sustentación :+0
+Participacion:+2
 Observaciones : 
 - Considerar que solo es código HTML , si conservas el css y el JS se harán preguntas con respecto a esto.
-Nota Avance : 3.5 de 17
+- Separar bien las secciones 
+- Seguir los lineamientos dados en clase.
+Nota Parcial : 14 de 20
 -->
