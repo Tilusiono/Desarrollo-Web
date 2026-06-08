@@ -1,167 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bienestar y Salud</title>
 
   <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    body{
-      background:#f4fff9;
-      color:#333;
-      line-height:1.6;
+    body {
+      background: #f4fff9;
+      color: #333;
+      line-height: 1.6;
     }
 
-    header{
-      background:linear-gradient(135deg,#2bb673,#1d8f5a);
-      color:white;
-      padding:60px 20px;
-      text-align:center;
+    header {
+      background: linear-gradient(135deg, #2bb673, #1d8f5a);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
     }
 
-    header h1{
-      font-size:3rem;
-      margin-bottom:10px;
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
 
-    header p{
-      font-size:1.2rem;
-      opacity:0.95;
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.95;
     }
 
-    nav{
-      background:#ffffff;
-      padding:15px;
-      display:flex;
-      justify-content:center;
-      gap:30px;
-      box-shadow:0 2px 8px rgba(0,0,0,0.1);
-      position:sticky;
-      top:0;
-      z-index:100;
+    nav {
+      background: #ffffff;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
-    nav a{
-      text-decoration:none;
-      color:#1d8f5a;
-      font-weight:bold;
-      transition:0.3s;
+    nav a {
+      text-decoration: none;
+      color: #1d8f5a;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
-    nav a:hover{
-      color:#145c3b;
+    nav a:hover {
+      color: #145c3b;
     }
 
-    .container{
-      width:90%;
-      max-width:1200px;
-      margin:auto;
-      padding:50px 0;
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 0;
     }
 
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-      margin-top:30px;
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
     }
 
-    .card{
-      background:white;
-      padding:25px;
-      border-radius:15px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.08);
-      transition:0.3s;
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: 0.3s;
     }
 
-    .card:hover{
-      transform:translateY(-5px);
+    .card:hover {
+      transform: translateY(-5px);
     }
 
-    .card h3{
-      color:#1d8f5a;
-      margin-bottom:10px;
+    .card h3 {
+      color: #1d8f5a;
+      margin-bottom: 10px;
     }
 
-    .hero-image{
-      width:100%;
-      height:400px;
-      background:url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1600&auto=format&fit=crop') center/cover;
-      border-radius:20px;
-      margin-top:40px;
+    .hero-image {
+      width: 100%;
+      height: 400px;
+      background: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1600&auto=format&fit=crop') center/cover;
+      border-radius: 20px;
+      margin-top: 40px;
     }
 
-    .tips{
-      background:#e9fff3;
-      padding:40px;
-      border-radius:20px;
-      margin-top:50px;
+    .tips {
+      background: #e9fff3;
+      padding: 40px;
+      border-radius: 20px;
+      margin-top: 50px;
     }
 
-    .tips ul{
-      margin-top:20px;
-      padding-left:20px;
+    .tips ul {
+      margin-top: 20px;
+      padding-left: 20px;
     }
 
-    .tips li{
-      margin-bottom:10px;
+    .tips li {
+      margin-bottom: 10px;
     }
 
-    .contact{
-      background:white;
-      padding:40px;
-      border-radius:20px;
-      margin-top:50px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    .contact {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      margin-top: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
-    form{
-      display:flex;
-      flex-direction:column;
-      gap:15px;
-      margin-top:20px;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
     }
 
-    input, textarea{
-      padding:12px;
-      border:1px solid #ccc;
-      border-radius:10px;
-      font-size:1rem;
+    input,
+    textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
     }
 
-    button{
-      background:#1d8f5a;
-      color:white;
-      border:none;
-      padding:14px;
-      border-radius:10px;
-      cursor:pointer;
-      font-size:1rem;
-      transition:0.3s;
+    button {
+      background: #1d8f5a;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
     }
 
-    button:hover{
-      background:#145c3b;
+    button:hover {
+      background: #145c3b;
     }
 
-    footer{
-      margin-top:60px;
-      background:#1d8f5a;
-      color:white;
-      text-align:center;
-      padding:20px;
+    footer {
+      margin-top: 60px;
+      background: #1d8f5a;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
 
-    @media(max-width:768px){
-      header h1{
-        font-size:2.2rem;
+    @media(max-width:768px) {
+      header h1 {
+        font-size: 2.2rem;
       }
     }
   </style>
@@ -179,6 +181,14 @@
     <a href="#tips">Consejos</a>
     <a href="#contacto">Contacto</a>
   </nav>
+
+  <seccion class="carrusel-container">
+
+    <img src=" https://tse2.mm.bing.net/th/id/OIP.K8mQ4eHK-mPzlGsKs869BwHaE8?pid=Api&P=0&h=180" width="300">
+    <img src=" https://agendatransparencia.cl/wp-content/uploads/2025/05/image_C683G1NXC0.png" width="300">
+    <img src=" https://tse2.mm.bing.net/th/id/OIP.bYRPX0U_iZVIHhmjP1QGLwHaEC?pid=Api&P=0&h=180" width="300">
+
+  </seccion>
 
   <div class="container">
 
@@ -231,19 +241,53 @@
     <section class="contact" id="contacto">
       <h2>Contáctanos</h2>
 
-      <form>
-        <input type="text" placeholder="Tu nombre" required />
-        <input type="email" placeholder="Tu correo electrónico" required />
-        <textarea rows="5" placeholder="Escribe tu mensaje"></textarea>
+      <form action="" method="post">
+        <fieldset>
+          <legend>Registro de Usuario</legend>
 
-        <button type="submit">Enviar Mensaje</button>
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+          <label for="apellidos">Apellidos:</label><br>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required><br><br>
+
+          <label for="email">Correo Electrónico:</label><br>
+          <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required><br><br>
+
+          <label for="password">Contraseña:</label><br>
+          <input type="password" id="password" name="password" placeholder="Tu contraseña" required><br><br>
+
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea><br><br>
+
+          <button type="submit">Enviar Mensaje</button>
+        </fieldset>
       </form>
-    </section>
 
   </div>
 
   <footer>
     <p>© 2026 Bienestar y Salud | Todos los derechos reservados</p>
   </footer>
-  </body>
-</html
+</body>
+
+</html>
+
+<!-- 
+Header               1.0 , falta el logo
+S1 Carrusel          2.5 , no hay imágenes de banners para usar en el carrusel
+S2 Categorización    2.0 ,CARD(minimo 4) Deberias  
+S3 Ítems             1.0 ,ARTICLE(Minimo 12 ítems podrías hacer 4 por cada categoria)
+S4 Formulario        2.5 , Adicionar mas inputs 4/12 
+Footer               0.5 , Le falta mas contenido 
+HTML  : 10
+Sustentación:+0
+Participación:0
+Observaciones : 
+- Revisar el código generado , no usar div
+- Considerar que solo es código HTML , si conservas el css y el JS se harán preguntas con respecto a esto.
+- Separar bien las secciones 
+- Hay muchos elementos que no tienen etiqueta de cierre
+- Seguir los lineamientos dados en clase.
+NOTA PARCIAL : 10
+-->
