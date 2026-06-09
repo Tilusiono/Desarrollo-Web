@@ -1,0 +1,156 @@
+/* =========================================
+   ESTILOS GENERALES
+========================================= */
+
+body {
+    background-color: #f5f5f5; /* Fondo general de la página */
+    font-family: Arial, sans-serif; /* Fuente principal */
+}
+
+/* =========================================
+   BLOQUES DE CADA DEMO
+========================================= */
+
+.bloque-demo {
+    background-color: white; /* Fondo blanco para separar cada ejemplo */
+    border: 1px solid #dcdcdc; /* Borde suave */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 25px; /* Separación entre bloques */
+}
+
+.bloque-demo h2 {
+    margin-bottom: 10px; /* Espacio debajo del título principal del bloque */
+}
+
+.bloque-demo h3 {
+    font-size: 18px; /* Tamaño de subtítulos */
+    margin-bottom: 12px;
+}
+
+/* =========================================
+   CAJAS VISUALES PARA GRID Y COLUMNAS
+========================================= */
+
+.caja-demo {
+    background-color: #6f2cff; /* Color principal para visualizar columnas */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrado horizontal */
+    padding: 20px 10px; /* Alto visual de la caja */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: bold; /* Resalta el texto */
+    min-height: 70px; /* Altura mínima uniforme */
+    display: flex; /* Para centrar contenido */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.caja-secundaria {
+    background-color: #9b59ff; /* Color distinto para subcolumnas */
+}
+
+/* =========================================
+   DEMOS DE CONTAINERS
+========================================= */
+
+.container-ejemplo,
+.container-fluid-ejemplo,
+.container-sm-ejemplo {
+    background-color: #e9d8fd; /* Fondo suave */
+    border: 2px dashed #6f2cff; /* Borde decorativo */
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.container-fluid-ejemplo {
+    width: 100%; /* Simula el comportamiento fluido */
+}
+
+.container-sm-ejemplo {
+    max-width: 540px; /* Simulación visual de un container-sm */
+    margin: 0 auto; /* Centrado */
+}
+
+/* =========================================
+   UTILITIES
+========================================= */
+
+.caja-utilidad {
+    background-color: #6f2cff;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.caja-texto {
+    background-color: #ede9fe;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.caja-flex-demo {
+    background-color: #ede9fe;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.mini-caja {
+    background-color: #6f2cff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* =========================================
+   Z-INDEX
+========================================= */
+
+.zona-zindex {
+    height: 170px; /* Área para ver las superposiciones */
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cuadro-z {
+    width: 130px;
+    height: 90px;
+    position: absolute; /* Permite superponer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.z-1 {
+    background-color: #ef4444;
+    top: 20px;
+    left: 20px;
+}
+
+.z-2 {
+    background-color: #3b82f6;
+    top: 40px;
+    left: 70px;
+}
+
+.z-3 {
+    background-color: #22c55e;
+    top: 60px;
+    left: 120px;
+}
+
+/* =========================================
+   CSS GRID
+========================================= */
+
+.grid-css-demo {
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+}

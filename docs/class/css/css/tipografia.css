@@ -1,0 +1,222 @@
+
+body {
+    font-family: Arial, sans-serif;
+    /* Fuente general de la página */
+    background-color: #f5f5f5;
+    /* Fondo gris claro */
+    padding: 30px;
+    /* Espacio alrededor del contenido */
+    line-height: 1.5;
+    /* Altura base de línea */
+}
+
+h1 {
+    text-align: center;
+    /* Centra el título principal */
+    margin-bottom: 10px;
+    /* Espacio inferior */
+}
+
+.intro {
+    text-align: center;
+    /* Centra el texto introductorio */
+    margin-bottom: 30px;
+    /* Separación con las secciones */
+}
+
+section {
+    background-color: white;
+    /* Fondo blanco en cada sección */
+    border: 1px solid #ccc;
+    /* Borde gris */
+    border-radius: 10px;
+    /* Esquinas redondeadas */
+    padding: 20px;
+    /* Espacio interno */
+    margin-bottom: 20px;
+    /* Espacio entre secciones */
+}
+
+h2 {
+    margin-bottom: 15px;
+    /* Espacio debajo del subtítulo */
+}
+
+/* =========================================
+   ESTILO BASE DE LOS EJEMPLOS
+========================================= */
+
+.ejemplo {
+    margin: 0;
+    /* Quita margen por defecto */
+    color: #222;
+    /* Color del texto */
+    background-color: #eef2ff;
+    /* Fondo suave para distinguir el ejemplo */
+    padding: 12px;
+    /* Espacio interno */
+    border-radius: 8px;
+    /* Bordes redondeados */
+}
+
+/* =========================================
+   1. FONT-FAMILY
+========================================= */
+
+.font-family-demo {
+    font-family: Georgia, "Times New Roman", serif;
+    /* Cambia la familia tipográfica */
+}
+
+/* =========================================
+   2. FONT-SIZE
+========================================= */
+
+.font-size-demo {
+    font-size: 28px;
+    /* Aumenta el tamaño del texto */
+}
+
+/* =========================================
+   3. FONT-WEIGHT
+========================================= */
+
+.font-weight-demo {
+    font-weight: 700;
+    /* Aplica un grosor fuerte */
+}
+
+/* =========================================
+   4. FONT-STYLE
+========================================= */
+
+.font-style-demo {
+    font-style: italic;
+    /* Coloca el texto en cursiva */
+}
+
+/* =========================================
+   5. FONT-VARIANT
+========================================= */
+
+.font-variant-demo {
+    font-variant: small-caps;
+    /* Convierte el texto a pequeñas mayúsculas */
+}
+
+/* =========================================
+   6. FONT
+========================================= */
+
+.font-demo {
+    font: italic 700 24px/1.6 Verdana, sans-serif;
+    /* Propiedad abreviada:
+                                                       estilo, grosor, tamaño, altura de línea y fuente */
+}
+
+/* =========================================
+   7. LINE-HEIGHT
+========================================= */
+
+.line-height-demo {
+    line-height: 2;
+    /* Aumenta el espacio vertical entre líneas */
+}
+
+/* =========================================
+   8. LETTER-SPACING
+========================================= */
+
+.letter-spacing-demo {
+    letter-spacing: 4px;
+    /* Aumenta el espacio entre letras */
+}
+
+/* =========================================
+   9. WORD-SPACING
+========================================= */
+
+.word-spacing-demo {
+    word-spacing: 15px;
+    /* Aumenta el espacio entre palabras */
+}
+
+/* =========================================
+   10. TEXT-ALIGN
+========================================= */
+
+.text-align-demo {
+    text-align: center;
+    /* Centra el texto horizontalmente */
+}
+
+/* =========================================
+   11. TEXT-TRANSFORM
+========================================= */
+
+.text-transform-demo {
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+}
+
+/* =========================================
+   12. TEXT-DECORATION
+========================================= */
+
+.text-decoration-demo {
+    text-decoration: underline;
+    /* Subraya el texto */
+}
+
+/* =========================================
+   13. TEXT-INDENT
+========================================= */
+
+.text-indent-demo {
+    text-indent: 40px;
+    /* Agrega sangría al inicio del párrafo */
+}
+
+/* =========================================
+   14. TEXT-SHADOW
+========================================= */
+
+.text-shadow-demo {
+    font-size: 26px;
+    /* Tamaño mayor para notar la sombra */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+    /* Sombra del texto */
+}
+
+/* =========================================
+   15. WHITE-SPACE
+========================================= */
+
+.white-space-demo {
+    white-space: pre;
+    /* Conserva espacios y saltos de línea tal como están escritos */
+    background-color: #e0f2fe;
+}
+
+/* =========================================
+   16. DIRECTION
+========================================= */
+
+.direction-demo {
+    direction: rtl;
+    /* Muestra el contenido de derecha a izquierda */
+    text-align: right;
+    /* Alinea el texto a la derecha */
+}
+
+/* =========================================
+   17. UNICODE-BIDI
+========================================= */
+
+.unicode-bidi-demo {
+    direction: rtl;
+    /* Cambia la dirección del texto */
+    unicode-bidi: bidi-override;
+    /* Fuerza el orden visual bidireccional */
+    text-align: right;
+}
