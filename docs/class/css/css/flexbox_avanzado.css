@@ -1,0 +1,422 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Fuente general */
+    background-color: #f5f5f5;
+    /* Fondo de la página */
+    padding: 30px;
+    /* Espacio alrededor del contenido */
+    line-height: 1.5;
+    /* Altura de línea */
+}
+
+h1 {
+    text-align: center;
+    /* Centra el título */
+    margin-bottom: 10px;
+    /* Espacio inferior */
+}
+
+.intro {
+    text-align: center;
+    /* Centra el texto introductorio */
+    margin-bottom: 30px;
+    /* Separación con las secciones */
+}
+
+section {
+    background-color: white;
+    /* Fondo de cada bloque */
+    border: 1px solid #ccc;
+    /* Borde gris */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Espacio interno */
+    margin-bottom: 20px;
+    /* Separación entre secciones */
+}
+
+h2 {
+    margin-bottom: 15px;
+    /* Espacio debajo del subtítulo */
+}
+
+/* =========================================
+   ESTILOS BASE DE CONTENEDORES E ITEMS
+========================================= */
+
+.item,
+.item-inline,
+.item-ancho,
+.item-gap,
+.item-shrink {
+    background-color: royalblue;
+    /* Color base de los elementos */
+    color: white;
+    /* Color del texto */
+    padding: 15px;
+    /* Espacio interno */
+    margin: 0;
+    /* Quita margen por defecto */
+    text-align: center;
+    /* Centra el texto */
+}
+
+.item {
+    width: 70px;
+    /* Ancho base */
+}
+
+.item-inline {
+    width: 60px;
+    /* Ancho base para inline-flex */
+}
+
+.item-ancho {
+    width: 140px;
+    /* Ancho mayor para ver wrap */
+}
+
+.item-gap {
+    width: 100px;
+}
+
+.item-shrink {
+    width: 180px;
+    /* Ancho para mostrar reducción */
+}
+
+/* =========================================
+   1. DISPLAY FLEX
+========================================= */
+
+.contenedor-flex {
+    display: flex;
+    /* Activa Flexbox */
+    gap: 10px;
+    /* Espacio entre elementos */
+    background-color: #e5e7eb;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* =========================================
+   2. DISPLAY INLINE-FLEX
+========================================= */
+
+.contenedor-inline-flex {
+    display: inline-flex;
+    /* Flexbox pero en línea */
+    gap: 10px;
+    background-color: #d1fae5;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* =========================================
+   3. FLEX-DIRECTION ROW
+========================================= */
+
+.direccion-row {
+    display: flex;
+    /* Activa flex */
+    flex-direction: row;
+    /* Los elementos van en fila */
+    gap: 10px;
+    background-color: #ede9fe;
+    padding: 10px;
+}
+
+/* =========================================
+   4. FLEX-DIRECTION ROW-REVERSE
+========================================= */
+
+.direccion-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Fila en orden inverso */
+    gap: 10px;
+    background-color: #fce7f3;
+    padding: 10px;
+}
+
+/* =========================================
+   5. FLEX-DIRECTION COLUMN
+========================================= */
+
+.direccion-column {
+    display: flex;
+    flex-direction: column;
+    /* Los elementos van en columna */
+    gap: 10px;
+    background-color: #ecfccb;
+    padding: 10px;
+}
+
+/* =========================================
+   6. FLEX-DIRECTION COLUMN-REVERSE
+========================================= */
+
+.direccion-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    /* Columna en orden inverso */
+    gap: 10px;
+    background-color: #fee2e2;
+    padding: 10px;
+}
+
+/* =========================================
+   7. FLEX-WRAP NOWRAP
+========================================= */
+
+.wrap-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Todo en una sola línea */
+    gap: 10px;
+    overflow-x: auto;
+    /* Scroll horizontal si no entra */
+    background-color: #e0f2fe;
+    padding: 10px;
+}
+
+/* =========================================
+   8. FLEX-WRAP WRAP
+========================================= */
+
+.wrap-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    /* Los elementos pueden bajar a otra línea */
+    gap: 10px;
+    width: 360px;
+    background-color: #fef3c7;
+    padding: 10px;
+}
+
+/* =========================================
+   9. FLEX-FLOW
+========================================= */
+
+.flow-demo {
+    display: flex;
+    flex-flow: row wrap;
+    /* Atajo de flex-direction + flex-wrap */
+    gap: 10px;
+    width: 360px;
+    background-color: #dcfce7;
+    padding: 10px;
+}
+
+/* =========================================
+   10. JUSTIFY-CONTENT
+========================================= */
+
+.justify-demo {
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye espacio en el eje principal */
+    background-color: #fae8ff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* =========================================
+   11. ALIGN-ITEMS
+========================================= */
+
+.align-items-demo {
+    display: flex;
+    align-items: center;
+    /* Alinea los elementos en el eje cruzado */
+    gap: 10px;
+    height: 140px;
+    background-color: #fef2f2;
+    padding: 10px;
+}
+
+.altura-1 {
+    height: 40px;
+}
+
+.altura-2 {
+    height: 70px;
+}
+
+.altura-3 {
+    height: 100px;
+}
+
+/* =========================================
+   12. ALIGN-CONTENT
+========================================= */
+
+.align-content-demo {
+    display: flex;
+    flex-wrap: wrap;
+    /* Necesario para que align-content funcione */
+    align-content: space-between;
+    /* Distribuye las líneas dentro del contenedor */
+    gap: 10px;
+    width: 360px;
+    height: 220px;
+    background-color: #ecfeff;
+    padding: 10px;
+}
+
+/* =========================================
+   13. GAP / ROW-GAP / COLUMN-GAP
+========================================= */
+
+.gap-demo {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    /* Espacio entre filas */
+    column-gap: 15px;
+    /* Espacio entre columnas */
+    width: 260px;
+    background-color: #f3f4f6;
+    padding: 10px;
+}
+
+/* =========================================
+   14. ORDER
+========================================= */
+
+.order-demo {
+    display: flex;
+    gap: 10px;
+    background-color: #fff7ed;
+    padding: 10px;
+}
+
+.orden-1 {
+    order: 1;
+    /* Aparece primero */
+}
+
+.orden-2 {
+    order: 2;
+    /* Aparece segundo */
+}
+
+.orden-3 {
+    order: 3;
+    /* Aparece tercero */
+}
+
+/* =========================================
+   15. FLEX-GROW
+========================================= */
+
+.grow-demo {
+    display: flex;
+    gap: 10px;
+    background-color: #eff6ff;
+    padding: 10px;
+}
+
+.grow-1 {
+    flex-grow: 1;
+    /* Crece una proporción */
+}
+
+.grow-2 {
+    flex-grow: 2;
+    /* Crece el doble */
+}
+
+/* =========================================
+   16. FLEX-SHRINK
+========================================= */
+
+.shrink-demo {
+    display: flex;
+    width: 320px;
+    /* Menor ancho para forzar reducción */
+    gap: 10px;
+    background-color: #fdf2f8;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.shrink-0 {
+    flex-shrink: 0;
+    /* No se reduce */
+    background-color: #dc2626;
+}
+
+.shrink-1 {
+    flex-shrink: 1;
+    /* Sí se reduce si falta espacio */
+    background-color: #2563eb;
+}
+
+/* =========================================
+   17. FLEX-BASIS
+========================================= */
+
+.basis-demo {
+    display: flex;
+    gap: 10px;
+    background-color: #ecfdf5;
+    padding: 10px;
+}
+
+.basis-100 {
+    flex-basis: 100px;
+    /* Tamaño inicial de 100px */
+}
+
+.basis-200 {
+    flex-basis: 200px;
+    /* Tamaño inicial de 200px */
+}
+
+.basis-auto {
+    flex-basis: auto;
+    /* Usa tamaño automático */
+}
+
+/* =========================================
+   18. FLEX
+========================================= */
+
+.flex-demo {
+    display: flex;
+    gap: 10px;
+    background-color: #eef2ff;
+    padding: 10px;
+}
+
+.flex-1 {
+    flex: 1;
+    /* grow 1, shrink 1, basis 0 */
+}
+
+.flex-2 {
+    flex: 2;
+    /* ocupa el doble de espacio */
+}
+
+/* =========================================
+   19. ALIGN-SELF
+========================================= */
+
+.align-self-demo {
+    display: flex;
+    align-items: flex-start;
+    /* Alineación general arriba */
+    gap: 10px;
+    height: 140px;
+    background-color: #fff1f2;
+    padding: 10px;
+}
+
+.self-end {
+    align-self: flex-end;
+    /* Este elemento se alinea abajo */
+    background-color: #16a34a;
+}

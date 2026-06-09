@@ -1,0 +1,121 @@
+table{
+    border-collapse: collapse; /* une los bordes de las celdas */
+}
+/* =========================================
+   ESTILO GENERAL DE LA PÁGINA
+   Configuración base del documento
+========================================= */
+body{
+    font-family: "Segoe UI", Arial, sans-serif; /* Fuente principal del sitio */
+    margin:0; /* elimina el margen por defecto del navegador */
+    padding:40px; /* espacio interno del contenido respecto al borde */
+    background:linear-gradient(135deg,#f4f7fb,#e6eef9); /* fondo degradado */
+    color:#333; /* color del texto principal */
+    line-height:1.6; /* altura entre líneas para mejorar lectura */
+}
+
+
+
+/* =========================================
+   HEADER
+   Encabezado principal del sitio
+========================================= */
+header{
+    background: linear-gradient(90deg,#4facfe,#00f2fe); /* Fondo degradado */
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+
+
+/* =========================================
+   NAV
+   Barra de navegación
+========================================= */
+nav{
+    background: white;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Estilo para los enlaces del menú */
+nav a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+/* Efecto al pasar el mouse */
+nav a:hover{
+    color: #ff6600;
+}
+
+
+/* =========================================
+   MAIN
+   Contenedor del contenido principal
+========================================= */
+main{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* =========================================
+   SECTION
+   Agrupa contenido relacionado
+========================================= */
+section{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid #4facfe;
+    border-radius: 6px;
+}
+
+
+/* =========================================
+   ARTICLE
+   Contenido independiente dentro de una sección
+========================================= */
+article{
+    background: #fafafa;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Efecto hover en article */
+article:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    transition: all .3s ease;
+}
+
+
+/* =========================================
+   ASIDE
+   Información complementaria
+========================================= */
+aside{
+    background: #fff3cd;
+    padding: 15px;
+    border-left: 5px solid #ffc107;
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   FOOTER
+   Pie de página
+========================================= */
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

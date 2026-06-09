@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores de atributo CSS</title>
+    <link rel="stylesheet" href="../../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <h1>Pseudo-elementos en CSS</h1>
+
+    <p>
+        Los pseudo-elementos en CSS permiten aplicar estilos a partes específicas
+        de un elemento HTML, como la primera letra, la primera línea o contenido
+        que se agrega antes o después del elemento. Gracias a los pseudo-elementos
+        es posible modificar detalles visuales del contenido sin necesidad de
+        cambiar la estructura del HTML.
+    </p>
+    
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Pseudo-elemento</th>
+                <th>Ejemplo CSS</th>
+                <th>Uso principal</th>
+                <th>Descripción</th>
+                <th>Elemento HTML</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>::before</td>
+                <td>p::before</td>
+                <td>Contenido antes</td>
+                <td>Inserta contenido antes del contenido real del elemento.</td>
+                <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::after</td>
+                <td>p::after</td>
+                <td>Contenido después</td>
+                <td>Inserta contenido después del contenido del elemento.</td>
+                <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::first-letter</td>
+                <td>p::first-letter</td>
+                <td>Primera letra</td>
+                <td>Aplica estilos únicamente a la primera letra del texto.</td>
+                <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::first-line</td>
+                <td>p::first-line</td>
+                <td>Primera línea</td>
+                <td>Aplica estilos a la primera línea visible de un párrafo.</td>
+                <td>&lt;p&gt;Texto largo&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::selection</td>
+                <td>p::selection</td>
+                <td>Texto seleccionado</td>
+                <td>Permite cambiar el color del texto cuando el usuario lo selecciona.</td>
+                <td>&lt;p&gt;Texto seleccionable&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::marker</td>
+                <td>li::marker</td>
+                <td>Marcador de lista</td>
+                <td>Permite modificar el estilo de los marcadores de listas.</td>
+                <td>&lt;li&gt;Elemento&lt;/li&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::placeholder</td>
+                <td>input::placeholder</td>
+                <td>Texto de ayuda</td>
+                <td>Permite cambiar el estilo del texto placeholder de los inputs.</td>
+                <td>&lt;input placeholder="Nombre"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::file-selector-button</td>
+                <td>input::file-selector-button</td>
+                <td>Botón de archivo</td>
+                <td>Permite modificar el botón de selección de archivos.</td>
+                <td>&lt;input type="file"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::backdrop</td>
+                <td>dialog::backdrop</td>
+                <td>Fondo del diálogo</td>
+                <td>Permite cambiar el fondo detrás de un elemento &lt;dialog&gt;.</td>
+                <td>&lt;dialog&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::cue</td>
+                <td>video::cue</td>
+                <td>Subtítulos</td>
+                <td>Permite aplicar estilos a los subtítulos de un video.</td>
+                <td>&lt;video&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::cue-region</td>
+                <td>video::cue-region</td>
+                <td>Región de subtítulos</td>
+                <td>Define el estilo del área donde aparecen los subtítulos.</td>
+                <td>&lt;video&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::part()</td>
+                <td>my-element::part(header)</td>
+                <td>Web Components</td>
+                <td>Permite estilizar partes internas de componentes personalizados.</td>
+                <td>&lt;my-element&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::slotted()</td>
+                <td>slot::slotted(p)</td>
+                <td>Slots en Web Components</td>
+                <td>Permite aplicar estilos a elementos insertados en slots.</td>
+                <td>&lt;slot&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::highlight()</td>
+                <td>p::highlight()</td>
+                <td>Texto resaltado</td>
+                <td>Permite aplicar estilos a texto resaltado mediante API de highlight.</td>
+                <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::spelling-error</td>
+                <td>p::spelling-error</td>
+                <td>Error ortográfico</td>
+                <td>Permite mostrar estilos en palabras con errores ortográficos.</td>
+                <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>::grammar-error</td>
+                <td>p::grammar-error</td>
+                <td>Error gramatical</td>
+                <td>Permite mostrar estilos en errores gramaticales.</td>
+                <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a href="../../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/selectores/selectores_pseudo_elementos_avanzados.html">Ver demo de Pseudo-elementos</a>
+
+</body>
+
+</html>

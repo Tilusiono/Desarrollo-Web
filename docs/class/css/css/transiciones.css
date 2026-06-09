@@ -1,0 +1,352 @@
+/* =========================================
+   ESTILOS GENERALES
+========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.ejemplo {
+    display: inline-block;
+    padding: 14px 22px;
+    background-color: rgb(149, 81, 185);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* =========================================
+   1. transition-property
+========================================= */
+
+.fondo {
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.fondo:hover {
+    background-color: crimson;
+}
+
+/* =========================================
+   2. transition-duration
+========================================= */
+
+.duracion {
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+
+.duracion:hover {
+    background-color: seagreen;
+}
+
+/* =========================================
+   3. transition-delay
+========================================= */
+
+.retraso {
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+
+.retraso:hover {
+    background-color: darkorange;
+}
+
+/* =========================================
+   CONTENEDOR PARA LOS EJEMPLOS DE MOVIMIENTO
+========================================= */
+
+.pista {
+    width: 100%;
+    height: 70px;
+    border: 1px dashed #999;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   ESTILO BASE PARA ELEMENTOS QUE SE MUEVEN
+========================================= */
+
+.movimiento {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    padding: 10px 16px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 8px;
+}
+
+/* =========================================
+   4. ease
+========================================= */
+
+.ease {
+    transition-property: left;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.pista:hover .ease {
+    left: 200px;
+}
+
+/* =========================================
+   5. linear
+========================================= */
+
+.linear {
+    transition-property: left;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.pista:hover .linear {
+    left: 200px;
+}
+
+/* =========================================
+   6. ease-in
+========================================= */
+
+.ease-in {
+    transition-property: left;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+.pista:hover .ease-in {
+    left: 200px;
+}
+
+/* =========================================
+   7. ease-out
+========================================= */
+
+.ease-out {
+    transition-property: left;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+.pista:hover .ease-out {
+    left: 200px;
+}
+
+/* =========================================
+   8. ease-in-out
+========================================= */
+
+.ease-in-out {
+    transition-property: left;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.pista:hover .ease-in-out {
+    left: 200px;
+}
+
+/* =========================================
+   9. width
+========================================= */
+
+.ancho {
+    width: 180px;
+    height: 10px;
+    border: none;
+    background-color: royalblue;
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+.ancho:hover {
+    width: 320px;
+}
+
+/* =========================================
+   10. transform
+========================================= */
+
+.escala {
+    display: inline-block;
+    border-radius: 10px;
+    transition-property: transform;
+    transition-duration: 0.8s;
+}
+
+.escala:hover {
+    transform: scale(1.2);
+}
+
+/* =========================================
+   11. border-radius
+========================================= */
+
+.borde {
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    transition-property: border-radius, background-color;
+    transition-duration: 1s;
+}
+
+.borde:hover {
+    border-radius: 30px;
+    background-color: #e8f0ff;
+}
+
+/* =========================================
+   12. box-shadow
+========================================= */
+
+.sombra {
+    width: 280px;
+    height: 80px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    transition-property: box-shadow;
+    transition-duration: 0.8s;
+}
+
+.sombra:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================
+   13. opacity
+========================================= */
+
+.opacidad {
+    display: inline-block;
+    text-align: center;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.opacidad:hover {
+    opacity: 0.4;
+}
+
+/* =========================================
+   14. cubic-bezier()
+========================================= */
+
+.bezier {
+    transition-property: left, background-color;
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.pista:hover .bezier {
+    left: 200px;
+    background-color: mediumvioletred;
+}
+
+/* =========================================
+   15. steps()
+========================================= */
+
+.pasos {
+    transition-property: left;
+    transition-duration: 2s;
+    transition-timing-function: steps(4);
+}
+
+.pista:hover .pasos {
+    left: 200px;
+}
+
+/* =========================================
+   16. transition abreviada
+========================================= */
+
+.abreviada {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.abreviada:hover {
+    background-color: teal;
+    transform: rotate(8deg);
+}
+
+/* =========================================
+   17. all
+========================================= */
+
+.todo {
+    display: inline-block;
+    width: 180px;
+    padding: 16px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.todo:hover {
+    width: 240px;
+    background-color: tomato;
+    border-radius: 25px;
+    transform: scale(1.1);
+}
+
+/* =========================================
+   18. none
+========================================= */
+
+.sin-transicion {
+    width: 240px;
+    padding: 12px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 8px;
+    transition-property: none;
+}
+
+.sin-transicion:hover {
+    background-color: black;
+    transform: scale(1.05);
+}

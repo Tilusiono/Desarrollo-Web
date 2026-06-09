@@ -1,0 +1,248 @@
+
+
+body {
+    font-family: Arial, sans-serif; /* Fuente principal de la página */
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    padding: 30px; /* Espacio interno alrededor del contenido */
+    line-height: 1.5; /* Altura de línea para mejorar la lectura */
+}
+
+h1 {
+    text-align: center; /* Centra el título principal */
+    margin-bottom: 10px; /* Espacio inferior del título */
+}
+
+.intro {
+    text-align: center; /* Centra el texto introductorio */
+    margin-bottom: 30px; /* Separación inferior */
+}
+
+section {
+    background-color: white; /* Fondo blanco para cada sección */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Separación entre secciones */
+}
+
+h2 {
+    margin-bottom: 15px; /* Espacio debajo de cada subtítulo */
+}
+
+/* =========================================
+   ESTILO BASE
+========================================= */
+
+.ejemplo {
+    background-color: royalblue; /* Color de fondo base */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espacio interno */
+    margin: 5px 0; /* Espacio vertical entre elementos */
+}
+
+/* =========================================
+   1. BLOCK
+========================================= */
+
+.block-demo {
+    display: block; /* Hace que el elemento ocupe toda la línea */
+    width: 220px; /* Ancho fijo del elemento */
+}
+
+/* =========================================
+   2. INLINE
+========================================= */
+
+.inline-demo {
+    display: inline; /* Elemento en línea (no rompe la línea) */
+    background-color: seagreen; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 8px; /* Espacio interno */
+}
+
+/* =========================================
+   3. INLINE-BLOCK
+========================================= */
+
+.inline-block-demo {
+    display: inline-block; /* Se comporta como inline pero permite width y height */
+    width: 120px; /* Ancho de cada caja */
+    height: 60px; /* Alto de cada caja */
+    background-color: darkorange; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espacio interno */
+    margin-right: 10px; /* Espacio entre cajas */
+    text-align: center; /* Centra el texto */
+    line-height: 40px; /* Ajusta la altura del texto dentro de la caja */
+}
+
+/* =========================================
+   4. NONE
+========================================= */
+
+.visible-demo {
+    width: 180px; /* Elemento visible con ancho definido */
+    background-color: crimson;
+}
+
+.none-demo {
+    display: none; /* El elemento desaparece completamente del layout */
+}
+
+/* =========================================
+   5. FLEX
+========================================= */
+
+.contenedor-flex {
+    display: flex; /* Activa el sistema Flexbox */
+    gap: 10px; /* Espacio entre los elementos hijos */
+    background-color: #e5e7eb; /* Color de fondo */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.item-flex {
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    flex: 1; /* Cada elemento ocupa el mismo espacio disponible */
+    text-align: center;
+}
+
+/* =========================================
+   6. INLINE-FLEX
+========================================= */
+
+.contenedor-inline-flex {
+    display: inline-flex; /* Flexbox pero el contenedor se comporta como inline */
+    gap: 10px;
+    background-color: #d1fae5;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.item-inline-flex {
+    background-color: #059669;
+    color: white;
+    padding: 15px;
+}
+
+/* =========================================
+   7. GRID
+========================================= */
+
+.contenedor-grid {
+    display: grid; /* Activa el sistema Grid */
+    grid-template-columns: repeat(3, 30vw); /* 3 columnas de 30% del ancho de la ventana */
+    gap: 1.7vw; /* Espacio entre columnas y filas */
+    background-color: #ede9fe;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.item-grid {
+    background-color: #7c3aed;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* =========================================
+   8. INLINE-GRID
+========================================= */
+
+.contenedor-inline-grid {
+    display: inline-grid; /* Grid pero el contenedor se comporta como inline */
+    grid-template-columns: repeat(2, 30vw); /* 2 columnas */
+    gap: 1.7vw;
+    background-color: #fef3c7;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.item-inline-grid {
+    background-color: #d97706;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* =========================================
+   9. LIST-ITEM
+========================================= */
+
+.list-item-demo {
+    display: list-item; /* Hace que el elemento se comporte como un item de lista */
+    list-style-position: inside; /* El marcador aparece dentro del elemento */
+    margin-left: 20px;
+    background-color: #0f766e;
+    color: white;
+    padding: 10px;
+    width: 220px;
+}
+
+/* =========================================
+   10. FLOW-ROOT
+========================================= */
+
+.flow-root-demo {
+    display: flow-root; /* Crea un nuevo contexto de bloque */
+    background-color: #e0f2fe;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.imagen-float {
+    float: left; /* La imagen flota a la izquierda */
+    margin-right: 15px; /* Espacio entre imagen y texto */
+    border-radius: 6px;
+}
+
+/* =========================================
+   11. TABLE
+========================================= */
+
+.tabla-demo {
+    display: table; /* Hace que el contenedor se comporte como una tabla */
+    border-collapse: collapse;
+    width: 260px;
+    border: 2px solid #333;
+}
+
+.fila-demo {
+    display: table-row; /* Representa una fila de la tabla */
+}
+
+.celda-demo {
+    display: table-cell; /* Representa una celda de la tabla */
+    border: 4px solid #950606;
+    padding: 15px;
+    text-align: center;
+    background-color: #fecaca;
+    margin: 0;
+}
+
+/* =========================================
+   12. CONTENTS
+========================================= */
+
+.padre-contents {
+    display: flex; /* Contenedor flex para ver el efecto */
+    gap: 10px;
+    background-color: #f3f4f6;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.contents-demo {
+    display: contents; /* El contenedor desaparece visualmente */
+}
+
+.hijo-contents {
+    background-color: #334155;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
