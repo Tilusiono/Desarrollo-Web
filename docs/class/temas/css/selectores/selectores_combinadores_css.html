@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Semántico HTML</title>
+    <link rel="stylesheet" href="../../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <h1>Combinadores en CSS</h1>
+
+    <p>
+        Los combinadores en CSS permiten seleccionar elementos según la relación
+        que tienen entre sí dentro del documento HTML. Gracias a estos selectores
+        podemos aplicar estilos dependiendo de la estructura de la página,
+        como elementos hijos, descendientes o hermanos.
+    </p>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Combinador</th>
+                <th>Símbolo</th>
+                <th>Uso principal</th>
+                <th>Ejemplo CSS</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Descendente</td>
+                <td>(espacio)</td>
+                <td>Selecciona elementos dentro de otro</td>
+                <td>div p</td>
+                <td>Aplica estilos a todos los párrafos dentro del div.</td>
+            </tr>
+
+            <tr>
+                <td>Hijo directo</td>
+                <td>&gt;</td>
+                <td>Selecciona hijos inmediatos</td>
+                <td>div &gt; p</td>
+                <td>Aplica estilos solo a los párrafos que son hijos directos.</td>
+            </tr>
+
+            <tr>
+                <td>Hermano adyacente</td>
+                <td>+</td>
+                <td>Selecciona el primer hermano siguiente</td>
+                <td>h2 + p</td>
+                <td>Selecciona el primer párrafo que aparece después del h2.</td>
+            </tr>
+
+            <tr>
+                <td>Hermanos generales</td>
+                <td>~</td>
+                <td>Selecciona todos los hermanos posteriores</td>
+                <td>h2 ~ p</td>
+                <td>Selecciona todos los párrafos que aparecen después del h2.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a href="../../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/selectores/selectores_combinadores_css.html">Ver demo de contenido semántico</a>
+
+</body>
+
+</html>

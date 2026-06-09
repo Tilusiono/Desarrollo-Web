@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tablas en HTML</title>
+</head>
+
+<link rel="stylesheet" href="../../css/html/tablas.css">
+
+<body>
+
+    <h1>Tablas en HTML</h1>
+
+    <p>
+        Las tablas en HTML se utilizan para organizar información en filas y columnas.
+        Permiten presentar datos de forma estructurada, facilitando su lectura y comprensión.
+        Una tabla está compuesta por elementos como <strong>table</strong>, <strong>tr</strong>,
+        <strong>th</strong> y <strong>td</strong>, los cuales ayudan a definir la estructura
+        de encabezados y contenido dentro de la tabla.
+    </p>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Etiqueta</th>
+                <th>Función</th>
+                <th>Uso principal</th>
+                <th>Ejemplo visual</th>
+                <th>Elemento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Contenedor principal</td>
+                <td>Define la estructura general de una tabla</td>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <td>Dato</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>&lt;table&gt;...&lt;/table&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Fila de la tabla</td>
+                <td>Organiza los datos horizontalmente</td>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <td>Fila 1</td>
+                            <td>Fila 1</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>&lt;tr&gt;...&lt;/tr&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Encabezado de columna</td>
+                <td>Define títulos de columnas o filas</td>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                        </tr>
+                    </table>
+                </td>
+                <td>&lt;th&gt;Título&lt;/th&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Celda de datos</td>
+                <td>Contiene la información dentro de la tabla</td>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <td>Mouse Gamer</td>
+                            <td>S/120</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>&lt;td&gt;Dato&lt;/td&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;thead&gt;</td>
+                <td>Encabezado de la tabla</td>
+                <td>Agrupa las filas de títulos</td>
+                <td>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </td>
+                <td>&lt;thead&gt;...&lt;/thead&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;tbody&gt;</td>
+                <td>Cuerpo de la tabla</td>
+                <td>Contiene los datos principales</td>
+                <td>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td>Dato</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>&lt;tbody&gt;...&lt;/tbody&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;tfoot&gt;</td>
+                <td>Pie de tabla</td>
+                <td>Se usa para totales o información final</td>
+                <td>
+                    <table border="1">
+                        <tfoot>
+                            <tr>
+                                <td>Total</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+                <td>&lt;tfoot&gt;...&lt;/tfoot&gt;</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+
+    <br>
+
+    <a href="../../../clases_HTML.html">Volver al índice</a><br>
+    <a href="../../demo/html/tablas.html">Ver demo de tablas</a><br>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades en CSS</title>
+
+    <link rel="stylesheet" href="../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <h1>Modelo de Caja en CSS</h1>
+
+    <p>
+        El <strong>modelo de caja (Box Model)</strong> es un concepto fundamental en CSS que describe
+        cómo se estructura y calcula el espacio que ocupa un elemento en una página web.
+        Cada elemento HTML se representa como una caja compuesta por cuatro partes:
+        <strong>contenido (content)</strong>, <strong>padding</strong>, <strong>borde (border)</strong> y <strong>margen
+            (margin)</strong>.
+        Estas áreas determinan el tamaño total del elemento y la separación que tendrá
+        respecto a otros elementos dentro del diseño.
+    </p>
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Área / Concepto</th>
+                <th>Propiedades CSS</th>
+                <th>Uso principal</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Contenido (Content)</td>
+                <td>
+                    width<br>
+                    height<br>
+                    min-width<br>
+                    max-width<br>
+                    min-height<br>
+                    max-height
+                </td>
+                <td>Controlar tamaño del contenido</td>
+                <td>Define el tamaño del área donde se muestra el contenido del elemento.</td>
+            </tr>
+
+            <tr>
+                <td>Padding (Espacio interno)</td>
+                <td>
+                    padding<br>
+                    padding-top<br>
+                    padding-right<br>
+                    padding-bottom<br>
+                    padding-left
+                </td>
+                <td>Separación interna</td>
+                <td>Espacio entre el contenido y el borde del elemento.</td>
+            </tr>
+
+            <tr>
+                <td>Border (Borde)</td>
+                <td>
+                    border<br>
+                    border-width<br>
+                    border-style<br>
+                    border-color<br>
+                    border-top<br>
+                    border-right<br>
+                    border-bottom<br>
+                    border-left
+                </td>
+                <td>Borde del elemento</td>
+                <td>Define el borde que rodea el padding y el contenido.</td>
+            </tr>
+
+
+            <tr>
+                <td>Margin (Espacio externo)</td>
+                <td>
+                    margin<br>
+                    margin-top<br>
+                    margin-right<br>
+                    margin-bottom<br>
+                    margin-left
+                </td>
+                <td>Separar elementos</td>
+                <td>Espacio externo que separa un elemento de otros elementos.</td>
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Área / Concepto</th>
+                <th>Propiedades CSS</th>
+                <th>Uso principal</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+           
+
+            <tr>
+                <td>Border Radius</td>
+                <td>
+                    border-radius<br>
+                    border-top-left-radius<br>
+                    border-top-right-radius<br>
+                    border-bottom-left-radius<br>
+                    border-bottom-right-radius
+                </td>
+                <td>Esquinas redondeadas</td>
+                <td>Permite redondear las esquinas del borde.</td>
+            </tr>
+
+            <tr>
+                <td>Border Imagen</td>
+                <td>
+                    border-image<br>
+                    border-image-source<br>
+                    border-image-slice<br>
+                    border-image-width<br>
+                    border-image-outset<br>
+                    border-image-repeat
+                </td>
+                <td>Bordes con imágenes</td>
+                <td>Permite usar imágenes como borde de un elemento.</td>
+            </tr>
+
+            <tr>
+                <td>Margin Auto</td>
+                <td>
+                    margin:auto
+                </td>
+                <td>Centrado de elementos</td>
+                <td>Permite centrar elementos horizontalmente cuando tienen un ancho definido.</td>
+            </tr>
+
+            <tr>
+                <td>Cálculo del tamaño</td>
+                <td>
+                    box-sizing
+                </td>
+                <td>Control del tamaño total</td>
+                <td>Define si el ancho y alto incluyen padding y borde.</td>
+            </tr>
+
+            <tr>
+                <td>Overflow</td>
+                <td>
+                    overflow<br>
+                    overflow-x<br>
+                    overflow-y
+                </td>
+                <td>Control de desbordamiento</td>
+                <td>Controla qué ocurre cuando el contenido supera el tamaño de la caja.</td>
+            </tr>
+
+            <tr>
+                <td>Outline</td>
+                <td>
+                    outline<br>
+                    outline-width<br>
+                    outline-style<br>
+                    outline-color<br>
+                    outline-offset
+                </td>
+                <td>Borde visual externo</td>
+                <td>Similar al borde pero no afecta el tamaño del box model.</td>
+            </tr>
+
+            <tr>
+                <td>Shadow del elemento</td>
+                <td>
+                    box-shadow
+                </td>
+                <td>Sombra del elemento</td>
+                <td>Permite aplicar sombra alrededor de la caja.</td>
+            </tr>
+
+            <tr>
+                <td>Clip del fondo</td>
+                <td>
+                    background-clip
+                </td>
+                <td>Control del fondo</td>
+                <td>Define hasta dónde se extiende el fondo dentro del modelo de caja.</td>
+            </tr>
+
+            <tr>
+                <td>Origen del fondo</td>
+                <td>
+                    background-origin
+                </td>
+                <td>Posición del fondo</td>
+                <td>Determina desde qué parte del box model se posiciona el fondo.</td>
+            </tr>
+
+            <tr>
+                <td>Área del fondo</td>
+                <td>
+                    background-size
+                </td>
+                <td>Tamaño del fondo</td>
+                <td>Define el tamaño de la imagen de fondo dentro de la caja.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <a href="../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/css/modelo_caja.html">Ver demo de Modelo Cajas</a>
+
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout en Bootstrap</title>
+
+    <link rel="stylesheet" href="../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Layout en Bootstrap</h1>
+
+        <p>
+            El sistema de Layout en Bootstrap permite construir interfaces adaptables
+            y responsivas utilizando contenedores, filas, columnas y utilidades.
+            Bootstrap se basa en un sistema de 12 columnas que se adapta automáticamente
+            a diferentes tamaños de pantalla mediante breakpoints.
+        </p>
+
+        <section>
+            <h2>Breakpoints, contenedores y sistema de layout</h2>
+
+            <table class="tabla-bootstrap">
+
+                <thead>
+                    <tr>
+                        <th scope="col">Tema</th>
+                        <th scope="col">Clase / Concepto</th>
+                        <th scope="col">Valores admitidos</th>
+                        <th scope="col">Descripción</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- BREAKPOINTS -->
+                    <tr>
+                        <td rowspan="6">Breakpoints</td>
+                        <td>xs</td>
+                        <td>&lt;576px</td>
+                        <td>Tamaño extra pequeño para móviles.</td>
+                    </tr>
+
+                    <tr>
+                        <td>sm</td>
+                        <td>≥576px</td>
+                        <td>Pantallas pequeñas como móviles grandes.</td>
+                    </tr>
+
+                    <tr>
+                        <td>md</td>
+                        <td>≥768px</td>
+                        <td>Tablets o pantallas medianas.</td>
+                    </tr>
+
+                    <tr>
+                        <td>lg</td>
+                        <td>≥992px</td>
+                        <td>Portátiles o pantallas grandes.</td>
+                    </tr>
+
+                    <tr>
+                        <td>xl</td>
+                        <td>≥1200px</td>
+                        <td>Monitores grandes.</td>
+                    </tr>
+
+                    <tr>
+                        <td>xxl</td>
+                        <td>≥1400px</td>
+                        <td>Pantallas muy grandes.</td>
+                    </tr>
+
+                    <!-- CONTAINERS -->
+                    <tr>
+                        <td rowspan="7">Containers</td>
+                        <td>.container</td>
+                        <td>Responsive</td>
+                        <td>Contenedor centrado con ancho máximo adaptativo.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.container-fluid</td>
+                        <td>100%</td>
+                        <td>Ocupa todo el ancho del viewport.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.container-sm</td>
+                        <td>≥576px</td>
+                        <td>Se vuelve contenedor desde sm.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.container-md</td>
+                        <td>≥768px</td>
+                        <td>Se vuelve contenedor desde md.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.container-lg</td>
+                        <td>≥992px</td>
+                        <td>Se vuelve contenedor desde lg.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.container-xl</td>
+                        <td>≥1200px</td>
+                        <td>Se vuelve contenedor desde xl.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.container-xxl</td>
+                        <td>≥1400px</td>
+                        <td>Se vuelve contenedor desde xxl.</td>
+                    </tr>
+
+                    <!-- GRID -->
+                    <tr>
+                        <td rowspan="4">Grid</td>
+                        <td>.row</td>
+                        <td>Fila</td>
+                        <td>Crea una fila dentro del sistema grid.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.col</td>
+                        <td>Auto</td>
+                        <td>Columnas automáticas que reparten el espacio.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.row-cols-*</td>
+                        <td>1–6</td>
+                        <td>Define número de columnas automáticas por fila.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nesting</td>
+                        <td>row dentro de una columna (col)</td>
+                        <td>Permite grids dentro de otros grids.</td>
+                    </tr>
+
+                    <!-- COLUMNS -->
+                    <tr>
+                        <td rowspan="6">Columns</td>
+                        <td>.col-1 → .col-12</td>
+                        <td>1–12</td>
+                        <td>Define el ancho según el sistema de 12 columnas.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.col-auto</td>
+                        <td>auto</td>
+                        <td>La columna ocupa solo el ancho del contenido.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.offset-*</td>
+                        <td>1–11</td>
+                        <td>Desplaza columnas hacia la derecha.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.order-*</td>
+                        <td>0–5, first, last</td>
+                        <td>Cambia el orden visual de las columnas.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.col-sm-* .col-md-* .col-lg-* .col-xl-* .col-xxl-*</td>
+                        <td>Responsive</td>
+                        <td>Columnas adaptadas según breakpoint.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.align-self-*</td>
+                        <td>start, center, end</td>
+                        <td>Alinea columnas individualmente.</td>
+                    </tr>
+
+                    <!-- GUTTERS -->
+                    <tr>
+                        <td rowspan="3">Gutters</td>
+                        <td>.g-*</td>
+                        <td>0–5</td>
+                        <td>Espacio entre columnas y filas.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.gx-*</td>
+                        <td>0–5</td>
+                        <td>Espacio horizontal entre columnas.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.gy-*</td>
+                        <td>0–5</td>
+                        <td>Espacio vertical entre filas.</td>
+                    </tr>
+
+                    <!-- UTILITIES -->
+                    <tr>
+                        <td rowspan="6">Utilities</td>
+                        <td>Display</td>
+                        <td>d-flex, d-grid, d-block</td>
+                        <td>Controla cómo se muestra un elemento.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Spacing</td>
+                        <td>m-*, p-*</td>
+                        <td>Controla márgenes y padding.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Flex utilities</td>
+                        <td>justify-content-*, align-items-*</td>
+                        <td>Control de alineación en flexbox.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Text utilities</td>
+                        <td>text-center, text-start, text-end</td>
+                        <td>Alineación de texto.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Background utilities</td>
+                        <td>bg-primary, bg-success</td>
+                        <td>Colores de fondo.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Border utilities</td>
+                        <td>border, border-0, rounded</td>
+                        <td>Control de bordes.</td>
+                    </tr>
+
+                    <!-- Z-INDEX -->
+                    <tr>
+                        <td rowspan="5">Z-index</td>
+                        <td>.z-n1</td>
+                        <td>-1</td>
+                        <td>Coloca elemento detrás.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.z-0</td>
+                        <td>0</td>
+                        <td>Z-index base.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.z-1</td>
+                        <td>1</td>
+                        <td>Capa baja.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.z-2</td>
+                        <td>2</td>
+                        <td>Capa media.</td>
+                    </tr>
+
+                    <tr>
+                        <td>.z-3</td>
+                        <td>3</td>
+                        <td>Capa superior.</td>
+                    </tr>
+
+                    <!-- CSS GRID -->
+                    <tr>
+                        <td rowspan="4">CSS Grid</td>
+                        <td>d-grid</td>
+                        <td>grid</td>
+                        <td>Activa layout CSS Grid.</td>
+                    </tr>
+
+                    <tr>
+                        <td>gap-*</td>
+                        <td>0–5</td>
+                        <td>Espacio entre filas y columnas.</td>
+                    </tr>
+
+                    <tr>
+                        <td>row-gap-*</td>
+                        <td>0–5</td>
+                        <td>Espacio vertical en grid.</td>
+                    </tr>
+
+                    <tr>
+                        <td>column-gap-*</td>
+                        <td>0–5</td>
+                        <td>Espacio horizontal en grid.</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </section>
+
+        <a href="../../../clases_Boostrap.html">Volver al índice</a><br>
+        <a href="../../demo/bootstrap/layout.html">Ver demo de Layout</a>
+
+    </main>
+
+</body>
+
+</html>
