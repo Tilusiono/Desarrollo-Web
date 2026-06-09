@@ -1,0 +1,19 @@
+/* 1 Descendente */
+div p {
+color: blue;
+}
+
+/* 2 Hijo directo */
+div > p {
+font-weight: bold;
+}
+
+/* 3 Hermano adyacente */
+h2 + p {
+background-color: yellow;
+}
+
+/* 4 Hermanos generales */
+h2 ~ p {
+border: 2px solid red;
+}

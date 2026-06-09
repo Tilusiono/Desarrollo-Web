@@ -1,0 +1,82 @@
+/* Estilo general */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+    padding:40px;
+}
+
+/* Título */
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Formulario */
+form{
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    max-width:600px;
+    margin:auto;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Etiquetas */
+label{
+    font-weight:bold;
+}
+
+/* Inputs */
+input, select, textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+/* Focus */
+input:focus, select:focus, textarea:focus{
+    border-color:#007BFF;
+    outline:none;
+}
+
+/* Fieldset */
+fieldset{
+    border:1px solid #ddd;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+/* Legend */
+legend{
+    font-weight:bold;
+}
+
+/* Botones */
+button{
+    background:#007BFF;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+/* Progress */
+progress{
+    width:100%;
+    margin-bottom:20px;
+}
+
+/* Details */
+details{
+    background:#f9f9f9;
+    padding:10px;
+    border-radius:5px;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Semántico HTML</title>
+    <link rel="stylesheet" href="../../css/html/contenido_sematico.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Contenido Semántico en HTML</h1>
+        <p>Elementos que aportan significado al contenido de una página web</p>
+
+        <nav>
+            <a href="#multimedia">Contenido multimedia</a>
+            <a href="#interactivo">Contenido interactivo</a>
+            <a href="#tiempo">Tiempo y texto</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ========================== -->
+        <section>
+
+            <h2 id="multimedia">Contenido multimedia</h2>
+
+            <article>
+
+                <header>
+                    <h3>Etiqueta figure</h3>
+                </header>
+
+                <figure>
+                    <img src="https://picsum.photos/300/180">
+                    <figcaption>Imagen representativa del desarrollo web</figcaption>
+                </figure>
+
+                <p>La etiqueta <strong>figure</strong> se usa para agrupar contenido visual que tiene significado dentro
+                    del documento.</p>
+
+            </article>
+
+
+            <article>
+
+                <header>
+                    <h3>Etiqueta figcaption</h3>
+                </header>
+
+                <figure>
+                    <img src="https://picsum.photos/300/181">
+                    <figcaption>Ejemplo de descripción de imagen</figcaption>
+                </figure>
+
+                <p>La etiqueta <strong>figcaption</strong> describe el contenido de una imagen, gráfico o figura.</p>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ========================== -->
+        <section>
+
+            <h2 id="interactivo">Contenido interactivo</h2>
+
+            <article>
+
+                <header>
+                    <h3>Etiqueta details</h3>
+                </header>
+
+                <p>Permite mostrar contenido desplegable sin usar JavaScript.</p>
+
+                <details open>
+                    <summary>Ver temas del curso</summary>
+
+                    <ul>
+                        <li>HTML semántico</li>
+                        <li>CSS avanzado</li>
+                        <li>Bootstrap</li>
+                        <li>Diseño responsive</li>
+                    </ul>
+
+                </details>
+
+            </article>
+
+
+
+            <article>
+
+                <header>
+                    <h3>Etiqueta dialog</h3>
+                </header>
+
+                <p>Representa una ventana modal o cuadro de diálogo.</p>
+
+                <dialog open>
+                    <p>Bienvenido al curso de Entornos Web</p>
+                </dialog>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ========================== -->
+        <section>
+
+            <h2 id="tiempo">Etiquetas de tiempo y texto</h2>
+
+            <article>
+
+                <header>
+                    <h3>Etiqueta time</h3>
+                </header>
+
+                <p>La etiqueta <strong>time</strong> representa fechas u horas con significado para el navegador.</p>
+
+                <p>Inicio del curso:
+                    <time datetime="2026-04-01">1 de Abril de 2026</time>
+                </p>
+
+            </article>
+
+
+
+            <article>
+
+                <header>
+                    <h3>Etiqueta mark</h3>
+                </header>
+
+                <p>Sirve para <mark>resaltar información importante</mark> dentro de un texto.</p>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ========================== -->
+        <section>
+
+            <h2 id="contacto">Información de contacto</h2>
+
+            <article>
+
+                <header>
+                    <h3>Etiqueta address</h3>
+                </header>
+
+                <address>
+                    Docente: Bernabe Daniel Inche<br>
+                    Curso: Entornos Web<br>
+                    Email: docente@idat.edu.pe
+                </address>
+
+                <p>La etiqueta <strong>address</strong> se utiliza para mostrar información de contacto.</p>
+
+            </article>
+
+        </section>
+
+        <!--Ejemplo combinado-->
+        <article>
+
+            <header>
+                <h3>Ejemplo combinado de contenido semántico</h3>
+            </header>
+
+            <figure>
+                <img src="https://picsum.photos/300/182" alt="Desarrollo web">
+                <figcaption>Ejemplo de contenido visual dentro de una figura</figcaption>
+            </figure>
+
+            <p>
+                Este ejemplo muestra cómo diferentes etiquetas semánticas pueden trabajar juntas
+                dentro de un mismo contenido. El curso inicia el
+                <time datetime="2026-04-01">1 de abril de 2026</time> y se enfocará en
+                <mark>HTML semántico y buenas prácticas</mark>.
+            </p>
+
+            <details open>
+                <summary>Más información del curso</summary>
+
+                <p>El curso cubrirá temas como:</p>
+
+                <ul>
+                    <li>Estructura semántica en HTML</li>
+                    <li>Estilos con CSS</li>
+                    <li>Componentes con Bootstrap</li>
+                </ul>
+
+                <address>
+                    Docente: Bernabé Daniel Inche<br>
+                    Email: docente@idat.edu.pe
+                </address>
+
+            </details>
+
+        </article>
+    </main>
+
+
+
+    <footer>
+
+        <section>
+
+            <h4>Información del curso</h4>
+
+            <address>
+                Curso: Entornos Web<br>
+                Tecnologías: HTML, CSS, Bootstrap<br>
+                Duración: 16 semanas
+            </address>
+
+        </section>
+
+        <p>© 2026 Curso Entornos Web</p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+/* ================================
+   ESTILOS GENERALES
+================================ */
+
+body {
+    font-family: Arial, sans-serif;
+    /* Fuente principal de la página */
+    background: #f5f5f5;
+    /* Color de fondo general */
+    padding: 30px;
+    /* Espacio alrededor del contenido */
+}
+
+h1 {
+    text-align: center;
+    /* Centra el título principal */
+    margin-bottom: 10px;
+    /* Espacio inferior del título */
+}
+
+.intro {
+    text-align: center;
+    /* Centra el texto introductorio */
+    margin-bottom: 30px;
+    /* Separación con las secciones */
+}
+
+section {
+    background: rgb(248, 179, 215);
+    /* Fondo blanco para cada ejemplo */
+    border: 1px solid #a9b103;
+    /* Borde gris claro */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Espacio interno */
+    margin-bottom: 25px;
+    /* Separación entre secciones */
+}
+
+h2 {
+    margin-bottom: 15px;
+    /* Espacio debajo de los subtítulos */
+}
+
+/* ================================
+   ESTILO BASE DE LAS CAJAS
+================================ */
+
+.caja {
+    width: 200px;
+    /* Ancho de cada caja */
+    padding: 15px;
+    /* Espacio interno */
+    background: rgb(74, 114, 237);
+    /* Color base */
+    color: white;
+    /* Color del texto */
+    margin: 10px 0;
+    /* Separación vertical */
+}
+
+/* ================================
+   1. POSITION STATIC
+================================ */
+
+.static {
+    position: static;
+    /* Posición normal (valor por defecto en CSS) */
+    background: #2563eb;
+    /* Color para identificar el ejemplo */
+}
+
+/* ================================
+   2. POSITION RELATIVE
+================================ */
+
+.relative {
+    position: relative;
+    /* Permite mover el elemento desde su posición original */
+    top: 20px;
+    /* Desplaza la caja 20px hacia abajo */
+    left: 30px;
+    /* Desplaza la caja 30px hacia la derecha */
+    background: #16a34a;
+    /* Color para distinguir el ejemplo */
+}
+
+/* ================================
+   CONTENEDOR PARA POSITION ABSOLUTE
+================================ */
+
+.contenedor {
+    position: relative;
+    /* Define el punto de referencia para elementos absolute */
+    height: 120px;
+    /* Altura del contenedor */
+    background: #e5e7eb;
+    /* Color de fondo para visualizar el contenedor */
+}
+
+/* ================================
+   3. POSITION ABSOLUTE
+================================ */
+
+.absolute {
+    position: absolute;
+    /* Posiciona el elemento fuera del flujo normal */
+    top: 20px;
+    /* Distancia desde el borde superior del contenedor */
+    right: 20px;
+    /* Distancia desde el borde derecho */
+    background: #dc2626;
+    /* Color del ejemplo */
+}
+
+/* ================================
+   4. POSITION FIXED
+================================ */
+
+.fixed {
+    position: fixed;
+    /* El elemento se fija respecto al viewport */
+    bottom: 500px;
+    /* Distancia desde la parte inferior de la pantalla */
+    right: 100rem;
+    /* Distancia desde el lado derecho */
+    background: #d4ea73;
+    /* Color distintivo */
+}
+
+/* ================================
+   5. POSITION STICKY
+================================ */
+
+.sticky-container {
+    height: 200px;
+    /* Altura del contenedor para ver el efecto sticky */
+}
+
+.sticky {
+    position: sticky;
+    /* Cambia entre relative y fixed según el scroll */
+    top: 10px;
+    /* Cuando llega a 10px del borde superior se queda fijo */
+    background: #f59e0b;
+    /* Color del ejemplo */
+}
+
+/* ================================
+   6. MOVIMIENTO CON TOP / LEFT
+================================ */
+
+.mover {
+    position: absolute;
+    /* Posicionamiento absoluto */
+    top: 20px;
+    /* Distancia desde la parte superior del contenedor */
+    left: 300px;
+    /* Distancia desde la izquierda */
+    background: #b83ee8;
+    /* Color del ejemplo */
+}
+
+/* ================================
+   7. Z-INDEX
+================================ */
+
+.capa1 {
+    position: absolute;
+    /* Permite superposición */
+    top: 20px;
+    left: 400px;
+    background: #ef4444;
+    z-index: 1;
+    /* Capa inferior */
+}
+
+.capa2 {
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    background: #22c55e;
+    z-index: 2;
+    /* Aparece encima porque tiene mayor z-index */
+}
+
+/* ================================
+   8. INSET
+================================ */
+
+.inset {
+    position: absolute;
+    /* Posicionamiento absoluto */
+    inset: 50px;
+    /* Atajo que equivale a:
+    top:50px;
+    right:50px;
+    bottom:50px;
+    left:50px;
+    */
+    background: #0d3a14;
+    /* Color del ejemplo */
+}
