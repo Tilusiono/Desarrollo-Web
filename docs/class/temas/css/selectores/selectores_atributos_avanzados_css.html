@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores de atributo CSS</title>
+    <link rel="stylesheet" href="../../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <h1>Selectores de atributo en CSS</h1>
+
+    <p>
+        Los selectores de atributo en CSS permiten aplicar estilos a los elementos
+        HTML según los atributos que poseen o según el valor de dichos atributos.
+        Esto permite seleccionar elementos de manera más específica dentro de una
+        página web sin necesidad de utilizar clases o identificadores adicionales.
+    </p>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Ejemplo</th>
+                <th>Uso principal</th>
+                <th>Descripción</th>
+                <th>Elemento HTML</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>[atributo]</td>
+                <td>input[type]</td>
+                <td>Atributo existente</td>
+                <td>Selecciona todos los elementos que contienen ese atributo.</td>
+                <td>&lt;input type="text"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>[atributo="valor"]</td>
+                <td>input[type="text"]</td>
+                <td>Valor exacto</td>
+                <td>Selecciona elementos cuyo atributo tiene exactamente ese valor.</td>
+                <td>&lt;input type="text"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>[atributo~="valor"]</td>
+                <td>div[class~="activo"]</td>
+                <td>Palabra dentro de lista</td>
+                <td>Selecciona elementos cuyo atributo contiene una palabra específica separada por espacios.</td>
+                <td>&lt;div class="activo principal"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>[atributo^="valor"]</td>
+                <td>a[href^="https"]</td>
+                <td>Empieza con</td>
+                <td>Selecciona elementos cuyo atributo comienza con el valor indicado.</td>
+                <td>&lt;a href="https://sitio.com"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>[atributo$="valor"]</td>
+                <td>img[src$=".png"]</td>
+                <td>Termina con</td>
+                <td>Selecciona elementos cuyo atributo termina con el valor indicado.</td>
+                <td>&lt;img src="imagen.png"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>[atributo*="valor"]</td>
+                <td>div[class*="card"]</td>
+                <td>Contiene texto</td>
+                <td>Selecciona elementos cuyo atributo contiene una parte del valor.</td>
+                <td>&lt;div class="card-producto"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>[atributo|="valor"]</td>
+                <td>p[lang|="es"]</td>
+                <td>Valor o valor-guion</td>
+                <td>Selecciona elementos cuyo atributo es ese valor o comienza con él seguido de guion.</td>
+                <td>&lt;p lang="es-PE"&gt;</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a href="../../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/selectores/selectores_atributos_avanzados.html">Ver demo de selectores de atributo</a>
+
+</body>
+
+</html>
