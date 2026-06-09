@@ -1,0 +1,120 @@
+table{
+    border-collapse: collapse; /* une los bordes de las celdas */
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif; /* Fuente principal del sitio */
+    margin:0; /* elimina el margen por defecto del navegador */
+    padding:40px; /* espacio interno del contenido respecto al borde */
+    background:linear-gradient(135deg,#f4f7fb,#e6eef9); /* fondo degradado */
+    color:#333; /* color del texto principal */
+    line-height:1.6; /* altura entre líneas para mejorar lectura */
+}
+
+/* =========================================
+   ESTILO GENERAL PARA TODAS LAS LISTAS
+   Se aplica a ul, ol y dl
+========================================= */
+ul, ol, dl{
+    font-family: "Segoe UI", Arial, sans-serif; /* Tipografía */
+    margin: 20px 0; /* Espacio superior e inferior */
+    padding-left: 25px; /* Separación desde el borde izquierdo */
+}
+
+
+/* =========================================
+   LISTA DESORDENADA (UL)
+   Se usa cuando el orden no importa
+========================================= */
+ul{
+    list-style-type: square; /* Cambia la viñeta */
+    background: #f8f8f8; /* Fondo suave */
+    padding: 15px 25px;
+    border-left: 5px solid #3aa5ff; /* Barra decorativa */
+    border-radius: 6px;
+}
+
+/* Estilo para cada elemento de la lista */
+ul li{
+    margin: 6px 0;
+    color: #333;
+}
+
+/* Efecto visual al pasar el mouse */
+ul li:hover{
+    color: #3aa5ff;
+    transform: translateX(4px);
+    transition: all .2s ease;
+}
+
+
+/* =========================================
+   LISTA ORDENADA (OL)
+   Se usa cuando el orden sí importa
+========================================= */
+ol{
+    list-style-type: decimal; /* Numeración normal */
+    background: #f5fff7;
+    padding: 15px 25px;
+    border-left: 5px solid #34c759;
+    border-radius: 6px;
+}
+
+/* Elementos de lista numerada */
+ol li{
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+/* Estilo al pasar el mouse */
+ol li:hover{
+    color: #2e9e50;
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   LISTA DE DEFINICIONES (DL)
+   Se usa para definir términos
+========================================= */
+dl{
+    background: #fff9f0;
+    padding: 15px 20px;
+    border-left: 5px solid #ff8a00;
+    border-radius: 6px;
+}
+
+/* Término definido */
+dt{
+    font-weight: bold;
+    color: #d35400;
+    margin-top: 10px;
+}
+
+/* Descripción del término */
+dd{
+    margin-left: 20px;
+    margin-bottom: 8px;
+    color: #444;
+    font-style: italic;
+}
+
+
+/* =========================================
+   LISTAS ANIDADAS
+   Aplica estilo cuando hay listas dentro
+   de otras listas
+========================================= */
+ul ul, ol ol{
+    margin-top: 6px;
+    background: #ffffff;
+    border-left: 3px dashed #ccc;
+}
+
+
+/* =========================================
+   EFECTO GENERAL PARA TODOS LOS ITEMS
+========================================= */
+li{
+    transition: all .2s ease;
+}

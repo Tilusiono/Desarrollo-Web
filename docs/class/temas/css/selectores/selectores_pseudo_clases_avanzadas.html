@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-clases en CSS</title>
+    <link rel="stylesheet" href="../../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <h1>Pseudo-clases en CSS</h1>
+
+    <p>
+        Las pseudo-clases en CSS permiten aplicar estilos a los elementos HTML
+        según su estado, posición o interacción dentro de la página. Estas
+        pseudo-clases permiten modificar la apariencia de los elementos cuando
+        el usuario interactúa con ellos o cuando cumplen ciertas condiciones,
+        como ser el primer elemento, estar enfocado o encontrarse seleccionado
+        en un formulario.
+    </p>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Pseudo-clase</th>
+                <th>Ejemplo CSS</th>
+                <th>Uso principal</th>
+                <th>Descripción</th>
+                <th>Elemento HTML</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>:hover</td>
+                <td>a:hover</td>
+                <td>Interacción con mouse</td>
+                <td>Aplica estilos cuando el cursor pasa sobre el elemento.</td>
+                <td>&lt;a&gt;Enlace&lt;/a&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:active</td>
+                <td>button:active</td>
+                <td>Elemento presionado</td>
+                <td>Se activa cuando el usuario hace clic sobre el elemento.</td>
+                <td>&lt;button&gt;Enviar&lt;/button&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:focus</td>
+                <td>input:focus</td>
+                <td>Elemento enfocado</td>
+                <td>Se aplica cuando un elemento recibe foco.</td>
+                <td>&lt;input type="text"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:first-child</td>
+                <td>p:first-child</td>
+                <td>Primer hijo</td>
+                <td>Selecciona el primer elemento hijo dentro de un contenedor.</td>
+                <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:last-child</td>
+                <td>p:last-child</td>
+                <td>Último hijo</td>
+                <td>Selecciona el último elemento hijo dentro de su contenedor.</td>
+                <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:nth-child()</td>
+                <td>li:nth-child(2)</td>
+                <td>Posición específica</td>
+                <td>Selecciona elementos según su posición.</td>
+                <td>&lt;li&gt;Item&lt;/li&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:nth-last-child()</td>
+                <td>li:nth-last-child(2)</td>
+                <td>Posición desde el final</td>
+                <td>Selecciona elementos contando desde el final.</td>
+                <td>&lt;li&gt;Item&lt;/li&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:first-of-type</td>
+                <td>p:first-of-type</td>
+                <td>Primer tipo</td>
+                <td>Selecciona el primer elemento de ese tipo.</td>
+                <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:last-of-type</td>
+                <td>p:last-of-type</td>
+                <td>Último tipo</td>
+                <td>Selecciona el último elemento de ese tipo.</td>
+                <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:nth-of-type()</td>
+                <td>p:nth-of-type(3)</td>
+                <td>Tipo específico</td>
+                <td>Selecciona elementos según tipo y posición.</td>
+                <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:not()</td>
+                <td>p:not(.activo)</td>
+                <td>Excluir elementos</td>
+                <td>Selecciona elementos que no cumplen la condición.</td>
+                <td>&lt;p class="texto"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:is()</td>
+                <td>:is(h1,h2,h3)</td>
+                <td>Agrupar selectores</td>
+                <td>Permite aplicar estilos a varios selectores.</td>
+                <td>&lt;h1&gt;Título&lt;/h1&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:where()</td>
+                <td>:where(div,p)</td>
+                <td>Selector flexible</td>
+                <td>Similar a :is pero con menor especificidad.</td>
+                <td>&lt;div&gt;Contenido&lt;/div&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:has()</td>
+                <td>div:has(img)</td>
+                <td>Elemento con contenido</td>
+                <td>Selecciona elementos que contienen otro elemento.</td>
+                <td>&lt;div&gt;&lt;img&gt;&lt;/div&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:checked</td>
+                <td>input:checked</td>
+                <td>Formulario marcado</td>
+                <td>Selecciona checkboxes o radios seleccionados.</td>
+                <td>&lt;input type="checkbox"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:disabled</td>
+                <td>input:disabled</td>
+                <td>Campo deshabilitado</td>
+                <td>Selecciona campos que están deshabilitados.</td>
+                <td>&lt;input disabled&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:enabled</td>
+                <td>input:enabled</td>
+                <td>Campo habilitado</td>
+                <td>Selecciona elementos de formulario activos.</td>
+                <td>&lt;input&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:required</td>
+                <td>input:required</td>
+                <td>Campo obligatorio</td>
+                <td>Selecciona campos que requieren información.</td>
+                <td>&lt;input required&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:valid</td>
+                <td>input:valid</td>
+                <td>Formulario válido</td>
+                <td>Selecciona campos con contenido válido.</td>
+                <td>&lt;input type="email"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:invalid</td>
+                <td>input:invalid</td>
+                <td>Formulario inválido</td>
+                <td>Selecciona campos con contenido incorrecto.</td>
+                <td>&lt;input type="email"&gt;</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a href="../../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/selectores/selectores_pseudo_clases_avanzadas.html">Ver demo de Pseudo-clases</a>
+
+</body>
+
+</html>

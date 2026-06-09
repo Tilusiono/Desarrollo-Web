@@ -1,0 +1,35 @@
+/* 1 atributo existente type*/
+input[type] {
+    border: 2px solid blue;
+}
+
+/* 2 valor exacto =*/
+input[type="text"] {
+    background-color: lightyellow;
+}
+
+/* 3 palabra en lista ~=*/
+div[class~="activo"] {
+    border: 3px solid red;
+}
+
+/* 4 empieza con ^= */
+a[href^="https"] {
+    color: green;
+}
+
+/* 5 termina con $= */
+img[src$=".png"] {
+    border: 3px solid purple;
+}
+
+/* 6 contiene texto *= */
+div[class*="card"] {
+    background-color: lightgray;
+}
+
+/* 7 valor o valor con guion |= */
+p[lang|="es"] {
+    color: orange;
+    font-weight: bold;
+}

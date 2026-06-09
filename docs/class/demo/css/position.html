@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Position en CSS</title>
+    <link rel="stylesheet" href="../../css/css/position.css">
+</head>
+
+<body>
+
+    <h1>Ejemplos de Position en CSS</h1>
+
+    <p class="intro">
+        Estos ejemplos muestran cómo funcionan los diferentes tipos de posicionamiento
+        en CSS y las propiedades relacionadas como top, left, right, bottom y z-index.
+    </p>
+
+    <section>
+        <h2>1. position: static</h2>
+        <p class="caja static">Caja static</p>
+        <p>
+            El elemento sigue el flujo normal del documento.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. position: relative</h2>
+        <p class="caja relative">Caja relative</p>
+        <p>
+            Se mueve respecto a su posición original.
+        </p>
+    </section>
+
+    <section class="contenedor">
+        <h2>3. position: absolute</h2>
+        <p class="caja absolute">Caja absolute</p>
+        <p>
+            Se posiciona respecto a su contenedor más cercano con position.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. position: fixed</h2>
+        <p class="caja fixed">Caja fixed</p>
+        <p>
+            Permanece fija en la pantalla aunque se haga scroll.
+        </p>
+    </section>
+
+    <section class="sticky-container">
+        <h2>5. position: sticky</h2>
+        <p class="caja sticky">Caja sticky</p>
+        <p>
+            Se mantiene fija cuando se alcanza cierta posición al hacer scroll.
+        </p>
+    </section>
+
+    <section class="contenedor">
+        <h2>6. Propiedades top / left</h2>
+        <p class="caja mover">Caja movida</p>
+    </section>
+
+    <section class="contenedor">
+        <h2>7. z-index</h2>
+
+        <p class="caja capa1">Capa 1</p>
+        <p class="caja capa2">Capa 2</p>
+
+        <p>
+            z-index controla qué elemento aparece encima.
+        </p>
+
+    </section>
+
+    <section class="contenedor">
+        <h2>8. inset</h2>
+        <p class="caja inset">Caja con inset</p>
+    </section>
+
+</body>
+
+</html>

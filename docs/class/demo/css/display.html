@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Display en CSS</title>
+    <link rel="stylesheet" href="../../css/css/display.css">
+</head>
+
+<body>
+
+    <h1>Demo de Display en CSS</h1>
+
+    <p class="intro">
+        En esta página se muestran ejemplos de los valores más usados de la propiedad
+        <strong>display</strong> en CSS.
+    </p>
+
+    <section>
+        <h2>1. display: block</h2>
+        <span class="ejemplo block-demo">Elemento 1</span>
+        <span class="ejemplo block-demo">Elemento 2</span>
+        <p>
+            Cada elemento ocupa todo el ancho disponible y baja a la siguiente línea.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. display: inline</h2>
+        <p>
+            <span class="ejemplo inline-demo">Inline 1</span>
+            <span class="ejemplo inline-demo">Inline 2</span>
+            <span class="ejemplo inline-demo">Inline 3</span>
+        </p>
+        <p>
+            Los elementos se colocan uno al lado del otro y solo ocupan el espacio necesario.
+        </p>
+    </section>
+
+    <section>
+        <h2>3. display: inline-block</h2>
+        <span class="ejemplo inline-block-demo">Caja 1</span>
+        <span class="ejemplo inline-block-demo">Caja 2</span>
+        <span class="ejemplo inline-block-demo">Caja 3</span>
+        <p>
+            Se colocan en línea, pero permiten aplicar ancho y alto.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. display: none</h2>
+        <p class="ejemplo visible-demo">Este sí se ve</p>
+        <p class="ejemplo none-demo">Este no debería verse</p>
+        <p>
+            El elemento con <strong>display: none</strong> desaparece y no ocupa espacio.
+        </p>
+    </section>
+
+    <section>
+        <h2>5. display: flex</h2>
+        <article class="contenedor-flex">
+            <p class="item-flex">1</p>
+            <p class="item-flex">2</p>
+            <p class="item-flex">3</p>
+            <p class="item-flex">4</p>
+            <p class="item-flex">5</p>
+            <p class="item-flex">6</p>
+        </article>
+        <p>
+            Flex organiza elementos en fila o columna y facilita su alineación.
+        </p>
+    </section>
+
+    <section>
+        <h2>6. display: inline-flex</h2>
+        <article class="contenedor-inline-flex">
+            <span class="item-inline-flex">A</span>
+            <span class="item-inline-flex">E</span>
+            <span class="item-inline-flex">I</span>
+            <span class="item-inline-flex">O</span>
+            <span class="item-inline-flex">U</span>
+        </article>
+        <p>
+            Funciona como flex, pero el contenedor se comporta como un elemento en línea.
+        </p>
+    </section>
+
+    <section>
+        <h2>7. display: grid</h2>
+        <article class="contenedor-grid">
+            <p class="item-grid">1</p>
+            <p class="item-grid">2</p>
+            <p class="item-grid">3</p>
+            <p class="item-grid">4</p>
+            <p class="item-grid">5</p>
+            <p class="item-grid">6</p>
+            <p class="item-grid">7</p>
+        </article>
+        <p>
+            Grid distribuye elementos en filas y columnas.
+        </p>
+    </section>
+
+    <section>
+        <h2>8. display: inline-grid</h2>
+        <article class="contenedor-inline-grid">
+            <span class="item-inline-grid">X</span>
+            <span class="item-inline-grid">Y</span>
+            <span class="item-inline-grid">Z</span>
+            <span class="item-inline-grid">W</span>
+        </article>
+        <p>
+            Es igual que grid, pero el contenedor se comporta como inline.
+        </p>
+    </section>
+
+    <section>
+        <h2>9. display: list-item</h2>
+        <p class="list-item-demo">Elemento con marcador</p>
+        <p>
+            Hace que el elemento se comporte como un ítem de lista.
+        </p>
+    </section>
+
+    <section>
+        <h2>10. display: flow-root</h2>
+        <article class="flow-root-demo">
+            <img src="https://thumbs.dreamstime.com/b/demo-88003515.jpg" alt="imagen de ejemplo" class="imagen-float">
+            <p>
+                Este contenedor usa <strong>flow-root</strong> para envolver correctamente
+                el contenido flotante.
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <h2>11. display: table</h2>
+        <article class="tabla-demo">
+            <article class="fila-demo">
+                <p class="celda-demo">Celda 1</p>
+                <p class="celda-demo">Celda 2</p>
+            </article>
+            <article class="fila-demo">
+                <p class="celda-demo">Celda 3</p>
+                <p class="celda-demo">Celda 4</p>
+            </article>
+        </article>
+        <p>
+            Permite simular el comportamiento de una tabla usando CSS.
+        </p>
+    </section>
+
+    <section>
+        <h2>12. display: contents</h2>
+        <article class="padre-contents">
+            <article class="contents-demo">
+                <p class="hijo-contents">Hijo 1</p>
+                <p class="hijo-contents">Hijo 2</p>
+            </article>
+        </article>
+        <p>
+            El contenedor desaparece visualmente, pero sus hijos siguen presentes.
+        </p>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo completa de pseudo-elementos CSS</title>
+    <link rel="stylesheet" href="../../../css/css/selectores/selectores_pseudo_elementos_avanzados.css">
+</head>
+<body>
+
+    <h1>Pseudo-elementos en CSS</h1>
+
+    <p class="intro">
+        Esta página muestra ejemplos de pseudo-elementos CSS. Algunos funcionan
+        directamente con HTML y CSS, mientras que otros requieren soporte especial,
+        subtítulos, componentes web o una pequeña ayuda con JavaScript.
+    </p>
+
+    <section class="before-demo">
+        <h2>::before</h2>
+        <p>Este párrafo tiene contenido agregado antes.</p>
+    </section>
+
+    <section class="after-demo">
+        <h2>::after</h2>
+        <p>Este párrafo tiene contenido agregado después.</p>
+    </section>
+
+    <section class="first-letter-demo">
+        <h2>::first-letter</h2>
+        <p>Este párrafo muestra la primera letra con un estilo especial.</p>
+    </section>
+
+    <section class="first-line-demo">
+        <h2>::first-line</h2>
+        <p>
+            Este párrafo es lo suficientemente largo para demostrar cómo el
+            pseudo-elemento first-line permite aplicar estilos únicamente
+            a la primera línea visible del texto dentro del contenedor.
+        </p>
+    </section>
+
+    <section class="selection-demo">
+        <h2>::selection</h2>
+        <p>Selecciona este texto con el mouse para ver el efecto aplicado.</p>
+    </section>
+
+    <section class="marker-demo">
+        <h2>::marker</h2>
+        <ul>
+            <li>Elemento uno</li>
+            <li>Elemento dos</li>
+            <li>Elemento tres</li>
+        </ul>
+    </section>
+
+    <section class="placeholder-demo">
+        <h2>::placeholder</h2>
+        <input type="text" placeholder="Escribe tu nombre">
+    </section>
+
+    <section class="file-demo">
+        <h2>::file-selector-button</h2>
+        <input type="file">
+    </section>
+
+    <section class="dialog-demo">
+        <h2>::backdrop</h2>
+        <button id="abrirDialogo">Abrir diálogo</button>
+
+        <dialog id="miDialogo">
+            <p>Este diálogo usa ::backdrop en el fondo.</p>
+            <button id="cerrarDialogo">Cerrar</button>
+        </dialog>
+    </section>
+
+    <section class="cue-demo">
+        <h2>::cue</h2>
+        <p class="nota">Necesita un archivo de video y subtítulos .vtt para verse.</p>
+        <video controls width="360">
+            <source src="media/video.mp4" type="video/mp4">
+            <track kind="subtitles" src="media/subtitulos.vtt" srclang="es" label="Español" default>
+            Tu navegador no soporta video.
+        </video>
+    </section>
+
+    <section class="cue-region-demo">
+        <h2>::cue-region</h2>
+        <p class="nota">También depende de subtítulos WebVTT y del soporte del navegador.</p>
+        <video controls width="360">
+            <source src="media/video.mp4" type="video/mp4">
+            <track kind="subtitles" src="media/subtitulos.vtt" srclang="es" label="Español" default>
+        </video>
+    </section>
+
+    <section class="part-demo">
+        <h2>::part()</h2>
+        <p class="nota">Ejemplo con Web Component.</p>
+        <tarjeta-demo></tarjeta-demo>
+    </section>
+
+    <section class="slotted-demo">
+        <h2>::slotted()</h2>
+        <p class="nota">Ejemplo con contenido enviado a un slot.</p>
+        <contenedor-slot>
+            <p>Este párrafo entra al slot del componente.</p>
+        </contenedor-slot>
+    </section>
+
+    <section class="highlight-demo">
+        <h2>::highlight()</h2>
+        <p id="texto-highlight">
+            Este texto será resaltado usando la Highlight API del navegador.
+        </p>
+    </section>
+
+    <section class="spelling-demo">
+        <h2>::spelling-error</h2>
+        <p contenteditable="true" spellcheck="true">
+            Escribe aqui una palabraa mal escrita para intentar ver el error ortográfico.
+        </p>
+    </section>
+
+    <section class="grammar-demo">
+        <h2>::grammar-error</h2>
+        <p contenteditable="true" spellcheck="true">
+            Aqui puedes escribir una frase con error gramatical para probar este pseudo-elemento.
+        </p>
+    </section>
+
+    <script>
+        const dialogo = document.getElementById("miDialogo");
+        const abrir = document.getElementById("abrirDialogo");
+        const cerrar = document.getElementById("cerrarDialogo");
+
+        abrir.addEventListener("click", () => dialogo.showModal());
+        cerrar.addEventListener("click", () => dialogo.close());
+
+        class TarjetaDemo extends HTMLElement {
+            constructor() {
+                super();
+                const shadow = this.attachShadow({ mode: "open" });
+                shadow.innerHTML = `
+                    <div class="card">
+                        <h3 part="titulo">Título del componente</h3>
+                        <p>Contenido interno del componente.</p>
+                    </div>
+                `;
+            }
+        }
+        customElements.define("tarjeta-demo", TarjetaDemo);
+
+        class ContenedorSlot extends HTMLElement {
+            constructor() {
+                super();
+                const shadow = this.attachShadow({ mode: "open" });
+                shadow.innerHTML = `
+                    <style>
+                        .box{
+                            border:1px solid #999;
+                            padding:12px;
+                            border-radius:8px;
+                        }
+                    </style>
+                    <div class="box">
+                        <slot></slot>
+                    </div>
+                `;
+            }
+        }
+        customElements.define("contenedor-slot", ContenedorSlot);
+
+        if (window.CSS && window.Highlight) {
+            const texto = document.getElementById("texto-highlight");
+            const range = new Range();
+            range.setStart(texto.firstChild, 10);
+            range.setEnd(texto.firstChild, 27);
+
+            const highlight = new Highlight(range);
+            CSS.highlights.set("busqueda", highlight);
+        }
+    </script>
+
+</body>
+</html>

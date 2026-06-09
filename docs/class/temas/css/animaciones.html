@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones en CSS</title>
+
+    <link rel="stylesheet" href="../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <h1>Animaciones en CSS</h1>
+
+    <p>
+        Las animaciones en CSS permiten crear efectos visuales dinámicos en los elementos
+        de una página web. Mediante diferentes propiedades es posible controlar el tiempo,
+        la repetición, la dirección y la velocidad de los movimientos o cambios visuales.
+        Las animaciones se definen utilizando la regla <strong>@keyframes</strong>, donde se
+        establecen las diferentes etapas o estados de la animación.
+    </p>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Propiedad</th>
+                <th>Uso principal</th>
+                <th>Ejemplo CSS</th>
+                <th>Descripción detallada</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>@keyframes</td>
+                <td>Definir animación</td>
+                <td>@keyframes mover { }</td>
+                <td>Permite definir las diferentes etapas de una animación. Cada etapa representa un estado visual del
+                    elemento durante el proceso de animación.</td>
+            </tr>
+
+            <tr>
+                <td>animation-name</td>
+                <td>Nombre de la animación</td>
+                <td>animation-name: mover;</td>
+                <td>Indica el nombre de la animación que se aplicará al elemento y que fue definida previamente con la
+                    regla @keyframes.</td>
+            </tr>
+
+            <tr>
+                <td>animation-duration</td>
+                <td>Duración</td>
+                <td>animation-duration: 3s;</td>
+                <td>Define cuánto tiempo tarda la animación en completarse desde el inicio hasta el final.</td>
+            </tr>
+
+            <tr>
+                <td>animation-delay</td>
+                <td>Retraso inicial</td>
+                <td>animation-delay: 2s;</td>
+                <td>Establece el tiempo de espera antes de que la animación comience después de cargarse el elemento.
+                </td>
+            </tr>
+
+            <tr>
+                <td>animation-iteration-count</td>
+                <td>Repetición</td>
+                <td>animation-iteration-count: infinite;</td>
+                <td>Determina cuántas veces se repetirá la animación. Puede ser un número específico o infinito.</td>
+            </tr>
+
+            <tr>
+                <td>animation-direction</td>
+                <td>Dirección</td>
+                <td>animation-direction: alternate;</td>
+                <td>Controla si la animación se reproduce normalmente, en reversa o alternando entre ambas direcciones.
+                </td>
+            </tr>
+
+            <tr>
+                <td>animation-timing-function</td>
+                <td>Velocidad</td>
+                <td>animation-timing-function: ease-in-out;</td>
+                <td>Define la velocidad de cambio durante la animación, controlando cómo acelera o desacelera el
+                    movimiento.</td>
+            </tr>
+
+            <tr>
+                <td>animation-fill-mode</td>
+                <td>Estado final</td>
+                <td>animation-fill-mode: forwards;</td>
+                <td>Define cómo se aplican los estilos antes de iniciar o después de finalizar la animación.</td>
+            </tr>
+
+            <tr>
+                <td>animation-play-state</td>
+                <td>Control de reproducción</td>
+                <td>animation-play-state: paused;</td>
+                <td>Permite pausar o continuar una animación sin eliminarla.</td>
+            </tr>
+
+            <tr>
+                <td>animation</td>
+                <td>Propiedad abreviada</td>
+                <td>animation: mover 3s infinite;</td>
+                <td>Permite definir varias propiedades de animación en una sola línea de código.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a href="../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/css/animaciones.html">Ver demo de animaciones</a>
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-/* ================================
+    /* ================================
    RESET
 ================================ */
 * {
@@ -68,7 +68,7 @@ body {
 .menu > li {
     position: relative;
     padding: 16px 24px;
-    color: white;
+    color: black;
     font-weight: 600;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -81,7 +81,7 @@ body {
 /* links */
 .menu a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 /* ================================
@@ -166,7 +166,7 @@ body {
 
 .table thead th {
     padding: 14px;
-    text-align: center;
+    text-align: right;
     font-weight: 600;
 }
 
@@ -308,7 +308,7 @@ span {
 
 mark {
     font-size: 15px;
-    color: white;
+    color: black;
     background: #8a129c;
     padding: 4px 8px;
     border-radius: 4px;
@@ -317,7 +317,7 @@ mark {
 
 span {
     font-size: 15px;
-    color: white;
+    color: black;
     background: #f4532b;
     padding: 4px 8px;
     border-radius: 4px;
