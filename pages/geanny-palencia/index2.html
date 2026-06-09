@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekiro Blog</title>
+   
+    <link rel="icon" type="image/png" href="../geanny-palencia/assets/img/icono.png">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            background: #111;
+            width: 100%;
+            padding: 15px;
+            z-index: 1000;
+        }
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #fff;
+    
+    /* Esto alinea el logo y el texto en la misma línea horizontal */
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Controla el espacio de separación entre el logo y el texto */
+}
+
+/* Controla el tamaño de tu icono para que no rompa la cabecera */
+.Menu-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain; /* Evita que la imagen se deforme */
+}
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 120px 20px 40px 20px; 
+            border-bottom: 1px solid #333;
+            min-height: 50vh;
+        }
+        section img {
+            display: block;
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #e67e22;
+        }
+
+        /* ========================================== */
+        /* NUEVO CSS PARA EL FOOTER          */
+        /* ========================================== */
+        .main-footer {
+            background-color: #0f0f0f;
+            color: #bbb;
+            padding: 60px 40px 20px 40px;
+            border-top: 3px solid #e67e22; /* Línea naranja estilo Sekiro */
+            
+            /* Grid de 3 columnas para el contenido principal */
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            gap: 40px;
+        }
+
+        .main-footer h3 {
+            color: #e67e22;
+            margin-top: 0;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .main-footer p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Listas del Footer */
+        .footer-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-nav li {
+            margin-bottom: 10px;
+        }
+
+        .footer-nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .footer-nav a:hover {
+            color: #e67e22;
+        }
+
+        /* Formulario del Footer */
+        .footer-form {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .footer-form input {
+            padding: 10px;
+            background: #222;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 4px 0 0 4px;
+            width: 100%;
+        }
+
+        .footer-form button {
+            background: #e67e22;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            padding: 0 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .footer-form button:hover {
+            background: #d35400;
+        }
+
+        /* Fila de Derechos y Legales */
+        .footer-copy {
+            grid-column: 1 / 3;
+            border-top: 1px solid #2a2a2a;
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .footer-legal {
+            grid-column: 3 / 4;
+            border-top: 1px solid #2a2a2a;
+            padding-top: 20px;
+            text-align: right;
+        }
+
+        .footer-legal a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-left: 15px;
+        }
+
+        .footer-legal a:hover {
+            color: #aaa;
+        }
+
+        /* Responsivo para móviles */
+        @media (max-width: 768px) {
+            .main-footer {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 40px 20px;
+            }
+            .footer-copy, .footer-legal {
+                grid-column: 1;
+                text-align: center;
+            }
+            .footer-legal {
+                border-top: none;
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+            <img src="../geanny-palencia/assets/img/icono.png" alt="Logo sekiro" class="Menu-logo">
+            Blog de Sekiro
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#seccion-1">historia y lore</a></li>
+                <li><a href="#seccion-2">Rutas y como hacerlas</a></li>
+                <li><a href="#seccion-3">objetos y habilidades</a></li>
+                <li><a href="#seccion-4">info de los personajes y enemigos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrusel">
+        <img src="../geanny-palencia/assets/img/mikiri.png" alt="Carrusel 1">
+        <img src="../geanny-palencia/assets/img/ejecusiones normales.png" alt="Carrusel 2">
+        <img src="../geanny-palencia/assets/img/hacienda recuerdo.png" alt="Carrusel 3"> 
+    </section> <main>
+        <section id="seccion-1">
+            <h2>📜 Historia y Lore</h2>
+            <p> Aqui va el lore y la historia de sekiro, con detalles sobre los personajes, el mundo y los eventos que ocurren en el juego.
+                desde la caida okami(nuestro protagonista) hasta el final del juego, pasando por los eventos importantes y las conexiones 
+                entre cada personaje y como influyen en la historia, también incluire algunas teorias y especulaciones tanto mias como de 
+                la comunidad, para darle un toque mas personal y generarte interes en el contenido, ademas de que te ayudara a entender mejor 
+                el juego y su historia, para que puedas disfrutarlo al maximo y apreciar cada detalle que se ha puesto en el desarrollo del juego.</p> 
+            <img src="../geanny-palencia/assets/img/captura1.png" alt="Captura 1">
+        </section>
+
+        <section id="seccion-2">
+            <h2>🗺️ Rutas y Cómo Hacerlas</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error quisquam beatae repudiandae voluptatem totam, maxime nostrum accusantium. Non ut nemo fugiat veritatis unde repudiandae, numquam placeat eius quos laborum dolorem?</p>
+            <img src="../geanny-palencia/assets/img/captura2.png" alt="Captura 2">
+        </section>
+
+        <section id="seccion-3">
+            <h2>🎒 Objetos y Habilidades</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus dolor excepturi blanditiis quaerat optio repellat veritatis libero porro iste, nemo illo tempora dolorem consequuntur sit eaque tempore! Beatae, soluta?</p>
+            <img src="../geanny-palencia/assets/img/captura3.png" alt="Captura 3">
+        </section>
+
+        <section id="seccion-4">
+            <h2>👥 Info de los Personajes y Enemigos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsum natus ipsam laudantium tempore voluptatibus voluptas praesentium totam, animi non laboriosam ea consectetur asperiores quis omnis soluta quasi optio officia!</p>
+            <img src="../geanny-palencia/assets/img/captura4.png" alt="Captura 4">
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        
+        <aside>
+            <h3>Sobre el Proyecto</h3>
+            <p>Guía definitiva y enciclopedia creada por fans para fans de Sekiro: Shadows Die Twice. Explora el Lore, domina el parry y completa todas las rutas.</p>
+        </aside>
+
+        <nav class="footer-nav">
+            <h3>Comunidad</h3>
+            <ul>
+                <li><a href="https://www.reddit.com/r/Sekiro/" target="_blank">Reddit Sekiro</a></li>
+                <li><a href="#" target="_blank">FromSoftware</a></li>
+                <li><a href="#" target="_blank">Wiki Oficial</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h3>Recibe Guías Especiales</h3>
+            <p>Deja tu correo para recibir alertas cuando subamos nuevas estrategias de jefes.</p>
+            <form class="footer-form">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Unirse</button>
+            </form>
+        </section>
+
+        <small class="footer-copy">&copy; 2026 Blog de Sekiro. Hecho con honor shinobi.</small>
+        
+        <nav class="footer-legal">
+            <a href="#">Aviso Legal</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
