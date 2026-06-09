@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades en CSS</title>
+
+    <link rel="stylesheet" href="../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <h1>Unidades en CSS</h1>
+
+    <p>
+        Las unidades en CSS permiten definir tamaños, proporciones y espacios dentro
+        de un diseño web. Algunas unidades son absolutas, mientras que otras son
+        relativas al tamaño del texto, al contenedor o al tamaño de la pantalla.
+        Elegir la unidad correcta es importante para lograr diseños flexibles y
+        adaptables a diferentes dispositivos.
+    </p>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Unidad</th>
+                <th>Tipo</th>
+                <th>Uso principal</th>
+                <th>Ejemplo CSS</th>
+                <th>Nivel de uso</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>px</td>
+                <td>Absoluta</td>
+                <td>Tamaños fijos</td>
+                <td>width: 200px;</td>
+                <td>Muy usada</td>
+                <td>Representa píxeles en pantalla y es una de las unidades más utilizadas.</td>
+            </tr>
+
+            <tr>
+                <td>%</td>
+                <td>Relativa</td>
+                <td>Proporciones</td>
+                <td>width: 50%;</td>
+                <td>Muy usada</td>
+                <td>Se calcula en relación al tamaño del elemento contenedor.</td>
+            </tr>
+
+            <tr>
+                <td>em</td>
+                <td>Relativa</td>
+                <td>Tamaño de texto</td>
+                <td>font-size: 1.5em;</td>
+                <td>Muy usada</td>
+                <td>Relativa al tamaño de fuente del elemento padre.</td>
+            </tr>
+
+            <tr>
+                <td>rem</td>
+                <td>Relativa</td>
+                <td>Tamaño global</td>
+                <td>font-size: 1.2rem;</td>
+                <td>Muy usada</td>
+                <td>Relativa al tamaño de fuente del elemento raíz (html).</td>
+            </tr>
+
+            <tr>
+                <td>vw</td>
+                <td>Viewport</td>
+                <td>Ancho de pantalla</td>
+                <td>width: 50vw;</td>
+                <td>Muy usada</td>
+                <td>Equivale al 1% del ancho de la ventana del navegador.</td>
+            </tr>
+
+            <tr>
+                <td>vh</td>
+                <td>Viewport</td>
+                <td>Altura de pantalla</td>
+                <td>height: 100vh;</td>
+                <td>Muy usada</td>
+                <td>Equivale al 1% de la altura del viewport.</td>
+            </tr>
+
+            <tr>
+                <td>vmin</td>
+                <td>Viewport</td>
+                <td>Escalado flexible</td>
+                <td>font-size: 5vmin;</td>
+                <td>Usada</td>
+                <td>Usa el valor menor entre el ancho y alto de la pantalla.</td>
+            </tr>
+
+            <tr>
+                <td>vmax</td>
+                <td>Viewport</td>
+                <td>Escalado flexible</td>
+                <td>font-size: 5vmax;</td>
+                <td>Usada</td>
+                <td>Usa el valor mayor entre el ancho y alto del viewport.</td>
+            </tr>
+
+            <tr>
+                <td>ch</td>
+                <td>Relativa</td>
+                <td>Ancho de texto</td>
+                <td>width: 40ch;</td>
+                <td>Usada</td>
+                <td>Representa el ancho del carácter "0".</td>
+            </tr>
+
+            <tr>
+                <td>ex</td>
+                <td>Relativa</td>
+                <td>Altura tipográfica</td>
+                <td>font-size: 2ex;</td>
+                <td>Poco usada</td>
+                <td>Basada en la altura de la letra "x".</td>
+            </tr>
+
+            <tr>
+                <td>cm</td>
+                <td>Absoluta</td>
+                <td>Medidas físicas</td>
+                <td>width: 10cm;</td>
+                <td>Poco usada</td>
+                <td>Unidad basada en centímetros.</td>
+            </tr>
+
+            <tr>
+                <td>mm</td>
+                <td>Absoluta</td>
+                <td>Medidas físicas</td>
+                <td>width: 20mm;</td>
+                <td>Poco usada</td>
+                <td>Unidad basada en milímetros.</td>
+            </tr>
+
+            <tr>
+                <td>in</td>
+                <td>Absoluta</td>
+                <td>Medidas físicas</td>
+                <td>width: 2in;</td>
+                <td>Poco usada</td>
+                <td>Unidad basada en pulgadas.</td>
+            </tr>
+
+            <tr>
+                <td>pt</td>
+                <td>Absoluta</td>
+                <td>Tipografía</td>
+                <td>font-size: 12pt;</td>
+                <td>Poco usada</td>
+                <td>Unidad tradicional usada en impresión.</td>
+            </tr>
+
+            <tr>
+                <td>pc</td>
+                <td>Absoluta</td>
+                <td>Tipografía</td>
+                <td>font-size: 1pc;</td>
+                <td>Poco usada</td>
+                <td>Equivale a 12 puntos tipográficos.</td>
+            </tr>
+
+            <tr>
+                <td>svh</td>
+                <td>Viewport moderno</td>
+                <td>Altura mínima viewport</td>
+                <td>height: 100svh;</td>
+                <td>Nueva</td>
+                <td>Representa la altura mínima del viewport en dispositivos móviles.</td>
+            </tr>
+
+            <tr>
+                <td>lvh</td>
+                <td>Viewport moderno</td>
+                <td>Altura máxima viewport</td>
+                <td>height: 100lvh;</td>
+                <td>Nueva</td>
+                <td>Representa la altura máxima del viewport.</td>
+            </tr>
+
+            <tr>
+                <td>dvh</td>
+                <td>Viewport moderno</td>
+                <td>Viewport dinámico</td>
+                <td>height: 100dvh;</td>
+                <td>Nueva</td>
+                <td>Se ajusta dinámicamente al viewport visible.</td>
+            </tr>
+
+            <tr>
+                <td>svw</td>
+                <td>Viewport moderno</td>
+                <td>Ancho mínimo viewport</td>
+                <td>width: 100svw;</td>
+                <td>Nueva</td>
+                <td>Representa el ancho mínimo del viewport.</td>
+            </tr>
+
+            <tr>
+                <td>lvw</td>
+                <td>Viewport moderno</td>
+                <td>Ancho máximo viewport</td>
+                <td>width: 100lvw;</td>
+                <td>Nueva</td>
+                <td>Representa el ancho máximo del viewport.</td>
+            </tr>
+
+            <tr>
+                <td>dvw</td>
+                <td>Viewport moderno</td>
+                <td>Ancho dinámico viewport</td>
+                <td>width: 100dvw;</td>
+                <td>Nueva</td>
+                <td>Se ajusta dinámicamente al ancho visible del viewport.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a href="../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/css/unidades.html">Ver demo de unidades</a>
+
+</body>
+
+</html>

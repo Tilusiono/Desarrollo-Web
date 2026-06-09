@@ -1,0 +1,163 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    line-height: 1.6;
+    background-color: #f7f9fc;
+    color: #222;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: 10px;
+    color: #0b4f8a;
+}
+
+section{
+    margin-bottom: 24px;
+    padding: 16px;
+    border: 1px solid #d0d7de;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.intro{
+    max-width: 800px;
+    margin-bottom: 24px;
+}
+
+.nota{
+    color: #666;
+    font-size: 14px;
+}
+
+/* ::before */
+.before-demo p::before{
+    content: "Nota: ";
+    color: red;
+    font-weight: bold;
+}
+
+/* ::after */
+.after-demo p::after{
+    content: " ✔";
+    color: green;
+    font-weight: bold;
+}
+
+/* ::first-letter */
+.first-letter-demo p::first-letter{
+    font-size: 42px;
+    color: blue;
+    font-weight: bold;
+}
+
+/* ::first-line */
+.first-line-demo p{
+    max-width: 540px;
+}
+
+.first-line-demo p::first-line{
+    color: purple;
+    font-weight: bold;
+}
+
+/* ::selection */
+.selection-demo p::selection{
+    background-color: yellow;
+    color: black;
+}
+
+/* ::marker */
+.marker-demo li::marker{
+    color: red;
+    font-size: 20px;
+}
+
+/* ::placeholder */
+.placeholder-demo input{
+    width: 260px;
+    padding: 8px;
+}
+
+.placeholder-demo input::placeholder{
+    color: gray;
+    font-style: italic;
+}
+
+/* ::file-selector-button */
+.file-demo input::file-selector-button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ::backdrop */
+.dialog-demo button{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0b4f8a;
+    color: white;
+    cursor: pointer;
+}
+
+dialog{
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* ::cue */
+.cue-demo video::cue{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+/* ::cue-region */
+.cue-region-demo video::cue-region{
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+/* ::part() */
+tarjeta-demo::part(titulo){
+    color: crimson;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+/* ::slotted() */
+contenedor-slot::part(box){
+    border: 2px dashed #999;
+}
+
+contenedor-slot::slotted(p){
+    color: teal;
+    font-weight: bold;
+}
+
+/* ::highlight() */
+.highlight-demo p::highlight(busqueda){
+    background-color: yellow;
+    color: black;
+}
+
+/* ::spelling-error */
+.spelling-demo p::spelling-error{
+    text-decoration: underline red wavy;
+}
+
+/* ::grammar-error */
+.grammar-demo p::grammar-error{
+    text-decoration: underline blue wavy;
+}
