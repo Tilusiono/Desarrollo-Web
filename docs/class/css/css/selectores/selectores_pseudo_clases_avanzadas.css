@@ -1,0 +1,151 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+section,
+article{
+    margin-bottom: 28px;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+h2,
+h3{
+    margin-bottom: 10px;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+p,
+li,
+label,
+input,
+button,
+a,
+div,
+span{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+/* 1 hover */
+.enlace-hover:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/* 2 active */
+.boton-active:active{
+    background-color: orange;
+    color: white;
+}
+
+/* 3 focus */
+.input-focus:focus{
+    border: 2px solid blue;
+    background-color: #eef6ff;
+    outline: none;
+}
+
+/* 4 first-child */
+.contenedor-first-child p:first-child{
+    color: green;
+    font-weight: bold;
+}
+
+/* 5 last-child */
+.contenedor-last-child p:last-child{
+    color: purple;
+    font-style: italic;
+}
+
+/* 6 nth-child() */
+.lista-nth li:nth-child(2){
+    background-color: yellow;
+}
+
+/* 7 nth-last-child() */
+.lista-nth-last li:nth-last-child(2){
+    background-color: lightblue;
+}
+
+/* 8 first-of-type */
+.first-type p:first-of-type{
+    color: brown;
+    font-weight: bold;
+}
+
+/* 9 last-of-type */
+.last-type p:last-of-type{
+    color: darkmagenta;
+}
+
+/* 10 nth-of-type() */
+.nth-type p:nth-of-type(2){
+    background-color: lightgreen;
+}
+
+/* 11 not() */
+.not-demo p:not(.excluido){
+    border-left: 4px solid red;
+    padding-left: 8px;
+}
+
+/* 12 is() */
+.demo-is :is(h2, h3).grupo-titulo{
+    color: darkblue;
+}
+
+/* 13 where() */
+:where(section, article).contenedor-suave{
+    border: 2px dashed gray;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+/* 14 has() */
+.demo-has .tarjeta:has(img){
+    border: 3px solid teal;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+/* 15 checked */
+.demo-checked input:checked + label{
+    color: green;
+    font-weight: bold;
+}
+
+/* 16 disabled */
+.demo-disabled input:disabled{
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* 17 enabled */
+.demo-enabled input:enabled{
+    border: 2px solid #666;
+}
+
+/* 18 required */
+.demo-required input:required{
+    border-left: 5px solid orange;
+}
+
+/* 19 valid */
+.demo-valid input:valid{
+    background-color: #e8ffe8;
+}
+
+/* 20 invalid */
+.demo-invalid input:invalid{
+    background-color: #ffe8e8;
+}

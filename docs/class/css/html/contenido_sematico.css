@@ -1,0 +1,160 @@
+table{
+    border-collapse: collapse; /* une los bordes de las celdas */
+}
+/* =========================================
+   ESTILO GENERAL DEL BODY
+========================================= */
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif; /* Fuente principal del sitio */
+    margin:0; /* elimina el margen por defecto del navegador */
+    padding:40px; /* espacio interno del contenido respecto al borde */
+    background:linear-gradient(135deg,#f4f7fb,#e6eef9); /* fondo degradado */
+    color:#333; /* color del texto principal */
+    line-height:1.6; /* altura entre líneas para mejorar lectura */
+}
+
+
+
+/* =========================================
+   FIGURE
+   Contenedor de imágenes o gráficos
+========================================= */
+
+figure{
+    background:white; /* color de fondo de la tarjeta */
+    padding:15px; /* espacio interno alrededor del contenido */
+    border-radius:8px; /* bordes redondeados */
+    box-shadow:0 4px 12px rgba(0,0,0,0.08); /* sombra suave */
+    margin:20px 0; /* separación superior e inferior */
+    text-align:center; /* centra el contenido horizontalmente */
+    transition:all .3s ease; /* animación suave cuando cambian propiedades */
+}
+
+
+
+/* efecto al pasar el mouse sobre la figura */
+
+figure:hover{
+    transform:translateY(-4px); /* mueve el elemento hacia arriba */
+    box-shadow:0 10px 25px rgba(0,0,0,0.12); /* sombra más fuerte al hacer hover */
+}
+
+
+
+/* imagen dentro de figure */
+
+figure img{
+    max-width:100%; /* la imagen nunca será más grande que su contenedor */
+    border-radius:6px; /* bordes redondeados en la imagen */
+}
+
+
+
+/* =========================================
+   FIGCAPTION
+   Descripción de la imagen
+========================================= */
+
+figcaption{
+    margin-top:10px; /* espacio entre la imagen y la descripción */
+    font-size:14px; /* tamaño del texto */
+    color:#555; /* color gris oscuro */
+    font-style:italic; /* estilo de texto en cursiva */
+}
+
+
+
+/* =========================================
+   DETAILS
+   Contenedor desplegable
+========================================= */
+
+details{
+    background:white; /* fondo del bloque desplegable */
+    border-left:5px solid #4facfe; /* barra decorativa a la izquierda */
+    padding:12px 15px; /* espacio interno */
+    margin:15px 0; /* separación entre elementos */
+    border-radius:6px; /* esquinas redondeadas */
+    box-shadow:0 3px 8px rgba(0,0,0,0.08); /* sombra ligera */
+}
+
+
+
+/* título del contenido desplegable */
+
+summary{
+    cursor:pointer; /* cambia el cursor indicando que es clickeable */
+    font-weight:bold; /* texto en negrita */
+    color:#1f3c88; /* color azul oscuro */
+    font-size:15px; /* tamaño del texto */
+}
+
+
+
+/* estilo cuando el details está abierto */
+
+details[open]{
+    border-left:5px solid #00c851; /* cambia el color del borde cuando se abre */
+}
+
+
+
+/* =========================================
+   DIALOG
+   Ventana modal
+========================================= */
+
+dialog{
+    border:none; /* elimina borde por defecto */
+    border-radius:8px; /* bordes redondeados */
+    padding:20px; /* espacio interno */
+    background:white; /* fondo del cuadro */
+    box-shadow:0 8px 30px rgba(0,0,0,0.2); /* sombra fuerte para efecto flotante */
+    font-size:16px; /* tamaño del texto dentro del diálogo */
+}
+
+
+
+/* =========================================
+   TIME
+   Representación de fecha
+========================================= */
+
+time{
+    background:#e8f1ff; /* fondo azul claro */
+    padding:3px 6px; /* espacio interno */
+    border-radius:4px; /* esquinas redondeadas */
+    font-size:15px; /* tamaño del texto */
+    color:#1f3c88; /* color azul oscuro */
+    font-weight:500; /* peso medio del texto */
+}
+
+
+
+/* =========================================
+   MARK
+   Texto resaltado
+========================================= */
+
+mark{
+    background:#fff59d; /* fondo amarillo resaltado */
+    padding:2px 4px; /* espacio interno del resaltado */
+    border-radius:3px; /* bordes suaves */
+}
+
+
+
+/* =========================================
+   ADDRESS
+   Información de contacto
+========================================= */
+
+address{
+    background:#fff8e1; /* fondo amarillo claro */
+    padding:12px 15px; /* espacio interno */
+    border-left:5px solid #ff9800; /* línea decorativa lateral */
+    border-radius:6px; /* bordes redondeados */
+    font-style:normal; /* evita cursiva por defecto del address */
+    margin-top:10px; /* espacio superior */
+}

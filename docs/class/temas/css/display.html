@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display en CSS</title>
+
+    <link rel="stylesheet" href="../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <h1>Tipo de visualización - Display en CSS</h1>
+
+    <p>
+        La propiedad <strong>display</strong> en CSS define cómo se comporta un elemento dentro
+        del flujo del documento. Determina si un elemento se muestra como bloque, en línea,
+        como contenedor flexible o como una cuadrícula. Es una de las propiedades más importantes
+        para controlar la estructura y el layout de una página web.
+    </p>
+
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Valor</th>
+                <th>Uso principal</th>
+                <th>Nivel de uso</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>block</td>
+                <td>Elemento en bloque</td>
+                <td>Muy usado</td>
+                <td>Ocupa todo el ancho disponible y comienza en una nueva línea.</td>
+            </tr>
+
+            <tr>
+                <td>inline</td>
+                <td>Elemento en línea</td>
+                <td>Muy usado</td>
+                <td>Solo ocupa el espacio necesario y no inicia una nueva línea.</td>
+            </tr>
+
+            <tr>
+                <td>inline-block</td>
+                <td>Bloque en línea</td>
+                <td>Muy usado</td>
+                <td>Se comporta como inline pero permite width y height.</td>
+            </tr>
+
+            <tr>
+                <td>none</td>
+                <td>Ocultar elemento</td>
+                <td>Muy usado</td>
+                <td>El elemento desaparece completamente del layout.</td>
+            </tr>
+
+            <tr>
+                <td>flex</td>
+                <td>Contenedor flexible</td>
+                <td>Muy usado</td>
+                <td>Permite crear layouts flexibles con alineación automática.</td>
+            </tr>
+
+            <tr>
+                <td>inline-flex</td>
+                <td>Flex en línea</td>
+                <td>Usado</td>
+                <td>Similar a flex pero el contenedor se comporta como inline.</td>
+            </tr>
+
+            <tr>
+                <td>grid</td>
+                <td>Layout en cuadrícula</td>
+                <td>Muy usado</td>
+                <td>Permite crear estructuras de filas y columnas.</td>
+            </tr>
+
+            <tr>
+                <td>inline-grid</td>
+                <td>Grid en línea</td>
+                <td>Usado</td>
+                <td>Grid pero con comportamiento inline.</td>
+            </tr>
+
+            <tr>
+                <td>flow-root</td>
+                <td>Nuevo contexto de bloque</td>
+                <td>Moderado</td>
+                <td>Crea un nuevo contexto de bloque y evita problemas con floats.</td>
+            </tr>
+
+            <tr>
+                <td>contents</td>
+                <td>Eliminar contenedor visual</td>
+                <td>Poco usado</td>
+                <td>El contenedor desaparece pero sus hijos permanecen en el DOM.</td>
+            </tr>
+
+            <tr>
+                <td>list-item</td>
+                <td>Elemento de lista</td>
+                <td>Usado</td>
+                <td>Hace que un elemento se comporte como un item de lista con marcador.</td>
+            </tr>
+
+            <tr>
+                <td>table</td>
+                <td>Simular tabla</td>
+                <td>Poco usado</td>
+                <td>Hace que el elemento se comporte como una tabla HTML.</td>
+            </tr>
+
+            <tr>
+                <td>table-row</td>
+                <td>Fila de tabla</td>
+                <td>Poco usado</td>
+                <td>Representa una fila dentro de una tabla.</td>
+            </tr>
+
+            <tr>
+                <td>table-cell</td>
+                <td>Celda de tabla</td>
+                <td>Poco usado</td>
+                <td>Representa una celda dentro de una tabla.</td>
+            </tr>
+
+            <tr>
+                <td>table-row-group</td>
+                <td>Grupo de filas</td>
+                <td>Muy poco usado</td>
+                <td>Agrupa varias filas dentro de una tabla.</td>
+            </tr>
+
+            <tr>
+                <td>table-header-group</td>
+                <td>Encabezado de tabla</td>
+                <td>Muy poco usado</td>
+                <td>Define el grupo de encabezado de una tabla.</td>
+            </tr>
+
+            <tr>
+                <td>table-footer-group</td>
+                <td>Pie de tabla</td>
+                <td>Muy poco usado</td>
+                <td>Define el pie de una tabla.</td>
+            </tr>
+
+            <tr>
+                <td>table-column</td>
+                <td>Columna de tabla</td>
+                <td>Muy poco usado</td>
+                <td>Define propiedades para una columna.</td>
+            </tr>
+
+            <tr>
+                <td>table-column-group</td>
+                <td>Grupo de columnas</td>
+                <td>Muy poco usado</td>
+                <td>Agrupa varias columnas.</td>
+            </tr>
+
+            <tr>
+                <td>table-caption</td>
+                <td>Título de tabla</td>
+                <td>Muy poco usado</td>
+                <td>Define el título o caption de una tabla.</td>
+            </tr>
+
+            <tr>
+                <td>ruby</td>
+                <td>Tipografía asiática</td>
+                <td>Casi no usado</td>
+                <td>Usado en anotaciones tipográficas para idiomas asiáticos.</td>
+            </tr>
+
+            <tr>
+                <td>ruby-base</td>
+                <td>Base ruby</td>
+                <td>Casi no usado</td>
+                <td>Parte base del sistema ruby.</td>
+            </tr>
+
+            <tr>
+                <td>ruby-text</td>
+                <td>Texto ruby</td>
+                <td>Casi no usado</td>
+                <td>Texto auxiliar en anotaciones ruby.</td>
+            </tr>
+
+            <tr>
+                <td>ruby-base-container</td>
+                <td>Contenedor ruby</td>
+                <td>Casi no usado</td>
+                <td>Contenedor para texto base ruby.</td>
+            </tr>
+
+            <tr>
+                <td>ruby-text-container</td>
+                <td>Contenedor ruby</td>
+                <td>Casi no usado</td>
+                <td>Contenedor para texto auxiliar ruby.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <a href="../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/css/display.html">Ver demo de Display</a>
+
+</body>
+
+</html>

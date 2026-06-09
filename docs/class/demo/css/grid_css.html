@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo CSS Grid avanzado</title>
+    <link rel="stylesheet" href="../../css/css/grid.css">
+</head>
+
+<body>
+
+    <h1>Demo de CSS Grid avanzado</h1>
+
+    <p class="intro">
+        En esta página se muestran ejemplos visuales de las propiedades y funciones más importantes de CSS Grid.
+    </p>
+
+    <section>
+        <h2>1. display: grid</h2>
+        <article class="grid-demo">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>2. display: inline-grid</h2>
+        <article class="inline-grid-demo">
+            <span class="item">A</span>
+            <span class="item">B</span>
+            <span class="item">C</span>
+            <span class="item">D</span>
+        </article>
+    </section>
+
+    <section>
+        <h2>3. grid-template-columns</h2>
+        <article class="columns-demo">
+            <p class="item">100px</p>
+            <p class="item">1fr</p>
+            <p class="item">2fr</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>4. grid-template-rows</h2>
+        <article class="rows-demo">
+            <p class="item">Fila 1</p>
+            <p class="item">Fila 2</p>
+            <p class="item">Fila 3</p>
+            <p class="item">Fila 4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>5. grid-template-areas</h2>
+        <article class="areas-demo">
+            <header class="item header-area">Header</header>
+            <nav class="item nav-area">Nav</nav>
+            <main class="item main-area">Main</main>
+            <aside class="item aside-area">Aside</aside>
+            <footer class="item footer-area">Footer</footer>
+        </article>
+    </section>
+
+    <section>
+        <h2>6. grid-template</h2>
+        <article class="template-demo">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>7. grid-auto-columns</h2>
+        <article class="auto-columns-demo">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>8. grid-auto-rows</h2>
+        <article class="auto-rows-demo">
+            <p class="item alto">1</p>
+            <p class="item">2</p>
+            <p class="item alto">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>9. grid-auto-flow</h2>
+        <article class="auto-flow-demo">
+            <p class="item ancho">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item ancho">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>10. gap</h2>
+        <article class="gap-demo">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>11. row-gap y column-gap</h2>
+        <article class="row-column-gap-demo">
+            <p class="item">A</p>
+            <p class="item">B</p>
+            <p class="item">C</p>
+            <p class="item">D</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>12. justify-items</h2>
+        <article class="justify-items-demo">
+            <p class="item corto">1</p>
+            <p class="item corto">2</p>
+            <p class="item corto">3</p>
+            <p class="item corto">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>13. align-items</h2>
+        <article class="align-items-demo">
+            <p class="item corto">1</p>
+            <p class="item corto">2</p>
+            <p class="item corto">3</p>
+            <p class="item corto">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>14. place-items</h2>
+        <article class="place-items-demo">
+            <p class="item corto">A</p>
+            <p class="item corto">B</p>
+            <p class="item corto">C</p>
+            <p class="item corto">D</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>15. justify-content</h2>
+        <article class="justify-content-demo">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>16. align-content</h2>
+        <article class="align-content-demo">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>17. place-content</h2>
+        <article class="place-content-demo">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>18. grid-column-start y grid-column-end</h2>
+        <article class="column-start-end-demo">
+            <p class="item columna-expandida">Item grande</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>19. grid-column</h2>
+        <article class="column-demo">
+            <p class="item columna-shorthand">Column span</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>20. grid-row-start y grid-row-end</h2>
+        <article class="row-start-end-demo">
+            <p class="item fila-expandida">Row grande</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+            <p class="item">5</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>21. grid-row</h2>
+        <article class="row-demo">
+            <p class="item fila-shorthand">Row span</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+            <p class="item">5</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>22. grid-area</h2>
+        <article class="grid-area-demo">
+            <p class="item area-1">1</p>
+            <p class="item area-2">2</p>
+            <p class="item area-3">3</p>
+            <p class="item area-4">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>23. justify-self</h2>
+        <article class="justify-self-demo">
+            <p class="item self-start">1</p>
+            <p class="item self-center">2</p>
+            <p class="item self-end">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>24. align-self</h2>
+        <article class="align-self-demo">
+            <p class="item a-self-start">1</p>
+            <p class="item a-self-center">2</p>
+            <p class="item a-self-end">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>25. place-self</h2>
+        <article class="place-self-demo">
+            <p class="item place-self-item">Item especial</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>26. repeat()</h2>
+        <article class="repeat-demo">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>27. minmax()</h2>
+        <article class="minmax-demo">
+            <p class="item">A</p>
+            <p class="item">B</p>
+            <p class="item">C</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>28. auto-fit</h2>
+        <article class="autofit-demo">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+            <p class="item">5</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>29. auto-fill</h2>
+        <article class="autofill-demo">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+            <p class="item">4</p>
+            <p class="item">5</p>
+        </article>
+    </section>
+
+</body>
+
+</html>

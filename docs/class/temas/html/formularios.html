@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="../../css/html/formularios.css">
+</head>
+
+<body>
+    <h1>Formularios en HTML</h1>
+
+    <p>
+        Los formularios en HTML se utilizan para recopilar información de los usuarios y enviarla a un servidor para su
+        procesamiento. Están compuestos por elementos como <strong>form</strong>, <strong>label</strong>,
+        <strong>input</strong>,
+        <strong>select</strong>, <strong>textarea</strong> y <strong>button</strong>, los cuales permiten ingresar
+        datos,
+        seleccionar opciones y enviar información de manera estructurada dentro de una página web.
+    </p>
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Etiqueta</th>
+                <th>Función</th>
+                <th>Uso principal</th>
+                <th>Ejemplo práctico</th>
+                <th>Elemento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>&lt;form&gt;</td>
+                <td>Contenedor del formulario</td>
+                <td>Define el inicio y fin del formulario</td>
+                <td>
+                    <form>
+                        <input type="text" placeholder="Nombre">
+                    </form>
+                </td>
+                <td>&lt;form&gt;...&lt;/form&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;label&gt;</td>
+                <td>Etiqueta descriptiva</td>
+                <td>Describe el campo</td>
+                <td>
+                    <label>Nombre:</label>
+                </td>
+                <td>&lt;label&gt;Nombre&lt;/label&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;fieldset&gt;</td>
+                <td>Agrupa campos</td>
+                <td>Organizar secciones</td>
+                <td>
+                    <fieldset>
+                        <input type="text">
+                    </fieldset>
+                </td>
+                <td>&lt;fieldset&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;legend&gt;</td>
+                <td>Título de grupo</td>
+                <td>Describe fieldset</td>
+                <td>
+                    <fieldset>
+                        <legend>Datos</legend>
+                    </fieldset>
+                </td>
+                <td>&lt;legend&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="text"&gt;</td>
+                <td>Texto</td>
+                <td>Ingresar texto</td>
+                <td>
+                    <input type="text" placeholder="Nombre">
+                </td>
+                <td>&lt;input type="text"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="email"&gt;</td>
+                <td>Email</td>
+                <td>Valida correo</td>
+                <td>
+                    <input type="email">
+                </td>
+                <td>&lt;input type="email"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="password"&gt;</td>
+                <td>Contraseña</td>
+                <td>Oculta caracteres</td>
+                <td>
+                    <input type="password">
+                </td>
+                <td>&lt;input type="password"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="number"&gt;</td>
+                <td>Número</td>
+                <td>Ingresar números</td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>&lt;input type="number"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="tel"&gt;</td>
+                <td>Teléfono</td>
+                <td>Ingresar teléfono</td>
+                <td>
+                    <input type="tel">
+                </td>
+                <td>&lt;input type="tel"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="url"&gt;</td>
+                <td>URL</td>
+                <td>Ingresar enlaces</td>
+                <td>
+                    <input type="url">
+                </td>
+                <td>&lt;input type="url"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="search"&gt;</td>
+                <td>Búsqueda</td>
+                <td>Campo de búsqueda</td>
+                <td>
+                    <input type="search">
+                </td>
+                <td>&lt;input type="search"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="date"&gt;</td>
+                <td>Fecha</td>
+                <td>Seleccionar fecha</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>&lt;input type="date"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="time"&gt;</td>
+                <td>Hora</td>
+                <td>Seleccionar hora</td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>&lt;input type="time"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="datetime-local"&gt;</td>
+                <td>Fecha y hora</td>
+                <td>Agenda eventos</td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+                <td>&lt;input type="datetime-local"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="month"&gt;</td>
+                <td>Mes</td>
+                <td>Seleccionar mes</td>
+                <td>
+                    <input type="month">
+                </td>
+                <td>&lt;input type="month"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="week"&gt;</td>
+                <td>Semana</td>
+                <td>Seleccionar semana</td>
+                <td>
+                    <input type="week">
+                </td>
+                <td>&lt;input type="week"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="color"&gt;</td>
+                <td>Color</td>
+                <td>Elegir color</td>
+                <td>
+                    <input type="color">
+                </td>
+                <td>&lt;input type="color"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="range"&gt;</td>
+                <td>Rango</td>
+                <td>Seleccionar valor</td>
+                <td>
+                    <input type="range">
+                </td>
+                <td>&lt;input type="range"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="file"&gt;</td>
+                <td>Archivo</td>
+                <td>Subir archivos</td>
+                <td>
+                    <input type="file">
+                </td>
+                <td>&lt;input type="file"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="checkbox"&gt;</td>
+                <td>Selección múltiple</td>
+                <td>Elegir varias opciones</td>
+                <td>
+                    <input type="checkbox"> HTML
+                </td>
+                <td>&lt;input type="checkbox"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input type="radio"&gt;</td>
+                <td>Selección única</td>
+                <td>Elegir una opción</td>
+                <td>
+                    <input type="radio">
+                </td>
+                <td>&lt;input type="radio"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>Texto largo</td>
+                <td>Comentarios</td>
+                <td>
+                    <textarea></textarea>
+                </td>
+                <td>&lt;textarea&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;select&gt;</td>
+                <td>Lista</td>
+                <td>Seleccionar opción</td>
+                <td>
+                    <select>
+                        <option>Perú</option>
+                    </select>
+                </td>
+                <td>&lt;select&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;option&gt;</td>
+                <td>Elemento de lista</td>
+                <td>Opciones</td>
+                <td>
+                    <select>
+                        <option>HTML</option>
+                    </select>
+                </td>
+                <td>&lt;option&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;optgroup&gt;</td>
+                <td>Agrupar opciones</td>
+                <td>Organizar select</td>
+                <td>
+                    <select>
+                        <optgroup label="Lenguajes">
+                            <option>HTML</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td>&lt;optgroup&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;datalist&gt;</td>
+                <td>Sugerencias</td>
+                <td>Autocompletar</td>
+                <td>
+                    <input list="ciudades">
+                    <datalist id="ciudades">
+                        <option value="Lima">
+                    </datalist>
+                </td>
+                <td>&lt;datalist&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;button&gt;</td>
+                <td>Botón</td>
+                <td>Enviar acciones</td>
+                <td>
+                    <button>Enviar</button>
+                </td>
+                <td>&lt;button&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;progress&gt;</td>
+                <td>Progreso</td>
+                <td>Mostrar avance</td>
+                <td>
+                    <progress value="60" max="100"></progress>
+                </td>
+                <td>&lt;progress&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;meter&gt;</td>
+                <td>Medidor</td>
+                <td>Representar nivel</td>
+                <td>
+                    <meter value="0.7"></meter>
+                </td>
+                <td>&lt;meter&gt;</td>
+            </tr>
+
+            <tr>
+                <td>&lt;output&gt;</td>
+                <td>Resultado</td>
+                <td>Mostrar cálculo</td>
+                <td>
+                    <output>Resultado</output>
+                </td>
+                <td>&lt;output&gt;</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <br>
+
+    <a href="../../../clases_HTML.html">Volver al índice</a><br>
+    <a href="../../demo/html/formularios.html">Ver demo de formularios</a><br>
+</body>
+
+</html>

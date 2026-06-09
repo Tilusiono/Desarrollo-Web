@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo de Unidades CSS</title>
+    <link rel="stylesheet" href="../../css/css/unidades.css">
+</head>
+
+<body>
+
+    <h1>Demo de las 21 unidades CSS</h1>
+
+    <p class="intro">
+        En esta página se muestran ejemplos visuales de unidades absolutas, relativas, viewport y viewport modernas en
+        CSS.
+    </p>
+
+    <section>
+        <h2>1. px</h2>
+        <p class="caja px">Ancho en píxeles</p>
+        <p>
+            Unidad absoluta basada en píxeles de pantalla. No depende de otros elementos.
+            Se recomienda usarla cuando se necesita un tamaño fijo como bordes, íconos o imágenes.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. %</h2>
+        <article class="contenedor-porcentaje">
+            <p class="caja porcentaje">Ancho en porcentaje</p>
+            <p class="caja porcentaje">Ancho en porcentaje</p>
+        </article>
+        <p>
+            Se calcula respecto al tamaño del elemento contenedor. Por ejemplo, 50% significa
+            la mitad del ancho del elemento padre. Se usa mucho para layouts flexibles.
+        </p>
+    </section>
+
+    <section>
+        <h2>3. em</h2>
+        <p class="texto-em">Texto con tamaño en em</p>
+        <p>
+            Se calcula en relación al tamaño de fuente del elemento padre. Por ejemplo,
+            si el padre tiene 16px, entonces 2em equivale a 32px. Se usa para tipografía
+            y componentes escalables.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. rem</h2>
+        <p class="texto-rem">Texto con tamaño en rem</p>
+        <p>
+            Se calcula respecto al tamaño de fuente del elemento raíz (html). Normalmente
+            1rem equivale a 16px. Es muy recomendable para mantener escalabilidad
+            consistente en todo el sitio.
+        </p>
+    </section>
+
+    <section>
+        <h2>5. vw</h2>
+        <p class="caja vw">Ancho en vw</p>
+        <p>
+            Representa el 1% del ancho de la ventana del navegador. Por ejemplo,
+            50vw significa la mitad del ancho de la pantalla. Muy usado en diseño responsive.
+        </p>
+    </section>
+
+    <section>
+        <h2>6. vh</h2>
+        <article class="alto-vh">Altura en vh</article>
+        <p>
+            Representa el 1% de la altura del viewport (pantalla). Por ejemplo,
+            50vh ocupa la mitad la altura visible del navegador. Muy usado para secciones full screen.
+        </p>
+    </section>
+
+    <section>
+        <h2>7. vmin</h2>
+        <p class="texto-vmin">Texto en vmin</p>
+        <p>
+            Se calcula tomando el valor menor entre el ancho y la altura del viewport.
+            Es útil para crear elementos que se adapten proporcionalmente a la pantalla.
+        </p>
+    </section>
+
+    <section>
+        <h2>8. vmax</h2>
+        <p class="texto-vmax">Texto en vmax</p>
+        <p>
+            Se calcula tomando el valor mayor entre el ancho y la altura del viewport.
+            Se usa cuando se quiere que un elemento escale según la dimensión más grande de la pantalla.
+        </p>
+    </section>
+
+    <section>
+        <h2>9. ch</h2>
+        <input type="text" class="ancho-ch" value="abcdefghijklmnopqrstuvwxyz">
+        <br>
+        <input type="text" class="ancho-ch2" value="aeiou">
+        <p>
+            Se basa en el ancho del carácter "0" de la fuente actual. Muy útil para limitar
+            la longitud de texto o formularios según número de caracteres.
+        </p>
+    </section>
+
+    <section>
+        <h2>10. ex</h2>
+        <p class="texto-ex">Texto con tamaño en ex</p>
+        <p>
+            Se calcula según la altura de la letra "x" de la tipografía utilizada.
+            No se usa mucho porque depende mucho de la fuente.
+        </p>
+    </section>
+
+    <section>
+        <h2>11. cm</h2>
+        <hr class="linea-cm">
+        <p>
+            Unidad física basada en centímetros. Se usa principalmente en impresión,
+            no en diseño web responsivo.
+        </p>
+    </section>
+
+    <section>
+        <h2>12. mm</h2>
+        <hr class="linea-mm">
+        <p>
+            Unidad física basada en milímetros. Similar a cm y utilizada sobre todo
+            en documentos destinados a impresión.
+        </p>
+    </section>
+
+    <section>
+        <h2>13. in</h2>
+        <img class="imagen-in" src="https://thumbs.dreamstime.com/b/demo-88003515.jpg" alt="Ejemplo en pulgadas">
+        <p>
+            Unidad basada en pulgadas (1in = 2.54cm). Usada principalmente en diseño
+            de impresión o documentos.
+        </p>
+    </section>
+
+    <section>
+        <h2>14. pt</h2>
+        <p class="texto-pt">Texto con tamaño en puntos</p>
+        <p>
+            Unidad tipográfica usada tradicionalmente en impresión.
+            1 punto equivale a 1/72 de pulgada.
+        </p>
+    </section>
+
+    <section>
+        <h2>15. pc</h2>
+        <p class="texto-pc">Texto con tamaño en picas</p>
+        <p>
+            Unidad tipográfica donde 1pc equivale a 12pt.
+            Se utiliza en tipografía profesional e impresión.
+        </p>
+    </section>
+
+    <section>
+        <h2>16. svh</h2>
+        <aside class="alto-svh">Caja con altura en svh</aside>
+        <p>
+            Representa el 1% de la altura mínima del viewport en dispositivos móviles.
+            Evita problemas cuando aparece la barra del navegador.
+        </p>
+        <ul>
+            <li> viewport = área visible del navegador
+            </li>
+            <li> s = small (altura mínima)
+            </li>
+            <li> vh = 1% de la altura del viewport
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>17. lvh</h2>
+        <aside class="alto-lvh">Caja con altura en lvh</aside>
+        <p>
+            Representa el 1% de la altura máxima del viewport.
+            Se usa para calcular la altura total posible del navegador.
+        </p>
+
+        <ul>
+            <li> viewport = área visible del navegador
+            </li>
+            <li> l = large ( altura máxima )
+            </li>
+            <li> vh = 1% de la altura del viewport
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>18. dvh</h2>
+        <aside class="alto-dvh">Caja con altura en dvh</aside>
+        <p>
+            Viewport dinámico que se adapta cuando cambia el tamaño visible del navegador.
+            Es una unidad moderna recomendada para layouts móviles.
+        </p>
+
+        <ul>
+            <li> viewport = área visible del navegador
+            </li>
+            <li>dynamic = cambia si aparece o desaparece la barra del navegador
+            </li>
+            <li> vh = 1% de la altura del viewport
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>19. svw</h2>
+        <label class="ancho-svw">Ancho en svw </label>
+        <p>
+            Representa el ancho mínimo del viewport en dispositivos móviles.
+            Permite controlar cambios provocados por barras del navegador.
+        </p>
+
+
+        <ul>
+            <li> viewport = área visible del navegador
+            </li>
+            <li> s = small (altura mínima)
+            </li>
+            <li> vw = 1% del ancho del viewport
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>20. lvw</h2>
+        <label class="ancho-lvw">Ancho en lvw</label>
+        <p>
+            Representa el ancho máximo del viewport disponible.
+            Se usa para cálculos de layout que necesitan el ancho completo.
+        </p>
+        <ul>
+            <li> viewport = área visible del navegador
+            </li>
+            <li> l = large ( altura máxima )
+            </li>
+            <li> vw = 1% del ancho del viewport
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>21. dvw</h2>
+        <label class="ancho-dvw">Ancho en dvw</label>
+        <p>
+            Unidad dinámica que representa el ancho visible del viewport
+            y se adapta cuando el tamaño de la ventana cambia.
+        </p>
+        <ul>
+            <li>viewport = área visible del navegador
+            </li>
+            <li>dynamic = cambia si aparece o desaparece la barra del navegador
+            </li>
+            <li>vw = 1% del ancho del viewport
+            </li>
+        </ul>
+    </section>
+
+</body>
+
+</html>

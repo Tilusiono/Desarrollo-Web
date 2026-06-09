@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables en CSS</title>
+
+    <link rel="stylesheet" href="../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <h1>Variables en CSS</h1>
+
+    <p>
+        Las variables en CSS, también conocidas como <strong>Custom Properties</strong>,
+        permiten almacenar valores reutilizables dentro de una hoja de estilos.
+        Gracias a ellas es posible reutilizar colores, tamaños, fuentes u otros valores
+        en diferentes partes del diseño, facilitando el mantenimiento y la consistencia
+        del código. Las variables se definen utilizando dos guiones (<strong>--</strong>)
+        y se utilizan mediante la función <strong>var()</strong>.
+    </p>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Concepto</th>
+                <th>Uso principal</th>
+                <th>Ejemplo CSS</th>
+                <th>Descripción detallada</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>:root</td>
+                <td>Variables globales</td>
+                <td>:root { --color: blue; }</td>
+                <td>Permite definir variables globales que pueden ser utilizadas en todo el documento.</td>
+            </tr>
+
+            <tr>
+                <td>--variable</td>
+                <td>Declarar variable</td>
+                <td>--color-principal: red;</td>
+                <td>Las variables en CSS se declaran usando dos guiones al inicio del nombre.</td>
+            </tr>
+
+            <tr>
+                <td>var()</td>
+                <td>Usar variable</td>
+                <td>color: var(--color-principal);</td>
+                <td>La función var() permite acceder al valor almacenado en una variable.</td>
+            </tr>
+
+            <tr>
+                <td>var(valor, fallback)</td>
+                <td>Valor alternativo</td>
+                <td>color: var(--color, black);</td>
+                <td>Permite definir un valor alternativo si la variable no existe.</td>
+            </tr>
+
+            <tr>
+                <td>Variables locales</td>
+                <td>Variables dentro de un selector</td>
+                <td>.caja { --tamano: 20px; }</td>
+                <td>Las variables también pueden definirse dentro de un selector y solo se aplican en ese contexto.</td>
+            </tr>
+
+            <tr>
+                <td>Reutilización</td>
+                <td>Uso repetido</td>
+                <td>background: var(--color-principal);</td>
+                <td>Permite reutilizar un mismo valor en múltiples propiedades.</td>
+            </tr>
+
+            <tr>
+                <td>Variables en tamaños</td>
+                <td>Control de tamaños</td>
+                <td>font-size: var(--tamano-texto);</td>
+                <td>Las variables pueden almacenar tamaños para textos, márgenes o padding.</td>
+            </tr>
+
+            <tr>
+                <td>Variables en colores</td>
+                <td>Paleta de colores</td>
+                <td>background: var(--color-secundario);</td>
+                <td>Muy utilizadas para mantener consistencia en la paleta de colores de un diseño.</td>
+            </tr>
+
+            <tr>
+                <td>Variables en cálculos</td>
+                <td>Uso con calc()</td>
+                <td>width: calc(var(--ancho) * 2);</td>
+                <td>Las variables pueden combinarse con funciones como calc() para realizar cálculos.</td>
+            </tr>
+
+            <tr>
+                <td>Herencia</td>
+                <td>Propagación de variables</td>
+                <td>color: var(--color-principal);</td>
+                <td>Las variables CSS se heredan a los elementos hijos dentro del DOM.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a href="../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/css/variables.html">Ver demo de variables</a>
+
+</body>
+
+</html>

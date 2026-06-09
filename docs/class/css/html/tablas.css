@@ -1,0 +1,66 @@
+
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif; /* Fuente principal del sitio */
+    margin:0; /* elimina el margen por defecto del navegador */
+    padding:40px; /* espacio interno del contenido respecto al borde */
+    background:linear-gradient(135deg,#f4f7fb,#e6eef9); /* fondo degradado */
+    color:#333; /* color del texto principal */
+    line-height:1.6; /* altura entre líneas para mejorar lectura */
+}
+
+
+/* Título */
+h1{
+    text-align: center;
+}
+
+/* Tabla */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+/* Encabezados */
+thead{
+    background-color: #5806db;
+    color: white;
+}
+
+/* Celdas */
+th, td{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Filas alternadas */
+tbody tr:nth-child(even){
+    background-color: #67cbdf;
+}
+
+/* Hover */
+tbody tr:hover{
+    background-color: #11a9eb;
+}
+
+/* Pie de tabla */
+tfoot{
+    background-color: #af14ce;
+    color: white;
+    font-weight: bold;
+}
+
+/* Links */
+a{
+    display: inline-block;
+    margin-top: 15px;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
