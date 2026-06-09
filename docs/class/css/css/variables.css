@@ -1,0 +1,160 @@
+/* =========================================
+VARIABLES GLOBALES
+========================================= */
+
+:root {
+
+    --color-principal: rgb(189, 32, 168);
+    --color-secundario: rgb(70, 151, 232);
+    --tamano-texto: 22px;
+    --espaciado: 20px;
+    --padding-base: 14px;
+    --ancho-linea: 200px;
+    --estilo-borde: solid;
+}
+
+/* =========================================
+ESTILOS GENERALES
+========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* =========================================
+1 VARIABLES GLOBALES
+========================================= */
+
+.caja-global {
+
+    color: var(--color-principal);
+    border-style: var(--estilo-borde);
+
+}
+
+/* =========================================
+2 USO DE VARIABLES
+========================================= */
+
+.boton-variable {
+
+    background: var(--color-principal);
+    color: white;
+    border: none;
+    padding: var(--padding-base);
+    border-radius: 8px;
+
+}
+
+/* =========================================
+3 FALLBACK
+========================================= */
+
+.fallback {
+
+    color: var(--color-inexistente, black);
+
+}
+
+/* =========================================
+4 VARIABLES LOCALES
+========================================= */
+
+.contenedor-local {
+
+    --color-local: rgb(0, 126, 128);
+    color: var(--color-local);
+
+}
+
+/* =========================================
+5 VARIABLES EN TAMAÑOS
+========================================= */
+
+.titulo-variable {
+
+    font-size: var(--tamano-texto);
+
+}
+
+/* =========================================
+6 VARIABLES EN COLORES
+========================================= */
+
+.color-variable {
+
+    background: var(--color-secundario);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+
+/* =========================================
+7 VARIABLES EN MÁRGENES
+========================================= */
+
+.margen-variable {
+
+    margin-top: var(--espaciado);
+
+}
+
+/* =========================================
+8 VARIABLES EN PADDING
+========================================= */
+
+.padding-variable {
+
+    background: lightgray;
+    padding: var(--padding-base);
+
+}
+
+/* =========================================
+9 VARIABLES CON CALC
+========================================= */
+
+.linea-variable {
+
+    width: calc(var(--ancho-linea) * 1.5);
+    height: 6px;
+    background: var(--color-principal);
+    border: none;
+
+}
+
+/* =========================================
+10 HERENCIA
+========================================= */
+
+.herencia {
+
+    --color-hijo: rgb(99, 222, 65);
+    color: var(--color-hijo);
+
+}

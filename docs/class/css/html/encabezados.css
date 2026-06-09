@@ -1,0 +1,143 @@
+
+table{
+    border-collapse: collapse; /* une los bordes de las celdas */
+}
+body{
+    font-family: "Segoe UI", Arial, sans-serif; /* Fuente principal del sitio */
+    margin:0; /* elimina el margen por defecto del navegador */
+    padding:40px; /* espacio interno del contenido respecto al borde */
+    background:linear-gradient(135deg,#f4f7fb,#e6eef9); /* fondo degradado */
+    color:#333; /* color del texto principal */
+    line-height:1.6; /* altura entre líneas para mejorar lectura */
+}
+
+/* =====================================
+   ESTILO BASE PARA TODOS LOS ENCABEZADOS
+   Se aplica a h1, h2, h3, h4, h5 y h6
+===================================== */
+h1, h2, h3, h4, h5, h6{
+    font-family: "Segoe UI", Arial, sans-serif; /* Tipo de letra */
+    margin: 18px 0; /* Espacio superior e inferior */
+    line-height: 1.3; /* Altura entre líneas */
+    transition: all .3s ease; /* Animación suave cuando cambian propiedades */
+}
+
+
+/* =====================================
+   H1 → TÍTULO PRINCIPAL DE LA PÁGINA
+   Se usa normalmente una sola vez
+===================================== */
+h1{
+    font-size: 46px; /* Tamaño grande */
+    font-weight: 700; /* Texto en negrita */
+    
+    /* Gradiente aplicado al texto */
+    background: linear-gradient(90deg,#ff4b4b,#ff8a00);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    border-bottom: 4px solid #ff4b4b; /* Línea inferior decorativa */
+    padding-bottom: 10px;
+    letter-spacing: 1px; /* Espacio entre letras */
+        
+}
+
+
+/* =====================================
+   H2 → SECCIONES PRINCIPALES
+===================================== */
+h2{
+    font-size: 34px;
+    color: #2c2c2c;
+
+    border-left: 6px solid #6ae02d; /* Barra lateral decorativa */
+
+    padding-left: 12px;
+
+    /* Fondo suave para resaltar la sección */
+    background: linear-gradient(90deg,#f7f7f7,#ffffff);
+    padding: 8px 12px;
+}
+
+
+/* =====================================
+   H3 → SUBSECCIONES
+===================================== */
+h3{
+    font-size: 28px;
+    color: #e40a0a;
+    position: relative; /* Permite posicionar elementos decorativos */
+}
+
+
+/* Línea decorativa debajo del h3 usando pseudo-elemento */
+h3::after{
+    content: ""; /* Elemento vacío decorativo */
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ff6600;
+    margin-top: 6px;
+}
+
+
+/* =====================================
+   H4 → SUBTEMAS
+===================================== */
+h4{
+    font-size: 22px;
+    color: #0da6b7;
+    font-style: italic; /* Texto en cursiva */
+
+    border-bottom: 2px dashed #0da6b7; /* Línea punteada */
+
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+
+/* =====================================
+   H5 → DETALLES MÁS ESPECÍFICOS
+===================================== */
+h5{
+    font-size: 18px;
+    color: #9fae10;
+
+    letter-spacing: 1.2px; /* Separación entre letras */
+
+    text-transform: capitalize; /* Primera letra en mayúscula */
+}
+
+
+/* =====================================
+   H6 → NOTAS O INFORMACIÓN MENOR
+===================================== */
+h6{
+    font-size: 14px;
+    color: #9188f8;
+
+    text-transform: uppercase; /* Todo en mayúsculas */
+
+    background: #f3f3ff; /* Fondo tipo etiqueta */
+
+    display: inline-block;
+
+    padding: 4px 8px;
+
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+
+/* =====================================
+   EFECTO HOVER
+   Se aplica cuando el cursor pasa encima
+===================================== */
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover{
+
+    transform: translateX(40px); /* Desplazamiento lateral */
+}

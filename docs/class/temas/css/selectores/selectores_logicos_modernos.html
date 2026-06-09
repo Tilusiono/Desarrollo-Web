@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores lógicos modernos en CSS</title>
+    <link rel="stylesheet" href="../../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <h1>Selectores lógicos modernos en CSS</h1>
+
+    <p>
+        Los selectores lógicos modernos en CSS permiten seleccionar elementos
+        de manera más flexible mediante condiciones, agrupaciones o relaciones
+        entre elementos dentro del documento HTML. Estos selectores forman parte
+        de los Selectors Level 4 y facilitan escribir código más limpio,
+        reutilizable y con menor repetición de reglas CSS.
+    </p>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Selector lógico</th>
+                <th>Ejemplo CSS</th>
+                <th>Uso principal</th>
+                <th>Descripción</th>
+                <th>Elemento HTML</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>:not()</td>
+                <td>p:not(.activo)</td>
+                <td>Excluir elementos</td>
+                <td>Selecciona todos los elementos que no cumplen una condición específica.</td>
+                <td>&lt;p class="texto"&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:is()</td>
+                <td>:is(h1, h2, h3)</td>
+                <td>Agrupar selectores</td>
+                <td>Permite agrupar varios selectores en una sola regla CSS para evitar repetir código.</td>
+                <td>&lt;h1&gt;Título&lt;/h1&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:where()</td>
+                <td>:where(section, article)</td>
+                <td>Agrupación sin especificidad</td>
+                <td>Funciona similar a :is(), pero no aumenta la especificidad del selector.</td>
+                <td>&lt;section&gt;Contenido&lt;/section&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:has()</td>
+                <td>div:has(img)</td>
+                <td>Selector relacional</td>
+                <td>Selecciona un elemento si contiene otro elemento dentro de él.</td>
+                <td>&lt;div&gt;&lt;img src="foto.jpg"&gt;&lt;/div&gt;</td>
+            </tr>
+
+            <tr>
+                <td>:matches()</td>
+                <td>:matches(h1, h2)</td>
+                <td>Agrupación antigua</td>
+                <td>Versión antigua de :is(), utilizada en implementaciones previas de CSS.</td>
+                <td>&lt;h1&gt;Título&lt;/h1&gt;</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a href="../../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/selectores/selectores_logicos_modernos.html">Ver demo de Logicos Modernos</a>
+
+</body>
+
+</html>
