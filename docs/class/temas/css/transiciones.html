@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones en CSS</title>
+
+    <link rel="stylesheet" href="../../css/html/tablas.css">
+</head>
+
+<body>
+
+    <h1>Transiciones en CSS</h1>
+
+    <p>
+        Las transiciones en CSS permiten que un elemento cambie sus estilos de forma gradual
+        cuando ocurre una interacción o cambio de estado. Estas propiedades controlan qué
+        propiedad cambia, cuánto dura el cambio, la velocidad del efecto y si existe un
+        retraso antes de iniciar la transición.
+    </p>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Propiedad</th>
+                <th>Uso principal</th>
+                <th>Ejemplo CSS</th>
+                <th>Descripción detallada</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>transition-property</td>
+                <td>Propiedad a animar</td>
+                <td>transition-property: background-color;</td>
+                <td>Define qué propiedad CSS cambiará de forma gradual durante la transición.</td>
+            </tr>
+
+            <tr>
+                <td>transition-duration</td>
+                <td>Duración</td>
+                <td>transition-duration: 2s;</td>
+                <td>Indica cuánto tiempo tarda el cambio desde el estado inicial hasta el final.</td>
+            </tr>
+
+            <tr>
+                <td>transition-timing-function</td>
+                <td>Velocidad</td>
+                <td>transition-timing-function: ease;</td>
+                <td>Controla la velocidad de la transición, permitiendo efectos de aceleración o desaceleración.</td>
+            </tr>
+
+            <tr>
+                <td>transition-delay</td>
+                <td>Retraso</td>
+                <td>transition-delay: 1s;</td>
+                <td>Define cuánto tiempo espera la transición antes de comenzar.</td>
+            </tr>
+
+            <tr>
+                <td>transition</td>
+                <td>Propiedad abreviada</td>
+                <td>transition: all 2s ease;</td>
+                <td>Permite declarar varias propiedades de transición en una sola línea.</td>
+            </tr>
+
+            <tr>
+                <td>ease</td>
+                <td>Velocidad suave</td>
+                <td>transition-timing-function: ease;</td>
+                <td>La transición inicia lento, acelera en el centro y desacelera al final.</td>
+            </tr>
+
+            <tr>
+                <td>linear</td>
+                <td>Velocidad constante</td>
+                <td>transition-timing-function: linear;</td>
+                <td>La transición mantiene la misma velocidad durante todo el cambio.</td>
+            </tr>
+
+            <tr>
+                <td>ease-in</td>
+                <td>Aceleración inicial</td>
+                <td>transition-timing-function: ease-in;</td>
+                <td>La transición comienza lentamente y acelera hacia el final.</td>
+            </tr>
+
+            <tr>
+                <td>ease-out</td>
+                <td>Desaceleración final</td>
+                <td>transition-timing-function: ease-out;</td>
+                <td>La transición inicia rápido y termina lentamente.</td>
+            </tr>
+
+            <tr>
+                <td>ease-in-out</td>
+                <td>Aceleración y desaceleración</td>
+                <td>transition-timing-function: ease-in-out;</td>
+                <td>La transición inicia lento, acelera en medio y vuelve a desacelerar al final.</td>
+            </tr>
+
+            <tr>
+                <td>cubic-bezier()</td>
+                <td>Curva personalizada</td>
+                <td>transition-timing-function: cubic-bezier(.17,.67,.83,.67);</td>
+                <td>Permite crear una curva de velocidad personalizada para controlar el ritmo de la transición.</td>
+            </tr>
+
+            <tr>
+                <td>steps()</td>
+                <td>Transición por pasos</td>
+                <td>transition-timing-function: steps(4);</td>
+                <td>La transición se realiza en saltos discretos en lugar de ser continua.</td>
+            </tr>
+
+            <tr>
+                <td>all</td>
+                <td>Todas las propiedades</td>
+                <td>transition-property: all;</td>
+                <td>Aplica la transición a cualquier propiedad que cambie.</td>
+            </tr>
+
+            <tr>
+                <td>none</td>
+                <td>Sin transición</td>
+                <td>transition-property: none;</td>
+                <td>Desactiva cualquier transición en el elemento.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <a href="../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/css/transiciones.html">Ver demo de transiciones</a>
+
+</body>
+
+</html>

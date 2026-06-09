@@ -1,0 +1,179 @@
+/* =========================================
+   ESTILO GENERAL DE LA PÁGINA
+========================================= */
+
+/* Estilo del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    padding: 30px; /* Espacio interno alrededor del contenido */
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+}
+
+/* Estilo del título principal */
+h1 {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+/* Estilo de cada sección donde se muestra la animación */
+section {
+    background-color: white; /* Fondo blanco */
+    margin-bottom: 20px; /* Separación entre secciones */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+/* Estilo de los títulos de cada grupo */
+.grupo-titulo {
+    margin-bottom: 15px; /* Espacio debajo del subtítulo */
+}
+
+/* =========================================
+   ESTILO BASE DE LOS BOTONES
+========================================= */
+
+.boton {
+    padding: 12px 20px; /* Espacio interno del botón */
+    border: none; /* Quita el borde */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: rgb(91, 11, 190); /* Color de fondo azul */
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    position: relative; /* Permite mover el botón con left o top */
+}
+
+/* =========================================
+   DEFINICIÓN DE LA ANIMACIÓN
+========================================= */
+
+/* Se define la animación llamada "mover" */
+@keyframes mover {
+
+    /* Estado inicial de la animación */
+    from {
+        left: 0; /* El botón inicia en su posición normal */
+        background-color: rgb(206, 113, 250); /* Color inicial azul */
+    }
+
+    /* Estado final de la animación */
+    to {
+        left: 120px; /* El botón se mueve 120px a la derecha */
+        background-color: rgb(239, 126, 78); /* Cambia el color a rojo */
+    }
+}
+
+/* =========================================
+   animation-name + animation-duration
+========================================= */
+
+/* Aplica la animación básica */
+.boton-keyframes {
+    animation-name: mover; /* Nombre de la animación */
+    animation-duration: 2s; /* Duración de la animación */
+}
+
+/* =========================================
+   animation-name
+========================================= */
+
+/* Especifica qué animación se usará */
+.boton-name {
+    animation-name: mover; /* Nombre de la animación */
+    animation-duration: 2s; /* Duración */
+}
+
+/* =========================================
+   animation-duration
+========================================= */
+
+/* Cambia la duración de la animación */
+.boton-duration {
+    animation-name: mover;
+    animation-duration: 4s; /* La animación tarda 4 segundos */
+}
+
+/* =========================================
+   animation-delay
+========================================= */
+
+/* Retrasa el inicio de la animación */
+.boton-delay {
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-delay: 2s; /* Espera 2 segundos antes de iniciar */
+    animation-fill-mode: forwards; /* Mantiene el estado final */
+}
+
+/* =========================================
+   animation-iteration-count
+========================================= */
+
+/* Hace que la animación se repita continuamente */
+.boton-iteration {
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; /* Repetición infinita */
+}
+
+/* =========================================
+   animation-direction
+========================================= */
+
+/* La animación va y vuelve */
+.boton-direction {
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /* Cambia dirección cada ciclo */
+}
+
+/* =========================================
+   animation-timing-function
+========================================= */
+
+/* Controla la velocidad de la animación */
+.boton-timing {
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out; /* Acelera y desacelera */
+    animation-fill-mode: forwards;
+}
+
+/* =========================================
+   animation-fill-mode
+========================================= */
+
+/* Mantiene el estilo final cuando termina la animación */
+.boton-fill {
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; /* Se queda en el estado final */
+}
+
+/* =========================================
+   animation-play-state
+========================================= */
+
+/* Animación continua */
+.boton-play {
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Al pasar el mouse se pausa la animación */
+.boton-play:hover {
+    animation-play-state: paused;
+}
+
+/* =========================================
+   animation (propiedad abreviada)
+========================================= */
+
+/* Define varias propiedades de animación en una sola línea */
+.boton-shorthand {
+    animation: mover 2s 1s infinite alternate ease-in-out;
+}
