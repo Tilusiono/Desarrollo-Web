@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Flex Box CSS</title>
+    <link rel="stylesheet" href="../../css/html/tablas.css">
+
+</head>
+
+<body>
+    <h1>CSS Grid completo</h1>
+
+    <p>
+        CSS Grid es un sistema de layout bidimensional que permite organizar elementos
+        en filas y columnas dentro de un contenedor. Ofrece control preciso sobre la
+        distribución, alineación y tamaño de los elementos dentro de la cuadrícula.
+    </p>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Propiedad / Valor</th>
+                <th>Tipo</th>
+                <th>Uso principal</th>
+                <th>Nivel de uso</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>display: grid</td>
+                <td>Contenedor</td>
+                <td>Activar Grid</td>
+                <td>Muy usado</td>
+                <td>Convierte el elemento en un contenedor grid.</td>
+            </tr>
+
+            <tr>
+                <td>display: inline-grid</td>
+                <td>Contenedor</td>
+                <td>Grid en línea</td>
+                <td>Usado</td>
+                <td>Hace que el contenedor grid se comporte como inline.</td>
+            </tr>
+
+            <tr>
+                <td>grid-template-columns</td>
+                <td>Contenedor</td>
+                <td>Definir columnas</td>
+                <td>Muy usado</td>
+                <td>Define el número y tamaño de columnas.</td>
+            </tr>
+
+            <tr>
+                <td>grid-template-rows</td>
+                <td>Contenedor</td>
+                <td>Definir filas</td>
+                <td>Muy usado</td>
+                <td>Define el número y tamaño de filas.</td>
+            </tr>
+
+            <tr>
+                <td>grid-template-areas</td>
+                <td>Contenedor</td>
+                <td>Layout por áreas</td>
+                <td>Usado</td>
+                <td>Permite nombrar áreas dentro de la cuadrícula.</td>
+            </tr>
+
+            <tr>
+                <td>grid-template</td>
+                <td>Contenedor</td>
+                <td>Shorthand</td>
+                <td>Usado</td>
+                <td>Combina grid-template-rows, columns y areas.</td>
+            </tr>
+
+            <tr>
+                <td>grid-auto-columns</td>
+                <td>Contenedor</td>
+                <td>Columnas automáticas</td>
+                <td>Poco usado</td>
+                <td>Tamaño de columnas generadas automáticamente.</td>
+            </tr>
+
+            <tr>
+                <td>grid-auto-rows</td>
+                <td>Contenedor</td>
+                <td>Filas automáticas</td>
+                <td>Poco usado</td>
+                <td>Tamaño de filas generadas automáticamente.</td>
+            </tr>
+
+            <tr>
+                <td>grid-auto-flow</td>
+                <td>Contenedor</td>
+                <td>Flujo automático</td>
+                <td>Usado</td>
+                <td>Controla cómo se colocan automáticamente los elementos.</td>
+            </tr>
+
+            <tr>
+                <td>row-gap</td>
+                <td>Contenedor</td>
+                <td>Espacio entre filas</td>
+                <td>Muy usado</td>
+                <td>Define la separación vertical entre filas.</td>
+            </tr>
+
+            <tr>
+                <td>column-gap</td>
+                <td>Contenedor</td>
+                <td>Espacio entre columnas</td>
+                <td>Muy usado</td>
+                <td>Define la separación horizontal entre columnas.</td>
+            </tr>
+
+            <tr>
+                <td>gap</td>
+                <td>Contenedor</td>
+                <td>Separación general</td>
+                <td>Muy usado</td>
+                <td>Define espacio entre filas y columnas.</td>
+            </tr>
+
+            <tr>
+                <td>justify-items</td>
+                <td>Contenedor</td>
+                <td>Alineación horizontal</td>
+                <td>Usado</td>
+                <td>Alinea los elementos dentro de su celda horizontalmente.</td>
+            </tr>
+
+            <tr>
+                <td>align-items</td>
+                <td>Contenedor</td>
+                <td>Alineación vertical</td>
+                <td>Usado</td>
+                <td>Alinea los elementos verticalmente dentro de su celda.</td>
+            </tr>
+
+            <tr>
+                <td>place-items</td>
+                <td>Contenedor</td>
+                <td>Shorthand</td>
+                <td>Usado</td>
+                <td>Combina justify-items y align-items.</td>
+            </tr>
+
+            <tr>
+                <td>justify-content</td>
+                <td>Contenedor</td>
+                <td>Alinear cuadrícula</td>
+                <td>Usado</td>
+                <td>Alinea toda la cuadrícula horizontalmente.</td>
+            </tr>
+
+            <tr>
+                <td>align-content</td>
+                <td>Contenedor</td>
+                <td>Alinear verticalmente</td>
+                <td>Usado</td>
+                <td>Alinea toda la cuadrícula verticalmente.</td>
+            </tr>
+
+            <tr>
+                <td>place-content</td>
+                <td>Contenedor</td>
+                <td>Shorthand</td>
+                <td>Usado</td>
+                <td>Combina justify-content y align-content.</td>
+            </tr>
+
+            <tr>
+                <td>grid-column-start</td>
+                <td>Ítem</td>
+                <td>Inicio columna</td>
+                <td>Usado</td>
+                <td>Define en qué columna inicia el elemento.</td>
+            </tr>
+
+            <tr>
+                <td>grid-column-end</td>
+                <td>Ítem</td>
+                <td>Fin columna</td>
+                <td>Usado</td>
+                <td>Define dónde termina la columna.</td>
+            </tr>
+
+            <tr>
+                <td>grid-column</td>
+                <td>Ítem</td>
+                <td>Shorthand columnas</td>
+                <td>Muy usado</td>
+                <td>Combina column-start y column-end.</td>
+            </tr>
+
+            <tr>
+                <td>grid-row-start</td>
+                <td>Ítem</td>
+                <td>Inicio fila</td>
+                <td>Usado</td>
+                <td>Define en qué fila comienza.</td>
+            </tr>
+
+            <tr>
+                <td>grid-row-end</td>
+                <td>Ítem</td>
+                <td>Fin fila</td>
+                <td>Usado</td>
+                <td>Define dónde termina.</td>
+            </tr>
+
+            <tr>
+                <td>grid-row</td>
+                <td>Ítem</td>
+                <td>Shorthand filas</td>
+                <td>Muy usado</td>
+                <td>Combina row-start y row-end.</td>
+            </tr>
+
+            <tr>
+                <td>grid-area</td>
+                <td>Ítem</td>
+                <td>Área completa</td>
+                <td>Muy usado</td>
+                <td>Define ubicación completa o conecta con grid-template-areas.</td>
+            </tr>
+
+            <tr>
+                <td>justify-self</td>
+                <td>Ítem</td>
+                <td>Alineación horizontal individual</td>
+                <td>Usado</td>
+                <td>Alinea un elemento dentro de su celda.</td>
+            </tr>
+
+            <tr>
+                <td>align-self</td>
+                <td>Ítem</td>
+                <td>Alineación vertical individual</td>
+                <td>Usado</td>
+                <td>Alinea un elemento verticalmente.</td>
+            </tr>
+
+            <tr>
+                <td>place-self</td>
+                <td>Ítem</td>
+                <td>Shorthand</td>
+                <td>Poco usado</td>
+                <td>Combina align-self y justify-self.</td>
+            </tr>
+
+            <tr>
+                <td>subgrid</td>
+                <td>Valor</td>
+                <td>Subcuadrícula</td>
+                <td>Poco usado</td>
+                <td>Permite heredar la estructura grid del contenedor padre.</td>
+            </tr>
+
+            <tr>
+                <td>repeat()</td>
+                <td>Función</td>
+                <td>Repetir columnas o filas</td>
+                <td>Muy usado</td>
+                <td>Permite definir múltiples columnas o filas de forma compacta.</td>
+            </tr>
+
+            <tr>
+                <td>minmax()</td>
+                <td>Función</td>
+                <td>Tamaño flexible</td>
+                <td>Muy usado</td>
+                <td>Define un tamaño mínimo y máximo para filas o columnas.</td>
+            </tr>
+
+            <tr>
+                <td>auto-fit</td>
+                <td>Valor</td>
+                <td>Columnas responsivas</td>
+                <td>Usado</td>
+                <td>Adapta columnas automáticamente según espacio disponible.</td>
+            </tr>
+
+            <tr>
+                <td>auto-fill</td>
+                <td>Valor</td>
+                <td>Columnas automáticas</td>
+                <td>Usado</td>
+                <td>Rellena la cuadrícula con columnas automáticas.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <a href="../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/css/grid_css.html">Ver demo de Flex Box</a><br>
+</body>
+
+</html>

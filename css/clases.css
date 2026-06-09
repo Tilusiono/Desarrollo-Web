@@ -1,0 +1,276 @@
+/* ================================
+   PALETA DE COLORES
+================================ */
+
+:root{
+
+    --blanco:#FEFAFA;
+    --negro:#181818;
+    --naranja:#E6603B;
+    --morado:#722AE9;
+    --fucsia:#F70487;
+    --cian:#4AFEF1;
+
+}
+
+
+
+/* ================================
+   RESET
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+/* ================================
+   BODY
+================================ */
+
+body{
+
+    font-family:"Segoe UI", Arial, sans-serif;
+
+    background:linear-gradient(135deg,var(--negro),var(--morado));
+
+    color:var(--blanco);
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+
+
+/* ================================
+   HEADER
+================================ */
+
+header{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    animation:fadeDown 1s ease;
+
+}
+
+header h1{
+
+    font-size:42px;
+
+    color:var(--cian);
+
+    margin-bottom:10px;
+
+}
+
+header p{
+
+    opacity:0.8;
+
+}
+
+
+
+/* ================================
+   NAV
+================================ */
+
+nav{
+
+    background:var(--negro);
+
+    border:2px solid var(--morado);
+
+    padding:30px;
+
+    width:420px;
+
+    border-radius:12px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+
+
+nav h2{
+
+    margin-bottom:20px;
+
+    border-bottom:2px solid var(--fucsia);
+
+    padding-bottom:10px;
+
+}
+
+
+
+/* ================================
+   LISTA
+================================ */
+/* ================================
+   JERARQUÍA DE LISTA
+================================ */
+
+nav ol{
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ol > li{
+    color: var(--cian);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+nav ol > li > ul{
+    list-style: none;
+    margin-top: 15px;
+    padding-left: 18px;
+    border-left: 3px solid var(--fucsia);
+}
+
+nav ol > li > ul > li{
+    margin: 10px 0;
+}
+a{
+
+    font-size: 15px;
+    display:block;
+
+    text-decoration:none;
+
+    background:var(--fucsia);
+
+    padding:20px 45px;
+
+    border-radius:16px;
+
+    color:var(--blanco);
+
+    transition:all .3s ease;
+
+}
+ a:hover{
+
+    background:var(--naranja);
+
+    transform:translateX(10px);
+
+}
+/* ================================
+   LINKS
+================================ */
+
+nav a{
+
+    display:block;
+
+    text-decoration:none;
+
+    background:var(--morado);
+
+    padding:12px 15px;
+
+    border-radius:6px;
+
+    color:var(--blanco);
+
+    transition:all .3s ease;
+
+}
+
+
+
+/* ================================
+   HOVER
+================================ */
+
+nav a:hover{
+
+    background:var(--naranja);
+
+    transform:translateX(8px);
+
+}
+
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer{
+
+    margin-top:40px;
+
+    font-size:14px;
+
+    opacity:0.7;
+
+}
+
+
+
+/* ================================
+   ANIMACIONES
+================================ */
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}

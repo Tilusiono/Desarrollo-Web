@@ -1,0 +1,266 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f5f5f5;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.caja,
+.alto-vh,
+.alto-svh,
+.alto-lvh,
+.alto-dvh,
+.ancho-svw,
+.ancho-lvw,
+.ancho-dvw {
+    background-color: royalblue;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* =========================================
+   1. px
+========================================= */
+
+.px {
+    width: 220px;
+}
+
+/* =========================================
+   2. %
+========================================= */
+
+.contenedor-porcentaje {
+    width: 100%;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.porcentaje {
+    width: 50%;
+}
+
+/* =========================================
+   3. em
+========================================= */
+
+.texto-em {
+    font-size: 1.5em;
+}
+
+/* =========================================
+   4. rem
+========================================= */
+
+.texto-rem {
+    font-size: 1.5rem;
+}
+
+/* =========================================
+   5. vw
+========================================= */
+
+.vw {
+    width: 50vw;
+}
+
+/* =========================================
+   6. vh
+========================================= */
+
+.alto-vh {
+    width: 180px;
+    height: 50vh;
+}
+
+/* =========================================
+   7. vmin
+========================================= */
+
+.texto-vmin {
+    font-size: 4vmin;
+    font-weight: bold;
+}
+
+/* =========================================
+   8. vmax
+========================================= */
+
+.texto-vmax {
+    font-size: 3vmax;
+    font-weight: bold;
+}
+
+/* =========================================
+   9. ch
+========================================= */
+
+.ancho-ch {
+    width: 25ch;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+.ancho-ch2{
+    width: 5ch;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+/* =========================================
+   10. ex
+========================================= */
+
+.texto-ex {
+    font-family: Arial; /*16px a 20px*/
+    font-size: 3ex;
+}
+
+/* =========================================
+   11. cm
+========================================= */
+
+.linea-cm {
+    width: 5cm;
+    height: 8px;
+    background-color: crimson;
+    border: none;
+    border-radius: 8px;
+    margin: 0;
+}
+
+/* =========================================
+   12. mm
+========================================= */
+
+.linea-mm {
+    width: 50mm;
+    height: 8px;
+    background-color: seagreen;
+    border: none;
+    border-radius: 8px;
+    margin: 0;
+}
+
+/* =========================================
+   13. in
+========================================= */
+
+.imagen-in {
+    width: 2in;
+    height: 1in;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #333;
+}
+
+/* =========================================
+   14. pt
+========================================= */
+
+.texto-pt {
+    font-size: 18pt;
+}
+
+/* =========================================
+   15. pc
+========================================= */
+
+.texto-pc {
+    font-size: 2pc;
+}
+
+/* =========================================
+   16. svh
+========================================= */
+
+.alto-svh {
+    width: 50svh;
+    height: 50svh;
+}
+
+/* =========================================
+   17. lvh
+========================================= */
+
+.alto-lvh {
+    width: 50lvh;
+    height: 50lvh;
+    background-color: darkorange;
+}
+
+/* =========================================
+   18. dvh
+========================================= */
+
+.alto-dvh {
+    width: 50dvh;
+    height: 50dvh;
+    background-color: mediumvioletred;
+}
+
+/* =========================================
+   19. svw
+========================================= */
+
+.ancho-svw {
+    height: 50svw;
+    width: 50svw;
+    background-color: teal;
+}
+
+/* =========================================
+   20. lvw
+========================================= */
+
+.ancho-lvw {
+    height: 50lvw;
+    width: 50lvw;
+    background-color: tomato;
+}
+
+/* =========================================
+   21. dvw
+========================================= */
+
+.ancho-dvw {
+    height: 50dvw;
+    width: 50dvw;
+    background-color: slateblue;
+}
