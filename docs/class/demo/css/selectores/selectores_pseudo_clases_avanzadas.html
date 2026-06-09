@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de 20 pseudo-clases CSS</title>
+    <link rel="stylesheet" href="../../../css/css/selectores/selectores_pseudo_clases_avanzadas.css">
+</head>
+<body>
+
+    <h1>Ejemplo de pseudo-clases en CSS</h1>
+
+    <section class="demo-hover">
+        <h2 class="grupo-titulo">1. :hover</h2>
+        <a href="#" class="enlace-hover">Pasa el mouse sobre este enlace</a>
+    </section>
+
+    <section class="demo-active">
+        <h2 class="grupo-titulo">2. :active</h2>
+        <button class="boton-active">Haz clic sostenido</button>
+    </section>
+
+    <section class="demo-focus">
+        <h2 class="grupo-titulo">3. :focus</h2>
+        <input type="text" class="input-focus" placeholder="Haz clic aquí">
+    </section>
+
+    <section class="lista-first">
+        <h2 class="grupo-titulo">4. :first-child</h2>
+        <div class="contenedor-first-child">
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+            <p>Tercer párrafo</p>
+        </div>
+    </section>
+
+    <section class="lista-last">
+        <h2 class="grupo-titulo">5. :last-child</h2>
+        <div class="contenedor-last-child">
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+            <p>Último párrafo</p>
+        </div>
+    </section>
+
+    <section class="demo-nth-child">
+        <h2 class="grupo-titulo">6. :nth-child(2)</h2>
+        <ul class="lista-nth">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+    </section>
+
+    <section class="demo-nth-last-child">
+        <h2 class="grupo-titulo">7. :nth-last-child(2)</h2>
+        <ul class="lista-nth-last">
+            <li>Elemento A</li>
+            <li>Elemento B</li>
+            <li>Elemento C</li>
+            <li>Elemento D</li>
+        </ul>
+    </section>
+
+    <section class="first-type">
+        <h2 class="grupo-titulo">8. :first-of-type</h2>
+        <span>Texto span</span>
+        <p>Primer párrafo del tipo p</p>
+        <p>Segundo párrafo</p>
+    </section>
+
+    <section class="last-type">
+        <h2 class="grupo-titulo">9. :last-of-type</h2>
+        <p>Párrafo uno</p>
+        <p>Párrafo dos</p>
+        <p>Párrafo final</p>
+        <div>Otro elemento</div>
+    </section>
+
+    <section class="nth-type">
+        <h2 class="grupo-titulo">10. :nth-of-type(2)</h2>
+        <p>Párrafo uno</p>
+        <p>Párrafo dos</p>
+        <p>Párrafo tres</p>
+    </section>
+
+    <section class="not-demo">
+        <h2 class="grupo-titulo">11. :not()</h2>
+        <p>Párrafo afectado</p>
+        <p class="excluido">Párrafo excluido</p>
+        <p>Otro párrafo afectado</p>
+    </section>
+
+    <section class="demo-is">
+        <h2 class="grupo-titulo">12. :is()</h2>
+        <h2 class="grupo-titulo">Título h2 con :is()</h2>
+        <h3 class="grupo-titulo">Título h3 con :is()</h3>
+    </section>
+
+    <section class="contenedor-suave">
+        <h2 class="grupo-titulo">13. :where()</h2>
+        <p>Este section tiene estilo con :where()</p>
+    </section>
+
+    <article class="contenedor-suave">
+        <h3 class="grupo-titulo">Otro contenedor con :where()</h3>
+        <p>Este article también recibe el estilo.</p>
+    </article>
+
+    <section class="demo-has">
+        <h2 class="grupo-titulo">14. :has()</h2>
+        <div class="tarjeta">
+            <img src="https://via.placeholder.com/100" alt="demo">
+            <p>Tarjeta con imagen</p>
+        </div>
+
+        <div class="tarjeta">
+            <p>Tarjeta sin imagen</p>
+        </div>
+    </section>
+
+    <section class="demo-checked">
+        <h2 class="grupo-titulo">15. :checked</h2>
+        <input type="checkbox" id="acepto" checked>
+        <label for="acepto">Acepto los términos</label>
+    </section>
+
+    <section class="demo-disabled">
+        <h2 class="grupo-titulo">16. :disabled</h2>
+        <input type="text" value="Campo deshabilitado" disabled>
+    </section>
+
+    <section class="demo-enabled">
+        <h2 class="grupo-titulo">17. :enabled</h2>
+        <input type="text" value="Campo habilitado">
+    </section>
+
+    <section class="demo-required">
+        <h2 class="grupo-titulo">18. :required</h2>
+        <input type="text" required placeholder="Campo obligatorio">
+    </section>
+
+    <section class="demo-valid">
+        <h2 class="grupo-titulo">19. :valid</h2>
+        <input type="email" value="correo@demo.com" required>
+    </section>
+
+    <section class="demo-invalid">
+        <h2 class="grupo-titulo">20. :invalid</h2>
+        <input type="email" value="correo-invalido" required>
+    </section>
+
+</body>
+</html>

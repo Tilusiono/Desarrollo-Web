@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Semántico HTML</title>
+
+    <link rel="stylesheet" href="../../css/html/contenido_sematico.css">
+
+</head>
+
+<body>
+
+    <h1>Contenido Semántico en HTML5</h1>
+
+    <p>
+        El contenido semántico en HTML utiliza etiquetas que describen el significado y la función del contenido dentro
+        de la página. Elementos como header, nav, main, section, article y footer permiten organizar la estructura del
+        sitio web de manera lógica, facilitando la comprensión tanto para los navegadores como para los motores de
+        búsqueda y mejorando la accesibilidad del contenido.
+    </p>
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Etiqueta</th>
+                <th>Tipo</th>
+                <th>Uso principal</th>
+                <th>Ejemplo práctico</th>
+                <th>Elemento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>&lt;figure&gt;</td>
+                <td>Contenido multimedia</td>
+                <td>Agrupa imágenes o gráficos con significado</td>
+
+                <td>
+                    <figure>
+                        <img src="https://picsum.photos/100">
+                    </figure>
+                </td>
+
+                <td>
+                    &lt;figure&gt;<br>
+                    &nbsp;&nbsp;&lt;img src="imagen.jpg"&gt;<br>
+                    &lt;/figure&gt;
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>&lt;figcaption&gt;</td>
+                <td>Descripción de imagen</td>
+                <td>Texto descriptivo para una imagen</td>
+
+                <td>
+                    <figure>
+                        <img src="https://picsum.photos/100">
+                        <figcaption>Imagen del curso HTML</figcaption>
+                    </figure>
+                </td>
+
+                <td>
+                    &lt;figcaption&gt;Descripción de imagen&lt;/figcaption&gt;
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>&lt;details&gt;</td>
+                <td>Contenido desplegable</td>
+                <td>Muestra u oculta información adicional</td>
+
+                <td>
+                    <details>
+                        <summary>Ver contenido</summary>
+                        <p>Contenido oculto del curso</p>
+                    </details>
+                </td>
+
+                <td>
+                    &lt;details&gt;<br>
+                    &nbsp;&nbsp;&lt;summary&gt;Ver contenido&lt;/summary&gt;<br>
+                    &nbsp;&nbsp;&lt;p&gt;Contenido oculto&lt;/p&gt;<br>
+                    &lt;/details&gt;
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>&lt;address&gt;</td>
+                <td>Información de contacto</td>
+                <td>Representa datos de contacto</td>
+
+                <td>
+                    <address>
+                        Docente: Bernabe Inche<br>
+                        Email: docente@idat.edu.pe
+                    </address>
+                </td>
+
+                <td>
+                    &lt;address&gt;<br>
+                    &nbsp;&nbsp;Docente: Bernabe Inche<br>
+                    &nbsp;&nbsp;Email: docente@idat.edu.pe<br>
+                    &lt;/address&gt;
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>&lt;time&gt;</td>
+                <td>Fecha u hora</td>
+                <td>Representa fechas o tiempos</td>
+
+                <td>
+                    <time datetime="2026-03-06T14:30:00">
+                        6 Marzo 2026 a las 2:30 PM
+                    </time>
+                </td>
+
+                <td>
+                    &lt;time datetime="2026-03-06T14:30:00"&gt;6 Marzo 2026 a las 2:30 PM&lt;/time&gt;
+                </td>
+            </tr>
+
+            <tr>
+                <td>&lt;dialog&gt;</td>
+                <td>Cuadro de diálogo</td>
+                <td>Representa una ventana modal</td>
+
+                <td>
+                    <dialog open>
+                        <p>Bienvenido al curso</p>
+                    </dialog>
+                </td>
+
+                <td>
+                    &lt;dialog open&gt;<br>
+                    &nbsp;&nbsp;&lt;p&gt;Mensaje&lt;/p&gt;<br>
+                    &lt;/dialog&gt;
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <a href="../../../clases_HTML.html">Volver al índice</a><br>
+    <a href="../../demo/html/contenido_semantico.html">Ver demo de contenido semántico</a>
+
+</body>
+
+</html>
