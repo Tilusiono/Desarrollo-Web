@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Flexbox avanzado</title>
+    <link rel="stylesheet" href="../../css/css/flexbox_avanzado.css">
+</head>
+
+<body>
+
+    <h1>Demo de Flexbox avanzado en CSS</h1>
+
+    <p class="intro">
+        En esta página se muestran ejemplos visuales de las propiedades más importantes de Flexbox.
+    </p>
+
+    <section>
+        <h2>1. display: flex</h2>
+        <article class="contenedor-flex">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>2. display: inline-flex</h2>
+        <article class="contenedor-inline-flex">
+            <span class="item-inline">A</span>
+            <span class="item-inline">B</span>
+            <span class="item-inline">C</span>
+        </article>
+    </section>
+
+    <section>
+        <h2>3. flex-direction: row</h2>
+        <article class="direccion-row">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>4. flex-direction: row-reverse</h2>
+        <article class="direccion-row-reverse">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>5. flex-direction: column</h2>
+        <article class="direccion-column">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>6. flex-direction: column-reverse</h2>
+        <article class="direccion-column-reverse">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>7. flex-wrap: nowrap</h2>
+        <article class="wrap-nowrap">
+            <p class="item-ancho">Elemento 1</p>
+            <p class="item-ancho">Elemento 2</p>
+            <p class="item-ancho">Elemento 3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>8. flex-wrap: wrap</h2>
+        <article class="wrap-wrap">
+            <p class="item-ancho">Elemento 1</p>
+            <p class="item-ancho">Elemento 2</p>
+            <p class="item-ancho">Elemento 3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>9. flex-flow</h2>
+        <article class="flow-demo">
+            <p class="item-ancho">1</p>
+            <p class="item-ancho">2</p>
+            <p class="item-ancho">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>10. justify-content</h2>
+        <article class="justify-demo">
+            <p class="item">1</p>
+            <p class="item">2</p>
+            <p class="item">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>11. align-items</h2>
+        <article class="align-items-demo">
+            <p class="item altura-1">1</p>
+            <p class="item altura-2">2</p>
+            <p class="item altura-3">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>12. align-content</h2>
+        <article class="align-content-demo">
+            <p class="item-ancho">1</p>
+            <p class="item-ancho">2</p>
+            <p class="item-ancho">3</p>
+            <p class="item-ancho">4</p>
+            <p class="item-ancho">5</p>
+            <p class="item-ancho">6</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>13. gap / row-gap / column-gap</h2>
+        <article class="gap-demo">
+            <p class="item-gap">A</p>
+            <p class="item-gap">B</p>
+            <p class="item-gap">C</p>
+            <p class="item-gap">D</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>14. order</h2>
+        <article class="order-demo">
+            <p class="item orden-3">1</p>
+            <p class="item orden-1">2</p>
+            <p class="item orden-2">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>15. flex-grow</h2>
+        <article class="grow-demo">
+            <p class="item grow-1">1</p>
+            <p class="item grow-2">2</p>
+            <p class="item grow-1">3</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>16. flex-shrink</h2>
+        <article class="shrink-demo">
+            <p class="item-shrink shrink-0">No reduce</p>
+            <p class="item-shrink shrink-1">Sí reduce</p>
+            <p class="item-shrink shrink-1">Sí reduce</p>
+            <p class="item-shrink shrink-0">No reduce</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>17. flex-basis</h2>
+        <article class="basis-demo">
+            <p class="item basis-100">100px</p>
+            <p class="item basis-200">200px</p>
+            <p class="item basis-auto">auto</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>18. flex</h2>
+        <article class="flex-demo">
+            <p class="item flex-1">flex: 1</p>
+            <p class="item flex-2">flex: 2</p>
+            <p class="item flex-2">flex: 2</p>
+            <p class="item flex-2">flex: 2</p>
+            <p class="item flex-1">flex: 1</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>19. align-self</h2>
+        <article class="align-self-demo">
+            <p class="item">1</p>
+            <p class="item self-end">2</p>
+            <p class="item">3</p>
+            <p class="item self-end">4</p>
+            <p class="item">5</p>
+        </article>
+    </section>
+
+</body>
+
+</html>
