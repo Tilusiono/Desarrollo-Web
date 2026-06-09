@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Flex Box CSS</title>
+    <link rel="stylesheet" href="../../css/html/tablas.css">
+
+</head>
+
+<body>
+    <h1>Flexbox avanzado en CSS</h1>
+
+    <p>
+        Flexbox (Flexible Box Layout) es un sistema de diseño en CSS que permite organizar
+        y alinear elementos dentro de un contenedor flexible. Proporciona herramientas
+        para distribuir espacio, controlar alineaciones en dos ejes y adaptar el layout
+        a diferentes tamaños de pantalla.
+    </p>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Propiedad / Valor</th>
+                <th>Tipo</th>
+                <th>Uso principal</th>
+                <th>Nivel de uso</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>display: flex</td>
+                <td>Contenedor</td>
+                <td>Activar Flexbox</td>
+                <td>Muy usado</td>
+                <td>Convierte el elemento en un contenedor flex y permite controlar sus elementos hijos.</td>
+            </tr>
+
+            <tr>
+                <td>display: inline-flex</td>
+                <td>Contenedor</td>
+                <td>Flex en línea</td>
+                <td>Usado</td>
+                <td>Hace que el contenedor use Flexbox pero se comporte como elemento inline.</td>
+            </tr>
+
+            <tr>
+                <td>flex-direction</td>
+                <td>Contenedor</td>
+                <td>Dirección de elementos</td>
+                <td>Muy usado</td>
+                <td>Define la dirección del eje principal donde se colocan los elementos.</td>
+            </tr>
+
+            <tr>
+                <td>row</td>
+                <td>Valor</td>
+                <td>Dirección horizontal</td>
+                <td>Muy usado</td>
+                <td>Los elementos se organizan en fila de izquierda a derecha.</td>
+            </tr>
+
+            <tr>
+                <td>row-reverse</td>
+                <td>Valor</td>
+                <td>Fila inversa</td>
+                <td>Usado</td>
+                <td>Los elementos se colocan en fila pero en orden inverso.</td>
+            </tr>
+
+            <tr>
+                <td>column</td>
+                <td>Valor</td>
+                <td>Dirección vertical</td>
+                <td>Muy usado</td>
+                <td>Los elementos se organizan en columna.</td>
+            </tr>
+
+            <tr>
+                <td>column-reverse</td>
+                <td>Valor</td>
+                <td>Columna inversa</td>
+                <td>Usado</td>
+                <td>Los elementos se organizan verticalmente en orden inverso.</td>
+            </tr>
+
+            <tr>
+                <td>flex-wrap</td>
+                <td>Contenedor</td>
+                <td>Salto de línea</td>
+                <td>Muy usado</td>
+                <td>Permite que los elementos pasen a una nueva línea cuando no hay espacio.</td>
+            </tr>
+
+            <tr>
+                <td>nowrap</td>
+                <td>Valor</td>
+                <td>Una sola línea</td>
+                <td>Muy usado</td>
+                <td>Los elementos permanecen en una sola fila.</td>
+            </tr>
+
+            <tr>
+                <td>wrap</td>
+                <td>Valor</td>
+                <td>Varias líneas</td>
+                <td>Muy usado</td>
+                <td>Los elementos pueden pasar a otra línea.</td>
+            </tr>
+
+            <tr>
+                <td>wrap-reverse</td>
+                <td>Valor</td>
+                <td>Líneas inversas</td>
+                <td>Poco usado</td>
+                <td>Las nuevas filas se colocan en dirección inversa.</td>
+            </tr>
+
+            <tr>
+                <td>flex-flow</td>
+                <td>Contenedor</td>
+                <td>Shorthand</td>
+                <td>Usado</td>
+                <td>Combina flex-direction y flex-wrap.</td>
+            </tr>
+
+            <tr>
+                <td>justify-content</td>
+                <td>Contenedor</td>
+                <td>Alineación eje principal</td>
+                <td>Muy usado</td>
+                <td>Distribuye los elementos a lo largo del eje principal.</td>
+            </tr>
+
+            <tr>
+                <td>flex-start</td>
+                <td>Valor</td>
+                <td>Inicio</td>
+                <td>Muy usado</td>
+                <td>Los elementos se alinean al inicio del contenedor.</td>
+            </tr>
+
+            <tr>
+                <td>flex-end</td>
+                <td>Valor</td>
+                <td>Final</td>
+                <td>Muy usado</td>
+                <td>Los elementos se alinean al final del contenedor.</td>
+            </tr>
+
+            <tr>
+                <td>center</td>
+                <td>Valor</td>
+                <td>Centrado</td>
+                <td>Muy usado</td>
+                <td>Los elementos se centran dentro del contenedor.</td>
+            </tr>
+
+            <tr>
+                <td>space-between</td>
+                <td>Valor</td>
+                <td>Espacio entre</td>
+                <td>Muy usado</td>
+                <td>Distribuye espacio entre los elementos.</td>
+            </tr>
+
+            <tr>
+                <td>space-around</td>
+                <td>Valor</td>
+                <td>Espacio alrededor</td>
+                <td>Usado</td>
+                <td>Agrega espacio alrededor de cada elemento.</td>
+            </tr>
+
+            <tr>
+                <td>space-evenly</td>
+                <td>Valor</td>
+                <td>Espacio uniforme</td>
+                <td>Usado</td>
+                <td>El espacio entre elementos es uniforme.</td>
+            </tr>
+
+            <tr>
+                <td>align-items</td>
+                <td>Contenedor</td>
+                <td>Alineación eje cruzado</td>
+                <td>Muy usado</td>
+                <td>Alinea los elementos verticalmente u horizontalmente según el eje.</td>
+            </tr>
+
+            <tr>
+                <td>stretch</td>
+                <td>Valor</td>
+                <td>Estirar elementos</td>
+                <td>Muy usado</td>
+                <td>Los elementos ocupan todo el espacio disponible.</td>
+            </tr>
+
+            <tr>
+                <td>baseline</td>
+                <td>Valor</td>
+                <td>Alineación de texto</td>
+                <td>Poco usado</td>
+                <td>Alinea los elementos según la línea base del texto.</td>
+            </tr>
+
+            <tr>
+                <td>align-content</td>
+                <td>Contenedor</td>
+                <td>Alinear múltiples líneas</td>
+                <td>Usado</td>
+                <td>Controla la distribución cuando hay varias filas de elementos.</td>
+            </tr>
+
+            <tr>
+                <td>gap</td>
+                <td>Contenedor</td>
+                <td>Espacio entre elementos</td>
+                <td>Muy usado</td>
+                <td>Define separación entre elementos.</td>
+            </tr>
+
+            <tr>
+                <td>row-gap</td>
+                <td>Contenedor</td>
+                <td>Espacio entre filas</td>
+                <td>Usado</td>
+                <td>Define el espacio vertical entre filas.</td>
+            </tr>
+
+            <tr>
+                <td>column-gap</td>
+                <td>Contenedor</td>
+                <td>Espacio entre columnas</td>
+                <td>Usado</td>
+                <td>Define el espacio horizontal entre columnas.</td>
+            </tr>
+
+            <tr>
+                <td>order</td>
+                <td>Ítem</td>
+                <td>Cambiar orden</td>
+                <td>Usado</td>
+                <td>Permite cambiar el orden visual de los elementos.</td>
+            </tr>
+
+            <tr>
+                <td>flex-grow</td>
+                <td>Ítem</td>
+                <td>Expandir elemento</td>
+                <td>Muy usado</td>
+                <td>Define cuánto puede crecer un elemento.</td>
+            </tr>
+
+            <tr>
+                <td>flex-shrink</td>
+                <td>Ítem</td>
+                <td>Reducir elemento</td>
+                <td>Usado</td>
+                <td>Define cuánto puede reducirse si falta espacio.</td>
+            </tr>
+
+            <tr>
+                <td>flex-basis</td>
+                <td>Ítem</td>
+                <td>Tamaño base</td>
+                <td>Muy usado</td>
+                <td>Define el tamaño inicial antes de distribuir el espacio.</td>
+            </tr>
+
+            <tr>
+                <td>flex</td>
+                <td>Ítem</td>
+                <td>Shorthand</td>
+                <td>Muy usado</td>
+                <td>Combina flex-grow, flex-shrink y flex-basis.</td>
+            </tr>
+
+            <tr>
+                <td>align-self</td>
+                <td>Ítem</td>
+                <td>Alineación individual</td>
+                <td>Usado</td>
+                <td>Permite cambiar la alineación de un solo elemento.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <a href="../../../clases_CSS.html">Volver al índice</a><br>
+    <a href="../../demo/css/flexbox_avanzado.html">Ver demo de Flex Box</a><br>
+</body>
+
+</html>
