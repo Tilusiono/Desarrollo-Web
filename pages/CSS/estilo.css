@@ -1,10 +1,94 @@
-body{
-    background-color: rgb(255, 255, 255);
+/* ==================== 5 ETIQUETAS GENERALES ==================== */
+body {
+    background-color: #f4eae1;
+    color: #2b2b2b;
+    font-family: 'Georgia', serif;
+}
+h1 {
+    color: #8b4513;
+    font-style: italic;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 5px;
+}
+p {
+    color: #4a4a4a;
+    line-height: 1.8;
+    text-align: justify;
+}
+button {
+    background-color: transparent;
+    color: #8b4513;
+    border: 2px solid #8b4513;
+    padding: 8px 16px;
+    font-family: inherit;
+}
+footer {
+    background-color: #eaddca;
+    border-top: 1px dashed #8b4513;
+    padding: 20px;
 }
 
-.header{
-    background-color: tan;
+/* ==================== 5 ETIQUETAS ID ==================== */
+#inicio {
+    background-color: #fff8f0;
+    box-shadow: 4px 4px 0px #8b4513;
+    padding: 40px;
 }
-main{
-    background-color: darkgoldenrod;
+#productos {
+    background-color: #faf0e6;
+    border: 1px solid #d2b48c;
+    padding: 30px;
 }
+#elementos {
+    background-color: #f5f5dc;
+    border-top: 3px double #8b4513;
+    padding: 35px;
+}
+#formulario {
+    background-color: #fffdfa;
+    border: 1px solid #cdc0b0;
+    padding: 25px;
+}
+#formCompleto {
+    background-color: #fcf8f2;
+    border-radius: 4px;
+}
+
+/* ==================== 5 ETIQUETAS CLASS ==================== */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2e6d9;
+    padding: 15px;
+}
+.logo {
+    height: 50px;
+    filter: sepia(1) contrast(1.2);
+}
+.columnas_3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.columnas_4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.card {
+    background-color: #fffdfa;
+    border: 1px solid #d7ccc8;
+    box-shadow: 5px 5px 0px #8b4513;
+    padding: 20px;
+}
+
+/* ==================== LOS ÚLTIMOS DOS SELECTORES REQUERIDOS ==================== */
+/* Pseudo-clases */
+button:hover { background-color: #8b4513; color: #ffffff; }
+input:disabled { background-color: #e0e0e0; color: #a0a0a0; }
+/* Selectores Descendientes */
+.header nav ul li a { color: #8b4513; text-decoration: underline; }
+.card figure img { max-width: 90%; border: 3px solid #8b4513; margin: 0 auto; display: block; }
